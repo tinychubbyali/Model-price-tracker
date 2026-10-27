@@ -44,17 +44,23 @@ async function fromFallback() {
   return { date: new Date().toISOString().slice(0, 10), source: 'https://open.er-api.com', rates: { SGD, CNY } };
 }
 
+// In GitHub Actions, also surface FX messages as run annotations so they show on the run page.
+function report(level, msg) {
+  (level === 'warning' ? console.warn : console.log)(msg);
+  if (process.env.GITHUB_ACTIONS) console.log(`::${level} title=FX::${msg}`);
+}
+
 // Returns fresh rates, or the previously stored ones if every source fails.
 export async function loadFx(previous) {
   for (const [name, load] of [['MAS', fromMas], ['fallback', fromFallback]]) {
     try {
       const fx = await load();
-      console.log(`FX from ${name}:`, fx.date, fx.rates);
+      report('notice', `FX from ${name} (${fx.date}): ${JSON.stringify(fx.rates)}`);
       return fx;
     } catch (err) {
-      console.warn(`FX source ${name} failed: ${err.message}`);
+      report('warning', `FX source ${name} failed: ${err.cause?.code ?? err.message}`);
     }
   }
-  console.warn('All FX sources failed; keeping previous rates.');
+  report('warning', 'All FX sources failed; keeping previous rates.');
   return previous;
 }
