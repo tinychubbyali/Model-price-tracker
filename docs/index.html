@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>大模型价格追踪</title>
+  <meta name="description" content="主流大模型 API 牌价与历史调价记录">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="wrap">
+    <h1>大模型价格追踪</h1>
+    <p class="meta" id="meta">加载中…</p>
+  </header>
+
+  <main class="wrap">
+    <section class="controls" aria-label="筛选">
+      <input id="search" type="search" placeholder="搜索模型，例如 gpt-5、claude、qwen" aria-label="搜索模型">
+      <select id="provider" aria-label="厂商"><option value="">全部厂商</option></select>
+      <div class="seg" role="group" aria-label="货币">
+        <button type="button" data-currency="USD" aria-pressed="true">USD</button>
+        <button type="button" data-currency="CNY" aria-pressed="false">CNY</button>
+      </div>
+      <label class="check"><input id="showRemoved" type="checkbox"> 显示已下架</label>
+    </section>
+
+    <section id="detail" class="card" hidden></section>
+
+    <section class="card">
+      <h2>当前牌价 <span class="unit" id="unit">（每百万 tokens）</span></h2>
+      <div class="table-scroll">
+        <table id="prices">
+          <thead>
+            <tr>
+              <th data-sort="model">模型</th>
+              <th data-sort="provider">厂商</th>
+              <th data-sort="input" class="num">输入</th>
+              <th data-sort="output" class="num">输出</th>
+              <th data-sort="cacheRead" class="num">缓存命中</th>
+              <th data-sort="lastChange" class="num">最近变动</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="empty" id="noResults" hidden>没有匹配的模型。</p>
+    </section>
+
+    <section class="card">
+      <h2>最近调价</h2>
+      <ul id="changes" class="changes"></ul>
+    </section>
+  </main>
+
+  <footer class="wrap meta">
+    数据每天自动抓取一次，只有价格变动时才会新增记录。价格为标准按量计费（不含批处理、优先级等档位），以各厂商官网为准。
+  </footer>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

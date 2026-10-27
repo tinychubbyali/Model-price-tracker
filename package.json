@@ -1,0 +1,11 @@
+{
+  "name": "model-price-tracker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-prices.mjs",
+    "test": "node --test",
+    "serve": "npx --yes serve docs"
+  },
+  "engines": { "node": ">=20" }
+}
