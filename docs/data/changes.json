@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "date": "2026-10-29",
+  "id": "mistral/mistral-large-4",
+  "type": "changed",
+  "before": {
+   "input": 0.68,
+   "output": 2.09,
+   "cacheRead": 0.068
+  },
+  "after": {
+   "input": 1.36,
+   "output": 4.18,
+   "cacheRead": 0.14
+  }
+ },
+ {
+  "date": "2026-10-29",
+  "id": "mistral/mistral-large-4-0",
+  "type": "changed",
+  "before": {
+   "input": 0.68,
+   "output": 2.09,
+   "cacheRead": 0.068
+  },
+  "after": {
+   "input": 1.36,
+   "output": 4.18,
+   "cacheRead": 0.14
+  }
+ },
+ {
+  "date": "2026-10-29",
+  "id": "moonshot/kimi-k3.1-pro",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.2
+  }
+ }
+]
