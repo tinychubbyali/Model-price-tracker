@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-10-30",
+  "id": "zai/glm-5v-turbo",
+  "type": "added",
+  "after": {
+   "input": 1.2,
+   "output": 4,
+   "cacheRead": 0.24
+  }
+ },
+ {
   "date": "2026-10-29",
   "id": "mistral/mistral-large-4",
   "type": "changed",

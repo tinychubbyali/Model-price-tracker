@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-10-29T08:14:54.912Z",
+ "updatedAt": "2026-10-30T08:21:43.187Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
- "usdCny": 6.680538,
+ "usdCny": 6.676858,
  "models": {
   "anthropic/claude-haiku-4-5": {
    "provider": "anthropic",
@@ -3888,6 +3888,23 @@
      "input": 2,
      "output": 10,
      "cacheRead": 0.2
+    }
+   ]
+  },
+  "zai/glm-5v-turbo": {
+   "provider": "zai",
+   "model": "glm-5v-turbo",
+   "input": 1.2,
+   "output": 4,
+   "cacheRead": 0.24,
+   "source": "https://vercel.com/ai-gateway/models/glm-5v-turbo",
+   "firstSeen": "2026-10-30",
+   "history": [
+    {
+     "date": "2026-10-30",
+     "input": 1.2,
+     "output": 4,
+     "cacheRead": 0.24
     }
    ]
   }
