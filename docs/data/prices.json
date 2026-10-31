@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-10-30T08:21:43.187Z",
+ "updatedAt": "2026-10-31T08:12:25.660Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
- "usdCny": 6.676858,
+ "usdCny": 6.669566,
  "models": {
   "anthropic/claude-haiku-4-5": {
    "provider": "anthropic",
@@ -3905,6 +3905,23 @@
      "input": 1.2,
      "output": 4,
      "cacheRead": 0.24
+    }
+   ]
+  },
+  "openai/gpt-6-rosalind": {
+   "provider": "openai",
+   "model": "gpt-6-rosalind",
+   "input": 15,
+   "output": 75,
+   "cacheRead": 1.5,
+   "source": "https://developers.openai.com/api/docs/pricing",
+   "firstSeen": "2026-10-31",
+   "history": [
+    {
+     "date": "2026-10-31",
+     "input": 15,
+     "output": 75,
+     "cacheRead": 1.5
     }
    ]
   }

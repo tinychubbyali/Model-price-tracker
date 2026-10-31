@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-10-31",
+  "id": "openai/gpt-6-rosalind",
+  "type": "added",
+  "after": {
+   "input": 15,
+   "output": 75,
+   "cacheRead": 1.5
+  }
+ },
+ {
   "date": "2026-10-30",
   "id": "zai/glm-5v-turbo",
   "type": "added",
