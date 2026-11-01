@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-10-31T08:12:25.660Z",
+ "updatedAt": "2026-11-01T08:56:15.661Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
- "usdCny": 6.669566,
+ "usdCny": 6.670992,
  "models": {
   "anthropic/claude-haiku-4-5": {
    "provider": "anthropic",
@@ -3922,6 +3922,23 @@
      "input": 15,
      "output": 75,
      "cacheRead": 1.5
+    }
+   ]
+  },
+  "openai/gpt-6-astra-law": {
+   "provider": "openai",
+   "model": "gpt-6-astra-law",
+   "input": 10,
+   "output": 50,
+   "cacheRead": 1,
+   "source": "https://developers.openai.com/api/docs/pricing",
+   "firstSeen": "2026-11-01",
+   "history": [
+    {
+     "date": "2026-11-01",
+     "input": 10,
+     "output": 50,
+     "cacheRead": 1
     }
    ]
   }

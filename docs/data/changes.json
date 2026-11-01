@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-01",
+  "id": "openai/gpt-6-astra-law",
+  "type": "added",
+  "after": {
+   "input": 10,
+   "output": 50,
+   "cacheRead": 1
+  }
+ },
+ {
   "date": "2026-10-31",
   "id": "openai/gpt-6-rosalind",
   "type": "added",
