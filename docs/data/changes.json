@@ -1,5 +1,25 @@
 [
  {
+  "date": "2026-11-06",
+  "id": "openai/gpt-6-cyber",
+  "type": "added",
+  "after": {
+   "input": 20,
+   "output": 100,
+   "cacheRead": 2
+  }
+ },
+ {
+  "date": "2026-11-06",
+  "id": "gemini/gemini-omni-1.2-flash",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 9,
+   "cacheRead": null
+  }
+ },
+ {
   "date": "2026-11-03",
   "id": "mistral/mistral-large-4",
   "type": "changed",

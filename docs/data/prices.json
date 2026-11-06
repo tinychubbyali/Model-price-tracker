@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-11-05T09:13:35.102Z",
+ "updatedAt": "2026-11-06T09:05:23.708Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
- "usdCny": 6.685421,
+ "usdCny": 6.682525,
  "models": {
   "anthropic/claude-haiku-4-5": {
    "provider": "anthropic",
@@ -859,7 +859,7 @@
    "input": 1.5,
    "output": 9,
    "cacheRead": null,
-   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "source": "https://ai.google.dev/gemini-api/docs/deprecations",
    "firstSeen": "2026-10-27",
    "history": [
     {
@@ -3178,7 +3178,7 @@
    "input": 1.5,
    "output": 9,
    "cacheRead": null,
-   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "source": "https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash",
    "firstSeen": "2026-10-27",
    "history": [
     {
@@ -3951,6 +3951,40 @@
      "input": 10,
      "output": 50,
      "cacheRead": 1
+    }
+   ]
+  },
+  "openai/gpt-6-cyber": {
+   "provider": "openai",
+   "model": "gpt-6-cyber",
+   "input": 20,
+   "output": 100,
+   "cacheRead": 2,
+   "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
+   "firstSeen": "2026-11-06",
+   "history": [
+    {
+     "date": "2026-11-06",
+     "input": 20,
+     "output": 100,
+     "cacheRead": 2
+    }
+   ]
+  },
+  "gemini/gemini-omni-1.2-flash": {
+   "provider": "gemini",
+   "model": "gemini-omni-1.2-flash",
+   "input": 1.5,
+   "output": 9,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "firstSeen": "2026-11-06",
+   "history": [
+    {
+     "date": "2026-11-06",
+     "input": 1.5,
+     "output": 9,
+     "cacheRead": null
     }
    ]
   }
