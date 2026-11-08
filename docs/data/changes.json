@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-08",
+  "id": "moonshot/kimi-k3.1-pro-highspeed",
+  "type": "added",
+  "after": {
+   "input": 4,
+   "output": 20,
+   "cacheRead": 0.2
+  }
+ },
+ {
   "date": "2026-11-06",
   "id": "openai/gpt-6-cyber",
   "type": "added",

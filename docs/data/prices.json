@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-11-07T08:33:11.532Z",
+ "updatedAt": "2026-11-08T08:45:54.006Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
- "usdCny": 6.686107,
+ "usdCny": 6.690826,
  "models": {
   "anthropic/claude-haiku-4-5": {
    "provider": "anthropic",
@@ -3985,6 +3985,23 @@
      "input": 1.5,
      "output": 9,
      "cacheRead": null
+    }
+   ]
+  },
+  "moonshot/kimi-k3.1-pro-highspeed": {
+   "provider": "moonshot",
+   "model": "kimi-k3.1-pro-highspeed",
+   "input": 4,
+   "output": 20,
+   "cacheRead": 0.2,
+   "source": "https://platform.kimi.ai/docs/pricing/chat",
+   "firstSeen": "2026-11-08",
+   "history": [
+    {
+     "date": "2026-11-08",
+     "input": 4,
+     "output": 20,
+     "cacheRead": 0.2
     }
    ]
   }
