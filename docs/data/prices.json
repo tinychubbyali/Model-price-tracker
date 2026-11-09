@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-11-08T08:45:54.006Z",
+ "updatedAt": "2026-11-09T09:26:56.675Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
- "usdCny": 6.690826,
+ "usdCny": 6.679814,
  "models": {
   "anthropic/claude-haiku-4-5": {
    "provider": "anthropic",
