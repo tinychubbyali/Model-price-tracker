@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-10",
+  "id": "anthropic/claude-fable-5-2",
+  "type": "added",
+  "after": {
+   "input": 8,
+   "output": 40,
+   "cacheRead": 0.2
+  }
+ },
+ {
   "date": "2026-11-08",
   "id": "moonshot/kimi-k3.1-pro-highspeed",
   "type": "added",

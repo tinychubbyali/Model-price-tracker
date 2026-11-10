@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-11-09T09:26:56.675Z",
+ "updatedAt": "2026-11-10T09:29:40.640Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
- "usdCny": 6.679814,
+ "usdCny": 6.686583,
  "models": {
   "anthropic/claude-haiku-4-5": {
    "provider": "anthropic",
@@ -3960,7 +3960,7 @@
    "input": 20,
    "output": 100,
    "cacheRead": 2,
-   "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
+   "source": "https://developers.openai.com/api/docs/pricing",
    "firstSeen": "2026-11-06",
    "history": [
     {
@@ -4001,6 +4001,23 @@
      "date": "2026-11-08",
      "input": 4,
      "output": 20,
+     "cacheRead": 0.2
+    }
+   ]
+  },
+  "anthropic/claude-fable-5-2": {
+   "provider": "anthropic",
+   "model": "claude-fable-5-2",
+   "input": 8,
+   "output": 40,
+   "cacheRead": 0.2,
+   "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+   "firstSeen": "2026-11-10",
+   "history": [
+    {
+     "date": "2026-11-10",
+     "input": 8,
+     "output": 40,
      "cacheRead": 0.2
     }
    ]
