@@ -1,5 +1,25 @@
 [
  {
+  "date": "2026-11-11",
+  "id": "anthropic/claude-mythos-5-2",
+  "type": "added",
+  "after": {
+   "input": 8,
+   "output": 40,
+   "cacheRead": 0.2
+  }
+ },
+ {
+  "date": "2026-11-11",
+  "id": "gemini/gemini-4-carbon",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.1
+  }
+ },
+ {
   "date": "2026-11-10",
   "id": "anthropic/claude-fable-5-2",
   "type": "added",

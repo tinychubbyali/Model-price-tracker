@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-11-10T09:29:40.640Z",
+ "updatedAt": "2026-11-11T09:02:21.840Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
- "usdCny": 6.686583,
+ "usdCny": 6.687755,
  "models": {
   "anthropic/claude-haiku-4-5": {
    "provider": "anthropic",
@@ -4019,6 +4019,40 @@
      "input": 8,
      "output": 40,
      "cacheRead": 0.2
+    }
+   ]
+  },
+  "anthropic/claude-mythos-5-2": {
+   "provider": "anthropic",
+   "model": "claude-mythos-5-2",
+   "input": 8,
+   "output": 40,
+   "cacheRead": 0.2,
+   "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+   "firstSeen": "2026-11-11",
+   "history": [
+    {
+     "date": "2026-11-11",
+     "input": 8,
+     "output": 40,
+     "cacheRead": 0.2
+    }
+   ]
+  },
+  "gemini/gemini-4-carbon": {
+   "provider": "gemini",
+   "model": "gemini-4-carbon",
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.1,
+   "source": "https://aistudio.google.com/docs/pricing#gemini-4-carbon",
+   "firstSeen": "2026-11-11",
+   "history": [
+    {
+     "date": "2026-11-11",
+     "input": 2,
+     "output": 10,
+     "cacheRead": 0.1
     }
    ]
   }
