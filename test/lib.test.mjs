@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
+import { parseMas } from '../scripts/fx.mjs';
 import { applySnapshot, normalize, sanityCheck } from '../scripts/lib.mjs';
 
 const raw = {
@@ -55,4 +56,13 @@ test('sanityCheck rejects a snapshot that lost most of a provider', () => {
   const broken = normalize(raw);
   delete broken['openai/gpt-4o'];
   assert.match(sanityCheck(prev, broken)[0], /openai/);
+});
+
+test('parseMas converts MAS quotes to units per USD', () => {
+  const fx = parseMas({ result: { records: [{ end_of_day: '2026-10-24', usd_sgd: '1.2950', cny_sgd_100: '18.20' }] } });
+  assert.equal(fx.date, '2026-10-24');
+  assert.equal(fx.rates.SGD, 1.295);
+  assert.equal(fx.rates.CNY, 7.1154);
+  assert.equal(parseMas({ result: { records: [] } }), null);
+  assert.equal(parseMas({ result: { records: [{ end_of_day: '2026-10-24', usd_sgd: null, cny_sgd_100: '18.2' }] } }), null);
 });

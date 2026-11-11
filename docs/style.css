@@ -72,6 +72,7 @@ footer { padding: 8px 16px 40px; }
   font: inherit; border: 0; padding: 7px 12px; background: var(--surface-1); color: var(--text-secondary); cursor: pointer;
 }
 .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+.seg button:disabled { opacity: 0.4; cursor: not-allowed; }
 .check { color: var(--text-secondary); font-size: 14px; display: inline-flex; gap: 6px; align-items: center; }
 
 .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-bottom: 16px; }

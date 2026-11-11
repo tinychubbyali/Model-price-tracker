@@ -10,6 +10,7 @@ const PROVIDER_NAMES = {
   moonshot: 'Moonshot (Kimi)',
 };
 const FIELD_NAMES = { input: '输入', output: '输出', cacheRead: '缓存命中' };
+const CURRENCY_SYMBOLS = { USD: '$', CNY: '¥', SGD: 'S$' };
 
 const $ = (sel) => document.querySelector(sel);
 const state = { currency: 'USD', sort: { key: 'provider', dir: 1 }, selected: null };
@@ -18,7 +19,7 @@ let data, changes;
 function loadPrefs() {
   try {
     const c = localStorage.getItem('currency');
-    if (c === 'USD' || c === 'CNY') state.currency = c;
+    if (c in CURRENCY_SYMBOLS) state.currency = c;
   } catch {}
 }
 
@@ -26,10 +27,16 @@ function savePref(key, value) {
   try { localStorage.setItem(key, value); } catch {}
 }
 
+// Units of the selected currency per 1 USD; null when no rate has been fetched.
+function rate(currency = state.currency) {
+  if (currency === 'USD') return 1;
+  return data.fx?.rates?.[currency] ?? (currency === 'CNY' ? data.usdCny : null) ?? null;
+}
+
 function money(v) {
   if (v === null || v === undefined) return '—';
-  const n = state.currency === 'CNY' ? v * data.usdCny : v;
-  const sym = state.currency === 'CNY' ? '¥' : '$';
+  const n = v * rate();
+  const sym = CURRENCY_SYMBOLS[state.currency];
   if (n === 0) return sym + '0';
   const digits = n >= 100 ? 0 : n >= 1 ? 2 : n >= 0.01 ? 3 : 4;
   return sym + n.toFixed(digits);
@@ -46,8 +53,14 @@ function renderMeta() {
   const when = new Date(data.updatedAt).toLocaleString('zh-CN', { hour12: false });
   const n = Object.values(data.models).filter((m) => !m.removed).length;
   $('#meta').innerHTML =
-    `收录 ${n} 个模型 · 最后抓取 ${esc(when)} · 汇率 1 USD ≈ ${data.usdCny.toFixed(2)} CNY · ` +
-    `<a href="${esc(data.source)}" rel="noopener">数据来源</a>`;
+  const fxText = ['CNY', 'SGD'].filter((c) => rate(c)).map((c) => `${rate(c).toFixed(4)} ${c}`).join(' ≈ ');
+  const fxSource = data.fx?.source
+    ? `（<a href="${esc(data.fx.source)}" rel="noopener">${data.fx.source.includes('mas.gov.sg') ? '新加坡金管局' : '汇率来源'}</a>${data.fx.date ? ` ${esc(data.fx.date)}` : ''}）`
+    : '';
+  $('#meta').innerHTML =
+    `收录 ${n} 个模型 · 最后抓取 ${esc(when)} · ` +
+    (fxText ? `汇率 1 USD ≈ ${fxText}${fxSource} · ` : '') +
+    `<a href="${esc(data.source)}" rel="noopener">价格数据来源</a>`;
   $('#unit').textContent = `（每百万 tokens，${state.currency}）`;
 }
 
@@ -118,7 +131,7 @@ function chartSvg(m, W) {
   const end = Date.parse(m.removed ?? today);
   const t0 = points[0].t;
   const t1 = Math.max(end, t0 + 864e5);
-  const conv = (v) => (v === null ? null : state.currency === 'CNY' ? v * data.usdCny : v);
+  const conv = (v) => (v === null ? null : v * rate());
   const max = Math.max(...points.flatMap((p) => [conv(p.input), conv(p.output)])) * 1.15 || 1;
 
   const H = 240, L = 56, R = 12, T = 12, B = 28;
@@ -136,7 +149,7 @@ function chartSvg(m, W) {
   const ticks = [0, 0.25, 0.5, 0.75, 1].map((k) => k * max);
   const grid = ticks.map((v) =>
     `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/>` +
-    `<text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${money(state.currency === 'CNY' ? v / data.usdCny : v)}</text>`).join('');
+    `<text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${money(v / rate())}</text>`).join('');
   const fmt = (t) => new Date(t).toISOString().slice(0, 10);
   const markers = points.flatMap((p) => ['input', 'output'].map((f, i) =>
     `<circle cx="${x(p.t)}" cy="${y(conv(p[f]))}" r="4" fill="var(--series-${i + 1})" stroke="var(--surface-1)" stroke-width="2"/>`)).join('');
@@ -240,7 +253,9 @@ async function main() {
   const providers = [...new Set(Object.values(data.models).map((m) => m.provider))];
   $('#provider').innerHTML += providers.map((p) => `<option value="${esc(p)}">${esc(providerName(p))}</option>`).join('');
 
+  if (!rate()) state.currency = 'USD';
   for (const b of document.querySelectorAll('[data-currency]')) {
+    b.disabled = !rate(b.dataset.currency);
     b.setAttribute('aria-pressed', b.dataset.currency === state.currency);
     b.addEventListener('click', () => {
       state.currency = b.dataset.currency;
