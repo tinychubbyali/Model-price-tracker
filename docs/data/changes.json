@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-13",
+  "id": "gemini/gemini-4-hydrogen",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.075
+  }
+ },
+ {
   "date": "2026-11-11",
   "id": "anthropic/claude-mythos-5-2",
   "type": "added",
