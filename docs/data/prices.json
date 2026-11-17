@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-11-16T09:15:51.895Z",
+ "updatedAt": "2026-11-17T10:25:33.217Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
- "usdCny": 6.678399,
+ "usdCny": 6.679257,
  "models": {
   "anthropic/claude-haiku-4-5": {
    "provider": "anthropic",
@@ -4070,6 +4070,23 @@
      "input": 1.5,
      "output": 7.5,
      "cacheRead": 0.075
+    }
+   ]
+  },
+  "dashscope/qwen4-max": {
+   "provider": "dashscope",
+   "model": "qwen4-max",
+   "input": 1.5,
+   "output": 4.5,
+   "cacheRead": null,
+   "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+   "firstSeen": "2026-11-17",
+   "history": [
+    {
+     "date": "2026-11-17",
+     "input": 1.5,
+     "output": 4.5,
+     "cacheRead": null
     }
    ]
   }

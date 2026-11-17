@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-17",
+  "id": "dashscope/qwen4-max",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 4.5,
+   "cacheRead": null
+  }
+ },
+ {
   "date": "2026-11-13",
   "id": "gemini/gemini-4-hydrogen",
   "type": "added",
