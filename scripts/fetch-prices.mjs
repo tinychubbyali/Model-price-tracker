@@ -1,11 +1,11 @@
 // Fetches current list prices and records any changes into docs/data/.
 // Usage: node scripts/fetch-prices.mjs [--from path/to/local.json]
 import { readFile, writeFile } from 'node:fs/promises';
+import { loadFx } from './fx.mjs';
 import { applySnapshot, normalize, sanityCheck } from './lib.mjs';
 
 const SOURCE_URL =
   'https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json';
-const FX_URL = 'https://open.er-api.com/v6/latest/USD';
 const DATA_DIR = new URL('../docs/data/', import.meta.url);
 const PRICES = new URL('prices.json', DATA_DIR);
 const CHANGES = new URL('changes.json', DATA_DIR);
@@ -27,15 +27,6 @@ async function loadSource() {
   return res.json();
 }
 
-async function loadUsdCny(previous) {
-  try {
-    const res = await fetch(FX_URL);
-    const rate = (await res.json())?.rates?.CNY;
-    if (typeof rate === 'number' && rate > 1) return rate;
-  } catch {}
-  return previous ?? 7.1;
-}
-
 const state = await readJson(PRICES, { models: {} });
 const changes = await readJson(CHANGES, []);
 const snapshot = normalize(await loadSource());
@@ -52,11 +43,13 @@ const date = now.slice(0, 10);
 const result = applySnapshot(state.models, snapshot, date);
 // The first run seeds every model; listing them all as "added" would bury real changes.
 if (Object.keys(state.models).length === 0) result.changes = [];
+// Older data files stored only a CNY rate as `usdCny`.
+const previousFx = state.fx ?? (state.usdCny && { date: null, source: null, rates: { CNY: state.usdCny } });
 
 await writeFile(
   PRICES,
   JSON.stringify(
-    { updatedAt: now, source: SOURCE_URL, usdCny: await loadUsdCny(state.usdCny), models: result.models },
+    { updatedAt: now, source: SOURCE_URL, fx: await loadFx(previousFx), models: result.models },
     null,
     1,
   ) + '\n',

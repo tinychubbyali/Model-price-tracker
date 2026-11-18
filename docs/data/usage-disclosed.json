@@ -1,0 +1,29 @@
+{
+ "note": "Hand-maintained. Each entry is a figure a vendor stated publicly, with the page it was read from. perDay converts the stated figure to tokens per day so vendors can be compared roughly; scopes differ.",
+ "vendors": [
+  {
+   "vendor": "谷歌",
+   "scope": "全部产品与接口（含搜索、Gemini 应用、API）",
+   "points": [
+    { "date": "2025-05", "stated": "约 480 万亿 / 月", "perDay": 1.6e13, "source": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" },
+    { "date": "2026-05", "stated": "超 3.2 千万亿 / 月", "perDay": 1.07e14, "source": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" }
+   ]
+  },
+  {
+   "vendor": "字节跳动（豆包）",
+   "scope": "豆包大模型日均调用",
+   "points": [
+    { "date": "2025-05", "stated": "16.4 万亿 / 日", "perDay": 1.64e13, "source": "https://www.ithome.com/0/889/637.htm" },
+    { "date": "2026-06", "stated": "180 万亿 / 日", "perDay": 1.8e14, "source": "https://www.jiemian.com/article/14629207.html" }
+   ]
+  },
+  {
+   "vendor": "OpenAI",
+   "scope": "仅 API（不含 ChatGPT）",
+   "points": [
+    { "date": "2025-10", "stated": "60 亿 / 分钟", "perDay": 8.64e12, "source": "https://techinformed.com/openai-devday-2025-apps-agents-and-enterprise-push/" },
+    { "date": "2026-03", "stated": "超 150 亿 / 分钟", "perDay": 2.16e13, "source": "https://openai.com/index/accelerating-the-next-phase-ai/" }
+   ]
+  }
+ ]
+}

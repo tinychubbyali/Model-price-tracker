@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
+import { parseMas } from '../scripts/fx.mjs';
 import { applySnapshot, normalize, sanityCheck } from '../scripts/lib.mjs';
 
 const raw = {
@@ -12,7 +13,8 @@ const raw = {
   'dashscope/deepseek-v4-pro': { litellm_provider: 'dashscope', mode: 'chat', input_cost_per_token: 1e-6, output_cost_per_token: 1e-6 },
   'deepseek/deepseek-chat': {
     litellm_provider: 'deepseek', mode: 'chat', input_cost_per_token: 2.8e-7, output_cost_per_token: 4.2e-7,
-    cache_read_input_token_cost: 2.8e-8,
+    cache_read_input_token_cost: 2.8e-8, max_input_tokens: 131072, max_output_tokens: 8192,
+    supports_function_calling: true, supports_vision: false, deprecation_date: '2026-07-24',
   },
 };
 
@@ -23,6 +25,9 @@ test('normalize keeps only vendor chat models, priced per million tokens', () =>
   assert.equal(out['openai/gpt-4o'].output, 10);
   assert.equal(out['deepseek/deepseek-chat'].input, 0.28);
   assert.equal(out['deepseek/deepseek-chat'].cacheRead, 0.028);
+  assert.deepEqual(out['deepseek/deepseek-chat'].specs,
+    { context: 131072, maxOutput: 8192, caps: ['tools'], deprecation: '2026-07-24' });
+  assert.deepEqual(out['openai/gpt-4o'].specs, { context: null, maxOutput: null, caps: [], deprecation: null });
 });
 
 test('applySnapshot records changes, removals and restorations', () => {
@@ -55,4 +60,13 @@ test('sanityCheck rejects a snapshot that lost most of a provider', () => {
   const broken = normalize(raw);
   delete broken['openai/gpt-4o'];
   assert.match(sanityCheck(prev, broken)[0], /openai/);
+});
+
+test('parseMas converts MAS quotes to units per USD', () => {
+  const fx = parseMas({ result: { records: [{ end_of_day: '2026-10-24', usd_sgd: '1.2950', cny_sgd_100: '18.20' }] } });
+  assert.equal(fx.date, '2026-10-24');
+  assert.equal(fx.rates.SGD, 1.295);
+  assert.equal(fx.rates.CNY, 7.1154);
+  assert.equal(parseMas({ result: { records: [] } }), null);
+  assert.equal(parseMas({ result: { records: [{ end_of_day: '2026-10-24', usd_sgd: null, cny_sgd_100: '18.2' }] } }), null);
 });

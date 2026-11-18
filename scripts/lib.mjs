@@ -18,6 +18,29 @@ const PRICE_FIELDS = ['input', 'output', 'cacheRead'];
 // Dated snapshots (gpt-4o-2024-08-06, claude-x-20251001) duplicate their alias.
 const SNAPSHOT = /-(\d{4}-\d{2}-\d{2}|\d{8}|\d{4})$/;
 
+// Capability flags worth showing, keyed by the upstream supports_* field.
+const CAPS = {
+  reasoning: 'supports_reasoning',
+  vision: 'supports_vision',
+  tools: 'supports_function_calling',
+  web: 'supports_web_search',
+  computer: 'supports_computer_use',
+  pdf: 'supports_pdf_input',
+  audio: 'supports_audio_input',
+  video: 'supports_video_input',
+};
+
+// Context size, output limit and capability flags. Not price history: always the latest values.
+export function specsOf(v) {
+  const int = (x) => (Number.isInteger(x) && x > 0 ? x : null);
+  return {
+    context: int(v.max_input_tokens),
+    maxOutput: int(v.max_output_tokens),
+    caps: Object.keys(CAPS).filter((k) => v[CAPS[k]] === true),
+    deprecation: /^\d{4}-\d{2}-\d{2}$/.test(v.deprecation_date ?? '') ? v.deprecation_date : null,
+  };
+}
+
 const perMillion = (v) =>
   typeof v === 'number' && Number.isFinite(v) ? Math.round(v * 1e6 * 1e6) / 1e6 : null;
 
@@ -44,6 +67,7 @@ export function normalize(raw) {
       output,
       cacheRead: perMillion(v.cache_read_input_token_cost),
       source: v.source ?? null,
+      specs: specsOf(v),
     };
   }
   return out;
@@ -81,7 +105,7 @@ export function applySnapshot(prev, next, date) {
     const before = pick(old);
     const after = pick(m);
     const changed = PRICE_FIELDS.some((f) => before[f] !== after[f]);
-    Object.assign(old, { source: m.source }, after);
+    Object.assign(old, { source: m.source, specs: m.specs }, after);
     if (old.removed) {
       delete old.removed;
       changes.push({ date, id, type: 'restored', after });

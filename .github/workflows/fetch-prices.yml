@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 2 * * *' # 每天 02:00 UTC（北京时间 10:00）
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '只抓取并打印结果，不提交数据'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -22,7 +27,15 @@ jobs:
           node-version: 22
       - run: npm test
       - run: npm run fetch
+      # Macro sources are best-effort: a failure here must not block the price update.
+      - run: npm run fetch-macro
+        continue-on-error: true
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       - name: Commit price changes
+        if: ${{ !inputs.dry_run }}
         run: |
           git config user.name "price-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

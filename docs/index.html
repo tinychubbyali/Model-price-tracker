@@ -3,37 +3,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>大模型价格追踪</title>
-  <meta name="description" content="主流大模型 API 牌价与历史调价记录">
+  <title>Token 产业观察</title>
+  <meta name="description" content="从 Token 价格切入，追踪 AI 产业链的宏观指标">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="wrap">
-    <h1>大模型价格追踪</h1>
+    <h1>Token 产业观察</h1>
     <p class="meta" id="meta">加载中…</p>
-  </header>
-
-  <main class="wrap">
-    <section class="controls" aria-label="筛选">
-      <input id="search" type="search" placeholder="搜索模型，例如 gpt-5、claude、qwen" aria-label="搜索模型">
-      <select id="provider" aria-label="厂商"><option value="">全部厂商</option></select>
+    <nav class="tabs" aria-label="页面">
+      <a href="#overview" data-tab="overview">概览</a>
+      <a href="#prices" data-tab="prices">Token 价格</a>
+      <a href="#macro" data-tab="macro">宏观</a>
       <div class="seg" role="group" aria-label="货币">
         <button type="button" data-currency="USD" aria-pressed="true">USD</button>
         <button type="button" data-currency="CNY" aria-pressed="false">CNY</button>
+        <button type="button" data-currency="SGD" aria-pressed="false">SGD</button>
       </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="view-overview" hidden></section>
+    <section id="view-macro" hidden></section>
+    <div id="view-prices" hidden>
+    <section class="card">
+      <div class="card-head">
+        <h2>最近变化</h2>
+        <p class="change-summary" id="changeSummary"></p>
+      </div>
+      <ul id="changes" class="changes"></ul>
+      <button type="button" class="link-btn" id="moreChanges" hidden>显示全部</button>
+    </section>
+
+    <section class="controls" aria-label="筛选">
+      <input id="search" type="search" placeholder="搜索模型，例如 gpt-5、claude、qwen" aria-label="搜索模型">
+      <select id="segment" aria-label="分类"><option value="">全部分类</option></select>
+      <select id="provider" aria-label="厂商"><option value="">全部厂商</option></select>
+      <select id="context" aria-label="上下文长度">
+        <option value="">上下文不限</option>
+        <option value="128000">≥ 128K</option>
+        <option value="200000">≥ 200K</option>
+        <option value="1000000">≥ 1M</option>
+      </select>
+      <select id="priceBand" aria-label="输出价格">
+        <option value="">输出价格不限</option>
+        <option value="0-1">输出 ≤ $1</option>
+        <option value="1-10">输出 $1–10</option>
+        <option value="10-">输出 &gt; $10</option>
+      </select>
+      <div class="cap-filter" id="caps" role="group" aria-label="能力"></div>
+      <label class="check"><input id="changedOnly" type="checkbox"> 只看调过价</label>
       <label class="check"><input id="showRemoved" type="checkbox"> 显示已下架</label>
+      <button type="button" class="link-btn" id="resetFilters">重置筛选</button>
     </section>
 
     <section id="detail" class="card" hidden></section>
 
     <section class="card">
-      <h2>当前牌价 <span class="unit" id="unit">（每百万 tokens）</span></h2>
+      <h2>当前牌价 <span class="unit" id="unit">（每百万 tokens）</span> <span class="unit" id="resultCount"></span></h2>
       <div class="table-scroll">
         <table id="prices">
           <thead>
             <tr>
               <th data-sort="model">模型</th>
               <th data-sort="provider">厂商</th>
+              <th data-sort="context" class="num">上下文</th>
+              <th>能力</th>
+              <th data-sort="intelligence" class="num" title="Artificial Analysis 智能指数，0–100">智能指数</th>
               <th data-sort="input" class="num">输入</th>
               <th data-sort="output" class="num">输出</th>
               <th data-sort="cacheRead" class="num">缓存命中</th>
@@ -44,16 +81,13 @@
         </table>
       </div>
       <p class="empty" id="noResults" hidden>没有匹配的模型。</p>
+      <p class="source" id="benchSource"></p>
     </section>
-
-    <section class="card">
-      <h2>最近调价</h2>
-      <ul id="changes" class="changes"></ul>
-    </section>
+    </div>
   </main>
 
   <footer class="wrap meta">
-    数据每天自动抓取一次，只有价格变动时才会新增记录。价格为标准按量计费（不含批处理、优先级等档位），以各厂商官网为准。
+    Token 价格每天自动抓取，只有变动时才新增记录，为标准按量计费（不含批处理、优先级等档位），以各厂商官网为准。财报数据来自美国证监会 EDGAR，股价来自 Alpha Vantage，用量和智能指数来自 OpenRouter 与 Artificial Analysis。
   </footer>
 
   <script src="app.js" type="module"></script>

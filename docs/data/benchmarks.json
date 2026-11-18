@@ -1,0 +1,653 @@
+{
+ "asOf": "2026-11-18T00:00:37.846Z",
+ "citation": "Source: Artificial Analysis (artificialanalysis.ai) via OpenRouter (openrouter.ai/rankings).",
+ "sourceUrl": "https://artificialanalysis.ai",
+ "models": {
+  "claude-fable-5-2": {
+   "name": "Claude Fable 5.2 (Max, Default Fallback)",
+   "slug": "anthropic/claude-fable-5.2-20261109",
+   "scores": {
+    "intelligence": 64.6,
+    "engineering": 72.6,
+    "finance_and_accounting": 64.7,
+    "legal": 63.3
+   }
+  },
+  "gpt-6-2-astra": {
+   "name": "GPT-6.2 Astra (Max)",
+   "slug": "openai/gpt-6.2-astra-20261117",
+   "scores": {
+    "intelligence": 62.1,
+    "engineering": 66.6,
+    "finance_and_accounting": 60.9,
+    "legal": 58.7
+   }
+  },
+  "gemini-4-carbon": {
+   "name": "Gemini 4 Carbon (High)",
+   "slug": "google/gemini-4-carbon-20261110",
+   "scores": {
+    "intelligence": 60,
+    "engineering": 65.3,
+    "finance_and_accounting": 62.6,
+    "legal": 62
+   }
+  },
+  "claude-opus-5-5": {
+   "name": "Claude Opus 5.5 (Max, Default Fallback)",
+   "slug": "anthropic/claude-opus-5.5-20260921",
+   "scores": {
+    "intelligence": 59.1,
+    "engineering": 65.3,
+    "finance_and_accounting": 59.4,
+    "legal": 58
+   }
+  },
+  "gpt-6-2-sol": {
+   "name": "GPT-6.2 Sol (Max)",
+   "slug": "openai/gpt-6.2-sol-20261117",
+   "scores": {
+    "intelligence": 57.3,
+    "engineering": 61.2,
+    "finance_and_accounting": 57.2,
+    "legal": 55
+   }
+  },
+  "gpt-6-astra": {
+   "name": "GPT-6 Astra (Max)",
+   "slug": "openai/gpt-6-astra-20260903",
+   "scores": {
+    "intelligence": 56.9,
+    "engineering": 61.8,
+    "finance_and_accounting": 57.4,
+    "legal": 55.7
+   }
+  },
+  "gpt-6-1-sol": {
+   "name": "GPT-6.1 Sol (Max)",
+   "slug": "openai/gpt-6.1-sol-20260929",
+   "scores": {
+    "intelligence": 54.6,
+    "engineering": 59.4,
+    "finance_and_accounting": 56.2,
+    "legal": 53.7
+   }
+  },
+  "claude-sonnet-5-5": {
+   "name": "Claude Sonnet 5.5 (Max, Default Fallback)",
+   "slug": "anthropic/claude-sonnet-5.5-20260928",
+   "scores": {
+    "intelligence": 54.5,
+    "engineering": 58.5,
+    "finance_and_accounting": 55.8,
+    "legal": 52.2
+   }
+  },
+  "gemini-4-hydrogen": {
+   "name": "Gemini 4 Hydrogen (Xhigh)",
+   "slug": "google/gemini-4-hydrogen-20261112",
+   "scores": {
+    "intelligence": 53.9,
+    "engineering": 60.1,
+    "finance_and_accounting": 58.1,
+    "legal": 56.7
+   }
+  },
+  "gpt-6-1-terra": {
+   "name": "GPT-6.1 Terra (Max)",
+   "slug": "openai/gpt-6.1-terra-20261026",
+   "scores": {
+    "intelligence": 51.3,
+    "engineering": 54.7,
+    "finance_and_accounting": 49,
+    "legal": 46.4
+   }
+  },
+  "gemini-4-argon": {
+   "name": "Gemini 4 Argon (High)",
+   "slug": "google/gemini-4-argon-20261013",
+   "scores": {
+    "intelligence": 50.4,
+    "engineering": 57.3,
+    "finance_and_accounting": 55.9,
+    "legal": 54.6
+   }
+  },
+  "claude-fable-5-1": {
+   "name": "Claude Fable 5.1 (Xhigh, Default Fallback)",
+   "slug": "anthropic/claude-fable-5.1-20260831",
+   "scores": {
+    "intelligence": 50,
+    "engineering": 57.2,
+    "finance_and_accounting": 53.8,
+    "legal": 54.5
+   }
+  },
+  "kimi-k3-1-pro": {
+   "name": "Kimi K3.1 Pro",
+   "slug": "moonshotai/kimi-k3.1-pro-20261023",
+   "scores": {
+    "intelligence": 46.5,
+    "engineering": 50.9,
+    "finance_and_accounting": 53.3,
+    "legal": 49.2
+   }
+  },
+  "claude-opus-5": {
+   "name": "Claude Opus 5 (Max)",
+   "slug": "anthropic/claude-opus-5-20260723",
+   "scores": {
+    "intelligence": 44.2,
+    "engineering": 51.3,
+    "finance_and_accounting": 49.7,
+    "legal": 50.9
+   }
+  },
+  "gpt-6-sol": {
+   "name": "GPT-6 Sol (Max)",
+   "slug": "openai/gpt-6-sol-20260922",
+   "scores": {
+    "intelligence": 44.2,
+    "engineering": 48.9,
+    "finance_and_accounting": 47.5,
+    "legal": 46.3
+   }
+  },
+  "muse-wonder": {
+   "name": "Muse Wonder (Max)",
+   "slug": "meta/muse-wonder-20261012",
+   "scores": {
+    "intelligence": 43.6,
+    "engineering": 49.6,
+    "finance_and_accounting": 51.1,
+    "legal": 46.9
+   }
+  },
+  "qwen4-max": {
+   "name": "Qwen4 Max",
+   "slug": "qwen/qwen4-max-20261115",
+   "scores": {
+    "intelligence": 42.9,
+    "engineering": 50.1,
+    "finance_and_accounting": 54.1,
+    "legal": 49.6
+   }
+  },
+  "muse-spark-1-3": {
+   "name": "Muse Spark 1.3 (Max)",
+   "slug": "meta/muse-spark-1.3-20260902",
+   "scores": {
+    "intelligence": 36.6,
+    "engineering": 44.1,
+    "finance_and_accounting": 48.8,
+    "legal": 45.2
+   }
+  },
+  "claude-haiku-5-5": {
+   "name": "Claude Haiku 5.5 (Max)",
+   "slug": "anthropic/claude-haiku-5.5-20261007",
+   "scores": {
+    "intelligence": 36.5,
+    "engineering": 42.5,
+    "finance_and_accounting": 43.6,
+    "legal": 38.7
+   }
+  },
+  "muse-ember": {
+   "name": "Muse Ember (Max)",
+   "slug": "meta/muse-ember-20261109",
+   "scores": {
+    "intelligence": 36,
+    "engineering": 41.8,
+    "finance_and_accounting": 44.6,
+    "legal": 38.5
+   }
+  },
+  "grok-4-7": {
+   "name": "Grok 4.7 (Xhigh)",
+   "slug": "x-ai/grok-4.7-20260916",
+   "scores": {
+    "intelligence": 35.5,
+    "engineering": 41.8,
+    "finance_and_accounting": 51.7,
+    "legal": 47.2
+   }
+  },
+  "hy4": {
+   "name": "Tencent Hy4",
+   "slug": "tencent/hy4-20261104",
+   "scores": {
+    "intelligence": 34.6,
+    "engineering": 41.1,
+    "finance_and_accounting": 38,
+    "legal": 35.4
+   }
+  },
+  "qwen3-8-max": {
+   "name": "Qwen3.8 Max (0902)",
+   "slug": "qwen/qwen3.8-max-20260902",
+   "scores": {
+    "intelligence": 33.7,
+    "engineering": 39.3,
+    "finance_and_accounting": 45,
+    "legal": 41
+   }
+  },
+  "deepseek-v4-1-flash": {
+   "name": "DeepSeek V4.1 Flash 1017 (Max)",
+   "slug": "deepseek/deepseek-v4.1-flash-20261017",
+   "scores": {
+    "intelligence": 32.6,
+    "engineering": 37.6,
+    "finance_and_accounting": 42.2,
+    "legal": 37.7
+   }
+  },
+  "gpt-5-6-terra": {
+   "name": "GPT-5.6 Terra (Max)",
+   "slug": "openai/gpt-5.6-terra-20260709",
+   "scores": {
+    "intelligence": 32.3,
+    "engineering": 36.6,
+    "finance_and_accounting": 34.6,
+    "legal": 32
+   }
+  },
+  "glm-5-3": {
+   "name": "GLM-5.3 (Max)",
+   "slug": "z-ai/glm-5.3-20260816",
+   "scores": {
+    "intelligence": 31.7,
+    "engineering": 37.6,
+    "finance_and_accounting": 42.1,
+    "legal": 35.8
+   }
+  },
+  "grok-4-6": {
+   "name": "Grok 4.6 (Xhigh)",
+   "slug": "x-ai/grok-4.6-20260810",
+   "scores": {
+    "intelligence": 31,
+    "engineering": 37.4,
+    "finance_and_accounting": 47.6,
+    "legal": 43.5
+   }
+  },
+  "gemini-3-8-flash": {
+   "name": "Gemini 3.8 Flash (High)",
+   "slug": "google/gemini-3.8-flash-20260902",
+   "scores": {
+    "intelligence": 30.8,
+    "engineering": 38.8,
+    "finance_and_accounting": 42.4,
+    "legal": 41.7
+   }
+  },
+  "inkling-2-small": {
+   "name": "Inkling 2 Small",
+   "slug": "thinkingmachines/inkling-2-small-20261107",
+   "scores": {
+    "intelligence": 30.6,
+    "engineering": 38.9,
+    "finance_and_accounting": 44.3,
+    "legal": 41.6
+   }
+  },
+  "mimo-v2-6-pro": {
+   "name": "MiMo-V2.6-Pro",
+   "slug": "xiaomi/mimo-v2.6-pro-20260921",
+   "scores": {
+    "intelligence": 29.9,
+    "engineering": 34.3,
+    "finance_and_accounting": 38.9,
+    "legal": 35
+   }
+  },
+  "ling-3-1-flash": {
+   "name": "Ling 3.1 Flash 1019",
+   "slug": "inclusionai/ling-3.1-flash-20261002",
+   "scores": {
+    "intelligence": 29.6,
+    "engineering": 35.5,
+    "finance_and_accounting": 42.6,
+    "legal": 35.5
+   }
+  },
+  "minimax-m3-1-flash": {
+   "name": "MiniMax-M3.1-Flash",
+   "slug": "minimax/minimax-m3.1-flash-20261019",
+   "scores": {
+    "intelligence": 29.1,
+    "engineering": 34.3,
+    "finance_and_accounting": 39.1,
+    "legal": 33
+   }
+  },
+  "qwen3-8-flash": {
+   "name": "Qwen3.8-Flash-Next",
+   "slug": "qwen/qwen3.8-flash-20260826",
+   "scores": {
+    "intelligence": 28.6,
+    "engineering": 33,
+    "finance_and_accounting": 39,
+    "legal": 35.1
+   }
+  },
+  "step-5-preview": {
+   "name": "Step 5 Preview",
+   "slug": "stepfun/step-5-preview-20261008",
+   "scores": {
+    "intelligence": 28.5,
+    "engineering": 37,
+    "finance_and_accounting": 40.5,
+    "legal": 38.6
+   }
+  },
+  "gpt-6-luna": {
+   "name": "GPT-6 Luna (Max)",
+   "slug": "openai/gpt-6-luna-20260922",
+   "scores": {
+    "intelligence": 27.9,
+    "engineering": 33.3,
+    "finance_and_accounting": 33.9,
+    "legal": 32.2
+   }
+  },
+  "glm-5-3-flash": {
+   "name": "GLM-5.3-Flash",
+   "slug": "z-ai/glm-5.3-flash-20260826",
+   "scores": {
+    "intelligence": 27.8,
+    "engineering": 34.5,
+    "finance_and_accounting": 38.8,
+    "legal": 34.8
+   }
+  },
+  "mimo-v2-6-flash": {
+   "name": "MiMo-V2.6-Flash",
+   "slug": "xiaomi/mimo-v2.6-flash-20260921",
+   "scores": {
+    "intelligence": 26.7,
+    "engineering": 31,
+    "finance_and_accounting": 36.9,
+    "legal": 33.8
+   }
+  },
+  "mistral-large-4-0": {
+   "name": "Mistral Large 4 (High)",
+   "slug": "mistralai/mistral-large-4-0-20261006",
+   "scores": {
+    "intelligence": 26.1,
+    "engineering": 33.4,
+    "finance_and_accounting": 39.1,
+    "legal": 34.6
+   }
+  },
+  "muse-spark-open": {
+   "name": "Muse Spark Open (Xhigh)",
+   "slug": "meta/muse-spark-open-20261015",
+   "scores": {
+    "intelligence": 24.9,
+    "engineering": 35.1,
+    "finance_and_accounting": 42,
+    "legal": 39.6
+   }
+  },
+  "gpt-5-6-luna": {
+   "name": "GPT-5.6 Luna (Max)",
+   "slug": "openai/gpt-5.6-luna-20260709",
+   "scores": {
+    "intelligence": 23.8,
+    "engineering": 29.4,
+    "finance_and_accounting": 31.8,
+    "legal": 27.7
+   }
+  },
+  "deepseek-v4-pro": {
+   "name": "DeepSeek V4 Pro 0813 (Max)",
+   "slug": "deepseek/deepseek-v4-pro-20260813",
+   "scores": {
+    "intelligence": 23.1,
+    "engineering": 29.8,
+    "finance_and_accounting": 30.4,
+    "legal": 27.5
+   }
+  },
+  "qwen3-8-27b": {
+   "name": "Qwen3.8 27B (Xhigh)",
+   "slug": "qwen/qwen3.8-27b-20260814",
+   "scores": {
+    "intelligence": 20.1,
+    "engineering": 28.1,
+    "finance_and_accounting": 35.5,
+    "legal": 33.2
+   }
+  },
+  "minimax-m3": {
+   "name": "MiniMax-M3",
+   "slug": "minimax/minimax-m3-20260531",
+   "scores": {
+    "intelligence": 18.9,
+    "engineering": 26.2,
+    "finance_and_accounting": 25.1,
+    "legal": 23.5
+   }
+  },
+  "beam-1-0-501b-a23b": {
+   "name": "Beam 1.0",
+   "slug": "reflection/beam-1.0-501b-a23b-20261016",
+   "scores": {
+    "intelligence": 17.7,
+    "engineering": 25.2,
+    "finance_and_accounting": 30.2,
+    "legal": 28.1
+   }
+  },
+  "kimi-k3": {
+   "name": "Kimi K3 (Low)",
+   "slug": "moonshotai/kimi-k3-20260715",
+   "scores": {
+    "intelligence": 17.4,
+    "engineering": 22.8,
+    "finance_and_accounting": 28.3,
+    "legal": 27.7
+   }
+  },
+  "solar-pro4": {
+   "name": "Solar Pro 4",
+   "slug": "upstage/solar-pro4-20260810",
+   "scores": {
+    "intelligence": 14.2,
+    "engineering": 24.4,
+    "finance_and_accounting": 28.4,
+    "legal": 25.1
+   }
+  },
+  "nemotron-3-5-super-vl": {
+   "name": "Nemotron 3.5 Super VL",
+   "slug": "nvidia/nemotron-3.5-super-vl-20261015",
+   "scores": {
+    "intelligence": 13.6,
+    "engineering": 23.5,
+    "finance_and_accounting": 26.7,
+    "legal": 25.3
+   }
+  },
+  "inkling-small": {
+   "name": "Inkling Small",
+   "slug": "thinkingmachines/inkling-small-20260730",
+   "scores": {
+    "intelligence": 12.9,
+    "engineering": 23.1,
+    "finance_and_accounting": 23.7,
+    "legal": 21.7
+   }
+  },
+  "inkling": {
+   "name": "Inkling (Xhigh)",
+   "slug": "thinkingmachines/inkling-20260715",
+   "scores": {
+    "intelligence": 12.5,
+    "engineering": 22,
+    "finance_and_accounting": 23.2,
+    "legal": 23.1
+   }
+  },
+  "nemotron-3-ultra-550b-a55b": {
+   "name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+   "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+   "scores": {
+    "intelligence": 11.8,
+    "engineering": 22.8,
+    "finance_and_accounting": 24.2,
+    "legal": 22.6
+   }
+  },
+  "gemini-3-5-flash-lite": {
+   "name": "Gemini 3.5 Flash-Lite",
+   "slug": "google/gemini-3.5-flash-lite-20260721",
+   "scores": {
+    "intelligence": 11.7,
+    "engineering": 21.2,
+    "finance_and_accounting": 23.3,
+    "legal": 23.9
+   }
+  },
+  "claude-4-5-haiku": {
+   "name": "Claude 4.5 Haiku (Reasoning)",
+   "slug": "anthropic/claude-4.5-haiku-20251001",
+   "scores": {
+    "intelligence": 7.4,
+    "engineering": 17,
+    "finance_and_accounting": 19.4,
+    "legal": 18
+   }
+  },
+  "muse-glimmer-30b": {
+   "name": "Muse Glimmer (High)",
+   "slug": "meta/muse-glimmer-30b-20260810",
+   "scores": {
+    "intelligence": 6.3,
+    "engineering": 15.4,
+    "finance_and_accounting": 10,
+    "legal": 12.5
+   }
+  },
+  "gemini-3-1-flash-lite-preview": {
+   "name": "Gemini 3.1 Flash-Lite",
+   "slug": "google/gemini-3.1-flash-lite-preview-20260303",
+   "scores": {
+    "intelligence": 6.2,
+    "engineering": 14.6,
+    "finance_and_accounting": 12.1,
+    "legal": 14.7
+   }
+  },
+  "command-a-plus-05-2026": {
+   "name": "Command A+",
+   "slug": "cohere/command-a-plus-05-2026",
+   "scores": {
+    "intelligence": 6.2,
+    "engineering": 16.4,
+    "finance_and_accounting": 17,
+    "legal": 15.9
+   }
+  },
+  "lfm-3-1-7b": {
+   "name": "LFM3-1.7B",
+   "slug": "liquid/lfm-3-1.7b-20261106",
+   "scores": {
+    "intelligence": 6,
+    "engineering": 16.3,
+    "finance_and_accounting": 16.8,
+    "legal": 16.1
+   }
+  },
+  "nemotron-3-5-lightning": {
+   "name": "Nemotron 3.5 Lightning",
+   "slug": "nvidia/nemotron-3.5-lightning-20260807",
+   "scores": {
+    "intelligence": 5.5,
+    "engineering": 15.5,
+    "finance_and_accounting": 14.9,
+    "legal": 14.2
+   }
+  },
+  "granite-4-2-8b": {
+   "name": "Granite 4.2 8B",
+   "slug": "ibm-granite/granite-4.2-8b-20260831",
+   "scores": {
+    "intelligence": 5.1,
+    "engineering": 14.6,
+    "finance_and_accounting": 14.8,
+    "legal": 14.6
+   }
+  },
+  "mistral-medium-3-5": {
+   "name": "Mistral Medium 3.5",
+   "slug": "mistralai/mistral-medium-3.5-20260430",
+   "scores": {
+    "intelligence": 4.6,
+    "engineering": 12.2,
+    "finance_and_accounting": 11.1,
+    "legal": 9.7
+   }
+  },
+  "gemma-4-31b-it": {
+   "name": "Gemma 4 31B (Reasoning)",
+   "slug": "google/gemma-4-31b-it-20260402",
+   "scores": {
+    "intelligence": 4.4,
+    "engineering": 11.9,
+    "finance_and_accounting": 8.2,
+    "legal": 7.3
+   }
+  },
+  "mistral-small-2603": {
+   "name": "Mistral Small 4 (Reasoning)",
+   "slug": "mistralai/mistral-small-2603",
+   "scores": {
+    "intelligence": 4.3,
+    "engineering": 13.3,
+    "finance_and_accounting": 11.6,
+    "legal": 11.6
+   }
+  },
+  "gpt-oss-120b": {
+   "name": "gpt-oss-120b (High)",
+   "slug": "openai/gpt-oss-120b",
+   "scores": {
+    "intelligence": 3.8,
+    "engineering": 11.2,
+    "finance_and_accounting": 7.8,
+    "legal": 8.1
+   }
+  },
+  "north-mini-code": {
+   "name": "North Mini Code",
+   "slug": "cohere/north-mini-code-20260617",
+   "scores": {
+    "intelligence": 3.4,
+    "engineering": 9.9,
+    "finance_and_accounting": 9.3,
+    "legal": 7.9
+   }
+  },
+  "qwen3-8-2-4t-a95b": {
+   "name": "Qwen3.8 2.4T A95B",
+   "slug": "qwen/qwen3.8-2.4t-a95b-20260812",
+   "scores": {
+    "finance_and_accounting": 41.3,
+    "legal": 37
+   }
+  },
+  "glm-5-2": {
+   "name": "GLM-5.2 (Max)",
+   "slug": "z-ai/glm-5.2-20260616",
+   "scores": {
+    "finance_and_accounting": 32.1,
+    "legal": 28.5
+   }
+  }
+ }
+}
