@@ -250,7 +250,7 @@ function movesTable(macro) {
     const hikes = pts.reduce((a, p) => a + p.hikes, 0);
     return `<tr><td>${esc(seg.name)}</td><td class="num down">${cuts}</td><td class="num up">${hikes}</td></tr>`;
   }).join('');
-  return `<table><thead><tr><th>分类</th><th class="num">降价</th><th class="num">涨价</th></tr></thead><tbody>${rows}</tbody></table>`;
+  return `<div class="table-scroll"><table><thead><tr><th>分类</th><th class="num">降价</th><th class="num">涨价</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
 
 function fastBand(macro, moneyAxis) {
@@ -304,9 +304,9 @@ function usageCards(macro) {
     ${top.length ? `<article class="card macro-card wide">
       ${chips(macro, 'demand', 'week')}
       <h3>用量前 10 的模型（${esc(macro.usageTop.week)} 当周）</h3>
-      <table><thead><tr><th>#</th><th>模型</th><th>分类</th><th class="num">周用量</th></tr></thead><tbody>
+      <div class="table-scroll"><table><thead><tr><th>#</th><th>模型</th><th>分类</th><th class="num">周用量</th></tr></thead><tbody>
       ${top.map((r, i) => `<tr><td>${i + 1}</td><td>${esc(stripDate(r.slug))}</td><td>${esc(segName(r.segment))}</td><td class="num">${tokensBig(r.tokens)}</td></tr>`).join('')}
-      </tbody></table>
+      </tbody></table></div>
     </article>` : ''}`;
 }
 
