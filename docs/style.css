@@ -190,3 +190,6 @@ td.caps { white-space: normal; min-width: 200px; }
 .hero-changes a { color: var(--accent); text-decoration: none; }
 @media (max-width: 760px) { .hero-body { grid-template-columns: 1fr; } }
 .chart-svg .end-label { font-size: 12px; font-weight: 600; }
+.hero-body.wide-side { grid-template-columns: minmax(0, 1fr) 400px; }
+.hero-usage { margin-top: 6px; }
+@media (max-width: 960px) { .hero-body.wide-side { grid-template-columns: 1fr; } }

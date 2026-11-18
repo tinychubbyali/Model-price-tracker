@@ -93,12 +93,36 @@ function dailyHero(macro, { money, changes, models }) {
   const lastDate = changes?.[0]?.date;
   const latest = (changes ?? []).filter((c) => c.date === lastDate);
   const segName = (id) => macro.segments.find((s) => s.id === id)?.name ?? '';
-  const rows = live.map((l) => {
+  // Usage columns appear once OpenRouter data exists; then every segment gets a row, priced or not.
+  const total = byId(macro, 'usage-total')?.points ?? [];
+  const hasUsage = total.length > 1;
+  const wow = (pts) => (pts.length > 1 && pts.at(-2).value ? pts.at(-1).value / pts.at(-2).value - 1 : null);
+  const tone = (v) => (v < 0 ? 'down' : v > 0 ? 'up' : '');
+  const shown = hasUsage ? lines.filter((l) => l.points.length || byId(macro, `usage-${l.id}`)?.points.length) : live;
+  const usageOf = (l) => {
+    const pts = byId(macro, `usage-${l.id}`)?.points ?? [];
+    const share = shareSeries(macro, l.id).at(-1)?.value ?? null;
+    return { share, growth: wow(pts) };
+  };
+  const rows = shown.map((l) => {
     const last = l.points.at(-1);
-    const w = changeOver(l.points, 7);
-    const color = l.color;
-    return `<tr><td><i class="dot" style="background:${color}"></i>${esc(l.name)}</td><td class="num">${money(last.value)}</td><td class="num ${w && w.change < 0 ? 'down' : w && w.change > 0 ? 'up' : ''}">${pct(w?.change ?? null)}</td></tr>`;
+    const w = l.points.length ? changeOver(l.points, 7) : null;
+    const u = hasUsage ? usageOf(l) : null;
+    return `<tr><td><i class="dot" style="background:${l.color}"></i>${esc(l.name)}</td>` +
+      `<td class="num">${last ? money(last.value) : '—'}</td>` +
+      `<td class="num ${tone(w?.change)}">${pct(w?.change ?? null)}</td>` +
+      (u ? `<td class="num">${u.share === null ? '—' : `${(u.share * 100).toFixed(1)}%`}</td><td class="num">${pct(u.growth)}</td>` : '') +
+      '</tr>';
   }).join('');
+  // One sentence of takeaways from the usage data.
+  let usageNote = '';
+  if (hasUsage) {
+    const ranked = shown.map((l) => ({ l, g: usageOf(l).growth })).filter((x) => x.g !== null).sort((a, b) => b.g - a.g);
+    const fastest = ranked[0];
+    usageNote = `<p class="kpi-note hero-usage">OpenRouter 本周（${esc(total.at(-1).date)}）总用量 ${tokensBig(total.at(-1).value)}，环比 ${pct(wow(total))}` +
+      (fastest ? `；增长最快的是${esc(fastest.l.name)}（${pct(fastest.g)}）` : '') + '。用量是 OpenRouter 公开流量，价格是本站牌价。</p>';
+  }
+  const head = `<tr><th>类型</th><th class="num">价格</th><th class="num">近 7 天</th>${hasUsage ? '<th class="num">用量占比</th><th class="num">用量周环比</th>' : ''}</tr>`;
   return `<article class="card hero">
     <div class="hero-head">
       <div>
@@ -107,10 +131,10 @@ function dailyHero(macro, { money, changes, models }) {
         <p class="kpi-note">混合价格（输入:输出 = 3:1），每百万 tokens。中位数也会因新模型上线而变动，不全是调价。底部圆点是每一次价格事件：<span class="down">绿色降价</span>、<span class="up">红色涨价</span>、灰色上新或下架。</p>
       </div>
     </div>
-    <div class="hero-body">
+    <div class="hero-body${hasUsage ? ' wide-side' : ''}">
       <div class="hero-chart">${lineChart(live, { format: money, step: true, width: 760, height: 260, money: true, events, endLabels: true })}</div>
       <aside class="hero-side">
-        <table class="hero-table"><thead><tr><th>类型</th><th class="num">最新</th><th class="num">近 7 天</th></tr></thead><tbody>${rows}</tbody></table>
+        <table class="hero-table"><thead>${head}</thead><tbody>${rows}</tbody></table>${usageNote}
         ${lastDate ? `<h3>最新变化 · ${esc(lastDate)}</h3>
         <ul class="hero-changes">${latest.slice(0, 6).map((c) => `<li><a href="#${esc(c.id)}">${esc(name(c))}</a> <span class="tag">${esc(segName(models?.[c.id] ? segmentOf(models[c.id]) : ''))}</span> ${describe(c)}</li>`).join('')}</ul>
         ${latest.length > 6 ? `<p class="kpi-note">当天另有 ${latest.length - 6} 条，见 <a href="#prices">Token 价格</a>。</p>` : ''}` : ''}
