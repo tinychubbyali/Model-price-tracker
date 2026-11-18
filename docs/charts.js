@@ -42,7 +42,8 @@ export function barChart(points, { width = 520, height = 200, format = String, c
 }
 
 // One or more lines sharing a time axis. series: [{name, points:[{date,value}]}].
-export function lineChart(series, { width = 520, height = 200, format = String, step = false } = {}) {
+// money: tooltip values go through bindHover's money formatter; otherwise they print like the axis.
+export function lineChart(series, { width = 520, height = 200, format = String, step = false, money = false } = {}) {
   const live = series.filter((s) => s.points.length);
   if (!live.length) return '<p class="empty">暂无数据</p>';
   const L = 56, R = 8, T = 10, B = 24;
@@ -63,7 +64,7 @@ export function lineChart(series, { width = 520, height = 200, format = String, 
     return `<path d="${path(s.points)}" fill="none" stroke="${color}" stroke-width="2"/>` +
       `<circle cx="${x(lastP.date)}" cy="${y(lastP.value)}" r="4" fill="${color}" stroke="var(--surface-1)" stroke-width="2"/>`;
   }).join('');
-  const payload = esc(JSON.stringify({ L, R, width, t0, t1, series: live.map((s) => ({ name: s.name, color: SERIES_COLORS[series.indexOf(s) % SERIES_COLORS.length], points: s.points.map((p) => [toTime(p.date), p.value, label(p.date)]) })) }));
+  const payload = esc(JSON.stringify({ L, R, width, t0, t1, money, series: live.map((s) => ({ name: s.name, color: SERIES_COLORS[series.indexOf(s) % SERIES_COLORS.length], points: s.points.map((p) => [toTime(p.date), p.value, label(p.date)]) })) }));
   return `<div class="chart" data-hover="${payload}"><svg class="chart-svg" viewBox="0 0 ${width} ${height}" role="img">
     ${ticks.map((v) => `<line class="grid" x1="${L}" x2="${width - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${esc(format(v))}</text>`).join('')}
     ${lines}
@@ -90,13 +91,14 @@ export function bindHover(root, format = String) {
       const vx = ((e.clientX - box.left) / box.width) * cfg.width;
       const t = cfg.t0 + ((vx - cfg.L) / (cfg.width - cfg.L - cfg.R)) * (cfg.t1 - cfg.t0);
       const rows = cfg.series.map((s) => ({ ...s, p: s.points.findLast((p) => p[0] <= t) })).filter((s) => s.p);
+      const fmt = cfg.money ? format : (v) => v.toFixed(1);
       if (!rows.length) return;
       cursor.setAttribute('x1', vx);
       cursor.setAttribute('x2', vx);
       cursor.setAttribute('visibility', 'visible');
       tip.hidden = false;
       tip.innerHTML = `${esc(rows[0].p[2])}<br>` + rows.map((s) =>
-        `<span style="color:${s.color}">●</span> ${esc(s.name)} ${esc(format(s.p[1]))}`).join('<br>');
+        `<span style="color:${s.color}">●</span> ${esc(s.name)} ${esc(fmt(s.p[1]))}`).join('<br>');
       const left = e.clientX - box.left;
       tip.style.left = `${Math.max(0, Math.min(left + 12, box.width - tip.offsetWidth))}px`;
       tip.style.top = '4px';
