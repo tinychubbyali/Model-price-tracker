@@ -176,3 +176,16 @@ td.caps { white-space: normal; min-width: 200px; }
 .specs dd { margin: 0; font-weight: 600; }
 #prices th, #prices td { padding: 8px 6px; }
 #prices td:first-child { white-space: normal; min-width: 180px; word-break: break-word; }
+
+.hero { margin-bottom: 16px; }
+.hero h2 { margin: 0 0 4px; font-size: 18px; }
+.hero-body { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 20px; align-items: start; margin-top: 8px; }
+.hero-chart .chart-svg { height: auto; }
+.hero-side h3 { font-size: 14px; margin: 16px 0 6px; }
+.hero-table th, .hero-table td { padding: 5px 4px; font-size: 13px; }
+.hero-table tbody tr { cursor: default; }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+.hero-changes { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+.hero-changes li { padding: 4px 0; border-bottom: 1px solid var(--grid); }
+.hero-changes a { color: var(--accent); text-decoration: none; }
+@media (max-width: 760px) { .hero-body { grid-template-columns: 1fr; } }

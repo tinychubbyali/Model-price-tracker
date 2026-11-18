@@ -1,5 +1,6 @@
 // Overview and macro tabs. Macro figures stay in USD; token prices follow the currency toggle.
 import { SERIES_COLORS, barChart, bindHover, legend, lineChart, sparkline } from './charts.js';
+import { segmentOf } from './segments.js';
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
@@ -66,25 +67,75 @@ function shareSeries(macro, segId) {
     .map((p) => ({ date: p.date, value: p.value / total.get(p.date) }));
 }
 
-export function renderOverview(el, { macro, money }) {
+// The headline chart: daily token price medians by segment, with every price event marked,
+// and a panel naming the most recent day's changes.
+function dailyHero(macro, { money, changes, models }) {
+  const lines = macro.segments.map((seg) => ({ id: seg.id, name: seg.name, points: byId(macro, `token-index-${seg.id}`)?.points ?? [] }));
+  const live = lines.filter((l) => l.points.length);
+  if (!live.length) return '';
+  const blended = (h) => (h.input * 3 + h.output) / 4;
+  const kindOf = (c) => (c.type === 'changed' ? (blended(c.after) < blended(c.before) ? 'down' : blended(c.after) > blended(c.before) ? 'up' : 'new') : 'new');
+  const name = (c) => c.id.split('/').slice(1).join('/');
+  const TYPE = { added: '新上线', removed: '下架', restored: '重新上架' };
+  const describe = (c) => {
+    const k = kindOf(c);
+    if (c.type === 'changed') {
+      const pctChange = blended(c.after) / blended(c.before) - 1;
+      if (k === 'new') return '缓存价调整';
+      return `<span class="${k}">${k === 'down' ? '降价' : '涨价'} ${pct(pctChange)}</span>`;
+    }
+    return esc(TYPE[c.type] ?? c.type);
+  };
+  const events = (changes ?? []).map((c) => ({ date: c.date, kind: kindOf(c), label: `${c.date} ${name(c)}` }));
+  const lastDate = changes?.[0]?.date;
+  const latest = (changes ?? []).filter((c) => c.date === lastDate);
+  const segName = (id) => macro.segments.find((s) => s.id === id)?.name ?? '';
+  const rows = live.map((l) => {
+    const last = l.points.at(-1);
+    const w = changeOver(l.points, 7);
+    const color = SERIES_COLORS[live.indexOf(l) % SERIES_COLORS.length]; // lineChart colors by position in live
+    return `<tr><td><i class="dot" style="background:${color}"></i>${esc(l.name)}</td><td class="num">${money(last.value)}</td><td class="num ${w && w.change < 0 ? 'down' : w && w.change > 0 ? 'up' : ''}">${pct(w?.change ?? null)}</td></tr>`;
+  }).join('');
+  return `<article class="card hero">
+    <div class="hero-head">
+      <div>
+        <p class="chips"><span class="chip">模型层（Token）</span><span class="chip">每日更新</span></p>
+        <h2>Token 价格中位数，按模型类型</h2>
+        <p class="kpi-note">混合价格（输入:输出 = 3:1），每百万 tokens。中位数也会因新模型上线而变动，不全是调价。底部圆点是每一次价格事件：<span class="down">绿色降价</span>、<span class="up">红色涨价</span>、灰色上新或下架。</p>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="hero-chart">${lineChart(live, { format: money, step: true, width: 760, height: 260, money: true, events })}</div>
+      <aside class="hero-side">
+        <table class="hero-table"><thead><tr><th>类型</th><th class="num">最新</th><th class="num">近 7 天</th></tr></thead><tbody>${rows}</tbody></table>
+        ${lastDate ? `<h3>最新变化 · ${esc(lastDate)}</h3>
+        <ul class="hero-changes">${latest.slice(0, 6).map((c) => `<li><a href="#${esc(c.id)}">${esc(name(c))}</a> <span class="tag">${esc(segName(models?.[c.id] ? segmentOf(models[c.id]) : ''))}</span> ${describe(c)}</li>`).join('')}</ul>
+        ${latest.length > 6 ? `<p class="kpi-note">当天另有 ${latest.length - 6} 条，见 <a href="#prices">Token 价格</a>。</p>` : ''}` : ''}
+      </aside>
+    </div>
+  </article>`;
+}
+
+export function renderOverview(el, { macro, money, changes, models }) {
   const capex = byId(macro, 'capex-total')?.points ?? [];
   const nvda = byId(macro, 'revenue-nvda')?.points ?? [];
   const capexYoy = yoy(capex);
   const nvdaYoy = yoy(nvda);
-  const frontier = byId(macro, 'token-index-frontier')?.points ?? [];
-  const china = byId(macro, 'token-index-china')?.points ?? [];
-  const fChange = changeOver(frontier, 90);
-  const cChange = changeOver(china, 90);
   const month = new Date().toISOString().slice(0, 7);
   const moves = macro.series.filter((s) => s.kind === 'moves')
     .map((s) => s.points.find((p) => p.date === month) ?? { cuts: 0, hikes: 0 })
     .reduce((a, p) => ({ cuts: a.cuts + p.cuts, hikes: a.hikes + p.hikes }), { cuts: 0, hikes: 0 });
   const stocks = macro.series.filter((s) => s.group === 'stocks' && s.points.length);
   const usage = byId(macro, 'usage-total')?.points ?? [];
+  const since = Date.now() - 30 * 864e5;
+  const launches = (changes ?? []).filter((c) => c.type === 'added' && Date.parse(c.date) >= since);
+  const launchBySeg = macro.segments.map((seg) => [seg.name, launches.filter((c) => models?.[c.id] && segmentOf(models[c.id]) === seg.id).length])
+    .filter(([, n]) => n).map(([n, k]) => `${esc(n)} ${k}`).join(' · ');
   const chinaShare = shareSeries(macro, 'china');
 
   el.innerHTML = `
-    <p class="lead">按变化快慢排列：第一行是每日、每周变动的股价、Token 价格和用量，第二行是每月、每季度的调价节奏和财报基本面。</p>
+    <p class="lead">最上面是每天更新的 Token 价格和最新调价；下面的卡片按变化快慢排列，先是每周的股价和用量，再是每月、每季度的调价节奏和财报基本面。</p>
+    ${dailyHero(macro, { money, changes, models })}
     <div class="kpi-grid">
       ${card({ freq: '每周',
         title: '产业链股价（近 3 个月）', note: '和上面的基本面对照，判断预期是否过热。',
@@ -93,10 +144,9 @@ export function renderOverview(el, { macro, money }) {
         sub: stocks.map((s) => `${esc(s.name.replace(/股价$/, ''))} ${pct(changeOver(s.points, 91)?.change ?? null)}`).join('<br>'),
       })}
       ${card({ freq: '每日',
-        title: 'Token 价格中位数', note: '模型层的定价压力，直接影响模型公司和应用层的毛利。',
-        missing: frontier.length ? null : '暂无价格数据',
-        value: `<span class="kpi-pair">海外 ${money(frontier.at(-1)?.value)}</span><span class="kpi-pair">中国 ${money(china.at(-1)?.value)}</span>`,
-        sub: `每百万 tokens · 自 ${esc(fChange?.since ?? '—')} 起：海外 ${pct(fChange?.change ?? null)}，中国 ${pct(cChange?.change ?? null)}`,
+        title: '新模型上线（近 30 天）', note: '上新越密集，说明模型层竞争越激烈，旧模型的定价压力越大。',
+        value: `${launches.length} 个`,
+        sub: launchBySeg || '近 30 天没有新模型',
       })}
       ${card({ freq: '每周',
         title: 'OpenRouter 周用量', note: '开发者侧的真实需求。用量增速快于降价速度，说明需求弹性在兑现。',
@@ -138,6 +188,7 @@ export function renderOverview(el, { macro, money }) {
         sub: `资本开支 ${pct(capexYoy)} vs 英伟达 ${pct(nvdaYoy)}`,
       })}
     </div>`;
+  bindHover(el, money);
 }
 
 // Bands ordered from fastest-moving data to slowest, so the top of the page is what changes daily.

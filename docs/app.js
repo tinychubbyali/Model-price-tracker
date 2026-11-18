@@ -346,7 +346,7 @@ function renderAll() {
   } else if (!macro) {
     $(`#view-${state.tab}`).innerHTML = '<p class="empty">宏观数据还没有生成，下一次每日抓取后会出现。</p>';
   } else if (state.tab === 'overview') {
-    renderOverview($('#view-overview'), { macro, money });
+    renderOverview($('#view-overview'), { macro, money, changes, models: data.models });
   } else {
     renderMacro($('#view-macro'), { macro, money, moneyAxis, disclosed });
   }

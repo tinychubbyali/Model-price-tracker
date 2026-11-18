@@ -43,7 +43,8 @@ export function barChart(points, { width = 520, height = 200, format = String, c
 
 // One or more lines sharing a time axis. series: [{name, points:[{date,value}]}].
 // money: tooltip values go through bindHover's money formatter; otherwise they print like the axis.
-export function lineChart(series, { width = 520, height = 200, format = String, step = false, money = false } = {}) {
+// events: [{date, kind: 'down'|'up'|'new'}] drawn as ticks along the bottom axis.
+export function lineChart(series, { width = 520, height = 200, format = String, step = false, money = false, events = [] } = {}) {
   const live = series.filter((s) => s.points.length);
   if (!live.length) return '<p class="empty">暂无数据</p>';
   const L = 56, R = 8, T = 10, B = 24;
@@ -58,6 +59,13 @@ export function lineChart(series, { width = 520, height = 200, format = String, 
     return step ? `H${x(p.date)}V${y(p.value)}` : `L${x(p.date)},${y(p.value)}`;
   }).join('');
   const ticks = [0, 0.5, 1].map((k) => k * max);
+  const EVENT_COLOR = { down: 'var(--down)', up: 'var(--up)', new: 'var(--text-muted)' };
+  const marks = events.filter((e) => toTime(e.date) >= t0 && toTime(e.date) <= t1).map((e, i, all) => {
+    // Several events on one day stack upward so each stays visible.
+    const n = all.slice(0, i).filter((o) => o.date === e.date).length;
+    const cx = x(e.date), cy = height - B - 5 - n * 7;
+    return `<circle cx="${cx}" cy="${cy}" r="3" fill="${EVENT_COLOR[e.kind] ?? EVENT_COLOR.new}"><title>${esc(e.label ?? e.date)}</title></circle>`;
+  }).join('');
   const lines = live.map((s) => {
     const color = SERIES_COLORS[series.indexOf(s) % SERIES_COLORS.length];
     const lastP = s.points.at(-1);
@@ -68,6 +76,7 @@ export function lineChart(series, { width = 520, height = 200, format = String, 
   return `<div class="chart" data-hover="${payload}"><svg class="chart-svg" viewBox="0 0 ${width} ${height}" role="img">
     ${ticks.map((v) => `<line class="grid" x1="${L}" x2="${width - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${esc(format(v))}</text>`).join('')}
     ${lines}
+    ${marks}
     <text x="${L}" y="${height - 6}">${esc(label(new Date(t0).toISOString()))}</text>
     <text x="${width - R}" y="${height - 6}" text-anchor="end">${esc(label(new Date(t1).toISOString()))}</text>
     <line class="cursor" y1="${T}" y2="${height - B}" visibility="hidden"/>
