@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { calendarQuarter, parseStooq, priceMoves, quarterly, sumByQuarter, tokenPriceIndex } from '../scripts/macro.mjs';
+import {
+  calendarQuarter, parseAlphaVantage, priceMoves, quarterly, segmentOf, sumByQuarter, tokenPriceIndex,
+} from '../scripts/macro.mjs';
 
 test('quarterly recovers single quarters from year-to-date cash-flow facts', () => {
   const facts = [
@@ -27,10 +29,22 @@ test('sumByQuarter aligns fiscal quarters and drops incomplete ones', () => {
   assert.deepEqual(sumByQuarter([a, b]), [{ date: '2025Q3', value: 12 }]);
 });
 
-test('parseStooq reads close prices and ignores junk', () => {
-  const csv = 'Date,Open,High,Low,Close,Volume\n2026-11-06,1,2,0.5,1.5,100\n2026-11-13,1,2,1,N/D,0\n';
-  assert.deepEqual(parseStooq(csv), [{ date: '2026-11-06', value: 1.5 }]);
-  assert.deepEqual(parseStooq('No data'), []);
+test('parseAlphaVantage reads weekly closes oldest first and ignores junk', () => {
+  const body = { 'Weekly Time Series': {
+    '2026-11-13': { '4. close': '190.5' },
+    '2026-11-06': { '4. close': '180.25' },
+    '2026-10-30': { '4. close': 'n/a' },
+  } };
+  assert.deepEqual(parseAlphaVantage(body), [{ date: '2026-11-06', value: 180.25 }, { date: '2026-11-13', value: 190.5 }]);
+  assert.deepEqual(parseAlphaVantage({ Note: 'rate limited' }), []);
+});
+
+test('segmentOf splits specialised variants before grouping by vendor', () => {
+  assert.equal(segmentOf({ provider: 'openai', model: 'gpt-5' }), 'frontier');
+  assert.equal(segmentOf({ provider: 'deepseek', model: 'deepseek-v4-pro' }), 'china');
+  assert.equal(segmentOf({ provider: 'openai', model: 'gpt-audio' }), 'multimodal');
+  assert.equal(segmentOf({ provider: 'dashscope', model: 'qwen3-vl-32b-instruct' }), 'multimodal');
+  assert.equal(segmentOf({ provider: 'mistral', model: 'codestral-latest' }), 'niche');
 });
 
 test('tokenPriceIndex follows listings, removals and price changes', () => {
@@ -53,4 +67,10 @@ test('priceMoves counts cuts and hikes per month', () => {
     { date: '2026-11-09', type: 'added', after: p(1, 1) },
   ];
   assert.deepEqual(priceMoves(changes), [{ date: '2026-11', cuts: 1, hikes: 1 }]);
+  const tagged = changes.map((c, i) => ({ ...c, id: i ? 'deepseek/deepseek-chat' : 'openai/gpt-5' }));
+  const models = {
+    'openai/gpt-5': { provider: 'openai', model: 'gpt-5' },
+    'deepseek/deepseek-chat': { provider: 'deepseek', model: 'deepseek-chat' },
+  };
+  assert.deepEqual(priceMoves(tagged, models, 'china'), [{ date: '2026-11', cuts: 0, hikes: 1 }]);
 });

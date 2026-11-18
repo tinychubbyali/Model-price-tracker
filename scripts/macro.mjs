@@ -5,8 +5,28 @@ export const LAYERS = [
   { id: 'compute', name: '算力供给', blurb: '芯片和算力卖得怎么样，决定了整个行业能用多少算力。' },
   { id: 'capex', name: '资本投入', blurb: '云厂商每季度花多少钱建数据中心，是对未来 AI 需求的押注。' },
   { id: 'tokens', name: '模型层（Token）', blurb: '算力最终变成 Token 卖出去，Token 的价格反映供需和技术进步。' },
-  { id: 'markets', name: '资本市场', blurb: '市场对 AI 产业链各环节的定价和预期。' },
+  { id: 'demand', name: '需求与用量', blurb: 'Token 实际被用了多少。这一层依赖人工录入，第二版加入。' },
+  { id: 'markets', name: '收入与资本市场', blurb: '模型公司赚到钱了吗，市场又怎么给产业链各环节定价。' },
 ];
+
+// Model-layer segments, grouped by what drives their prices.
+export const SEGMENTS = [
+  { id: 'frontier', name: '海外前沿闭源', driver: '核心研发与芯片代际带来的推理成本下降' },
+  { id: 'china', name: '中国模型', driver: '开源与价格竞争、国产芯片、云厂商生态补贴' },
+  { id: 'open', name: '开源权重托管', driver: '推理硬件效率与托管商竞争' },
+  { id: 'multimodal', name: '多模态', driver: '计价单位和成本结构与文本不同' },
+  { id: 'niche', name: '小众与专用', driver: '特定场景的需求' },
+];
+const CHINA_PROVIDERS = new Set(['deepseek', 'dashscope', 'zai', 'moonshot']);
+const MULTIMODAL = /audio|realtime|tts|vision|omni|image|-vl-|lyria|robotics/;
+const NICHE = /code|coder|codestral|devstral|search|computer-use|deep-research|cyber/;
+
+// Specialised and multimodal variants are split out first; the rest follow their vendor.
+export function segmentOf(m) {
+  if (MULTIMODAL.test(m.model)) return 'multimodal';
+  if (NICHE.test(m.model)) return 'niche';
+  return CHINA_PROVIDERS.has(m.provider) ? 'china' : 'frontier';
+}
 
 const DAY = 864e5;
 const days = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / DAY);
@@ -61,17 +81,14 @@ export function sumByQuarter(seriesList) {
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 
-// Parses a Stooq daily/weekly CSV (Date,Open,High,Low,Close,Volume) into close prices.
-export function parseStooq(csv) {
-  const [header, ...rows] = csv.trim().split(/\r?\n/);
-  const cols = header.split(',');
-  const di = cols.indexOf('Date');
-  const ci = cols.indexOf('Close');
-  if (di === -1 || ci === -1) return [];
-  return rows
-    .map((r) => r.split(','))
-    .map((c) => ({ date: c[di], value: Number(c[ci]) }))
-    .filter((p) => /^\d{4}-\d{2}-\d{2}$/.test(p.date) && Number.isFinite(p.value));
+// Parses Alpha Vantage TIME_SERIES_WEEKLY JSON into weekly closes, oldest first.
+export function parseAlphaVantage(body) {
+  const series = body?.['Weekly Time Series'];
+  if (!series || typeof series !== 'object') return [];
+  return Object.entries(series)
+    .map(([date, v]) => ({ date, value: Number(v?.['4. close']) }))
+    .filter((p) => /^\d{4}-\d{2}-\d{2}$/.test(p.date) && Number.isFinite(p.value))
+    .sort((a, b) => a.date.localeCompare(b.date));
 }
 
 // A blended price weights output 3:1 against input, a common proxy for a chat workload.
@@ -84,8 +101,8 @@ function median(xs) {
 }
 
 // Daily median blended price across models that were listed on each day.
-export function tokenPriceIndex(models, today) {
-  const list = Object.values(models);
+export function tokenPriceIndex(models, today, segment) {
+  const list = Object.values(models).filter((m) => !segment || segmentOf(m) === segment);
   if (!list.length) return [];
   const start = list.map((m) => m.firstSeen).sort()[0];
   const points = [];
@@ -103,10 +120,11 @@ export function tokenPriceIndex(models, today) {
 }
 
 // Monthly count of price cuts and hikes, from the change log.
-export function priceMoves(changes) {
+export function priceMoves(changes, models, segment) {
   const months = new Map();
   for (const c of changes) {
     if (c.type !== 'changed') continue;
+    if (segment && (!models[c.id] || segmentOf(models[c.id]) !== segment)) continue;
     const before = blended(c.before);
     const after = blended(c.after);
     if (!Number.isFinite(before) || !Number.isFinite(after) || before === after) continue;

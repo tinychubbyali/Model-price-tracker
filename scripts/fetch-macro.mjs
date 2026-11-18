@@ -1,15 +1,16 @@
 // Fetches macro indicators along the AI value chain into docs/data/macro.json.
 // A source that fails keeps its previously stored points, so one outage never blanks the page.
+// Env: SEC_CONTACT_EMAIL (SEC asks automated clients to identify themselves),
+//      ALPHAVANTAGE_API_KEY (weekly stock prices). A missing one skips its series.
 import { readFile, writeFile } from 'node:fs/promises';
 import {
-  LAYERS, parseStooq, priceMoves, quarterly, sumByQuarter, tokenPriceIndex,
+  LAYERS, SEGMENTS, parseAlphaVantage, priceMoves, quarterly, sumByQuarter, tokenPriceIndex,
 } from './macro.mjs';
 
 const DATA_DIR = new URL('../docs/data/', import.meta.url);
 const MACRO = new URL('macro.json', DATA_DIR);
-// SEC asks automated clients to identify themselves in the User-Agent.
-const SEC_HEADERS = { 'User-Agent': 'model-price-tracker github.com/tinychubbyali/Model-price-tracker' };
 const QUARTERS_KEPT = 12;
+const WEEKS_KEPT = 104;
 
 const CAPEX_COMPANIES = [
   { id: 'msft', name: '微软', cik: '0000789019' },
@@ -20,11 +21,15 @@ const CAPEX_COMPANIES = [
 ];
 const CAPEX_TAGS = ['PaymentsToAcquirePropertyPlantAndEquipment', 'PaymentsToAcquireProductiveAssets'];
 const REVENUE_TAGS = ['Revenues', 'RevenueFromContractWithCustomerExcludingAssessedTax'];
+const CHIPMAKERS = [
+  { id: 'nvda', name: '英伟达', cik: '0001045810', note: '英伟达营收的大头来自数据中心 GPU，是 AI 算力需求最直接的晴雨表。' },
+  { id: 'amd', name: 'AMD', cik: '0000002488', note: '英伟达之外的第二大 GPU 供应商，看算力供给是否在分散。' },
+];
 const STOCKS = [
-  { id: 'nvda', name: '英伟达', symbol: 'nvda.us' },
-  { id: 'tsm', name: '台积电 (ADR)', symbol: 'tsm.us' },
-  { id: 'avgo', name: '博通', symbol: 'avgo.us' },
-  { id: 'smh', name: '半导体 ETF (SMH)', symbol: 'smh.us' },
+  { id: 'nvda', name: '英伟达', symbol: 'NVDA' },
+  { id: 'tsm', name: '台积电 (ADR)', symbol: 'TSM' },
+  { id: 'avgo', name: '博通', symbol: 'AVGO' },
+  { id: 'smh', name: '半导体 ETF (SMH)', symbol: 'SMH' },
 ];
 
 function report(level, msg) {
@@ -47,14 +52,19 @@ async function getJson(url, headers) {
   return res.json();
 }
 
+const secEmail = process.env.SEC_CONTACT_EMAIL?.trim();
+const avKey = process.env.ALPHAVANTAGE_API_KEY?.trim();
+
 // Tries each XBRL tag and keeps the one whose quarterly data is most recent.
 async function secQuarterly(cik, tags) {
+  if (!secEmail) throw new Error('SEC_CONTACT_EMAIL not set');
+  const headers = { 'User-Agent': `model-price-tracker ${secEmail}` };
   let best = null;
   for (const tag of tags) {
     const url = `https://data.sec.gov/api/xbrl/companyconcept/CIK${cik}/us-gaap/${tag}.json`;
     let points;
     try {
-      points = quarterly((await getJson(url, SEC_HEADERS)).units?.USD ?? []);
+      points = quarterly((await getJson(url, headers)).units?.USD ?? []);
     } catch (err) {
       if (err.message === 'HTTP 404') continue;
       throw err;
@@ -63,6 +73,16 @@ async function secQuarterly(cik, tags) {
   }
   if (!best) throw new Error('no quarterly data under any tag');
   return best.points.slice(-QUARTERS_KEPT);
+}
+
+async function weeklyCloses(symbol) {
+  if (!avKey) throw new Error('ALPHAVANTAGE_API_KEY not set');
+  const url = `https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=${symbol}&apikey=${avKey}`;
+  const body = await getJson(url);
+  const points = parseAlphaVantage(body);
+  // Rate-limit and error replies come back as HTTP 200 with a message instead of data.
+  if (!points.length) throw new Error(body?.Note || body?.Information || body?.['Error Message'] || 'no data');
+  return points.slice(-WEEKS_KEPT);
 }
 
 const edgarUrl = (cik) => `https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${cik}&type=10-Q`;
@@ -78,12 +98,13 @@ async function buildSeries() {
     }
   };
 
-  await add(
-    { id: 'nvda-revenue', layer: 'compute', name: '英伟达季度营收', unit: 'USD', freq: 'quarter',
-      note: '英伟达营收的大头来自数据中心 GPU，是 AI 算力需求最直接的晴雨表。',
-      source: 'SEC EDGAR', sourceUrl: edgarUrl('0001045810') },
-    () => secQuarterly('0001045810', REVENUE_TAGS),
-  );
+  for (const c of CHIPMAKERS) {
+    await add(
+      { id: `revenue-${c.id}`, layer: 'compute', name: `${c.name}季度营收`, unit: 'USD', freq: 'quarter',
+        note: c.note, source: 'SEC EDGAR', sourceUrl: edgarUrl(c.cik) },
+      () => secQuarterly(c.cik, REVENUE_TAGS),
+    );
+  }
 
   for (const c of CAPEX_COMPANIES) {
     await add(
@@ -93,18 +114,11 @@ async function buildSeries() {
     );
   }
 
-  const twoYearsAgo = new Date(Date.now() - 2 * 365 * 864e5).toISOString().slice(0, 10).replaceAll('-', '');
   for (const s of STOCKS) {
     await add(
       { id: `stock-${s.id}`, layer: 'markets', name: `${s.name}股价`, unit: 'USD', freq: 'week',
-        group: 'stocks', source: 'Stooq', sourceUrl: `https://stooq.com/q/?s=${s.symbol}` },
-      async () => {
-        const res = await fetch(`https://stooq.com/q/d/l/?s=${s.symbol}&i=w&d1=${twoYearsAgo}`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const points = parseStooq(await res.text());
-        if (!points.length) throw new Error('empty or unexpected CSV');
-        return points;
-      },
+        group: 'stocks', source: 'Alpha Vantage', sourceUrl: `https://www.alphavantage.co/` },
+      () => weeklyCloses(s.symbol),
     );
   }
   return series;
@@ -132,16 +146,26 @@ if (capex.every((s) => s.points.length)) {
   });
 }
 
-series.push(
-  { id: 'token-index', layer: 'tokens', name: 'Token 价格中位数', unit: 'USD/MTok', freq: 'day',
-    note: '所有在售模型的混合价格（输入:输出 = 3:1）取中位数，每百万 tokens。',
-    source: '本站价格数据', sourceUrl: null, points: tokenPriceIndex(prices.models, today) },
-  { id: 'token-moves', layer: 'tokens', name: '每月调价次数', unit: 'count', freq: 'month', kind: 'moves',
-    note: '降价和涨价分开统计，只计已有模型的价格变动。',
-    source: '本站价格数据', sourceUrl: null, points: priceMoves(changes) },
-);
+for (const seg of SEGMENTS) {
+  const points = tokenPriceIndex(prices.models, today, seg.id);
+  series.push({
+    id: `token-index-${seg.id}`, layer: 'tokens', segment: seg.id, name: `${seg.name}：Token 价格中位数`,
+    unit: 'USD/MTok', freq: 'day', note: `驱动因素：${seg.driver}。混合价格（输入:输出 = 3:1）取中位数。`,
+    source: '本站价格数据', sourceUrl: null, points,
+  });
+}
+for (const seg of SEGMENTS) {
+  series.push({
+    id: `token-moves-${seg.id}`, layer: 'tokens', segment: seg.id, kind: 'moves', name: `${seg.name}：每月调价次数`,
+    unit: 'count', freq: 'month', source: '本站价格数据', sourceUrl: null,
+    points: priceMoves(changes, prices.models, seg.id),
+  });
+}
 
-await writeFile(MACRO, JSON.stringify({ updatedAt: new Date().toISOString(), layers: LAYERS, series }, null, 1) + '\n');
+await writeFile(
+  MACRO,
+  JSON.stringify({ updatedAt: new Date().toISOString(), layers: LAYERS, segments: SEGMENTS, series }, null, 1) + '\n',
+);
 const stale = series.filter((s) => s.stale).map((s) => s.id);
 report(stale.length ? 'warning' : 'notice',
   `${series.length} series written${stale.length ? `; kept previous data for ${stale.join(', ')}` : ''}`);

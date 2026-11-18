@@ -30,6 +30,9 @@ jobs:
       # Macro sources are best-effort: a failure here must not block the price update.
       - run: npm run fetch-macro
         continue-on-error: true
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
       - name: Commit price changes
         if: ${{ !inputs.dry_run }}
         run: |
