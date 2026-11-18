@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T06:10:38.364Z",
+ "updatedAt": "2026-11-18T06:28:54.205Z",
  "layers": [
   {
    "id": "compute",
@@ -19,7 +19,7 @@
   {
    "id": "demand",
    "name": "需求与用量",
-   "blurb": "Token 实际被用了多少。这一层依赖人工录入，第二版加入。"
+   "blurb": "Token 实际被用了多少：开发者平台的公开用量，加上厂商公布的调用量。"
   },
   {
    "id": "markets",
@@ -54,6 +54,7 @@
    "driver": "特定场景的需求"
   }
  ],
+ "usageTop": null,
  "series": [
   {
    "id": "revenue-nvda",
@@ -2246,6 +2247,83 @@
      "value": 460.1
     }
    ]
+  },
+  {
+   "id": "usage-total",
+   "name": "OpenRouter 每周 Token 用量",
+   "note": "OpenRouter 上公开流量的总量（输入 + 输出），代表开发者侧的需求，不含各厂商直连的流量。",
+   "layer": "demand",
+   "unit": "tokens",
+   "freq": "week",
+   "source": "OpenRouter（CC BY 4.0）",
+   "sourceUrl": "https://openrouter.ai/rankings",
+   "points": [],
+   "stale": true
+  },
+  {
+   "id": "usage-frontier",
+   "segment": "frontier",
+   "group": "usage-seg",
+   "name": "海外前沿闭源：每周用量",
+   "layer": "demand",
+   "unit": "tokens",
+   "freq": "week",
+   "source": "OpenRouter（CC BY 4.0）",
+   "sourceUrl": "https://openrouter.ai/rankings",
+   "points": [],
+   "stale": true
+  },
+  {
+   "id": "usage-china",
+   "segment": "china",
+   "group": "usage-seg",
+   "name": "中国模型：每周用量",
+   "layer": "demand",
+   "unit": "tokens",
+   "freq": "week",
+   "source": "OpenRouter（CC BY 4.0）",
+   "sourceUrl": "https://openrouter.ai/rankings",
+   "points": [],
+   "stale": true
+  },
+  {
+   "id": "usage-open",
+   "segment": "open",
+   "group": "usage-seg",
+   "name": "开源权重托管：每周用量",
+   "layer": "demand",
+   "unit": "tokens",
+   "freq": "week",
+   "source": "OpenRouter（CC BY 4.0）",
+   "sourceUrl": "https://openrouter.ai/rankings",
+   "points": [],
+   "stale": true
+  },
+  {
+   "id": "usage-multimodal",
+   "segment": "multimodal",
+   "group": "usage-seg",
+   "name": "多模态：每周用量",
+   "layer": "demand",
+   "unit": "tokens",
+   "freq": "week",
+   "source": "OpenRouter（CC BY 4.0）",
+   "sourceUrl": "https://openrouter.ai/rankings",
+   "points": [],
+   "stale": true
+  },
+  {
+   "id": "usage-niche",
+   "segment": "niche",
+   "group": "usage-seg",
+   "name": "小众与专用：每周用量",
+   "layer": "demand",
+   "unit": "tokens",
+   "freq": "week",
+   "source": "OpenRouter（CC BY 4.0）",
+   "sourceUrl": "https://openrouter.ai/rankings",
+   "points": [],
+   "stale": true
   },
   {
    "id": "token-index-frontier",
