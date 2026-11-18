@@ -80,7 +80,7 @@ async function usage() {
 // Tries each XBRL tag and keeps the one whose quarterly data is most recent.
 async function secQuarterly(cik, tags) {
   if (!secEmail) throw new Error('SEC_CONTACT_EMAIL not set');
-  const headers = { 'User-Agent': `model-price-tracker ${secEmail}` };
+  const headers = { 'User-Agent': `numagic-aistudy ${secEmail}` };
   let best = null;
   for (const tag of tags) {
     const url = `https://data.sec.gov/api/xbrl/companyconcept/CIK${cik}/us-gaap/${tag}.json`;

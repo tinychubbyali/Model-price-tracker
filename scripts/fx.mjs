@@ -28,7 +28,7 @@ export function parseMas(body) {
 }
 
 async function fromMas() {
-  const res = await fetch(MAS_URL, { headers: { 'User-Agent': 'model-price-tracker' } });
+  const res = await fetch(MAS_URL, { headers: { 'User-Agent': 'numagic-aistudy' } });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const fx = parseMas(await res.json());
   if (!fx) throw new Error('unexpected response shape');
