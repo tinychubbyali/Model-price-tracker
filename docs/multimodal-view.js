@@ -1,6 +1,5 @@
 // Multimodal tab: video, image, speech, transcription, music and 3D prices, each converted to the
 // price of one standard deliverable so models in a modality can be ranked side by side.
-import { bindHover, legend, lineChart } from './charts.js';
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
@@ -41,32 +40,6 @@ const median = (xs) => {
   const mid = s.length >> 1;
   return s.length % 2 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
 };
-
-// The value a model's history held on a given date (history rows are in date order).
-const valueOn = (history, date, f) => {
-  let v = null;
-  for (const h of history) { if (h.date <= date) v = f(h); else break; }
-  return v;
-};
-const activeOn = (m, date) => m.firstSeen <= date && (!m.removed || m.removed > date);
-
-// Daily index of a group's median price, 100 on its first recorded day.
-export function indexSeries(models, f, dates) {
-  const pts = [];
-  for (const date of dates) {
-    const vals = models.filter((m) => activeOn(m, date)).map((m) => valueOn(m.history, date, f)).filter((v) => v > 0);
-    const med = median(vals);
-    if (med !== null) pts.push({ date, value: med });
-  }
-  const base = pts[0]?.value;
-  return base ? pts.map((p) => ({ date: p.date, value: Math.round((p.value / base) * 1000) / 10 })) : [];
-}
-
-function datesFrom(start, end) {
-  const out = [];
-  for (let t = Date.parse(start); t <= Date.parse(end); t += 864e5) out.push(new Date(t).toISOString().slice(0, 10));
-  return out;
-}
 
 // Native price in the vendor's own unit, with small per-unit prices scaled to readable units.
 function nativeText(m, money) {
@@ -144,7 +117,7 @@ function buyCards(models, textMedian, money) {
     cards.push(`<article class="kpi"><h3>文本（对照）</h3>
       <p class="kpi-value">${wan >= 10 ? wan.toFixed(0) : wan.toFixed(1)} <span class="unit">万输出 token</span></p>
       <p class="kpi-sub">全部文本模型输出价中位数 ${money(textMedian)}/百万 token</p>
-      <p class="kpi-note">数据来自“Token 价格”页</p></article>`);
+      <p class="kpi-note">数据来自“模型查价”页</p></article>`);
   }
   return `<div class="kpi-grid mm-buy">${cards.join('')}</div>`;
 }
@@ -162,59 +135,30 @@ function changesList(mm, money) {
   return `<ul class="changes">${list.map((c) => `<li><time>${esc(c.date)}</time><span>${esc(name(c.id))} <span class="tag">${esc(MODALITIES.find((m) => m.id === mm.models[c.id]?.modality)?.name ?? '')}</span> ${what(c)}</span></li>`).join('')}</ul>`;
 }
 
-const MIN_DAYS = 7;
-
-// Before there is a trend to draw: each modality's starting median, the 100 of the index.
-function baseline(series, models, textMedian, money) {
-  const rows = MODALITIES.filter((m) => !['music', '3d'].includes(m.id)).map((mod) => {
-    const live = models.filter((m) => m.modality === mod.id && !m.removed && !m.manual);
-    return `<tr><td><span class="dot" style="background:${mod.color}"></span>${esc(mod.name)}</td><td>${esc(mod.std)}</td><td class="num">${money(median(live.map((m) => m.std)))}</td><td class="num">${live.length}</td></tr>`;
-  });
-  rows.push(`<tr><td><span class="dot" style="background:var(--accent)"></span>文本 token</td><td>每百万输出 token</td><td class="num">${money(textMedian)}</td><td class="num">—</td></tr>`);
-  return `<div class="table-scroll"><table class="mm-table"><thead><tr><th>模态</th><th>标准成品</th><th class="num">起点中位价</th><th class="num">模型数</th></tr></thead><tbody>${rows.join('')}</tbody></table></div>`;
+// "1 美元能买到什么" across modalities, for the price-trend page.
+export function mmBuySection(mm, textModels, money) {
+  if (!mm) return '';
+  const textLive = Object.values(textModels ?? {}).filter((m) => !m.removed);
+  const textMedian = median(textLive.map((m) => m.output));
+  return `<section class="card">
+      <h2>1 美元能买到什么 <span class="unit">（按当前牌价，${esc(mm.updatedAt.slice(0, 10))}）</span></h2>
+      ${buyCards(Object.values(mm.models), textMedian, money)}
+    </section>`;
 }
 
-export function renderMultimodal(el, { mm, money, textModels, sub, onSub }) {
+// Per-modality price tables for the model lookup page. `sub` picks the modality.
+export function renderMultimodal(el, { mm, money, sub, query = '' }) {
   if (!mm) {
     el.innerHTML = '<p class="empty">多模态数据还没有生成，下一次每日抓取后会出现。</p>';
     return;
   }
-  const models = Object.values(mm.models);
-  const today = mm.updatedAt.slice(0, 10);
-  const start = models.reduce((d, m) => (m.firstSeen < d ? m.firstSeen : d), today);
-  const dates = datesFrom(start, today);
-
-  const textLive = Object.values(textModels ?? {}).filter((m) => !m.removed);
-  const textMedian = median(textLive.map((m) => m.output));
-
-  const series = MODALITIES.map((mod) => ({
-    name: mod.name, color: mod.color,
-    points: indexSeries(models.filter((m) => m.modality === mod.id && !m.manual), (h) => h.std, dates),
-  }));
-  series.push({
-    name: '文本 token', color: 'var(--accent)',
-    points: indexSeries(Object.values(textModels ?? {}), (h) => (h.input * 3 + h.output) / 4, dates),
-  });
-  const days = dates.length;
-
+  const q = query.trim().toLowerCase();
+  const models = Object.values(mm.models).filter((m) => !q || `${m.model} ${displayName(m)} ${vendorOf(m)}`.toLowerCase().includes(q));
   const mod = MODALITIES.find((m) => m.id === sub) ?? MODALITIES[0];
-  const count = (id) => models.filter((m) => m.modality === id && !m.removed).length;
-
   el.innerHTML = `
-    <p class="lead">视频、图片、语音的计价单位各不相同，硬折成每百万 token 并不可靠。这里给每种模态定一个“标准成品”，统一算出做一件要多少钱，厂商原生单价放在旁边。只收官方渠道的牌价，转售平台不收。</p>
     <section class="card">
-      <h2>1 美元能买到什么 <span class="unit">（按当前牌价，${esc(today)}）</span></h2>
-      ${buyCards(models, textMedian, money)}
-    </section>
-    <section class="card">
-      <h2>各模态价格指数 <span class="unit">各模态标准成品价的中位数，起点记为 100</span></h2>
-      <p class="kpi-note">不同单位的模态放在同一张图上，比较谁降价更快。音乐和 3D 是人工估算价，不计入指数。${days < MIN_DAYS ? `从 ${esc(start)} 开始记录，满 ${MIN_DAYS} 天后这里会出现走势图；过去一年的历史价格会在下一版补上。下表是起点。` : ''}</p>
-      ${days < MIN_DAYS ? baseline(series, models, textMedian, money) : legend(series) + lineChart(series, { width: 760, height: 240, format: (v) => v.toFixed(0), endLabels: true })}
-    </section>
-    <section class="card">
-      <div class="subtabs" role="tablist">${MODALITIES.map((m) => `<button type="button" role="tab" data-sub="${m.id}" aria-pressed="${m.id === mod.id}">${esc(m.name)} <span class="count">${count(m.id)}</span></button>`).join('')}</div>
       <h2>${esc(mod.name)} <span class="unit">按「${esc(mod.std)}」从贵到便宜排列</span></h2>
-      <p class="kpi-note mm-mod-note">${esc(mod.note)}</p>
+      <p class="kpi-note mm-mod-note">${esc(mod.note)} 视频、图片、语音的计价单位各不相同，这里统一算成一件标准成品的价格，厂商原生单价放在旁边。只收官方渠道的牌价。</p>
       ${table(mod, models, money)}
       ${notesBlock(mm.notes?.[mod.id])}
       <p class="source">价格来源：<a href="${esc(mm.source)}" rel="noopener">LiteLLM 价目表</a>，只取官方渠道（模型名链接到各家官方价格页）；人工录入的条目注明了核对日期和来源。</p>
@@ -223,6 +167,4 @@ export function renderMultimodal(el, { mm, money, textModels, sub, onSub }) {
       <h2>最近变化</h2>
       ${changesList(mm, money)}
     </section>`;
-  bindHover(el, (v) => v.toFixed(1));
-  for (const b of el.querySelectorAll('[data-sub]')) b.addEventListener('click', () => onSub(b.dataset.sub));
 }

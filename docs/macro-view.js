@@ -1,9 +1,9 @@
 // Overview and macro tabs. Macro figures stay in USD; token prices follow the currency toggle.
-import { SERIES_COLORS, barChart, bindHover, legend, lineChart, sparkline } from './charts.js';
+import { SERIES_COLORS, barChart, bindHover, bindWeekly, legend, sparkline, weeklyChart } from './charts.js';
 
 // One color per segment on every chart, in segment order.
 const segColor = (macro, id) => SERIES_COLORS[macro.segments.findIndex((s) => s.id === id) % SERIES_COLORS.length];
-import { segmentOf, stripDate } from './segments.js';
+import { stripDate } from './segments.js';
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
@@ -70,129 +70,29 @@ function shareSeries(macro, segId) {
     .map((p) => ({ date: p.date, value: p.value / total.get(p.date) }));
 }
 
-// The headline chart: daily token price medians by segment, with every price event marked,
-// and a panel naming the most recent day's changes.
-function dailyHero(macro, { money, changes, models }) {
-  const lines = macro.segments.map((seg) => ({ id: seg.id, name: seg.name, color: segColor(macro, seg.id), points: byId(macro, `token-index-${seg.id}`)?.points ?? [] }));
-  const live = lines.filter((l) => l.points.length);
-  if (!live.length) return '';
-  const blended = (h) => (h.input * 3 + h.output) / 4;
-  const kindOf = (c) => (c.type === 'changed' ? (blended(c.after) < blended(c.before) ? 'down' : blended(c.after) > blended(c.before) ? 'up' : 'new') : 'new');
-  const name = (c) => c.id.split('/').slice(1).join('/');
-  const TYPE = { added: '新上线', removed: '下架', restored: '重新上架' };
-  const describe = (c) => {
-    const k = kindOf(c);
-    if (c.type === 'changed') {
-      const pctChange = blended(c.after) / blended(c.before) - 1;
-      if (k === 'new') return '缓存价调整';
-      return `<span class="${k}">${k === 'down' ? '降价' : '涨价'} ${pct(pctChange)}</span>`;
-    }
-    return esc(TYPE[c.type] ?? c.type);
-  };
-  const events = (changes ?? []).map((c) => ({ date: c.date, kind: kindOf(c), label: `${c.date} ${name(c)}` }));
-  const lastDate = changes?.[0]?.date;
-  const latest = (changes ?? []).filter((c) => c.date === lastDate);
-  const segName = (id) => macro.segments.find((s) => s.id === id)?.name ?? '';
-  // Usage columns appear once OpenRouter data exists; then every segment gets a row, priced or not.
-  const total = byId(macro, 'usage-total')?.points ?? [];
-  const hasUsage = total.length > 1;
-  const wow = (pts) => (pts.length > 1 && pts.at(-2).value ? pts.at(-1).value / pts.at(-2).value - 1 : null);
-  const tone = (v) => (v < 0 ? 'down' : v > 0 ? 'up' : '');
-  const shown = hasUsage ? lines.filter((l) => l.points.length || byId(macro, `usage-${l.id}`)?.points.length) : live;
-  const usageOf = (l) => {
-    const pts = byId(macro, `usage-${l.id}`)?.points ?? [];
-    const share = shareSeries(macro, l.id).at(-1)?.value ?? null;
-    return { share, growth: wow(pts) };
-  };
-  const rows = shown.map((l) => {
-    const last = l.points.at(-1);
-    const w = l.points.length ? changeOver(l.points, 7) : null;
-    const u = hasUsage ? usageOf(l) : null;
-    return `<tr><td><i class="dot" style="background:${l.color}"></i>${esc(l.name)}</td>` +
-      `<td class="num">${last ? money(last.value) : '—'}</td>` +
-      `<td class="num ${tone(w?.change)}">${pct(w?.change ?? null)}</td>` +
-      (u ? `<td class="num">${u.share === null ? '—' : `${(u.share * 100).toFixed(1)}%`}</td><td class="num">${pct(u.growth)}</td>` : '') +
-      '</tr>';
-  }).join('');
-  // One sentence of takeaways from the usage data.
-  let usageNote = '';
-  if (hasUsage) {
-    const ranked = shown.map((l) => ({ l, g: usageOf(l).growth })).filter((x) => x.g !== null).sort((a, b) => b.g - a.g);
-    const fastest = ranked[0];
-    usageNote = `<p class="kpi-note hero-usage">OpenRouter 本周（${esc(total.at(-1).date)}）总用量 ${tokensBig(total.at(-1).value)}，环比 ${pct(wow(total))}` +
-      (fastest ? `；${fastest.g >= 0 ? '增长最快' : '降幅最小'}的是${esc(fastest.l.name)}（${pct(fastest.g)}）` : '') + '。用量是 OpenRouter 公开流量，价格是本站牌价。</p>';
-  }
-  const head = `<tr><th>类型</th><th class="num">价格</th><th class="num">近 7 天</th>${hasUsage ? '<th class="num">用量占比</th><th class="num">用量周环比</th>' : ''}</tr>`;
-  return `<article class="card hero">
-    <div class="hero-head">
-      <div>
-        <p class="chips"><span class="chip">模型层（Token）</span><span class="chip">每日更新</span></p>
-        <h2>Token 价格中位数，按模型类型</h2>
-        <p class="kpi-note">混合价格（输入:输出 = 3:1），每百万 tokens。中位数也会因新模型上线而变动，不全是调价。底部圆点是每一次价格事件：<span class="down">绿色降价</span>、<span class="up">红色涨价</span>、灰色上新或下架。</p>
-      </div>
-    </div>
-    <div class="hero-body${hasUsage ? ' wide-side' : ''}">
-      <div class="hero-chart">${lineChart(live, { format: money, step: true, width: 760, height: 260, money: true, events, endLabels: true })}</div>
-      <aside class="hero-side">
-        <table class="hero-table"><thead>${head}</thead><tbody>${rows}</tbody></table>${usageNote}
-        ${lastDate ? `<h3>最新变化 · ${esc(lastDate)}</h3>
-        <ul class="hero-changes">${latest.slice(0, 6).map((c) => `<li><a href="#${esc(c.id)}">${esc(name(c))}</a> <span class="tag">${esc(segName(models?.[c.id] ? segmentOf(models[c.id]) : ''))}</span> ${describe(c)}</li>`).join('')}</ul>
-        ${latest.length > 6 ? `<p class="kpi-note">当天另有 ${latest.length - 6} 条，见 <a href="#prices">Token 价格</a>。</p>` : ''}` : ''}
-      </aside>
-    </div>
-  </article>`;
+// Weekly points of several series aligned on Monday dates, oldest first.
+const monday = (d) => { const t = Date.parse(d); return new Date(t - ((new Date(t).getUTCDay() + 6) % 7) * 864e5).toISOString().slice(0, 10); };
+export function alignWeekly(list) {
+  const weeks = [...new Set(list.flatMap((s) => s.points.map((p) => monday(p.date))))].sort();
+  return { weeks, series: list.map((s) => {
+    const m = new Map(s.points.map((p) => [monday(p.date), p.value]));
+    return { ...s, values: weeks.map((w) => m.get(w) ?? null) };
+  }) };
 }
 
-export function renderOverview(el, { macro, money, changes, models }) {
+// The slower industry-chain cards shown at the bottom of the overview.
+export function chainCards(macro) {
   const capex = byId(macro, 'capex-total')?.points ?? [];
   const nvda = byId(macro, 'revenue-nvda')?.points ?? [];
   const capexYoy = yoy(capex);
   const nvdaYoy = yoy(nvda);
-  const month = new Date().toISOString().slice(0, 7);
-  const moves = macro.series.filter((s) => s.kind === 'moves')
-    .map((s) => s.points.find((p) => p.date === month) ?? { cuts: 0, hikes: 0 })
-    .reduce((a, p) => ({ cuts: a.cuts + p.cuts, hikes: a.hikes + p.hikes }), { cuts: 0, hikes: 0 });
   const stocks = macro.series.filter((s) => s.group === 'stocks' && s.points.length);
-  const usage = byId(macro, 'usage-total')?.points ?? [];
-  const since = Date.now() - 30 * 864e5;
-  const launches = (changes ?? []).filter((c) => c.type === 'added' && Date.parse(c.date) >= since);
-  const launchBySeg = macro.segments.map((seg) => [seg.name, launches.filter((c) => models?.[c.id] && segmentOf(models[c.id]) === seg.id).length])
-    .filter(([, n]) => n).map(([n, k]) => `${esc(n)} ${k}`).join(' · ');
-  const chinaShare = shareSeries(macro, 'china');
-
-  el.innerHTML = `
-    <p class="lead">最上面是每天更新的 Token 价格和最新调价；下面的卡片按变化快慢排列，先是每周的股价和用量，再是每月、每季度的调价节奏和财报基本面。</p>
-    ${dailyHero(macro, { money, changes, models })}
-    <div class="kpi-grid">
+  return `<div class="kpi-grid">
       ${card({ freq: '每周',
-        title: '产业链股价（近 3 个月）', note: '和上面的基本面对照，判断预期是否过热。',
+        title: '产业链股价（近 3 个月）', note: '和基本面对照，判断预期是否过热。',
         missing: stocks.length ? null : STOCK_MISSING,
         value: '',
         sub: stocks.map((s) => `${esc(s.name.replace(/股价$/, ''))} ${pct(changeOver(s.points, 91)?.change ?? null)}`).join('<br>'),
-      })}
-      ${card({ freq: '每日',
-        title: '新模型上线（近 30 天）', note: '上新越密集，说明模型层竞争越激烈，旧模型的定价压力越大。',
-        value: `${launches.length} 个`,
-        sub: launchBySeg || '近 30 天没有新模型',
-      })}
-      ${card({ freq: '每周',
-        title: 'OpenRouter 周用量', note: '开发者侧的真实需求。用量增速快于降价速度，说明需求弹性在兑现。',
-        missing: usage.length ? null : USAGE_MISSING,
-        value: usage.length ? `${tokensBig(usage.at(-1).value)}` : '',
-        sub: usage.length ? `${esc(usage.at(-1).date)} 当周 · 环比 ${pct(usage.length > 1 ? usage.at(-1).value / usage.at(-2).value - 1 : null)} · 同比 ${pct(yoy(usage))}` : '',
-        spark: sparkline(usage, { color: SERIES_COLORS[2] }),
-      })}
-      ${card({ freq: '每周',
-        title: '中国模型用量占比', note: 'OpenRouter 上中国模型占总用量的比例，看国产模型在海外开发者中的渗透。',
-        missing: chinaShare.length ? null : USAGE_MISSING,
-        value: chinaShare.length ? pct(chinaShare.at(-1).value).replace('+', '') : '',
-        sub: chinaShare.length > 4 ? `较 4 周前 ${pp(chinaShare.at(-1).value - chinaShare.at(-5).value)}` : '',
-        spark: sparkline(chinaShare, { color: SERIES_COLORS[1] }),
-      })}
-      ${card({ freq: '每月',
-        title: '价格战强度', note: '降价密集对模型层是压力，对下游应用是利好。',
-        value: `<span class="down">降价 ${moves.cuts}</span> · <span class="up">涨价 ${moves.hikes}</span>`,
-        sub: `${esc(month)} 本月，所有分类合计`,
       })}
       ${card({ freq: '每季度',
         title: '英伟达季度营收', note: '算力供给的景气度。',
@@ -215,7 +115,6 @@ export function renderOverview(el, { macro, money, changes, models }) {
         sub: `资本开支 ${pct(capexYoy)} vs 英伟达 ${pct(nvdaYoy)}`,
       })}
     </div>`;
-  bindHover(el, money);
 }
 
 // Bands ordered from fastest-moving data to slowest, so the top of the page is what changes daily.
@@ -253,33 +152,49 @@ function movesTable(macro) {
   return `<div class="table-scroll"><table><thead><tr><th>分类</th><th class="num">降价</th><th class="num">涨价</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
 
-function fastBand(macro, moneyAxis) {
+function fastBand(macro, { weekly, range }) {
   const stocks = macro.series.filter((s) => s.group === 'stocks');
   // Rebase each stock to 100 at its first point so different price levels share one axis.
-  const stockLines = stocks.map((s) => ({ name: s.name.replace(/股价$/, ''),
+  const stockLines = stocks.filter((s) => s.points.length).map((s, i) => ({ name: s.name.replace(/股价$/, ''), color: SERIES_COLORS[i % SERIES_COLORS.length],
     points: s.points.map((p) => ({ date: p.date, value: (p.value / s.points[0].value) * 100 })) }));
-  const tokenLines = macro.segments.map((seg) => ({
-    name: seg.name, color: segColor(macro, seg.id), points: byId(macro, `token-index-${seg.id}`)?.points ?? [] }));
-  const empty = tokenLines.filter((x) => !x.points.length).map((x) => x.name);
+  const st = alignWeekly(stockLines);
   return `<div class="macro-grid">
     <article class="card macro-card wide">
       ${chips(macro, 'markets', 'week')}
       <h3>产业链股价走势（起点 = 100）</h3>
-      ${stocks.some((s) => s.points.length) ? legend(stockLines) + lineChart(stockLines, { format: (v) => v.toFixed(0), width: 760 }) : `<p class="kpi-missing">${esc(STOCK_MISSING)}</p>`}
+      ${stockLines.length ? legend(stockLines) + weeklyChart(st.weeks, st.series, { range, baseline: 100 }) : `<p class="kpi-missing">${esc(STOCK_MISSING)}</p>`}
       <p class="source">来源：<a href="https://www.alphavantage.co/" rel="noopener">Alpha Vantage</a> 周收盘价。模型公司收入和估值第二版加入。</p>
     </article>
-    <article class="card macro-card wide">
-      ${chips(macro, 'tokens', 'day')}
-      <h3>各类模型 Token 价格中位数</h3>
-      <p class="kpi-note">混合价格（输入:输出 = 3:1），每百万 tokens。${empty.length ? `${esc(empty.join('、'))}暂无数据，需要扩展收录范围。` : ''}</p>
-      ${legend(tokenLines)}${lineChart(tokenLines, { format: moneyAxis, step: true, width: 760, money: true, endLabels: true })}
-      <p class="source">来源：本站价格数据</p>
-    </article>
-    ${usageCards(macro)}
+    ${priceVsUsage(macro, weekly, range)}
+    ${usageCards(macro, range)}
   </div>`;
 }
 
-function usageCards(macro) {
+// Did cheaper tokens bring more usage? Usage and the text price index on the same weeks, each rebased to 100.
+function priceVsUsage(macro, weekly, range) {
+  const usage = byId(macro, 'usage-total')?.points ?? [];
+  if (!weekly || usage.length < 2) return '';
+  const idx = new Map(weekly.weeks.map((w, i) => [w, i]));
+  const weeks = usage.map((p) => monday(p.date)).filter((w) => idx.has(w));
+  const from = range && weeks.length > range ? weeks.length - range : 0;
+  const ws = weeks.slice(from);
+  const base = (vals) => { const b = vals.find((v) => v); return vals.map((v) => (v && b ? (v / b) * 100 : null)); };
+  const u = new Map(usage.map((p) => [monday(p.date), p.value]));
+  const text = weekly.groups.filter((g) => g.kind === 'text' && ['frontier', 'china'].includes(g.id));
+  const priceSeries = text.map((g, i) => ({ name: `${g.name}（在售中位数）`, color: SERIES_COLORS[i === 0 ? 0 : 1], values: base(ws.map((w) => g.median[idx.get(w)])) }));
+  const usageSeries = [{ name: 'OpenRouter 周用量', color: SERIES_COLORS[2], values: base(ws.map((w) => u.get(w) ?? null)) }];
+  const last = (s) => s.values.findLast((v) => v !== null);
+  return `<article class="card macro-card wide">
+      ${chips(macro, 'demand', 'week')}
+      <h3>价格 × 用量：降价有没有带来用量</h3>
+      <p class="kpi-note">同样的周，起点都记为 100。到最近一周，用量是起点的 ${(last(usageSeries[0]) / 100).toFixed(1)} 倍；在售价格中位数${priceSeries.map((p) => `${esc(p.name.replace('（在售中位数）', ''))}是起点的 ${(last(p) / 100).toFixed(2)} 倍`).join('，')}。价格用在售中位数，因为用户实际买的是当时在售的模型；在售价上涨多半是更贵的新一代模型上线，用量仍在增长说明用户愿意为更强的模型付费。</p>
+      ${legend([...usageSeries, ...priceSeries].map((s) => ({ ...s, points: [1] })))}
+      ${weeklyChart(ws, usageSeries, { height: 180, format: (v) => v.toFixed(0) })}
+      ${weeklyChart(ws, priceSeries, { height: 160, format: (v) => v.toFixed(0), baseline: 100 })}
+    </article>`;
+}
+
+function usageCards(macro, range) {
   const total = byId(macro, 'usage-total');
   const cite = `来源：<a href="https://openrouter.ai/rankings" rel="noopener">OpenRouter</a>${macro.usageTop?.asOf ? `，截至 ${esc(macro.usageTop.asOf.slice(0, 10))}` : ''}。Licensed under CC BY 4.0。各厂商分词方式不同，Token 数不完全可比。`;
   if (!total?.points.length) {
@@ -292,14 +207,14 @@ function usageCards(macro) {
       ${chips(macro, 'demand', 'week')}
       <h3>OpenRouter 每周 Token 用量</h3>
       <p class="kpi-note">${esc(total.note)}</p>
-      ${barChart(total.points, { format: tokensBig, color: SERIES_COLORS[2], width: 760 })}
+      ${barChart(range ? total.points.slice(-range) : total.points, { format: tokensBig, color: SERIES_COLORS[2], width: 760 })}
       <p class="source">${cite}</p>
     </article>
     <article class="card macro-card wide">
       ${chips(macro, 'demand', 'week')}
       <h3>各类模型用量占比</h3>
       <p class="kpi-note">只统计前 50 名模型，其余计入总量但不分类。</p>
-      ${legend(shares)}${lineChart(shares, { format: (v) => `${Math.round(v * 100)}%`, width: 760, endLabels: true })}
+      ${(() => { const a = alignWeekly(shares.filter((x) => x.points.length)); return weeklyChart(a.weeks, a.series.map((x) => ({ ...x, values: x.values.map((v) => (v === null ? null : v * 100)) })), { range, format: (v) => `${Math.round(v)}%` }); })()}
     </article>
     ${top.length ? `<article class="card macro-card wide">
       ${chips(macro, 'demand', 'week')}
@@ -345,12 +260,13 @@ function quarterBand(macro) {
     s.points.length ? barChart(s.points, { format: usdBig, color: s.id === 'capex-total' ? SERIES_COLORS[0] : SERIES_COLORS[1] }) : `<p class="kpi-missing">${esc(SEC_MISSING)}</p>`)).join('')}</div>`;
 }
 
-export function renderMacro(el, { macro, money, moneyAxis, disclosed }) {
-  const bodies = { fast: fastBand(macro, moneyAxis), month: monthBand(macro), quarter: quarterBand(macro), disclosed: disclosedBand(macro, disclosed) };
+export function renderMacro(el, { macro, money, disclosed, weekly, range, rangeCtl }) {
+  const bodies = { fast: fastBand(macro, { weekly, range }), month: monthBand(macro), quarter: quarterBand(macro), disclosed: disclosedBand(macro, disclosed) };
   const sections = BANDS.map((b) =>
     `<section class="layer"><h2>${esc(b.name)}</h2><p class="kpi-note">${esc(b.blurb)}</p>${bodies[b.id]}</section>`).join('');
-  el.innerHTML = `<p class="lead">按数据变化的快慢排列：越往上更新越频繁。每张卡片标出它属于产业链的哪一环。财报数据单位为美元；Token 价格跟随右上角的货币设置。数据更新于 ${esc(new Date(macro.updatedAt).toLocaleString('zh-CN', { hour12: false }))}。</p>
+  el.innerHTML = `<div class="toolbar"><p class="lead">按数据变化的快慢排列：越往上更新越频繁。每张卡片标出它属于产业链的哪一环。Token 价格的走势统一放在「价格走势」页。数据更新于 ${esc(new Date(macro.updatedAt).toLocaleString('zh-CN', { hour12: false }))}。</p>${rangeCtl ?? ''}</div>
     ${sections}
     <section class="layer"><h2>第二版加入</h2><p class="empty">模型公司收入和估值，需要人工录入。</p></section>`;
   bindHover(el, money);
+  bindWeekly(el, money);
 }

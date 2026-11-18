@@ -10,12 +10,12 @@
 <body>
   <header class="wrap">
     <h1>Numagic-AIStudy</h1>
-    <p class="meta" id="meta">加载中…</p>
+    <p class="meta" id="sub">用 Token 价格读懂 AI 产业 · 加载中…</p>
     <nav class="tabs" aria-label="页面">
-      <a href="#overview" data-tab="overview">概览</a>
-      <a href="#prices" data-tab="prices">Token 价格</a>
-      <a href="#multimodal" data-tab="multimodal">多模态</a>
-      <a href="#macro" data-tab="macro">宏观</a>
+      <a href="#overview" data-tab="overview">概览<span class="q">这周发生了什么</span></a>
+      <a href="#trend" data-tab="trend">价格走势<span class="q">文本 + 多模态，一年周度</span></a>
+      <a href="#chain" data-tab="chain">需求与产业链<span class="q">用量、算力、资本、市场</span></a>
+      <a href="#db" data-tab="db">模型查价<span class="q">查任何一个模型</span></a>
       <div class="seg" role="group" aria-label="货币">
         <button type="button" data-currency="USD" aria-pressed="true">USD</button>
         <button type="button" data-currency="CNY" aria-pressed="false">CNY</button>
@@ -26,12 +26,16 @@
 
   <main class="wrap">
     <section id="view-overview" hidden></section>
-    <section id="view-multimodal" hidden></section>
-    <section id="view-macro" hidden></section>
-    <div id="view-prices" hidden>
+    <section id="view-trend" hidden></section>
+    <section id="view-chain" hidden></section>
+    <div id="view-db" hidden>
+    <section class="controls db-search"><input id="dbSearch" type="search" placeholder="搜索任何模型，例如 gpt-5、claude、veo、seedance、elevenlabs" aria-label="搜索模型"></section>
+    <div class="subtabs" id="dbTabs" role="tablist"></div>
+    <section id="db-mm" hidden></section>
+    <div id="db-text">
     <section class="card">
       <div class="card-head">
-        <h2>最近变化</h2>
+        <h2>最近变化（文本模型）</h2>
         <p class="change-summary" id="changeSummary"></p>
       </div>
       <ul id="changes" class="changes"></ul>
@@ -39,7 +43,7 @@
     </section>
 
     <section class="controls" aria-label="筛选">
-      <input id="search" type="search" placeholder="搜索模型，例如 gpt-5、claude、qwen" aria-label="搜索模型">
+      <input id="search" type="search" hidden placeholder="搜索模型，例如 gpt-5、claude、qwen" aria-label="搜索模型">
       <select id="segment" aria-label="分类"><option value="">全部分类</option></select>
       <select id="provider" aria-label="厂商"><option value="">全部厂商</option></select>
       <select id="context" aria-label="上下文长度">
@@ -86,9 +90,11 @@
       <p class="source" id="benchSource"></p>
     </section>
     </div>
+    </div>
   </main>
 
   <footer class="wrap meta">
+    <p class="meta" id="meta"></p>
     Token 价格每天自动抓取，只有变动时才新增记录，为标准按量计费（不含批处理、优先级等档位），以各厂商官网为准。财报数据来自美国证监会 EDGAR，股价来自 Alpha Vantage，用量和智能指数来自 OpenRouter 与 Artificial Analysis。
   </footer>
 
