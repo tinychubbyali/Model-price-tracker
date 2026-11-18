@@ -52,7 +52,6 @@ const lastChange = (m) => m.history.at(-1)?.date ?? m.firstSeen;
 function renderMeta() {
   const when = new Date(data.updatedAt).toLocaleString('zh-CN', { hour12: false });
   const n = Object.values(data.models).filter((m) => !m.removed).length;
-  $('#meta').innerHTML =
   const fxText = ['CNY', 'SGD'].filter((c) => rate(c)).map((c) => `${rate(c).toFixed(4)} ${c}`).join(' ≈ ');
   const fxSource = data.fx?.source
     ? `（<a href="${esc(data.fx.source)}" rel="noopener">${data.fx.source.includes('mas.gov.sg') ? '新加坡金管局' : '汇率来源'}</a>${data.fx.date ? ` ${esc(data.fx.date)}` : ''}）`
