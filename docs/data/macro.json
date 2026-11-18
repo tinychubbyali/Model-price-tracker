@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T06:59:22.244Z",
+ "updatedAt": "2026-11-18T07:00:41.401Z",
  "layers": [
   {
    "id": "compute",
@@ -55,56 +55,56 @@
   }
  ],
  "usageTop": {
-  "asOf": "2026-11-18T06:59:21.598Z",
+  "asOf": "2026-11-18T07:00:40.671Z",
   "week": "2026-11-09",
   "rows": [
    {
-    "slug": "deepseek/deepseek-v4.1-flash-20261017",
-    "tokens": 59226957518681,
+    "slug": "deepseek/deepseek-v4.1-flash",
+    "tokens": 74772084446525,
     "segment": "china"
    },
    {
-    "slug": "tencent/hy4-20261104",
+    "slug": "tencent/hy4",
     "tokens": 18121868313164,
     "segment": "china"
    },
    {
-    "slug": "deepseek/deepseek-v4.1-flash-20260910",
-    "tokens": 15545126927844,
-    "segment": "china"
-   },
-   {
-    "slug": "z-ai/glm-5.3-flash-20260826",
+    "slug": "z-ai/glm-5.3-flash",
     "tokens": 11903059258880,
     "segment": "china"
    },
    {
-    "slug": "openai/gpt-6-luna-20260922",
+    "slug": "openai/gpt-6-luna",
     "tokens": 7850806739142,
     "segment": "frontier"
    },
    {
-    "slug": "anthropic/claude-opus-5.5-20260921",
+    "slug": "anthropic/claude-opus-5.5",
     "tokens": 6983920751549,
     "segment": "frontier"
    },
    {
-    "slug": "stepfun/step-5-preview-20261008",
+    "slug": "stepfun/step-5-preview",
     "tokens": 6410275896570,
     "segment": "china"
    },
    {
-    "slug": "xiaomi/mimo-v2.6-flash-20260921",
+    "slug": "deepseek/deepseek-v4-flash",
+    "tokens": 5452005107745,
+    "segment": "china"
+   },
+   {
+    "slug": "xiaomi/mimo-v2.6-flash",
     "tokens": 4228020833267,
     "segment": "china"
    },
    {
-    "slug": "z-ai/glm-5.3-20260816",
+    "slug": "z-ai/glm-5.3",
     "tokens": 3758045975594,
     "segment": "china"
    },
    {
-    "slug": "openai/gpt-6.1-sol-20260929",
+    "slug": "openai/gpt-6.1-sol",
     "tokens": 3707400389614,
     "segment": "frontier"
    }
