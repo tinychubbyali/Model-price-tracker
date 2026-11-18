@@ -37,6 +37,9 @@ jobs:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
           ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      # Weekly indices and the review list are rebuilt from the files above.
+      - run: npm run build-weekly
+        continue-on-error: true
       - name: Commit price changes
         if: ${{ !inputs.dry_run }}
         run: |

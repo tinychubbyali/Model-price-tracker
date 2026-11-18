@@ -1,5 +1,6 @@
-import { renderMacro, renderOverview } from './macro-view.js';
-import { renderMultimodal } from './multimodal-view.js';
+import { chainCards, renderMacro } from './macro-view.js';
+import { MODALITIES, mmBuySection, renderMultimodal } from './multimodal-view.js';
+import { RANGES, renderHome, renderTrend } from './weekly-view.js';
 import { SEGMENTS, matchKey, segmentOf } from './segments.js';
 
 const PROVIDER_NAMES = {
@@ -25,14 +26,20 @@ const SCORE_NAMES = { intelligence: '综合智能', engineering: '工程', finan
 const CHANGES_SHOWN = 8;
 
 const $ = (sel) => document.querySelector(sel);
-const state = { currency: 'USD', sort: { key: 'provider', dir: 1 }, selected: null, tab: 'overview', caps: new Set(), allChanges: false, mmSub: 'video' };
-const TABS = ['overview', 'prices', 'multimodal', 'macro'];
-let data, changes, macro, bench, disclosed, mm;
+const state = { currency: 'USD', sort: { key: 'provider', dir: 1 }, selected: null, tab: 'overview', caps: new Set(), allChanges: false, dbSub: 'text', view: { kind: 'text', range: 53, method: 'chain' } };
+const TABS = ['overview', 'trend', 'chain', 'db'];
+let data, changes, macro, bench, disclosed, mm, weekly;
 
 function loadPrefs() {
   try {
     const c = localStorage.getItem('currency');
     if (c in CURRENCY_SYMBOLS) state.currency = c;
+    const r = localStorage.getItem('view.range');
+    if (r !== null && RANGES.some(([v]) => String(v) === r)) state.view.range = Number(r);
+    const k = localStorage.getItem('view.kind');
+    if (k === 'text' || k === 'mm') state.view.kind = k;
+    const m = localStorage.getItem('view.method');
+    if (m === 'chain' || m === 'median') state.view.method = m;
   } catch {}
 }
 
@@ -91,6 +98,9 @@ function renderMeta() {
   const fxSource = data.fx?.source
     ? `（<a href="${esc(data.fx.source)}" rel="noopener">${data.fx.source.includes('mas.gov.sg') ? '新加坡金管局' : '汇率来源'}</a>${data.fx.date ? ` ${esc(data.fx.date)}` : ''}）`
     : '';
+  const nm = mm ? Object.values(mm.models).filter((m) => !m.removed).length : 0;
+  $('#sub').textContent = `用 Token 价格读懂 AI 产业 · 收录 ${n} 个文本模型、${nm} 个多模态模型 · 数据更新于 ${when}` +
+    (data.backfill ? ` · 历史价格回溯至 ${data.backfill.from}` : '');
   $('#meta').innerHTML =
     `收录 ${n} 个模型 · 最后抓取 ${esc(when)} · ` +
     (fxText ? `汇率 1 USD ≈ ${fxText}${fxSource} · ` : '') +
@@ -231,8 +241,15 @@ function chartSvg(m, W) {
   const markers = points.flatMap((p) => ['input', 'output'].map((f, i) =>
     `<circle cx="${x(p.t)}" cy="${y(conv(p[f]))}" r="4" fill="var(--series-${i + 1})" stroke="var(--surface-1)" stroke-width="2"/>`)).join('');
 
+  // Dates before the daily fetch began were rebuilt from the price source's history.
+  const bfEnd = data.backfill ? Date.parse(data.backfill.until) : null;
+  const band = bfEnd && bfEnd > t0
+    ? `<rect x="${L}" y="${T}" width="${x(Math.min(bfEnd, t1)) - L}" height="${H - T - B}" fill="var(--band)"/>` +
+      (bfEnd < t1 ? `<text x="${x(bfEnd) - 4}" y="${T + 12}" text-anchor="end" fill="var(--accent)">回溯数据</text>` : '')
+    : '';
   return `
     <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(m.model)} 价格走势">
+      ${band}
       <g class="grid">${grid}</g>
       <text x="${L}" y="${H - 6}">${fmt(t0)}</text>
       <text x="${W - R}" y="${H - 6}" text-anchor="end">${fmt(t1)}</text>
@@ -325,7 +342,7 @@ function renderDetail() {
 
 function select(id) {
   state.selected = id;
-  history.replaceState(null, '', id ? `#${encodeURIComponent(id)}` : '#prices');
+  history.replaceState(null, '', id ? `#${encodeURIComponent(id)}` : '#db');
   renderDetail();
   renderTable();
   if (id) $('#detail').scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -334,40 +351,72 @@ function select(id) {
 // Axis labels for token prices: the same currency, fewer digits.
 const moneyAxis = (v) => money(v);
 
+function setView(key, value) {
+  state.view[key] = key === 'range' ? Number(value) : value;
+  savePref(`view.${key}`, value);
+  renderAll();
+}
+
+const rangeCtl = () => `<div class="seg small" data-ctl="range" role="group">${RANGES.map(([v, label]) => `<button type="button" data-v="${v}" aria-pressed="${v === state.view.range}">${esc(label)}</button>`).join('')}</div>`;
+
+function renderDb() {
+  const q = $('#dbSearch').value;
+  const ql = q.trim().toLowerCase();
+  const textCount = Object.entries(data.models).filter(([id, m]) => !m.removed && (!ql || id.toLowerCase().includes(ql))).length;
+  const mmCount = (id) => Object.values(mm?.models ?? {}).filter((m) => m.modality === id && !m.removed && (!ql || `${m.model} ${m.vendor}`.toLowerCase().includes(ql))).length;
+  const tabs = [['text', '文本 Token', textCount], ...MODALITIES.map((m) => [m.id, m.name, mmCount(m.id)])];
+  $('#dbTabs').innerHTML = tabs.map(([id, name, n]) => `<button type="button" data-sub="${id}" aria-pressed="${id === state.dbSub}">${esc(name)} <span class="count">${n}</span></button>`).join('');
+  const isText = state.dbSub === 'text';
+  $('#db-text').hidden = !isText;
+  $('#db-mm').hidden = isText;
+  if (isText) {
+    $('#search').value = q;
+    renderTable();
+    renderChanges();
+    renderDetail();
+  } else {
+    renderMultimodal($('#db-mm'), { mm, money, sub: state.dbSub, query: q });
+  }
+}
+
 function renderAll() {
   renderMeta();
   for (const t of TABS) $(`#view-${t}`).hidden = t !== state.tab;
   for (const a of document.querySelectorAll('[data-tab]')) {
     a.setAttribute('aria-current', a.dataset.tab === state.tab ? 'page' : 'false');
   }
-  if (state.tab === 'prices') {
-    renderTable();
-    renderChanges();
-    renderDetail();
-  } else if (state.tab === 'multimodal') {
-    renderMultimodal($('#view-multimodal'), {
-      mm, money, textModels: data.models, sub: state.mmSub,
-      onSub: (id) => { state.mmSub = id; history.replaceState(null, '', `#multimodal/${id}`); renderAll(); },
-    });
-  } else if (!macro) {
-    $(`#view-${state.tab}`).innerHTML = '<p class="empty">宏观数据还没有生成，下一次每日抓取后会出现。</p>';
+  if (state.tab === 'db') {
+    renderDb();
   } else if (state.tab === 'overview') {
-    renderOverview($('#view-overview'), { macro, money, changes, models: data.models });
+    renderHome($('#view-overview'), { weekly, macro, view: state.view, onView: setView, providerName, chainCards: macro ? chainCards(macro) : '' });
+  } else if (state.tab === 'trend') {
+    renderTrend($('#view-trend'), { weekly, view: state.view, onView: setView, money, providerName, buySection: mmBuySection(mm, data.models, money) });
+  } else if (!macro) {
+    $('#view-chain').innerHTML = '<p class="empty">宏观数据还没有生成，下一次每日抓取后会出现。</p>';
   } else {
-    renderMacro($('#view-macro'), { macro, money, moneyAxis, disclosed });
+    renderMacro($('#view-chain'), { macro, money, disclosed, weekly, range: state.view.range, rangeCtl: rangeCtl() });
+    for (const s of $('#view-chain').querySelectorAll('[data-ctl]')) {
+      s.addEventListener('click', (e) => { const b = e.target.closest('button[data-v]'); if (b) setView(s.dataset.ctl, b.dataset.v); });
+    }
   }
 }
 
-// A hash is a tab name, or a model id (which opens the price tab on that model).
+// A hash is a tab name, db/<modality>, or a model id (which opens the lookup page on that model).
+// Hashes from the previous layout (#prices, #multimodal/<x>, #macro) still land in the right place.
+const LEGACY = { prices: ['db', 'text'], macro: ['chain'], multimodal: ['db', 'video'] };
 function route() {
   const hash = decodeURIComponent(location.hash.slice(1));
+  const [head, sub] = hash.split('/');
   if (TABS.includes(hash)) {
     state.tab = hash;
-  } else if (hash.startsWith('multimodal/')) {
-    state.tab = 'multimodal';
-    state.mmSub = hash.slice('multimodal/'.length);
+  } else if (LEGACY[hash]) {
+    [state.tab, state.dbSub = state.dbSub] = LEGACY[hash];
+  } else if ((head === 'db' || head === 'multimodal') && sub) {
+    state.tab = 'db';
+    state.dbSub = sub;
   } else if (data.models[hash]) {
-    state.tab = 'prices';
+    state.tab = 'db';
+    state.dbSub = 'text';
     state.selected = hash;
   } else {
     state.tab = 'overview';
@@ -381,7 +430,15 @@ async function main() {
     ['data/prices.json', 'data/changes.json'].map((u) => fetch(u, { cache: 'no-cache' }).then((r) => r.json())));
   // macro.json appears after the first daily run that includes it; the price tab works without it.
   const optional = (u) => fetch(u, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-  [macro, bench, disclosed, mm] = await Promise.all(['data/macro.json', 'data/benchmarks.json', 'data/usage-disclosed.json', 'data/multimodal.json'].map(optional));
+  [macro, bench, disclosed, mm, weekly] = await Promise.all(['data/macro.json', 'data/benchmarks.json', 'data/usage-disclosed.json', 'data/multimodal.json', 'data/weekly.json'].map(optional));
+  $('#dbTabs').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-sub]');
+    if (!b) return;
+    state.dbSub = b.dataset.sub;
+    history.replaceState(null, '', state.dbSub === 'text' ? '#db' : `#db/${state.dbSub}`);
+    renderDb();
+  });
+  $('#dbSearch').addEventListener('input', renderDb);
 
   const providers = [...new Set(Object.values(data.models).map((m) => m.provider))];
   $('#segment').innerHTML += SEGMENTS.map((g) => `<option value="${g.id}">${esc(g.name)}</option>`).join('');
@@ -396,7 +453,7 @@ async function main() {
     renderTable();
   });
   $('#resetFilters').addEventListener('click', () => {
-    for (const id of ['#search', '#segment', '#provider', '#context', '#priceBand']) $(id).value = '';
+    for (const id of ['#segment', '#provider', '#context', '#priceBand']) $(id).value = '';
     for (const id of ['#changedOnly', '#showRemoved']) $(id).checked = false;
     state.caps.clear();
     for (const b of document.querySelectorAll('[data-cap]')) b.setAttribute('aria-pressed', 'false');
@@ -419,7 +476,7 @@ async function main() {
       renderAll();
     });
   }
-  for (const id of ['#search', '#segment', '#provider', '#context', '#priceBand', '#changedOnly', '#showRemoved']) $(id).addEventListener('input', renderTable);
+  for (const id of ['#segment', '#provider', '#context', '#priceBand', '#changedOnly', '#showRemoved']) $(id).addEventListener('input', renderTable);
   for (const th of document.querySelectorAll('#prices th[data-sort]')) {
     th.addEventListener('click', () => {
       const key = th.dataset.sort;

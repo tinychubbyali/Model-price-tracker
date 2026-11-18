@@ -17,10 +17,10 @@
    "output": 5,
    "cacheRead": 0.1,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 1,
      "output": 5,
      "cacheRead": 0.1
@@ -46,10 +46,10 @@
    "output": 15,
    "cacheRead": 0.3,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 3,
      "output": 15,
      "cacheRead": 0.3
@@ -75,10 +75,10 @@
    "output": 10,
    "cacheRead": 0.2,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-03",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-03",
      "input": 2,
      "output": 10,
      "cacheRead": 0.2
@@ -105,10 +105,16 @@
    "output": 10,
    "cacheRead": 0.1,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-10-04",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-10-04",
+     "input": 2,
+     "output": 10,
+     "cacheRead": 0.2
+    },
+    {
+     "date": "2026-10-11",
      "input": 2,
      "output": 10,
      "cacheRead": 0.1
@@ -135,10 +141,10 @@
    "output": 15,
    "cacheRead": 0.3,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-02-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-02-20",
      "input": 3,
      "output": 15,
      "cacheRead": 0.3
@@ -165,10 +171,10 @@
    "output": 25,
    "cacheRead": 0.5,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-07",
      "input": 5,
      "output": 25,
      "cacheRead": 0.5
@@ -194,10 +200,10 @@
    "output": 25,
    "cacheRead": 0.5,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-02-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-02-07",
      "input": 5,
      "output": 25,
      "cacheRead": 0.5
@@ -224,10 +230,10 @@
    "output": 25,
    "cacheRead": 0.5,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-04-18",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-04-18",
      "input": 5,
      "output": 25,
      "cacheRead": 0.5
@@ -254,10 +260,10 @@
    "output": 50,
    "cacheRead": 1,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-06-09",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-06-09",
      "input": 10,
      "output": 50,
      "cacheRead": 1
@@ -284,10 +290,10 @@
    "output": 50,
    "cacheRead": 0.25,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-05",
      "input": 10,
      "output": 50,
      "cacheRead": 0.25
@@ -314,10 +320,10 @@
    "output": 20,
    "cacheRead": 0.2,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 4,
      "output": 20,
      "cacheRead": 0.2
@@ -344,10 +350,10 @@
    "output": 25,
    "cacheRead": 0.5,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-24",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-24",
      "input": 5,
      "output": 25,
      "cacheRead": 0.5
@@ -374,10 +380,10 @@
    "output": 25,
    "cacheRead": 0.5,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-05-28",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-05-28",
      "input": 5,
      "output": 25,
      "cacheRead": 0.5
@@ -404,10 +410,10 @@
    "output": 12,
    "cacheRead": null,
    "source": "https://platform.openai.com/docs/models/computer-use-preview",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-12",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-12",
      "input": 3,
      "output": 12,
      "cacheRead": null
@@ -432,10 +438,16 @@
    "output": 0.42,
    "cacheRead": 0.028,
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.6,
+     "output": 1.7,
+     "cacheRead": 0.06
+    },
+    {
+     "date": "2026-01-17",
      "input": 0.28,
      "output": 0.42,
      "cacheRead": 0.028
@@ -457,10 +469,16 @@
    "output": 0.42,
    "cacheRead": 0.028,
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.6,
+     "output": 1.7,
+     "cacheRead": 0.06
+    },
+    {
+     "date": "2026-01-17",
      "input": 0.28,
      "output": 0.42,
      "cacheRead": 0.028
@@ -482,10 +500,10 @@
    "output": 1.5,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.3,
      "output": 1.5,
      "cacheRead": null
@@ -508,10 +526,10 @@
    "output": 6.4,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 1.6,
      "output": 6.4,
      "cacheRead": null
@@ -534,10 +552,10 @@
    "output": 1.2,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.4,
      "output": 1.2,
      "cacheRead": null
@@ -560,10 +578,10 @@
    "output": 0.2,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.05,
      "output": 0.2,
      "cacheRead": null
@@ -586,10 +604,10 @@
    "output": 0.2,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.05,
      "output": 0.2,
      "cacheRead": null
@@ -612,10 +630,10 @@
    "output": 1.2,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-07",
      "input": 0.15,
      "output": 1.2,
      "cacheRead": null
@@ -637,10 +655,10 @@
    "output": 1.2,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-07",
      "input": 0.15,
      "output": 1.2,
      "cacheRead": null
@@ -663,10 +681,10 @@
    "output": 1.6,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-07",
      "input": 0.4,
      "output": 1.6,
      "cacheRead": null
@@ -689,10 +707,10 @@
    "output": 4,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-07",
      "input": 0.4,
      "output": 4,
      "cacheRead": null
@@ -716,10 +734,10 @@
    "output": 0.64,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-07",
      "input": 0.16,
      "output": 0.64,
      "cacheRead": null
@@ -742,10 +760,10 @@
    "output": 2.87,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-07",
      "input": 0.16,
      "output": 2.87,
      "cacheRead": null
@@ -769,10 +787,10 @@
    "output": 7.5,
    "cacheRead": 0.5,
    "source": "https://www.alibabacloud.com/help/en/model-studio/models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-30",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-30",
      "input": 2.5,
      "output": 7.5,
      "cacheRead": 0.5
@@ -795,10 +813,10 @@
    "output": 6,
    "cacheRead": 0.25,
    "source": "https://www.alibabacloud.com/help/en/model-studio/models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-15",
      "input": 2,
      "output": 6,
      "cacheRead": 0.25
@@ -822,10 +840,10 @@
    "output": 0.47,
    "cacheRead": 0.016,
    "source": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/model-pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-20",
      "input": 0.15,
      "output": 0.47,
      "cacheRead": 0.016
@@ -851,10 +869,10 @@
    "output": 0.47,
    "cacheRead": 0.016,
    "source": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/model-pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-20",
      "input": 0.15,
      "output": 0.47,
      "cacheRead": 0.016
@@ -881,10 +899,10 @@
    "output": 2.4,
    "cacheRead": null,
    "source": "https://www.alibabacloud.com/help/en/model-studio/models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.8,
      "output": 2.4,
      "cacheRead": null
@@ -907,10 +925,16 @@
    "output": 0.28,
    "cacheRead": 0.014,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.14,
+     "output": 0.28,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-27",
      "input": 0.14,
      "output": 0.28,
      "cacheRead": 0.014
@@ -932,10 +956,16 @@
    "output": 2.19,
    "cacheRead": 0.14,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.55,
+     "output": 2.19,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-27",
      "input": 0.55,
      "output": 2.19,
      "cacheRead": 0.14
@@ -958,10 +988,10 @@
    "output": 1.1,
    "cacheRead": 0.07,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.27,
      "output": 1.1,
      "cacheRead": 0.07
@@ -983,10 +1013,16 @@
    "output": 0.4,
    "cacheRead": 0.028,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-07",
+     "input": 0.28,
+     "output": 0.4,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-27",
      "input": 0.28,
      "output": 0.4,
      "cacheRead": 0.028
@@ -1009,10 +1045,16 @@
    "output": 5,
    "cacheRead": 0.1,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-06",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-06",
+     "input": 2,
+     "output": 10,
+     "cacheRead": 0.2
+    },
+    {
+     "date": "2026-09-20",
      "input": 1,
      "output": 5,
      "cacheRead": 0.1
@@ -1040,10 +1082,10 @@
    "output": 1.5,
    "cacheRead": 0.025,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-07",
      "input": 0.25,
      "output": 1.5,
      "cacheRead": 0.025
@@ -1071,10 +1113,10 @@
    "output": 2.5,
    "cacheRead": 0.03,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.3,
      "output": 2.5,
      "cacheRead": 0.03
@@ -1101,10 +1143,16 @@
    "output": 0.4,
    "cacheRead": 0.01,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.1,
+     "output": 0.4,
+     "cacheRead": 0.025
+    },
+    {
+     "date": "2026-01-23",
      "input": 0.1,
      "output": 0.4,
      "cacheRead": 0.01
@@ -1131,10 +1179,22 @@
    "output": 3.75,
    "cacheRead": 0.075,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.3,
+     "output": 2.5,
+     "cacheRead": 0.075
+    },
+    {
+     "date": "2026-08-29",
+     "input": 0.3,
+     "output": 2.5,
+     "cacheRead": 0.03
+    },
+    {
+     "date": "2026-09-20",
      "input": 0.75,
      "output": 3.75,
      "cacheRead": 0.075
@@ -1162,10 +1222,22 @@
    "output": 2.5,
    "cacheRead": 0.03,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.1,
+     "output": 0.4,
+     "cacheRead": 0.025
+    },
+    {
+     "date": "2026-08-29",
+     "input": 0.1,
+     "output": 0.4,
+     "cacheRead": 0.01
+    },
+    {
+     "date": "2026-09-20",
      "input": 0.3,
      "output": 2.5,
      "cacheRead": 0.03
@@ -1193,10 +1265,16 @@
    "output": 10,
    "cacheRead": 0.125,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 1.25,
+     "output": 10,
+     "cacheRead": 0.3125
+    },
+    {
+     "date": "2026-01-17",
      "input": 1.25,
      "output": 10,
      "cacheRead": 0.125
@@ -1224,10 +1302,10 @@
    "output": 1.5,
    "cacheRead": 0.025,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-05-23",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-05-23",
      "input": 0.25,
      "output": 1.5,
      "cacheRead": 0.025
@@ -1255,10 +1333,10 @@
    "output": 2.5,
    "cacheRead": 0.03,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-24",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-24",
      "input": 0.3,
      "output": 2.5,
      "cacheRead": 0.03
@@ -1287,10 +1365,10 @@
    "output": 3,
    "cacheRead": 0.05,
    "source": "https://ai.google.dev/gemini-api/docs/deprecations",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-20",
      "input": 0.5,
      "output": 3,
      "cacheRead": 0.05
@@ -1318,10 +1396,10 @@
    "output": 9,
    "cacheRead": 0.15,
    "source": "https://ai.google.dev/gemini-api/docs/deprecations",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-05-23",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-05-23",
      "input": 1.5,
      "output": 9,
      "cacheRead": 0.15
@@ -1349,10 +1427,16 @@
    "output": 3.75,
    "cacheRead": 0.075,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-24",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-24",
+     "input": 1.5,
+     "output": 7.5,
+     "cacheRead": 0.15
+    },
+    {
+     "date": "2026-08-22",
      "input": 0.75,
      "output": 3.75,
      "cacheRead": 0.075
@@ -1380,10 +1464,10 @@
    "output": 3.75,
    "cacheRead": 0.075,
    "source": "https://ai.google.dev/gemini-api/docs/deprecations",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-15",
      "input": 0.75,
      "output": 3.75,
      "cacheRead": 0.075
@@ -1411,10 +1495,10 @@
    "output": 3.75,
    "cacheRead": 0.075,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-05",
      "input": 0.75,
      "output": 3.75,
      "cacheRead": 0.075
@@ -1443,10 +1527,10 @@
    "output": 9,
    "cacheRead": null,
    "source": "https://ai.google.dev/gemini-api/docs/deprecations",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-18",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-18",
      "input": 1.5,
      "output": 9,
      "cacheRead": null
@@ -1471,10 +1555,10 @@
    "output": 12,
    "cacheRead": 0.2,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-02-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-02-20",
      "input": 2,
      "output": 12,
      "cacheRead": 0.2
@@ -1502,10 +1586,10 @@
    "output": 12,
    "cacheRead": 0.2,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-02-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-02-20",
      "input": 2,
      "output": 12,
      "cacheRead": 0.2
@@ -1533,10 +1617,22 @@
    "output": 20,
    "cacheRead": 0.125,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 1.25,
+     "output": 10,
+     "cacheRead": 0.3125
+    },
+    {
+     "date": "2026-01-17",
+     "input": 1.25,
+     "output": 10,
+     "cacheRead": 0.125
+    },
+    {
+     "date": "2026-08-29",
      "input": 1,
      "output": 20,
      "cacheRead": 0.125
@@ -1556,10 +1652,10 @@
    "output": 1.05,
    "cacheRead": null,
    "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#foundation_models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.35,
      "output": 1.05,
      "cacheRead": null
@@ -1582,10 +1678,10 @@
    "output": 1.05,
    "cacheRead": null,
    "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#foundation_models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.35,
      "output": 1.05,
      "cacheRead": null
@@ -1608,10 +1704,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://aistudio.google.com",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -1634,10 +1730,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -1661,10 +1757,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -1688,10 +1784,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://aistudio.google.com",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -1714,10 +1810,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-28",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-28",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -1737,10 +1833,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://ai.google.dev/gemini-api/docs/deprecations",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-28",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-28",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -1760,10 +1856,10 @@
    "output": 1.5,
    "cacheRead": null,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.5,
      "output": 1.5,
      "cacheRead": null
@@ -1785,10 +1881,10 @@
    "output": 4,
    "cacheRead": null,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 3,
      "output": 4,
      "cacheRead": null
@@ -1808,10 +1904,10 @@
    "output": 60,
    "cacheRead": null,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 30,
      "output": 60,
      "cacheRead": null
@@ -1833,10 +1929,10 @@
    "output": 30,
    "cacheRead": null,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 10,
      "output": 30,
      "cacheRead": null
@@ -1858,10 +1954,10 @@
    "output": 30,
    "cacheRead": null,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 10,
      "output": 30,
      "cacheRead": null
@@ -1885,10 +1981,10 @@
    "output": 8,
    "cacheRead": 0.5,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 2,
      "output": 8,
      "cacheRead": 0.5
@@ -1913,10 +2009,10 @@
    "output": 1.6,
    "cacheRead": 0.1,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.4,
      "output": 1.6,
      "cacheRead": 0.1
@@ -1941,10 +2037,10 @@
    "output": 0.4,
    "cacheRead": 0.025,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.1,
      "output": 0.4,
      "cacheRead": 0.025
@@ -1968,10 +2064,10 @@
    "output": 10,
    "cacheRead": 1.25,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 2.5,
      "output": 10,
      "cacheRead": 1.25
@@ -1995,10 +2091,10 @@
    "output": 10,
    "cacheRead": null,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-01-23",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-01-23",
      "input": 2.5,
      "output": 10,
      "cacheRead": null
@@ -2021,10 +2117,10 @@
    "output": 10,
    "cacheRead": null,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-02-28",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-02-28",
      "input": 2.5,
      "output": 10,
      "cacheRead": null
@@ -2047,10 +2143,10 @@
    "output": 2.4,
    "cacheRead": null,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-01-23",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-01-23",
      "input": 0.6,
      "output": 2.4,
      "cacheRead": null
@@ -2073,10 +2169,10 @@
    "output": 0.6,
    "cacheRead": 0.075,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.15,
      "output": 0.6,
      "cacheRead": 0.075
@@ -2100,10 +2196,10 @@
    "output": 0.6,
    "cacheRead": 0.075,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.15,
      "output": 0.6,
      "cacheRead": 0.075
@@ -2128,10 +2224,10 @@
    "output": 10,
    "cacheRead": 1.25,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 2.5,
      "output": 10,
      "cacheRead": 1.25
@@ -2156,10 +2252,10 @@
    "output": 10,
    "cacheRead": 0.125,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 1.25,
      "output": 10,
      "cacheRead": 0.125
@@ -2185,10 +2281,10 @@
    "output": 10,
    "cacheRead": 0.125,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 1.25,
      "output": 10,
      "cacheRead": 0.125
@@ -2214,10 +2310,10 @@
    "output": 10,
    "cacheRead": 0.125,
    "source": "https://developers.openai.com/api/docs/models/gpt-5.1-chat-latest",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 1.25,
      "output": 10,
      "cacheRead": 0.125
@@ -2242,10 +2338,10 @@
    "output": 14,
    "cacheRead": 0.175,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-14",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-14",
      "input": 1.75,
      "output": 14,
      "cacheRead": 0.175
@@ -2271,10 +2367,10 @@
    "output": 14,
    "cacheRead": 0.175,
    "source": "https://developers.openai.com/api/docs/models/gpt-5.2-chat-latest",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-14",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-14",
      "input": 1.75,
      "output": 14,
      "cacheRead": 0.175
@@ -2299,10 +2395,10 @@
    "output": 50,
    "cacheRead": 1,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-05",
      "input": 10,
      "output": 50,
      "cacheRead": 1
@@ -2329,10 +2425,10 @@
    "output": 10,
    "cacheRead": 0.2,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 2,
      "output": 10,
      "cacheRead": 0.2
@@ -2359,10 +2455,10 @@
    "output": 0.5,
    "cacheRead": 0.01,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 0.1,
      "output": 0.5,
      "cacheRead": 0.01
@@ -2389,10 +2485,16 @@
    "output": 20,
    "cacheRead": 0.4,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-11",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-11",
+     "input": 5,
+     "output": 30,
+     "cacheRead": 0.5
+    },
+    {
+     "date": "2026-08-22",
      "input": 4,
      "output": 20,
      "cacheRead": 0.4
@@ -2418,10 +2520,16 @@
    "output": 20,
    "cacheRead": 0.4,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-11",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-11",
+     "input": 5,
+     "output": 30,
+     "cacheRead": 0.5
+    },
+    {
+     "date": "2026-08-22",
      "input": 4,
      "output": 20,
      "cacheRead": 0.4
@@ -2448,10 +2556,16 @@
    "output": 12,
    "cacheRead": 0.2,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-11",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-11",
+     "input": 2.5,
+     "output": 15,
+     "cacheRead": 0.25
+    },
+    {
+     "date": "2026-07-30",
      "input": 2,
      "output": 12,
      "cacheRead": 0.2
@@ -2477,10 +2591,16 @@
    "output": 1.2,
    "cacheRead": 0.02,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-11",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-11",
+     "input": 1,
+     "output": 6,
+     "cacheRead": 0.1
+    },
+    {
+     "date": "2026-07-30",
      "input": 0.2,
      "output": 1.2,
      "cacheRead": 0.02
@@ -2506,10 +2626,10 @@
    "output": 75,
    "cacheRead": 1.25,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-22",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-22",
      "input": 12.5,
      "output": 75,
      "cacheRead": 1.25
@@ -2536,10 +2656,10 @@
    "output": 75,
    "cacheRead": 1.25,
    "source": "https://developers.openai.com/api/docs/models/gpt-daybreak-red-latest",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-22",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-22",
      "input": 12.5,
      "output": 75,
      "cacheRead": 1.25
@@ -2566,10 +2686,10 @@
    "output": 20,
    "cacheRead": 0.4,
    "source": "https://developers.openai.com/api/docs/models/gpt-daybreak-blue-latest",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-22",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-22",
      "input": 4,
      "output": 20,
      "cacheRead": 0.4
@@ -2596,10 +2716,10 @@
    "output": 30,
    "cacheRead": 0.5,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-22",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-22",
      "input": 5,
      "output": 30,
      "cacheRead": 0.5
@@ -2625,10 +2745,10 @@
    "output": 30,
    "cacheRead": 0.5,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-04-25",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-04-25",
      "input": 5,
      "output": 30,
      "cacheRead": 0.5
@@ -2654,10 +2774,10 @@
    "output": 15,
    "cacheRead": 0.25,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-07",
      "input": 2.5,
      "output": 15,
      "cacheRead": 0.25
@@ -2682,10 +2802,10 @@
    "output": 4.5,
    "cacheRead": 0.075,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-21",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-21",
      "input": 0.75,
      "output": 4.5,
      "cacheRead": 0.075
@@ -2711,10 +2831,10 @@
    "output": 1.25,
    "cacheRead": 0.02,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-21",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-21",
      "input": 0.2,
      "output": 1.25,
      "cacheRead": 0.02
@@ -2740,10 +2860,10 @@
    "output": 10,
    "cacheRead": 0.125,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 1.25,
      "output": 10,
      "cacheRead": 0.125
@@ -2767,10 +2887,10 @@
    "output": 10,
    "cacheRead": 0.125,
    "source": "https://developers.openai.com/api/docs/models/gpt-5-chat-latest",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 1.25,
      "output": 10,
      "cacheRead": 0.125
@@ -2795,10 +2915,10 @@
    "output": 14,
    "cacheRead": 0.175,
    "source": "https://developers.openai.com/api/docs/models/gpt-5.3-chat-latest",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-07",
      "input": 1.75,
      "output": 14,
      "cacheRead": 0.175
@@ -2823,10 +2943,10 @@
    "output": 2,
    "cacheRead": 0.025,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.25,
      "output": 2,
      "cacheRead": 0.025
@@ -2852,10 +2972,10 @@
    "output": 0.4,
    "cacheRead": 0.005,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.05,
      "output": 0.4,
      "cacheRead": 0.005
@@ -2881,10 +3001,22 @@
    "output": 0.9,
    "cacheRead": 0.03,
    "source": "https://docs.mistral.ai/models/model-cards/codestral-25-08",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 1,
+     "output": 3,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-22",
+     "input": 0.3,
+     "output": 0.9,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-29",
      "input": 0.3,
      "output": 0.9,
      "cacheRead": 0.03
@@ -2906,10 +3038,16 @@
    "output": 0.25,
    "cacheRead": 0.025,
    "source": "https://mistral.ai/technology/",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.25,
+     "output": 0.25,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-20",
      "input": 0.25,
      "output": 0.25,
      "cacheRead": 0.025
@@ -2929,10 +3067,16 @@
    "output": 0.3,
    "cacheRead": 0.01,
    "source": "https://docs.mistral.ai/models/devstral-small-2-25-12",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-02-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-02-20",
+     "input": 0.1,
+     "output": 0.3,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-20",
      "input": 0.1,
      "output": 0.3,
      "cacheRead": 0.01
@@ -2955,10 +3099,16 @@
    "output": 2,
    "cacheRead": 0.04,
    "source": "https://mistral.ai/news/devstral-2-vibe-cli",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-02-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-02-20",
+     "input": 0.4,
+     "output": 2,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-20",
      "input": 0.4,
      "output": 2,
      "cacheRead": 0.04
@@ -2981,10 +3131,16 @@
    "output": 2,
    "cacheRead": 0.04,
    "source": "https://mistral.ai/news/devstral-2-vibe-cli",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-02-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-02-20",
+     "input": 0.4,
+     "output": 2,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-20",
      "input": 0.4,
      "output": 2,
      "cacheRead": 0.04
@@ -3007,10 +3163,16 @@
    "output": 0.2,
    "cacheRead": 0.02,
    "source": "https://docs.mistral.ai/models/ministral-3-14b-25-12",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
+     "input": 0.2,
+     "output": 0.2,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-05",
      "input": 0.2,
      "output": 0.2,
      "cacheRead": 0.02
@@ -3033,10 +3195,16 @@
    "output": 0.1,
    "cacheRead": 0.01,
    "source": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
+     "input": 0.1,
+     "output": 0.1,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-05",
      "input": 0.1,
      "output": 0.1,
      "cacheRead": 0.01
@@ -3059,10 +3227,16 @@
    "output": 7.5,
    "cacheRead": 0.15,
    "source": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
+     "input": 1.5,
+     "output": 7.5,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-20",
      "input": 1.5,
      "output": 7.5,
      "cacheRead": 0.15
@@ -3086,10 +3260,16 @@
    "output": 0.4,
    "cacheRead": 0.01,
    "source": "https://docs.mistral.ai/models/voxtral-small-25-07",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
+     "input": 0.1,
+     "output": 0.4,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-20",
      "input": 0.1,
      "output": 0.4,
      "cacheRead": 0.01
@@ -3112,10 +3292,10 @@
    "output": 4.4,
    "cacheRead": 0.14,
    "source": "https://docs.mistral.ai/models/zai-glm-5-2",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-22",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-22",
      "input": 1.4,
      "output": 4.4,
      "cacheRead": 0.14
@@ -3138,10 +3318,10 @@
    "output": 4.4,
    "cacheRead": 0.14,
    "source": "https://docs.mistral.ai/models/zai-glm-5-3",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-20",
      "input": 1.4,
      "output": 4.4,
      "cacheRead": 0.14
@@ -3164,10 +3344,10 @@
    "output": 0.5,
    "cacheRead": 0.03,
    "source": "https://docs.mistral.ai/models/zai-glm-5-3-flash",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-10-24",
      "input": 0.15,
      "output": 0.5,
      "cacheRead": 0.03
@@ -3191,10 +3371,10 @@
    "output": 4.4,
    "cacheRead": 0.14,
    "source": "https://docs.mistral.ai/models/zai-glm-5-3",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-20",
      "input": 1.4,
      "output": 4.4,
      "cacheRead": 0.14
@@ -3217,10 +3397,10 @@
    "output": 4.4,
    "cacheRead": 0.14,
    "source": "https://docs.mistral.ai/models/zai-glm-5-3",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-20",
      "input": 1.4,
      "output": 4.4,
      "cacheRead": 0.14
@@ -3243,10 +3423,10 @@
    "output": 4.4,
    "cacheRead": 0.14,
    "source": "https://docs.mistral.ai/models/zai-glm-5-2",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-22",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-22",
      "input": 1.4,
      "output": 4.4,
      "cacheRead": 0.14
@@ -3269,10 +3449,16 @@
    "output": 7.5,
    "cacheRead": 0.15,
    "source": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 2,
+     "output": 5,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-05",
      "input": 1.5,
      "output": 7.5,
      "cacheRead": 0.15
@@ -3296,10 +3482,16 @@
    "output": 0.6,
    "cacheRead": 0.015,
    "source": "https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.5,
+     "output": 1.5,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-05",
      "input": 0.15,
      "output": 0.6,
      "cacheRead": 0.015
@@ -3323,10 +3515,10 @@
    "output": 2.1,
    "cacheRead": 0.07,
    "source": "https://docs.mistral.ai/models/mistral-large-4-0",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-10-11",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-10-11",
      "input": 0.68,
      "output": 2.09,
      "cacheRead": 0.068
@@ -3362,10 +3554,10 @@
    "output": 2.1,
    "cacheRead": 0.07,
    "source": "https://docs.mistral.ai/models/mistral-large-4-0",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-10-11",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-10-11",
      "input": 0.68,
      "output": 2.09,
      "cacheRead": 0.068
@@ -3401,10 +3593,22 @@
    "output": 1.5,
    "cacheRead": 0.05,
    "source": "https://docs.mistral.ai/models/mistral-large-3-25-12",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 2,
+     "output": 6,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-03-07",
+     "input": 0.5,
+     "output": 1.5,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-29",
      "input": 0.5,
      "output": 1.5,
      "cacheRead": 0.05
@@ -3427,10 +3631,16 @@
    "output": 1.5,
    "cacheRead": 0.05,
    "source": "https://docs.mistral.ai/models/mistral-large-3-25-12",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-07",
+     "input": 0.5,
+     "output": 1.5,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-29",
      "input": 0.5,
      "output": 1.5,
      "cacheRead": 0.05
@@ -3453,10 +3663,16 @@
    "output": 7.5,
    "cacheRead": 0.15,
    "source": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 2.7,
+     "output": 8.1,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-05",
      "input": 1.5,
      "output": 7.5,
      "cacheRead": 0.15
@@ -3480,10 +3696,22 @@
    "output": 7.5,
    "cacheRead": 0.15,
    "source": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.4,
+     "output": 2,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-06-27",
+     "input": 1.5,
+     "output": 7.5,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-29",
      "input": 1.5,
      "output": 7.5,
      "cacheRead": 0.15
@@ -3507,10 +3735,16 @@
    "output": 7.5,
    "cacheRead": 0.15,
    "source": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-06-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-06-20",
+     "input": 1.5,
+     "output": 7.5,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-29",
      "input": 1.5,
      "output": 7.5,
      "cacheRead": 0.15
@@ -3534,10 +3768,16 @@
    "output": 0.3,
    "cacheRead": 0.01,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.1,
+     "output": 0.3,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-20",
      "input": 0.1,
      "output": 0.3,
      "cacheRead": 0.01
@@ -3560,10 +3800,28 @@
    "output": 0.6,
    "cacheRead": 0.015,
    "source": "https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.1,
+     "output": 0.3,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-03-07",
+     "input": 0.06,
+     "output": 0.18,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-22",
+     "input": 0.15,
+     "output": 0.6,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-29",
      "input": 0.15,
      "output": 0.6,
      "cacheRead": 0.015
@@ -3587,10 +3845,16 @@
    "output": 0.15,
    "cacheRead": 0.015,
    "source": "https://mistral.ai/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-06-06",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-06-06",
+     "input": 0.15,
+     "output": 0.15,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-29",
      "input": 0.15,
      "output": 0.15,
      "cacheRead": 0.015
@@ -3613,10 +3877,16 @@
    "output": 0.25,
    "cacheRead": 0.025,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.25,
+     "output": 0.25,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-20",
      "input": 0.25,
      "output": 0.25,
      "cacheRead": 0.025
@@ -3636,10 +3906,16 @@
    "output": 0.3,
    "cacheRead": 0.03,
    "source": "https://mistral.ai/technology/",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.3,
+     "output": 0.3,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-20",
      "input": 0.3,
      "output": 0.3,
      "cacheRead": 0.03
@@ -3659,10 +3935,16 @@
    "output": 6,
    "cacheRead": 0.2,
    "source": null,
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 2,
+     "output": 6,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-20",
      "input": 2,
      "output": 6,
      "cacheRead": 0.2
@@ -3685,10 +3967,10 @@
    "output": 4,
    "cacheRead": 0.19,
    "source": "https://platform.kimi.ai/docs/pricing/chat-k27-code",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 0.95,
      "output": 4,
      "cacheRead": 0.19
@@ -3713,10 +3995,10 @@
    "output": 3,
    "cacheRead": 0.1,
    "source": "https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-02-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-02-07",
      "input": 0.6,
      "output": 3,
      "cacheRead": 0.1
@@ -3741,10 +4023,10 @@
    "output": 4,
    "cacheRead": 0.16,
    "source": "https://platform.kimi.ai/docs/pricing/chat-k26",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-04-25",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-04-25",
      "input": 0.95,
      "output": 4,
      "cacheRead": 0.16
@@ -3769,10 +4051,10 @@
    "output": 15,
    "cacheRead": 0.3,
    "source": "https://platform.kimi.ai/docs/pricing/chat-k3",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-22",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-22",
      "input": 3,
      "output": 15,
      "cacheRead": 0.3
@@ -3797,10 +4079,10 @@
    "output": 5,
    "cacheRead": null,
    "source": "https://platform.moonshot.ai/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 2,
      "output": 5,
      "cacheRead": null
@@ -3822,10 +4104,10 @@
    "output": 5,
    "cacheRead": null,
    "source": "https://platform.moonshot.ai/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 2,
      "output": 5,
      "cacheRead": null
@@ -3848,10 +4130,10 @@
    "output": 3,
    "cacheRead": null,
    "source": "https://platform.moonshot.ai/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 1,
      "output": 3,
      "cacheRead": null
@@ -3873,10 +4155,10 @@
    "output": 3,
    "cacheRead": null,
    "source": "https://platform.moonshot.ai/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 1,
      "output": 3,
      "cacheRead": null
@@ -3899,10 +4181,10 @@
    "output": 2,
    "cacheRead": null,
    "source": "https://platform.moonshot.ai/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.2,
      "output": 2,
      "cacheRead": null
@@ -3924,10 +4206,10 @@
    "output": 2,
    "cacheRead": null,
    "source": "https://platform.moonshot.ai/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 0.2,
      "output": 2,
      "cacheRead": null
@@ -3950,10 +4232,10 @@
    "output": 5,
    "cacheRead": null,
    "source": "https://platform.moonshot.ai/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 2,
      "output": 5,
      "cacheRead": null
@@ -3975,10 +4257,10 @@
    "output": 60,
    "cacheRead": 7.5,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 15,
      "output": 60,
      "cacheRead": 7.5
@@ -4003,10 +4285,10 @@
    "output": 8,
    "cacheRead": 0.5,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 2,
      "output": 8,
      "cacheRead": 0.5
@@ -4032,10 +4314,10 @@
    "output": 4.4,
    "cacheRead": 0.55,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 1.1,
      "output": 4.4,
      "cacheRead": 0.55
@@ -4058,10 +4340,10 @@
    "output": 4.4,
    "cacheRead": 0.275,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
      "input": 1.1,
      "output": 4.4,
      "cacheRead": 0.275
@@ -4087,10 +4369,16 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-21",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-21",
+     "input": 2,
+     "output": 6,
+     "cacheRead": 0.2
+    },
+    {
+     "date": "2026-08-15",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -4115,10 +4403,16 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-04-18",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-04-18",
+     "input": 2,
+     "output": 6,
+     "cacheRead": 0.2
+    },
+    {
+     "date": "2026-08-15",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -4143,10 +4437,16 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-21",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-21",
+     "input": 2,
+     "output": 6,
+     "cacheRead": 0.2
+    },
+    {
+     "date": "2026-08-15",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -4170,10 +4470,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-05-09",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-05-09",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -4198,10 +4498,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-05-09",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-05-09",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -4226,10 +4526,16 @@
    "output": 6,
    "cacheRead": 0.3,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-11",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-11",
+     "input": 2,
+     "output": 6,
+     "cacheRead": 0.5
+    },
+    {
+     "date": "2026-08-15",
      "input": 2,
      "output": 6,
      "cacheRead": 0.3
@@ -4254,10 +4560,16 @@
    "output": 6,
    "cacheRead": 0.3,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-07-11",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-07-11",
+     "input": 2,
+     "output": 6,
+     "cacheRead": 0.5
+    },
+    {
+     "date": "2026-08-15",
      "input": 2,
      "output": 6,
      "cacheRead": 0.3
@@ -4282,10 +4594,10 @@
    "output": 6,
    "cacheRead": 0.3,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-05",
      "input": 2,
      "output": 6,
      "cacheRead": 0.3
@@ -4310,10 +4622,10 @@
    "output": 6,
    "cacheRead": 0.5,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-15",
      "input": 2,
      "output": 6,
      "cacheRead": 0.5
@@ -4338,10 +4650,10 @@
    "output": 6,
    "cacheRead": 0.5,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 2,
      "output": 6,
      "cacheRead": 0.5
@@ -4366,10 +4678,10 @@
    "output": 3.2,
    "cacheRead": 0.2,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-07",
      "input": 1,
      "output": 3.2,
      "cacheRead": 0.2
@@ -4392,10 +4704,10 @@
    "output": 4.4,
    "cacheRead": 0.26,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 1.4,
      "output": 4.4,
      "cacheRead": 0.26
@@ -4418,10 +4730,10 @@
    "output": 0.5,
    "cacheRead": 0.03,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 0.15,
      "output": 0.5,
      "cacheRead": 0.03
@@ -4445,10 +4757,10 @@
    "output": 4.4,
    "cacheRead": 0.26,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-06-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-06-27",
      "input": 1.4,
      "output": 4.4,
      "cacheRead": 0.26
@@ -4471,10 +4783,10 @@
    "output": 5,
    "cacheRead": 0.3,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-03-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-03-07",
      "input": 1.2,
      "output": 5,
      "cacheRead": 0.3
@@ -4497,10 +4809,10 @@
    "output": 2.2,
    "cacheRead": 0.11,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-01-04",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-01-04",
      "input": 0.6,
      "output": 2.2,
      "cacheRead": 0.11
@@ -4523,10 +4835,10 @@
    "output": 0,
    "cacheRead": 0,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-06-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-06-27",
      "input": 0,
      "output": 0,
      "cacheRead": 0
@@ -4549,10 +4861,16 @@
    "output": 2.2,
    "cacheRead": 0.11,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-07",
+     "input": 0.6,
+     "output": 2.2,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
      "input": 0.6,
      "output": 2.2,
      "cacheRead": 0.11
@@ -4575,10 +4893,10 @@
    "output": 2.2,
    "cacheRead": null,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-07",
      "input": 0.6,
      "output": 2.2,
      "cacheRead": null
@@ -4600,10 +4918,10 @@
    "output": 1.8,
    "cacheRead": null,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-07",
      "input": 0.6,
      "output": 1.8,
      "cacheRead": null
@@ -4626,10 +4944,10 @@
    "output": 8.9,
    "cacheRead": null,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-07",
      "input": 2.2,
      "output": 8.9,
      "cacheRead": null
@@ -4651,10 +4969,10 @@
    "output": 1.1,
    "cacheRead": null,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-07",
      "input": 0.2,
      "output": 1.1,
      "cacheRead": null
@@ -4676,10 +4994,10 @@
    "output": 4.5,
    "cacheRead": null,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-07",
      "input": 1.1,
      "output": 4.5,
      "cacheRead": null
@@ -4701,10 +5019,10 @@
    "output": 0.1,
    "cacheRead": null,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-07",
      "input": 0.1,
      "output": 0.1,
      "cacheRead": null
@@ -4726,10 +5044,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-12-07",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -4751,10 +5069,10 @@
    "output": 10,
    "cacheRead": 0.125,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-02-14",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-02-14",
      "input": 1.25,
      "output": 10,
      "cacheRead": 0.125
@@ -4779,10 +5097,16 @@
    "output": 12,
    "cacheRead": 0.2,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-02-14",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-02-14",
+     "input": 1.25,
+     "output": 10,
+     "cacheRead": 0.125
+    },
+    {
+     "date": "2026-09-20",
      "input": 2,
      "output": 12,
      "cacheRead": 0.2
@@ -4810,10 +5134,10 @@
    "output": 1.2,
    "cacheRead": 0.006,
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-12",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-12",
      "input": 0.3,
      "output": 1.2,
      "cacheRead": 0.006
@@ -4837,10 +5161,22 @@
    "output": 1.2,
    "cacheRead": 0.006,
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-06-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-06-20",
+     "input": 0.14,
+     "output": 0.28,
+     "cacheRead": 0.0028
+    },
+    {
+     "date": "2026-08-22",
+     "input": 0.44,
+     "output": 1.32,
+     "cacheRead": 0.014
+    },
+    {
+     "date": "2026-09-12",
      "input": 0.3,
      "output": 1.2,
      "cacheRead": 0.006
@@ -4864,10 +5200,16 @@
    "output": 1.2,
    "cacheRead": 0.006,
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
+     "input": 0.44,
+     "output": 1.32,
+     "cacheRead": 0.014
+    },
+    {
+     "date": "2026-09-12",
      "input": 0.3,
      "output": 1.2,
      "cacheRead": 0.006
@@ -4891,10 +5233,16 @@
    "output": 3.96,
    "cacheRead": 0.044,
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-06-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-06-20",
+     "input": 0.435,
+     "output": 0.87,
+     "cacheRead": 0.003625
+    },
+    {
+     "date": "2026-08-22",
      "input": 1.32,
      "output": 3.96,
      "cacheRead": 0.044
@@ -4917,10 +5265,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-15",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -4944,10 +5292,10 @@
    "output": 2,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-15",
      "input": 1,
      "output": 2,
      "cacheRead": 0.2
@@ -4971,10 +5319,10 @@
    "output": 50,
    "cacheRead": 1,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-15",
      "input": 10,
      "output": 50,
      "cacheRead": 1
@@ -5000,10 +5348,10 @@
    "output": 50,
    "cacheRead": 0.25,
    "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-05",
      "input": 10,
      "output": 50,
      "cacheRead": 0.25
@@ -5029,10 +5377,10 @@
    "output": 50,
    "cacheRead": 1,
    "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-15",
      "input": 10,
      "output": 50,
      "cacheRead": 1
@@ -5058,10 +5406,16 @@
    "output": 5,
    "cacheRead": null,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-15",
+     "input": 2,
+     "output": 10,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-27",
      "input": 1,
      "output": 5,
      "cacheRead": null
@@ -5088,10 +5442,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://docs.mistral.ai/models/model-cards/leanstral-1-5",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-15",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -5115,10 +5469,10 @@
    "output": 9,
    "cacheRead": null,
    "source": "https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 1.5,
      "output": 9,
      "cacheRead": null
@@ -5143,10 +5497,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5171,10 +5525,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5199,10 +5553,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5227,10 +5581,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5254,10 +5608,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5281,10 +5635,10 @@
    "output": 7.5,
    "cacheRead": 0.15,
    "source": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 1.5,
      "output": 7.5,
      "cacheRead": 0.15
@@ -5308,10 +5662,10 @@
    "output": 7.5,
    "cacheRead": 0.15,
    "source": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 1.5,
      "output": 7.5,
      "cacheRead": 0.15
@@ -5335,10 +5689,10 @@
    "output": 7.5,
    "cacheRead": 0.15,
    "source": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 1.5,
      "output": 7.5,
      "cacheRead": 0.15
@@ -5362,10 +5716,10 @@
    "output": 0.6,
    "cacheRead": 0.015,
    "source": "https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 0.15,
      "output": 0.6,
      "cacheRead": 0.015
@@ -5389,10 +5743,10 @@
    "output": 0.9,
    "cacheRead": 0.03,
    "source": "https://docs.mistral.ai/models/model-cards/codestral-25-08",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 0.3,
      "output": 0.9,
      "cacheRead": 0.03
@@ -5414,10 +5768,10 @@
    "output": 0.9,
    "cacheRead": 0.03,
    "source": "https://docs.mistral.ai/models/model-cards/codestral-25-08",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 0.3,
      "output": 0.9,
      "cacheRead": 0.03
@@ -5439,10 +5793,16 @@
    "output": 2,
    "cacheRead": 0.04,
    "source": "https://mistral.ai/news/devstral-2-vibe-cli",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
+     "input": 0.4,
+     "output": 2,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-09-20",
      "input": 0.4,
      "output": 2,
      "cacheRead": 0.04
@@ -5465,10 +5825,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://docs.mistral.ai/models/model-cards/leanstral-1-5",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-08-29",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -5492,10 +5852,10 @@
    "output": 4.4,
    "cacheRead": 0.26,
    "source": "https://docs.z.ai/guides/overview/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-05",
      "input": 1.4,
      "output": 4.4,
      "cacheRead": 0.26
@@ -5518,10 +5878,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-05",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -5541,10 +5901,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-05",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -5564,10 +5924,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-12",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-12",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -5587,10 +5947,10 @@
    "output": 0,
    "cacheRead": null,
    "source": "https://ai.google.dev/gemini-api/docs/models/lyria-realtime-exp",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 0,
      "output": 0,
      "cacheRead": null
@@ -5610,10 +5970,10 @@
    "output": 75,
    "cacheRead": 1.25,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-20",
      "input": 12.5,
      "output": 75,
      "cacheRead": 1.25
@@ -5635,10 +5995,10 @@
    "output": 75,
    "cacheRead": 1.25,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-10-18",
      "input": 12.5,
      "output": 75,
      "cacheRead": 1.25
@@ -5660,10 +6020,10 @@
    "output": 25,
    "cacheRead": 0.5,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-20",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-20",
      "input": 5,
      "output": 25,
      "cacheRead": 0.5
@@ -5683,10 +6043,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5711,10 +6071,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5739,10 +6099,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5766,10 +6126,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5794,10 +6154,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5821,10 +6181,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5849,10 +6209,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5876,10 +6236,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5904,10 +6264,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5932,10 +6292,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5959,10 +6319,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -5987,10 +6347,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -6014,10 +6374,10 @@
    "output": 2.5,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-09-27",
      "input": 1.25,
      "output": 2.5,
      "cacheRead": 0.2
@@ -6042,10 +6402,16 @@
    "output": 2,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.2,
+     "output": 1.5,
+     "cacheRead": 0.02
+    },
+    {
+     "date": "2026-08-15",
      "input": 1,
      "output": 2,
      "cacheRead": 0.2
@@ -6069,10 +6435,16 @@
    "output": 2,
    "cacheRead": 0.2,
    "source": "https://api.x.ai/v1/language-models",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2025-11-15",
+     "input": 0.2,
+     "output": 1.5,
+     "cacheRead": 0.02
+    },
+    {
+     "date": "2026-08-15",
      "input": 1,
      "output": 2,
      "cacheRead": 0.2
@@ -6096,10 +6468,10 @@
    "output": 10,
    "cacheRead": 0.1,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-10-04",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-10-04",
      "input": 2,
      "output": 10,
      "cacheRead": 0.1
@@ -6126,10 +6498,10 @@
    "output": 0.5,
    "cacheRead": 0.01,
    "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-10-11",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-10-11",
      "input": 0.1,
      "output": 0.5,
      "cacheRead": 0.01
@@ -6156,10 +6528,10 @@
    "output": 25,
    "cacheRead": 0.5,
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-10-11",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-10-11",
      "input": 5,
      "output": 25,
      "cacheRead": 0.5
@@ -6179,10 +6551,10 @@
    "output": 10,
    "cacheRead": 0.1,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-10-27",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-10-27",
+     "date": "2026-10-18",
      "input": 2,
      "output": 10,
      "cacheRead": 0.1
@@ -6679,6 +7051,3161 @@
     ],
     "deprecation": null
    }
+  },
+  "openai/chatgpt-4o-latest": {
+   "provider": "openai",
+   "model": "chatgpt-4o-latest",
+   "input": 5,
+   "output": 15,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 4096,
+    "caps": [
+     "vision",
+     "tools",
+     "pdf"
+    ],
+    "deprecation": "2026-02-17"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 5,
+     "output": 15,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "anthropic/claude-3-5-haiku-latest": {
+   "provider": "anthropic",
+   "model": "claude-3-5-haiku-latest",
+   "input": 1,
+   "output": 5,
+   "cacheRead": 0.1,
+   "source": null,
+   "specs": {
+    "context": 200000,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "pdf"
+    ],
+    "deprecation": "2025-10-01"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 1,
+     "output": 5,
+     "cacheRead": 0.1
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "anthropic/claude-3-5-sonnet-latest": {
+   "provider": "anthropic",
+   "model": "claude-3-5-sonnet-latest",
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.3,
+   "source": null,
+   "specs": {
+    "context": 200000,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "computer",
+     "pdf"
+    ],
+    "deprecation": "2025-06-01"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 3,
+     "output": 15,
+     "cacheRead": 0.3
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "anthropic/claude-3-7-sonnet-latest": {
+   "provider": "anthropic",
+   "model": "claude-3-7-sonnet-latest",
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.3,
+   "source": null,
+   "specs": {
+    "context": 200000,
+    "maxOutput": 64000,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "computer",
+     "pdf"
+    ],
+    "deprecation": "2025-06-01"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 3,
+     "output": 15,
+     "cacheRead": 0.3
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "anthropic/claude-3-opus-latest": {
+   "provider": "anthropic",
+   "model": "claude-3-opus-latest",
+   "input": 15,
+   "output": 75,
+   "cacheRead": 1.5,
+   "source": null,
+   "specs": {
+    "context": 200000,
+    "maxOutput": 4096,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2025-03-01"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 15,
+     "output": 75,
+     "cacheRead": 1.5
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "anthropic/claude-opus-4-1": {
+   "provider": "anthropic",
+   "model": "claude-opus-4-1",
+   "input": 15,
+   "output": 75,
+   "cacheRead": 1.5,
+   "source": null,
+   "specs": {
+    "context": 200000,
+    "maxOutput": 32000,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "computer",
+     "pdf"
+    ],
+    "deprecation": "2026-08-05"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 15,
+     "output": 75,
+     "cacheRead": 1.5
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "gemini/gemini-1.5-flash": {
+   "provider": "gemini",
+   "model": "gemini-1.5-flash",
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/pricing",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2025-09-29"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.075,
+     "output": 0.3,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-1.5-flash-001": {
+   "provider": "gemini",
+   "model": "gemini-1.5-flash-001",
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": 0.01875,
+   "source": "https://ai.google.dev/pricing",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2025-05-24"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.075,
+     "output": 0.3,
+     "cacheRead": 0.01875
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-1.5-flash-002": {
+   "provider": "gemini",
+   "model": "gemini-1.5-flash-002",
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": 0.01875,
+   "source": "https://ai.google.dev/pricing",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2025-09-24"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.075,
+     "output": 0.3,
+     "cacheRead": 0.01875
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-1.5-flash-8b": {
+   "provider": "gemini",
+   "model": "gemini-1.5-flash-8b",
+   "input": 0,
+   "output": 0,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/pricing",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2025-09-29"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0,
+     "output": 0,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-1.5-flash-latest": {
+   "provider": "gemini",
+   "model": "gemini-1.5-flash-latest",
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/pricing",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2025-09-29"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.075,
+     "output": 0.3,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-1.5-pro": {
+   "provider": "gemini",
+   "model": "gemini-1.5-pro",
+   "input": 3.5,
+   "output": 10.5,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/pricing",
+   "specs": {
+    "context": 2097152,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2025-09-29"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 3.5,
+     "output": 10.5,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-1.5-pro-001": {
+   "provider": "gemini",
+   "model": "gemini-1.5-pro-001",
+   "input": 3.5,
+   "output": 10.5,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/pricing",
+   "specs": {
+    "context": 2097152,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2025-05-24"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 3.5,
+     "output": 10.5,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-1.5-pro-002": {
+   "provider": "gemini",
+   "model": "gemini-1.5-pro-002",
+   "input": 3.5,
+   "output": 10.5,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/pricing",
+   "specs": {
+    "context": 2097152,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2025-09-24"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 3.5,
+     "output": 10.5,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-1.5-pro-latest": {
+   "provider": "gemini",
+   "model": "gemini-1.5-pro-latest",
+   "input": 3.5,
+   "output": 1.05,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/pricing",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2025-09-29"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 3.5,
+     "output": 1.05,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.0-flash": {
+   "provider": "gemini",
+   "model": "gemini-2.0-flash",
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.025,
+   "source": "https://ai.google.dev/pricing#2_0flash",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "audio"
+    ],
+    "deprecation": "2026-06-01"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.1,
+     "output": 0.4,
+     "cacheRead": 0.025
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "gemini/gemini-2.0-flash-001": {
+   "provider": "gemini",
+   "model": "gemini-2.0-flash-001",
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.025,
+   "source": "https://ai.google.dev/pricing#2_0flash",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-06-01"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.1,
+     "output": 0.4,
+     "cacheRead": 0.025
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "gemini/gemini-2.0-flash-exp": {
+   "provider": "gemini",
+   "model": "gemini-2.0-flash-exp",
+   "input": 0,
+   "output": 0,
+   "cacheRead": 0,
+   "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#gemini-2.0-flash",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0,
+     "output": 0,
+     "cacheRead": 0
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.0-flash-lite": {
+   "provider": "gemini",
+   "model": "gemini-2.0-flash-lite",
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": 0.01875,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing#gemini-2.0-flash-lite",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-06-01"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.075,
+     "output": 0.3,
+     "cacheRead": 0.01875
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "gemini/gemini-2.0-flash-lite-preview-02-05": {
+   "provider": "gemini",
+   "model": "gemini-2.0-flash-lite-preview-02-05",
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": 0.01875,
+   "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#gemini-2.0-flash-lite",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2025-12-09"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.075,
+     "output": 0.3,
+     "cacheRead": 0.01875
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.0-flash-live-001": {
+   "provider": "gemini",
+   "model": "gemini-2.0-flash-live-001",
+   "input": 0.35,
+   "output": 1.5,
+   "cacheRead": 0.075,
+   "source": "https://ai.google.dev/gemini-api/docs/models#gemini-2-0-flash-live-001",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65535,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web",
+     "pdf"
+    ],
+    "deprecation": "2025-12-09"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.35,
+     "output": 1.5,
+     "cacheRead": 0.075
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.0-flash-preview-image-generation": {
+   "provider": "gemini",
+   "model": "gemini-2.0-flash-preview-image-generation",
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.025,
+   "source": "https://ai.google.dev/pricing#2_0flash",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "audio"
+    ],
+    "deprecation": "2025-11-14"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.1,
+     "output": 0.4,
+     "cacheRead": 0.025
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.0-flash-thinking-exp": {
+   "provider": "gemini",
+   "model": "gemini-2.0-flash-thinking-exp",
+   "input": 0,
+   "output": 0,
+   "cacheRead": 0,
+   "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#gemini-2.0-flash",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65536,
+    "caps": [
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2025-12-02"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0,
+     "output": 0,
+     "cacheRead": 0
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.0-flash-thinking-exp-01-21": {
+   "provider": "gemini",
+   "model": "gemini-2.0-flash-thinking-exp-01-21",
+   "input": 0,
+   "output": 0,
+   "cacheRead": 0,
+   "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#gemini-2.0-flash",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65536,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2025-12-02"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0,
+     "output": 0,
+     "cacheRead": 0
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.0-pro-exp-02-05": {
+   "provider": "gemini",
+   "model": "gemini-2.0-pro-exp-02-05",
+   "input": 0,
+   "output": 0,
+   "cacheRead": 0,
+   "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+   "specs": {
+    "context": 2097152,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "pdf",
+     "audio",
+     "video"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0,
+     "output": 0,
+     "cacheRead": 0
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.5-flash-lite-preview-06-17": {
+   "provider": "gemini",
+   "model": "gemini-2.5-flash-lite-preview-06-17",
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.01,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65535,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web",
+     "pdf"
+    ],
+    "deprecation": "2025-11-18"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.1,
+     "output": 0.4,
+     "cacheRead": 0.025
+    },
+    {
+     "date": "2026-08-29",
+     "input": 0.1,
+     "output": 0.4,
+     "cacheRead": 0.01
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "gemini/gemini-2.5-flash-preview-04-17": {
+   "provider": "gemini",
+   "model": "gemini-2.5-flash-preview-04-17",
+   "input": 0.15,
+   "output": 0.6,
+   "cacheRead": 0.0375,
+   "source": "https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash-preview",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65535,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web",
+     "pdf"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.15,
+     "output": 0.6,
+     "cacheRead": 0.0375
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.5-flash-preview-05-20": {
+   "provider": "gemini",
+   "model": "gemini-2.5-flash-preview-05-20",
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": 0.075,
+   "source": "https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash-preview",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65535,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web",
+     "pdf"
+    ],
+    "deprecation": "2025-11-18"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.3,
+     "output": 2.5,
+     "cacheRead": 0.075
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.5-flash-preview-tts": {
+   "provider": "gemini",
+   "model": "gemini-2.5-flash-preview-tts",
+   "input": 0.15,
+   "output": 0.6,
+   "cacheRead": 0.0375,
+   "source": "https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash-preview",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65535,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.15,
+     "output": 0.6,
+     "cacheRead": 0.0375
+    }
+   ],
+   "removed": "2026-02-14"
+  },
+  "gemini/gemini-2.5-pro-exp-03-25": {
+   "provider": "gemini",
+   "model": "gemini-2.5-pro-exp-03-25",
+   "input": 0,
+   "output": 0,
+   "cacheRead": 0,
+   "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65535,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "pdf",
+     "audio",
+     "video"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0,
+     "output": 0,
+     "cacheRead": 0
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.5-pro-preview-03-25": {
+   "provider": "gemini",
+   "model": "gemini-2.5-pro-preview-03-25",
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing#gemini-2.5-pro-preview",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65535,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "pdf"
+    ],
+    "deprecation": "2025-12-02"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 1.25,
+     "output": 10,
+     "cacheRead": 0.3125
+    },
+    {
+     "date": "2026-01-17",
+     "input": 1.25,
+     "output": 10,
+     "cacheRead": 0.125
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.5-pro-preview-05-06": {
+   "provider": "gemini",
+   "model": "gemini-2.5-pro-preview-05-06",
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing#gemini-2.5-pro-preview",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65535,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "pdf"
+    ],
+    "deprecation": "2025-12-02"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 1.25,
+     "output": 10,
+     "cacheRead": 0.3125
+    },
+    {
+     "date": "2026-01-17",
+     "input": 1.25,
+     "output": 10,
+     "cacheRead": 0.125
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-2.5-pro-preview-06-05": {
+   "provider": "gemini",
+   "model": "gemini-2.5-pro-preview-06-05",
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing#gemini-2.5-pro-preview",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65535,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "pdf"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 1.25,
+     "output": 10,
+     "cacheRead": 0.3125
+    },
+    {
+     "date": "2026-01-17",
+     "input": 1.25,
+     "output": 10,
+     "cacheRead": 0.125
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-pro": {
+   "provider": "gemini",
+   "model": "gemini-pro",
+   "input": 0.35,
+   "output": 1.05,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/gemini-api/docs/models/gemini",
+   "specs": {
+    "context": 32760,
+    "maxOutput": 8192,
+    "caps": [
+     "tools"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.35,
+     "output": 1.05,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-pro-vision": {
+   "provider": "gemini",
+   "model": "gemini-pro-vision",
+   "input": 0.35,
+   "output": 1.05,
+   "cacheRead": null,
+   "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#foundation_models",
+   "specs": {
+    "context": 30720,
+    "maxOutput": 2048,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.35,
+     "output": 1.05,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "openai/gpt-4-0125-preview": {
+   "provider": "openai",
+   "model": "gpt-4-0125-preview",
+   "input": 10,
+   "output": 30,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 4096,
+    "caps": [
+     "tools"
+    ],
+    "deprecation": "2026-03-26"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 10,
+     "output": 30,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "openai/gpt-4-1106-vision-preview": {
+   "provider": "openai",
+   "model": "gpt-4-1106-vision-preview",
+   "input": 10,
+   "output": 30,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 4096,
+    "caps": [
+     "vision",
+     "pdf"
+    ],
+    "deprecation": "2024-12-06"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 10,
+     "output": 30,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "openai/gpt-4-32k": {
+   "provider": "openai",
+   "model": "gpt-4-32k",
+   "input": 60,
+   "output": 120,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 32768,
+    "maxOutput": 4096,
+    "caps": [],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 60,
+     "output": 120,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "openai/gpt-4-turbo-preview": {
+   "provider": "openai",
+   "model": "gpt-4-turbo-preview",
+   "input": 10,
+   "output": 30,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 4096,
+    "caps": [
+     "tools",
+     "pdf"
+    ],
+    "deprecation": "2026-03-26"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 10,
+     "output": 30,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "openai/gpt-4-vision-preview": {
+   "provider": "openai",
+   "model": "gpt-4-vision-preview",
+   "input": 10,
+   "output": 30,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 4096,
+    "caps": [
+     "vision",
+     "pdf"
+    ],
+    "deprecation": "2024-12-06"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 10,
+     "output": 30,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "openai/gpt-4.5-preview": {
+   "provider": "openai",
+   "model": "gpt-4.5-preview",
+   "input": 75,
+   "output": 150,
+   "cacheRead": 37.5,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 16384,
+    "caps": [
+     "vision",
+     "tools",
+     "pdf"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 75,
+     "output": 150,
+     "cacheRead": 37.5
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "openai/gpt-4o-audio-preview": {
+   "provider": "openai",
+   "model": "gpt-4o-audio-preview",
+   "input": 2.5,
+   "output": 10,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 16384,
+    "caps": [
+     "tools",
+     "audio"
+    ],
+    "deprecation": "2026-05-07"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 2.5,
+     "output": 10,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "openai/gpt-4o-mini-audio-preview": {
+   "provider": "openai",
+   "model": "gpt-4o-mini-audio-preview",
+   "input": 0.15,
+   "output": 0.6,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 16384,
+    "caps": [
+     "tools",
+     "audio"
+    ],
+    "deprecation": "2026-05-07"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.15,
+     "output": 0.6,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "openai/gpt-4o-mini-realtime-preview": {
+   "provider": "openai",
+   "model": "gpt-4o-mini-realtime-preview",
+   "input": 0.6,
+   "output": 2.4,
+   "cacheRead": 0.3,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 4096,
+    "caps": [
+     "tools",
+     "audio"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.6,
+     "output": 2.4,
+     "cacheRead": 0.3
+    }
+   ],
+   "removed": "2026-07-18"
+  },
+  "openai/gpt-4o-realtime-preview": {
+   "provider": "openai",
+   "model": "gpt-4o-realtime-preview",
+   "input": 5,
+   "output": 20,
+   "cacheRead": 2.5,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 4096,
+    "caps": [
+     "tools",
+     "audio"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 5,
+     "output": 20,
+     "cacheRead": 2.5
+    }
+   ],
+   "removed": "2026-07-18"
+  },
+  "openai/gpt-realtime": {
+   "provider": "openai",
+   "model": "gpt-realtime",
+   "input": 4,
+   "output": 16,
+   "cacheRead": 0.4,
+   "source": null,
+   "specs": {
+    "context": 32000,
+    "maxOutput": 4096,
+    "caps": [
+     "tools",
+     "audio"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 4,
+     "output": 16,
+     "cacheRead": 0.4
+    }
+   ],
+   "removed": "2026-07-18"
+  },
+  "openai/gpt-realtime-mini": {
+   "provider": "openai",
+   "model": "gpt-realtime-mini",
+   "input": 0.6,
+   "output": 2.4,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 4096,
+    "caps": [
+     "tools",
+     "audio"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.6,
+     "output": 2.4,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-07-18"
+  },
+  "mistral/open-codestral-mamba": {
+   "provider": "mistral",
+   "model": "open-codestral-mamba",
+   "input": 0.25,
+   "output": 0.25,
+   "cacheRead": null,
+   "source": "https://mistral.ai/technology/",
+   "specs": {
+    "context": 256000,
+    "maxOutput": 256000,
+    "caps": [],
+    "deprecation": "2025-06-06"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.25,
+     "output": 0.25,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "mistral/open-mistral-7b": {
+   "provider": "mistral",
+   "model": "open-mistral-7b",
+   "input": 0.25,
+   "output": 0.25,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 32000,
+    "maxOutput": 8191,
+    "caps": [],
+    "deprecation": "2025-03-30"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.25,
+     "output": 0.25,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "mistral/open-mixtral-8x22b": {
+   "provider": "mistral",
+   "model": "open-mixtral-8x22b",
+   "input": 2,
+   "output": 6,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 65336,
+    "maxOutput": 8191,
+    "caps": [
+     "tools"
+    ],
+    "deprecation": "2025-03-30"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 2,
+     "output": 6,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "mistral/open-mixtral-8x7b": {
+   "provider": "mistral",
+   "model": "open-mixtral-8x7b",
+   "input": 0.7,
+   "output": 0.7,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 32000,
+    "maxOutput": 8191,
+    "caps": [
+     "tools"
+    ],
+    "deprecation": "2025-03-30"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.7,
+     "output": 0.7,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "moonshot/kimi-k2-0711-preview": {
+   "provider": "moonshot",
+   "model": "kimi-k2-0711-preview",
+   "input": 0.6,
+   "output": 2.5,
+   "cacheRead": 0.15,
+   "source": "https://platform.moonshot.ai/docs/pricing/chat#generation-model-kimi-k2",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-25"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.6,
+     "output": 2.5,
+     "cacheRead": 0.15
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "moonshot/kimi-latest": {
+   "provider": "moonshot",
+   "model": "kimi-latest",
+   "input": 2,
+   "output": 5,
+   "cacheRead": 0.15,
+   "source": "https://platform.moonshot.ai/docs/pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2026-01-28"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 2,
+     "output": 5,
+     "cacheRead": 0.15
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "moonshot/kimi-latest-128k": {
+   "provider": "moonshot",
+   "model": "kimi-latest-128k",
+   "input": 2,
+   "output": 5,
+   "cacheRead": 0.15,
+   "source": "https://platform.moonshot.ai/docs/pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2026-01-28"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 2,
+     "output": 5,
+     "cacheRead": 0.15
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "moonshot/kimi-latest-32k": {
+   "provider": "moonshot",
+   "model": "kimi-latest-32k",
+   "input": 1,
+   "output": 3,
+   "cacheRead": 0.15,
+   "source": "https://platform.moonshot.ai/docs/pricing",
+   "specs": {
+    "context": 32768,
+    "maxOutput": 32768,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2026-01-28"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 1,
+     "output": 3,
+     "cacheRead": 0.15
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "moonshot/kimi-latest-8k": {
+   "provider": "moonshot",
+   "model": "kimi-latest-8k",
+   "input": 0.2,
+   "output": 2,
+   "cacheRead": 0.15,
+   "source": "https://platform.moonshot.ai/docs/pricing",
+   "specs": {
+    "context": 8192,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools"
+    ],
+    "deprecation": "2026-01-28"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.2,
+     "output": 2,
+     "cacheRead": 0.15
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "moonshot/kimi-thinking-preview": {
+   "provider": "moonshot",
+   "model": "kimi-thinking-preview",
+   "input": 0.6,
+   "output": 2.5,
+   "cacheRead": 0.15,
+   "source": "https://platform.moonshot.ai/docs/pricing/chat#generation-model-kimi-k2",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "vision"
+    ],
+    "deprecation": "2025-11-11"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 30,
+     "output": 30,
+     "cacheRead": null
+    },
+    {
+     "date": "2025-12-07",
+     "input": 0.6,
+     "output": 2.5,
+     "cacheRead": 0.15
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "moonshot/kimi-k2-thinking": {
+   "provider": "moonshot",
+   "model": "kimi-k2-thinking",
+   "input": 0.6,
+   "output": 2.5,
+   "cacheRead": 0.15,
+   "source": "https://platform.moonshot.ai/docs/pricing/chat#generation-model-kimi-k2",
+   "specs": {
+    "context": 262144,
+    "maxOutput": 262144,
+    "caps": [
+     "reasoning",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-25"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.6,
+     "output": 2.5,
+     "cacheRead": 0.15
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "openai/o1-mini": {
+   "provider": "openai",
+   "model": "o1-mini",
+   "input": 1.1,
+   "output": 4.4,
+   "cacheRead": 0.55,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 65536,
+    "caps": [
+     "vision",
+     "pdf"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 1.1,
+     "output": 4.4,
+     "cacheRead": 0.55
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "openai/o1-preview": {
+   "provider": "openai",
+   "model": "o1-preview",
+   "input": 15,
+   "output": 60,
+   "cacheRead": 7.5,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 32768,
+    "caps": [
+     "reasoning",
+     "vision",
+     "pdf"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 15,
+     "output": 60,
+     "cacheRead": 7.5
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "xai/grok-2": {
+   "provider": "xai",
+   "model": "grok-2",
+   "input": 2,
+   "output": 10,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 2,
+     "output": 10,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-08-29"
+  },
+  "xai/grok-2-latest": {
+   "provider": "xai",
+   "model": "grok-2-latest",
+   "input": 2,
+   "output": 10,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 2,
+     "output": 10,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-08-29"
+  },
+  "xai/grok-2-vision": {
+   "provider": "xai",
+   "model": "grok-2-vision",
+   "input": 2,
+   "output": 10,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 32768,
+    "maxOutput": 32768,
+    "caps": [
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 2,
+     "output": 10,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-08-29"
+  },
+  "xai/grok-2-vision-latest": {
+   "provider": "xai",
+   "model": "grok-2-vision-latest",
+   "input": 2,
+   "output": 10,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 32768,
+    "maxOutput": 32768,
+    "caps": [
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 2,
+     "output": 10,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-08-29"
+  },
+  "xai/grok-3": {
+   "provider": "xai",
+   "model": "grok-3",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://x.ai/api#pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 3,
+     "output": 15,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
+     "input": 3,
+     "output": 15,
+     "cacheRead": 0.75
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-3-beta": {
+   "provider": "xai",
+   "model": "grok-3-beta",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://x.ai/api#pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 3,
+     "output": 15,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
+     "input": 3,
+     "output": 15,
+     "cacheRead": 0.75
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-3-fast-beta": {
+   "provider": "xai",
+   "model": "grok-3-fast-beta",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://x.ai/api#pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 5,
+     "output": 25,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
+     "input": 5,
+     "output": 25,
+     "cacheRead": 1.25
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-3-fast-latest": {
+   "provider": "xai",
+   "model": "grok-3-fast-latest",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://x.ai/api#pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 5,
+     "output": 25,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
+     "input": 5,
+     "output": 25,
+     "cacheRead": 1.25
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-3-latest": {
+   "provider": "xai",
+   "model": "grok-3-latest",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://x.ai/api#pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 3,
+     "output": 15,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
+     "input": 3,
+     "output": 15,
+     "cacheRead": 0.75
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-3-mini": {
+   "provider": "xai",
+   "model": "grok-3-mini",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://x.ai/api#pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "reasoning",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-02-28"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.3,
+     "output": 0.5,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
+     "input": 0.3,
+     "output": 0.5,
+     "cacheRead": 0.075
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-3-mini-beta": {
+   "provider": "xai",
+   "model": "grok-3-mini-beta",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://x.ai/api#pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "reasoning",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-02-28"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.3,
+     "output": 0.5,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
+     "input": 0.3,
+     "output": 0.5,
+     "cacheRead": 0.075
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-3-mini-fast": {
+   "provider": "xai",
+   "model": "grok-3-mini-fast",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://x.ai/api#pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "reasoning",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-02-28"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.6,
+     "output": 4,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
+     "input": 0.6,
+     "output": 4,
+     "cacheRead": 0.15
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-3-mini-fast-beta": {
+   "provider": "xai",
+   "model": "grok-3-mini-fast-beta",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://x.ai/api#pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "reasoning",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-02-28"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.6,
+     "output": 4,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
+     "input": 0.6,
+     "output": 4,
+     "cacheRead": 0.15
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-3-mini-fast-latest": {
+   "provider": "xai",
+   "model": "grok-3-mini-fast-latest",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://x.ai/api#pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "reasoning",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-02-28"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.6,
+     "output": 4,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
+     "input": 0.6,
+     "output": 4,
+     "cacheRead": 0.15
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-3-mini-latest": {
+   "provider": "xai",
+   "model": "grok-3-mini-latest",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://x.ai/api#pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "reasoning",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-02-28"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.3,
+     "output": 0.5,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-01-30",
+     "input": 0.3,
+     "output": 0.5,
+     "cacheRead": 0.075
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-4": {
+   "provider": "xai",
+   "model": "grok-4",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://docs.x.ai/docs/models",
+   "specs": {
+    "context": 256000,
+    "maxOutput": 256000,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 3,
+     "output": 15,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-4-fast-reasoning": {
+   "provider": "xai",
+   "model": "grok-4-fast-reasoning",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://docs.x.ai/docs/models",
+   "specs": {
+    "context": 2000000,
+    "maxOutput": 2000000,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.2,
+     "output": 0.5,
+     "cacheRead": 0.05
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-4-fast-non-reasoning": {
+   "provider": "xai",
+   "model": "grok-4-fast-non-reasoning",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://docs.x.ai/docs/models",
+   "specs": {
+    "context": 2000000,
+    "maxOutput": 2000000,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 0.2,
+     "output": 0.5,
+     "cacheRead": 0.05
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-4-latest": {
+   "provider": "xai",
+   "model": "grok-4-latest",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://docs.x.ai/docs/models",
+   "specs": {
+    "context": 256000,
+    "maxOutput": 256000,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 3,
+     "output": 15,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-beta": {
+   "provider": "xai",
+   "model": "grok-beta",
+   "input": 5,
+   "output": 15,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 131072,
+    "maxOutput": 131072,
+    "caps": [
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 5,
+     "output": 15,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-08-29"
+  },
+  "xai/grok-vision-beta": {
+   "provider": "xai",
+   "model": "grok-vision-beta",
+   "input": 5,
+   "output": 15,
+   "cacheRead": null,
+   "source": null,
+   "specs": {
+    "context": 8192,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "input": 5,
+     "output": 15,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-08-29"
+  },
+  "gemini/gemini-3-pro-preview": {
+   "provider": "gemini",
+   "model": "gemini-3-pro-preview",
+   "input": 2,
+   "output": 12,
+   "cacheRead": 0.2,
+   "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65535,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web",
+     "pdf",
+     "audio",
+     "video"
+    ],
+    "deprecation": "2026-03-09"
+   },
+   "firstSeen": "2025-11-22",
+   "history": [
+    {
+     "date": "2025-11-22",
+     "input": 2,
+     "output": 12,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-4-1-fast": {
+   "provider": "xai",
+   "model": "grok-4-1-fast",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning",
+   "specs": {
+    "context": 2000000,
+    "maxOutput": 2000000,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web",
+     "audio"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-22",
+   "history": [
+    {
+     "date": "2025-11-22",
+     "input": 0.2,
+     "output": 0.5,
+     "cacheRead": 0.05
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-4-1-fast-reasoning": {
+   "provider": "xai",
+   "model": "grok-4-1-fast-reasoning",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning",
+   "specs": {
+    "context": 2000000,
+    "maxOutput": 2000000,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web",
+     "audio"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-22",
+   "history": [
+    {
+     "date": "2025-11-22",
+     "input": 0.2,
+     "output": 0.5,
+     "cacheRead": 0.05
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-4-1-fast-reasoning-latest": {
+   "provider": "xai",
+   "model": "grok-4-1-fast-reasoning-latest",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning",
+   "specs": {
+    "context": 2000000,
+    "maxOutput": 2000000,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web",
+     "audio"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-22",
+   "history": [
+    {
+     "date": "2025-11-22",
+     "input": 0.2,
+     "output": 0.5,
+     "cacheRead": 0.05
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-4-1-fast-non-reasoning": {
+   "provider": "xai",
+   "model": "grok-4-1-fast-non-reasoning",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://docs.x.ai/docs/models/grok-4-1-fast-non-reasoning",
+   "specs": {
+    "context": 2000000,
+    "maxOutput": 2000000,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "audio"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-22",
+   "history": [
+    {
+     "date": "2025-11-22",
+     "input": 0.2,
+     "output": 0.5,
+     "cacheRead": 0.05
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "xai/grok-4-1-fast-non-reasoning-latest": {
+   "provider": "xai",
+   "model": "grok-4-1-fast-non-reasoning-latest",
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2,
+   "source": "https://docs.x.ai/docs/models/grok-4-1-fast-non-reasoning",
+   "specs": {
+    "context": 2000000,
+    "maxOutput": 2000000,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "audio"
+    ],
+    "deprecation": "2026-05-15"
+   },
+   "firstSeen": "2025-11-22",
+   "history": [
+    {
+     "date": "2025-11-22",
+     "input": 0.2,
+     "output": 0.5,
+     "cacheRead": 0.05
+    },
+    {
+     "date": "2026-08-29",
+     "input": 1.25,
+     "output": 2.5,
+     "cacheRead": 0.2
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "moonshot/kimi-k2-0905-preview": {
+   "provider": "moonshot",
+   "model": "kimi-k2-0905-preview",
+   "input": 0.6,
+   "output": 2.5,
+   "cacheRead": 0.15,
+   "source": "https://platform.moonshot.ai/docs/pricing/chat#generation-model-kimi-k2",
+   "specs": {
+    "context": 262144,
+    "maxOutput": 262144,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-25"
+   },
+   "firstSeen": "2025-12-07",
+   "history": [
+    {
+     "date": "2025-12-07",
+     "input": 0.6,
+     "output": 2.5,
+     "cacheRead": 0.15
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "moonshot/kimi-k2-turbo-preview": {
+   "provider": "moonshot",
+   "model": "kimi-k2-turbo-preview",
+   "input": 1.15,
+   "output": 8,
+   "cacheRead": 0.15,
+   "source": "https://platform.moonshot.ai/docs/pricing/chat#generation-model-kimi-k2",
+   "specs": {
+    "context": 262144,
+    "maxOutput": 262144,
+    "caps": [
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-25"
+   },
+   "firstSeen": "2025-12-07",
+   "history": [
+    {
+     "date": "2025-12-07",
+     "input": 1.15,
+     "output": 8,
+     "cacheRead": 0.15
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "moonshot/kimi-k2-thinking-turbo": {
+   "provider": "moonshot",
+   "model": "kimi-k2-thinking-turbo",
+   "input": 1.15,
+   "output": 8,
+   "cacheRead": 0.15,
+   "source": "https://platform.moonshot.ai/docs/pricing/chat#generation-model-kimi-k2",
+   "specs": {
+    "context": 262144,
+    "maxOutput": 262144,
+    "caps": [
+     "reasoning",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-05-25"
+   },
+   "firstSeen": "2025-12-07",
+   "history": [
+    {
+     "date": "2025-12-07",
+     "input": 1.15,
+     "output": 8,
+     "cacheRead": 0.15
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "gemini/gemini-robotics-er-1.5-preview": {
+   "provider": "gemini",
+   "model": "gemini-robotics-er-1.5-preview",
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": 0,
+   "source": "https://ai.google.dev/gemini-api/docs/models#gemini-robotics-er-1-5-preview",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65535,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-04-30"
+   },
+   "firstSeen": "2026-01-30",
+   "history": [
+    {
+     "date": "2026-01-30",
+     "input": 0.3,
+     "output": 2.5,
+     "cacheRead": 0
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "anthropic/us/claude-opus-4-6": {
+   "provider": "anthropic",
+   "model": "us/claude-opus-4-6",
+   "input": 5.5,
+   "output": 27.5,
+   "cacheRead": 0.55,
+   "source": null,
+   "specs": {
+    "context": 200000,
+    "maxOutput": 128000,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "computer",
+     "pdf"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-02-07",
+   "history": [
+    {
+     "date": "2026-02-07",
+     "input": 5.5,
+     "output": 27.5,
+     "cacheRead": 0.55
+    }
+   ],
+   "removed": "2026-02-28"
+  },
+  "anthropic/fast/claude-opus-4-6": {
+   "provider": "anthropic",
+   "model": "fast/claude-opus-4-6",
+   "input": 30,
+   "output": 150,
+   "cacheRead": 0.5,
+   "source": null,
+   "specs": {
+    "context": 1000000,
+    "maxOutput": 128000,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "computer",
+     "pdf"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-02-14",
+   "history": [
+    {
+     "date": "2026-02-14",
+     "input": 30,
+     "output": 150,
+     "cacheRead": 0.5
+    }
+   ],
+   "removed": "2026-02-28"
+  },
+  "anthropic/fast/us/claude-opus-4-6": {
+   "provider": "anthropic",
+   "model": "fast/us/claude-opus-4-6",
+   "input": 30,
+   "output": 150,
+   "cacheRead": 0.55,
+   "source": null,
+   "specs": {
+    "context": 200000,
+    "maxOutput": 128000,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "computer",
+     "pdf"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-02-14",
+   "history": [
+    {
+     "date": "2026-02-14",
+     "input": 30,
+     "output": 150,
+     "cacheRead": 0.55
+    }
+   ],
+   "removed": "2026-02-28"
+  },
+  "gemini/gemini-2.0-flash-lite-001": {
+   "provider": "gemini",
+   "model": "gemini-2.0-flash-lite-001",
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": 0.01875,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing#gemini-2.0-flash-lite",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "vision",
+     "tools",
+     "web"
+    ],
+    "deprecation": "2026-06-01"
+   },
+   "firstSeen": "2026-02-14",
+   "history": [
+    {
+     "date": "2026-02-14",
+     "input": 0.075,
+     "output": 0.3,
+     "cacheRead": 0.01875
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "gemini/gemini-2.5-flash-native-audio-latest": {
+   "provider": "gemini",
+   "model": "gemini-2.5-flash-native-audio-latest",
+   "input": 0.5,
+   "output": 2,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 8192,
+    "caps": [
+     "audio"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-02-14",
+   "history": [
+    {
+     "date": "2026-02-14",
+     "input": 0.3,
+     "output": 2.5,
+     "cacheRead": null
+    },
+    {
+     "date": "2026-08-29",
+     "input": 0.5,
+     "output": 2,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-05"
+  },
+  "anthropic/us/claude-sonnet-4-6": {
+   "provider": "anthropic",
+   "model": "us/claude-sonnet-4-6",
+   "input": 3.3,
+   "output": 16.5,
+   "cacheRead": 0.33,
+   "source": null,
+   "specs": {
+    "context": 200000,
+    "maxOutput": 64000,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "computer",
+     "pdf"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-02-20",
+   "history": [
+    {
+     "date": "2026-02-20",
+     "input": 3.3,
+     "output": 16.5,
+     "cacheRead": 0.33
+    }
+   ],
+   "removed": "2026-02-28"
+  },
+  "openai/gpt-realtime-1.5": {
+   "provider": "openai",
+   "model": "gpt-realtime-1.5",
+   "input": 4,
+   "output": 16,
+   "cacheRead": 0.4,
+   "source": null,
+   "specs": {
+    "context": 32000,
+    "maxOutput": 4096,
+    "caps": [
+     "tools",
+     "audio"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-02-28",
+   "history": [
+    {
+     "date": "2026-02-28",
+     "input": 4,
+     "output": 16,
+     "cacheRead": 0.4
+    }
+   ],
+   "removed": "2026-07-18"
+  },
+  "openai/gpt-5.4-pro": {
+   "provider": "openai",
+   "model": "gpt-5.4-pro",
+   "input": 30,
+   "output": 180,
+   "cacheRead": 3,
+   "source": null,
+   "specs": {
+    "context": 1050000,
+    "maxOutput": 128000,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web",
+     "pdf"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-03-07",
+   "history": [
+    {
+     "date": "2026-03-07",
+     "input": 30,
+     "output": 180,
+     "cacheRead": 3
+    }
+   ],
+   "removed": "2026-03-13"
+  },
+  "gemini/gemini-3.1-flash-live-preview": {
+   "provider": "gemini",
+   "model": "gemini-3.1-flash-live-preview",
+   "input": 0.75,
+   "output": 4.5,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 65536,
+    "caps": [
+     "vision",
+     "tools",
+     "web",
+     "audio"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-03-28",
+   "history": [
+    {
+     "date": "2026-03-28",
+     "input": 0.75,
+     "output": 4.5,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-05"
+  },
+  "openai/gpt-realtime-2": {
+   "provider": "openai",
+   "model": "gpt-realtime-2",
+   "input": 4,
+   "output": 16,
+   "cacheRead": 0.4,
+   "source": null,
+   "specs": {
+    "context": 32000,
+    "maxOutput": 4096,
+    "caps": [
+     "tools",
+     "audio"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-05-16",
+   "history": [
+    {
+     "date": "2026-05-16",
+     "input": 4,
+     "output": 16,
+     "cacheRead": 0.4
+    }
+   ],
+   "removed": "2026-07-18"
+  },
+  "openai/gpt-realtime-2.1": {
+   "provider": "openai",
+   "model": "gpt-realtime-2.1",
+   "input": 4,
+   "output": 24,
+   "cacheRead": 0.4,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 32000,
+    "caps": [
+     "tools",
+     "audio"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-07-11",
+   "history": [
+    {
+     "date": "2026-07-11",
+     "input": 4,
+     "output": 24,
+     "cacheRead": 0.4
+    }
+   ],
+   "removed": "2026-07-18"
+  },
+  "openai/gpt-realtime-2.1-mini": {
+   "provider": "openai",
+   "model": "gpt-realtime-2.1-mini",
+   "input": 0.6,
+   "output": 2.4,
+   "cacheRead": 0.06,
+   "source": null,
+   "specs": {
+    "context": 128000,
+    "maxOutput": 4096,
+    "caps": [
+     "tools",
+     "audio"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-07-11",
+   "history": [
+    {
+     "date": "2026-07-11",
+     "input": 0.6,
+     "output": 2.4,
+     "cacheRead": 0.06
+    }
+   ],
+   "removed": "2026-07-18"
+  },
+  "gemini/gemini-robotics-er-1.6-preview": {
+   "provider": "gemini",
+   "model": "gemini-robotics-er-1.6-preview",
+   "input": 1,
+   "output": 5,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing#gemini-robotics-er",
+   "specs": {
+    "context": 131072,
+    "maxOutput": 65536,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web",
+     "pdf",
+     "audio",
+     "video"
+    ],
+    "deprecation": "2026-08-31"
+   },
+   "firstSeen": "2026-08-06",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "input": 1,
+     "output": 5,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "gemini/gemini-3.5-live-translate-preview": {
+   "provider": "gemini",
+   "model": "gemini-3.5-live-translate-preview",
+   "input": 3.5,
+   "output": 21,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "specs": {
+    "context": null,
+    "maxOutput": null,
+    "caps": [
+     "audio"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-08-22",
+   "history": [
+    {
+     "date": "2026-08-22",
+     "input": 3.5,
+     "output": 21,
+     "cacheRead": null
+    }
+   ],
+   "removed": "2026-09-05"
   }
+ },
+ "backfill": {
+  "from": "2025-11-15",
+  "until": "2026-10-27",
+  "source": "https://github.com/BerriAI/litellm/commits/main/model_prices_and_context_window.json",
+  "method": "每周取主线上最后一个版本"
  }
 }

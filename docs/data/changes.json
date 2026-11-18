@@ -223,5 +223,4757 @@
    "output": 10,
    "cacheRead": 0.2
   }
+ },
+ {
+  "date": "2026-10-24",
+  "id": "mistral/zai-glm-5-3-flash",
+  "type": "added",
+  "after": {
+   "input": 0.15,
+   "output": 0.5,
+   "cacheRead": 0.03
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-10-18",
+  "id": "openai/gpt-5.5-cyber-preview",
+  "type": "added",
+  "after": {
+   "input": 12.5,
+   "output": 75,
+   "cacheRead": 1.25
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-10-18",
+  "id": "gemini/gemini-4-argon",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.1
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-10-11",
+  "id": "anthropic/claude-sonnet-5-5",
+  "type": "changed",
+  "before": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.2
+  },
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.1
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-10-11",
+  "id": "mistral/mistral-large-4",
+  "type": "added",
+  "after": {
+   "input": 0.68,
+   "output": 2.09,
+   "cacheRead": 0.068
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-10-11",
+  "id": "mistral/mistral-large-4-0",
+  "type": "added",
+  "after": {
+   "input": 0.68,
+   "output": 2.09,
+   "cacheRead": 0.068
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-10-11",
+  "id": "anthropic/claude-haiku-5-5",
+  "type": "added",
+  "after": {
+   "input": 0.1,
+   "output": 0.5,
+   "cacheRead": 0.01
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-10-11",
+  "id": "openai/gpt-rosalind-discovery",
+  "type": "added",
+  "after": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-10-04",
+  "id": "anthropic/claude-sonnet-5-5",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-10-04",
+  "id": "openai/gpt-6.1-sol",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.1
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "anthropic/claude-opus-5-5",
+  "type": "added",
+  "after": {
+   "input": 4,
+   "output": 20,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "deepseek/deepseek-coder",
+  "type": "changed",
+  "before": {
+   "input": 0.14,
+   "output": 0.28,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.14,
+   "output": 0.28,
+   "cacheRead": 0.014
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "deepseek/deepseek-r1",
+  "type": "changed",
+  "before": {
+   "input": 0.55,
+   "output": 2.19,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.55,
+   "output": 2.19,
+   "cacheRead": 0.14
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "deepseek/deepseek-v3.2",
+  "type": "changed",
+  "before": {
+   "input": 0.28,
+   "output": 0.4,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.28,
+   "output": 0.4,
+   "cacheRead": 0.028
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "openai/gpt-6-sol",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "openai/gpt-6-luna",
+  "type": "added",
+  "after": {
+   "input": 0.1,
+   "output": 0.5,
+   "cacheRead": 0.01
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.7",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "gemini/gemini-robotics-er-2-streaming-preview",
+  "type": "changed",
+  "before": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 1,
+   "output": 5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "gemini/lyria-realtime-exp",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-beta",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-beta-latest",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-beta-latest-non-reasoning",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-beta-latest-reasoning",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-beta-non-reasoning",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-beta-reasoning",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-experimental-beta-0304-non-reasoning",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-experimental-beta-0304-reasoning",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-experimental-beta-latest",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-experimental-beta-non-reasoning-latest",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-experimental-beta-reasoning-latest",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-non-reasoning-gv2",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4.20-reasoning-gv2",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "openai/chatgpt-4o-latest",
+  "type": "removed",
+  "before": {
+   "input": 5,
+   "output": 15,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "anthropic/claude-opus-4-1",
+  "type": "removed",
+  "before": {
+   "input": 15,
+   "output": 75,
+   "cacheRead": 1.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "gemini/gemini-2.0-flash",
+  "type": "removed",
+  "before": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.025
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "gemini/gemini-2.0-flash-001",
+  "type": "removed",
+  "before": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.025
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "gemini/gemini-2.0-flash-lite",
+  "type": "removed",
+  "before": {
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": 0.01875
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "gemini/gemini-2.5-flash-lite-preview-06-17",
+  "type": "removed",
+  "before": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.01
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "openai/gpt-4-0125-preview",
+  "type": "removed",
+  "before": {
+   "input": 10,
+   "output": 30,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "openai/gpt-4-turbo-preview",
+  "type": "removed",
+  "before": {
+   "input": 10,
+   "output": 30,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "openai/gpt-4o-audio-preview",
+  "type": "removed",
+  "before": {
+   "input": 2.5,
+   "output": 10,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "openai/gpt-4o-mini-audio-preview",
+  "type": "removed",
+  "before": {
+   "input": 0.15,
+   "output": 0.6,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "mistral/open-codestral-mamba",
+  "type": "removed",
+  "before": {
+   "input": 0.25,
+   "output": 0.25,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "mistral/open-mistral-7b",
+  "type": "removed",
+  "before": {
+   "input": 0.25,
+   "output": 0.25,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "mistral/open-mixtral-8x22b",
+  "type": "removed",
+  "before": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "mistral/open-mixtral-8x7b",
+  "type": "removed",
+  "before": {
+   "input": 0.7,
+   "output": 0.7,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "moonshot/kimi-k2-0711-preview",
+  "type": "removed",
+  "before": {
+   "input": 0.6,
+   "output": 2.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "moonshot/kimi-latest",
+  "type": "removed",
+  "before": {
+   "input": 2,
+   "output": 5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "moonshot/kimi-latest-128k",
+  "type": "removed",
+  "before": {
+   "input": 2,
+   "output": 5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "moonshot/kimi-latest-32k",
+  "type": "removed",
+  "before": {
+   "input": 1,
+   "output": 3,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "moonshot/kimi-latest-8k",
+  "type": "removed",
+  "before": {
+   "input": 0.2,
+   "output": 2,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "moonshot/kimi-thinking-preview",
+  "type": "removed",
+  "before": {
+   "input": 0.6,
+   "output": 2.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "moonshot/kimi-k2-thinking",
+  "type": "removed",
+  "before": {
+   "input": 0.6,
+   "output": 2.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-3",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-3-beta",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-3-fast-beta",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-3-fast-latest",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-3-latest",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-3-mini",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-3-mini-beta",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-3-mini-fast",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-3-mini-fast-beta",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-3-mini-fast-latest",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-3-mini-latest",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4-fast-reasoning",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4-fast-non-reasoning",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4-latest",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "gemini/gemini-3-pro-preview",
+  "type": "removed",
+  "before": {
+   "input": 2,
+   "output": 12,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4-1-fast",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4-1-fast-reasoning",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4-1-fast-reasoning-latest",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4-1-fast-non-reasoning",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "xai/grok-4-1-fast-non-reasoning-latest",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "moonshot/kimi-k2-0905-preview",
+  "type": "removed",
+  "before": {
+   "input": 0.6,
+   "output": 2.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "moonshot/kimi-k2-turbo-preview",
+  "type": "removed",
+  "before": {
+   "input": 1.15,
+   "output": 8,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "moonshot/kimi-k2-thinking-turbo",
+  "type": "removed",
+  "before": {
+   "input": 1.15,
+   "output": 8,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "gemini/gemini-robotics-er-1.5-preview",
+  "type": "removed",
+  "before": {
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": 0
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "gemini/gemini-2.0-flash-lite-001",
+  "type": "removed",
+  "before": {
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": 0.01875
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-27",
+  "id": "gemini/gemini-robotics-er-1.6-preview",
+  "type": "removed",
+  "before": {
+   "input": 1,
+   "output": 5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "dashscope/qwen3.8-flash",
+  "type": "added",
+  "after": {
+   "input": 0.15,
+   "output": 0.47,
+   "cacheRead": 0.016
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "dashscope/qwen3.8-omni-flash",
+  "type": "added",
+  "after": {
+   "input": 0.15,
+   "output": 0.47,
+   "cacheRead": 0.016
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "gemini/gemini-robotics-er-2-preview",
+  "type": "changed",
+  "before": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.2
+  },
+  "after": {
+   "input": 1,
+   "output": 5,
+   "cacheRead": 0.1
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "gemini/gemini-flash-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": 0.03
+  },
+  "after": {
+   "input": 0.75,
+   "output": 3.75,
+   "cacheRead": 0.075
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "gemini/gemini-flash-lite-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.01
+  },
+  "after": {
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": 0.03
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/codestral-mamba-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.25,
+   "output": 0.25,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.25,
+   "output": 0.25,
+   "cacheRead": 0.025
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/devstral-small-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.1,
+   "output": 0.3,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.1,
+   "output": 0.3,
+   "cacheRead": 0.01
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/devstral-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.4,
+   "output": 2,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.4,
+   "output": 2,
+   "cacheRead": 0.04
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/devstral-medium-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.4,
+   "output": 2,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.4,
+   "output": 2,
+   "cacheRead": 0.04
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/mistral-medium-3",
+  "type": "changed",
+  "before": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/voxtral-small-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.01
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/zai-glm-5-3",
+  "type": "added",
+  "after": {
+   "input": 1.4,
+   "output": 4.4,
+   "cacheRead": 0.14
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/zai-glm-5",
+  "type": "added",
+  "after": {
+   "input": 1.4,
+   "output": 4.4,
+   "cacheRead": 0.14
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/zai-glm-latest",
+  "type": "added",
+  "after": {
+   "input": 1.4,
+   "output": 4.4,
+   "cacheRead": 0.14
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/mistral-small",
+  "type": "changed",
+  "before": {
+   "input": 0.1,
+   "output": 0.3,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.1,
+   "output": 0.3,
+   "cacheRead": 0.01
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/mistral-tiny",
+  "type": "changed",
+  "before": {
+   "input": 0.25,
+   "output": 0.25,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.25,
+   "output": 0.25,
+   "cacheRead": 0.025
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/open-mistral-nemo",
+  "type": "changed",
+  "before": {
+   "input": 0.3,
+   "output": 0.3,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.3,
+   "output": 0.3,
+   "cacheRead": 0.03
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/pixtral-large-latest",
+  "type": "changed",
+  "before": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "gemini/gemini-pro-latest",
+  "type": "changed",
+  "before": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "after": {
+   "input": 2,
+   "output": 12,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "mistral/mistral-code-agent-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.4,
+   "output": 2,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.4,
+   "output": 2,
+   "cacheRead": 0.04
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "openai/gpt-5.5-cyber",
+  "type": "added",
+  "after": {
+   "input": 12.5,
+   "output": 75,
+   "cacheRead": 1.25
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-20",
+  "id": "openai/gpt-rosalind-research",
+  "type": "added",
+  "after": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-12",
+  "id": "openai/computer-use-preview",
+  "type": "added",
+  "after": {
+   "input": 3,
+   "output": 12,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-12",
+  "id": "deepseek/deepseek-flash",
+  "type": "added",
+  "after": {
+   "input": 0.3,
+   "output": 1.2,
+   "cacheRead": 0.006
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-12",
+  "id": "deepseek/deepseek-v4-flash",
+  "type": "changed",
+  "before": {
+   "input": 0.44,
+   "output": 1.32,
+   "cacheRead": 0.014
+  },
+  "after": {
+   "input": 0.3,
+   "output": 1.2,
+   "cacheRead": 0.006
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-12",
+  "id": "deepseek/deepseek-v4-flash-vision-exp",
+  "type": "changed",
+  "before": {
+   "input": 0.44,
+   "output": 1.32,
+   "cacheRead": 0.014
+  },
+  "after": {
+   "input": 0.3,
+   "output": 1.2,
+   "cacheRead": 0.006
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-12",
+  "id": "gemini/lyria-3.5",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "anthropic/claude-fable-5-1",
+  "type": "added",
+  "after": {
+   "input": 10,
+   "output": 50,
+   "cacheRead": 0.25
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "gemini/gemini-3.8-flash",
+  "type": "added",
+  "after": {
+   "input": 0.75,
+   "output": 3.75,
+   "cacheRead": 0.075
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "openai/gpt-6-astra",
+  "type": "added",
+  "after": {
+   "input": 10,
+   "output": 50,
+   "cacheRead": 1
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "mistral/ministral-14b-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.2,
+   "output": 0.2,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.2,
+   "output": 0.2,
+   "cacheRead": 0.02
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "mistral/ministral-3b-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.1,
+   "output": 0.1,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.1,
+   "output": 0.1,
+   "cacheRead": 0.01
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "mistral/magistral-medium-latest",
+  "type": "changed",
+  "before": {
+   "input": 2,
+   "output": 5,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "mistral/magistral-small-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.5,
+   "output": 1.5,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.15,
+   "output": 0.6,
+   "cacheRead": 0.015
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "mistral/mistral-medium",
+  "type": "changed",
+  "before": {
+   "input": 2.7,
+   "output": 8.1,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "xai/grok-build-latest",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.3
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "anthropic/claude-mythos-5-1",
+  "type": "added",
+  "after": {
+   "input": 10,
+   "output": 50,
+   "cacheRead": 0.25
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "zai/glm-5.2",
+  "type": "added",
+  "after": {
+   "input": 1.4,
+   "output": 4.4,
+   "cacheRead": 0.26
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "gemini/lyria-3.5-clip-preview",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "gemini/lyria-3.5-pro-preview",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "gemini/gemini-2.5-flash-native-audio-latest",
+  "type": "removed",
+  "before": {
+   "input": 0.5,
+   "output": 2,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "gemini/gemini-3.1-flash-live-preview",
+  "type": "removed",
+  "before": {
+   "input": 0.75,
+   "output": 4.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-09-05",
+  "id": "gemini/gemini-3.5-live-translate-preview",
+  "type": "removed",
+  "before": {
+   "input": 3.5,
+   "output": 21,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "gemini/gemini-flash-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": 0.075
+  },
+  "after": {
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": 0.03
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "gemini/gemini-flash-lite-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.025
+  },
+  "after": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.01
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "gemini/gemini-2.5-flash-lite-preview-06-17",
+  "type": "changed",
+  "before": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.025
+  },
+  "after": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.01
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "gemini/gemini-2.5-pro-preview-tts",
+  "type": "changed",
+  "before": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "after": {
+   "input": 1,
+   "output": 20,
+   "cacheRead": 0.125
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "gemini/gemma-4-26b-a4b-it",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "gemini/gemma-4-31b-it",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/codestral-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.3,
+   "output": 0.9,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.3,
+   "output": 0.9,
+   "cacheRead": 0.03
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/ministral-14b-latest",
+  "type": "added",
+  "after": {
+   "input": 0.2,
+   "output": 0.2,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/ministral-3b-latest",
+  "type": "added",
+  "after": {
+   "input": 0.1,
+   "output": 0.1,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-medium-3",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/voxtral-small-latest",
+  "type": "added",
+  "after": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-large-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.5,
+   "output": 1.5,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.5,
+   "output": 1.5,
+   "cacheRead": 0.05
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-large-3",
+  "type": "changed",
+  "before": {
+   "input": 0.5,
+   "output": 1.5,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.5,
+   "output": 1.5,
+   "cacheRead": 0.05
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-medium-latest",
+  "type": "changed",
+  "before": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-medium-3-5",
+  "type": "changed",
+  "before": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-small-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.15,
+   "output": 0.6,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.15,
+   "output": 0.6,
+   "cacheRead": 0.015
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/ministral-8b-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.15,
+   "output": 0.15,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.15,
+   "output": 0.15,
+   "cacheRead": 0.015
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "moonshot/kimi-k2.7-code",
+  "type": "added",
+  "after": {
+   "input": 0.95,
+   "output": 4,
+   "cacheRead": 0.19
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-3",
+  "type": "changed",
+  "before": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.75
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-3-beta",
+  "type": "changed",
+  "before": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.75
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-3-fast-beta",
+  "type": "changed",
+  "before": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": 1.25
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-3-fast-latest",
+  "type": "changed",
+  "before": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": 1.25
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-3-latest",
+  "type": "changed",
+  "before": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.75
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-3-mini",
+  "type": "changed",
+  "before": {
+   "input": 0.3,
+   "output": 0.5,
+   "cacheRead": 0.075
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-3-mini-beta",
+  "type": "changed",
+  "before": {
+   "input": 0.3,
+   "output": 0.5,
+   "cacheRead": 0.075
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-3-mini-fast",
+  "type": "changed",
+  "before": {
+   "input": 0.6,
+   "output": 4,
+   "cacheRead": 0.15
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-3-mini-fast-beta",
+  "type": "changed",
+  "before": {
+   "input": 0.6,
+   "output": 4,
+   "cacheRead": 0.15
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-3-mini-fast-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.6,
+   "output": 4,
+   "cacheRead": 0.15
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-3-mini-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.3,
+   "output": 0.5,
+   "cacheRead": 0.075
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4",
+  "type": "changed",
+  "before": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4-fast-reasoning",
+  "type": "changed",
+  "before": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4-fast-non-reasoning",
+  "type": "changed",
+  "before": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4-latest",
+  "type": "changed",
+  "before": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4-1-fast",
+  "type": "changed",
+  "before": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4-1-fast-reasoning",
+  "type": "changed",
+  "before": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4-1-fast-reasoning-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4-1-fast-non-reasoning",
+  "type": "changed",
+  "before": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4-1-fast-non-reasoning-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "zai/glm-5.3",
+  "type": "added",
+  "after": {
+   "input": 1.4,
+   "output": 4.4,
+   "cacheRead": 0.26
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "zai/glm-5.3-flash",
+  "type": "added",
+  "after": {
+   "input": 0.15,
+   "output": 0.5,
+   "cacheRead": 0.03
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "gemini/gemini-2.5-flash-native-audio-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.5,
+   "output": 2,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "deepseek/deepseek-v4-flash-vision-exp",
+  "type": "added",
+  "after": {
+   "input": 0.44,
+   "output": 1.32,
+   "cacheRead": 0.014
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "gemini/gemini-omni-1.1-flash",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 9,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4.20",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4.20-reasoning",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4.20-reasoning-latest",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4.20-non-reasoning",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-4.20-non-reasoning-latest",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-medium-3.5",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-vibe-cli-latest",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-vibe-cli-with-tools",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-vibe-cli-fast",
+  "type": "added",
+  "after": {
+   "input": 0.15,
+   "output": 0.6,
+   "cacheRead": 0.015
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-code-latest",
+  "type": "added",
+  "after": {
+   "input": 0.3,
+   "output": 0.9,
+   "cacheRead": 0.03
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-code-fim-latest",
+  "type": "added",
+  "after": {
+   "input": 0.3,
+   "output": 0.9,
+   "cacheRead": 0.03
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/mistral-code-agent-latest",
+  "type": "added",
+  "after": {
+   "input": 0.4,
+   "output": 2,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "mistral/labs-leanstral-1-5-1",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-2",
+  "type": "removed",
+  "before": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-2-latest",
+  "type": "removed",
+  "before": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-2-vision",
+  "type": "removed",
+  "before": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-2-vision-latest",
+  "type": "removed",
+  "before": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-beta",
+  "type": "removed",
+  "before": {
+   "input": 5,
+   "output": 15,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-29",
+  "id": "xai/grok-vision-beta",
+  "type": "removed",
+  "before": {
+   "input": 5,
+   "output": 15,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "gemini/gemini-3.6-flash",
+  "type": "changed",
+  "before": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.15
+  },
+  "after": {
+   "input": 0.75,
+   "output": 3.75,
+   "cacheRead": 0.075
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "openai/gpt-5.6",
+  "type": "changed",
+  "before": {
+   "input": 5,
+   "output": 30,
+   "cacheRead": 0.5
+  },
+  "after": {
+   "input": 4,
+   "output": 20,
+   "cacheRead": 0.4
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "openai/gpt-5.6-sol",
+  "type": "changed",
+  "before": {
+   "input": 5,
+   "output": 30,
+   "cacheRead": 0.5
+  },
+  "after": {
+   "input": 4,
+   "output": 20,
+   "cacheRead": 0.4
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "openai/gpt-5.6-cyber",
+  "type": "added",
+  "after": {
+   "input": 12.5,
+   "output": 75,
+   "cacheRead": 1.25
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "openai/daybreak-red-latest",
+  "type": "added",
+  "after": {
+   "input": 12.5,
+   "output": 75,
+   "cacheRead": 1.25
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "openai/daybreak-blue-latest",
+  "type": "added",
+  "after": {
+   "input": 4,
+   "output": 20,
+   "cacheRead": 0.4
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "openai/chat-latest",
+  "type": "added",
+  "after": {
+   "input": 5,
+   "output": 30,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "mistral/codestral-latest",
+  "type": "changed",
+  "before": {
+   "input": 1,
+   "output": 3,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.3,
+   "output": 0.9,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "mistral/zai-glm-5-2",
+  "type": "added",
+  "after": {
+   "input": 1.4,
+   "output": 4.4,
+   "cacheRead": 0.14
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "mistral/glm-5-2",
+  "type": "added",
+  "after": {
+   "input": 1.4,
+   "output": 4.4,
+   "cacheRead": 0.14
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "mistral/mistral-small-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.06,
+   "output": 0.18,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.15,
+   "output": 0.6,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "moonshot/kimi-k3",
+  "type": "added",
+  "after": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.3
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "deepseek/deepseek-v4-flash",
+  "type": "changed",
+  "before": {
+   "input": 0.14,
+   "output": 0.28,
+   "cacheRead": 0.0028
+  },
+  "after": {
+   "input": 0.44,
+   "output": 1.32,
+   "cacheRead": 0.014
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "deepseek/deepseek-v4-pro",
+  "type": "changed",
+  "before": {
+   "input": 0.435,
+   "output": 0.87,
+   "cacheRead": 0.003625
+  },
+  "after": {
+   "input": 1.32,
+   "output": 3.96,
+   "cacheRead": 0.044
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-22",
+  "id": "gemini/gemini-3.5-live-translate-preview",
+  "type": "added",
+  "after": {
+   "input": 3.5,
+   "output": 21,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "dashscope/qwen3.8-max",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.25
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "gemini/gemini-3.7-flash",
+  "type": "added",
+  "after": {
+   "input": 0.75,
+   "output": 3.75,
+   "cacheRead": 0.075
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "xai/grok-4.20-beta-0309-reasoning",
+  "type": "changed",
+  "before": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.2
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "xai/grok-4.20-0309-reasoning",
+  "type": "changed",
+  "before": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.2
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "xai/grok-4.20-beta-0309-non-reasoning",
+  "type": "changed",
+  "before": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.2
+  },
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "xai/grok-4.5",
+  "type": "changed",
+  "before": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.5
+  },
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.3
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "xai/grok-4.5-latest",
+  "type": "changed",
+  "before": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.5
+  },
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.3
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "xai/grok-4.6",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "xai/grok-code-fast",
+  "type": "changed",
+  "before": {
+   "input": 0.2,
+   "output": 1.5,
+   "cacheRead": 0.02
+  },
+  "after": {
+   "input": 1,
+   "output": 2,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "xai/grok-code-fast-1",
+  "type": "changed",
+  "before": {
+   "input": 0.2,
+   "output": 1.5,
+   "cacheRead": 0.02
+  },
+  "after": {
+   "input": 1,
+   "output": 2,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "xai/grok-4.20-0309-non-reasoning",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "xai/grok-build-0.1",
+  "type": "added",
+  "after": {
+   "input": 1,
+   "output": 2,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "anthropic/claude-mythos-5",
+  "type": "added",
+  "after": {
+   "input": 10,
+   "output": 50,
+   "cacheRead": 1
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "anthropic/claude-mythos-preview",
+  "type": "added",
+  "after": {
+   "input": 10,
+   "output": 50,
+   "cacheRead": 1
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "gemini/gemini-robotics-er-2-streaming-preview",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-15",
+  "id": "mistral/labs-leanstral-1-5",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-06",
+  "id": "gemini/gemini-robotics-er-2-preview",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-08-06",
+  "id": "gemini/gemini-robotics-er-1.6-preview",
+  "type": "added",
+  "after": {
+   "input": 1,
+   "output": 5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-30",
+  "id": "dashscope/qwen3.7-max",
+  "type": "added",
+  "after": {
+   "input": 2.5,
+   "output": 7.5,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-30",
+  "id": "openai/gpt-5.6-terra",
+  "type": "changed",
+  "before": {
+   "input": 2.5,
+   "output": 15,
+   "cacheRead": 0.25
+  },
+  "after": {
+   "input": 2,
+   "output": 12,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-30",
+  "id": "openai/gpt-5.6-luna",
+  "type": "changed",
+  "before": {
+   "input": 1,
+   "output": 6,
+   "cacheRead": 0.1
+  },
+  "after": {
+   "input": 0.2,
+   "output": 1.2,
+   "cacheRead": 0.02
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-24",
+  "id": "anthropic/claude-opus-5",
+  "type": "added",
+  "after": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-24",
+  "id": "gemini/gemini-3.5-flash-lite",
+  "type": "added",
+  "after": {
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": 0.03
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-24",
+  "id": "gemini/gemini-3.6-flash",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-18",
+  "id": "gemini/gemini-omni-flash-preview",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 9,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-18",
+  "id": "openai/gpt-4o-mini-realtime-preview",
+  "type": "removed",
+  "before": {
+   "input": 0.6,
+   "output": 2.4,
+   "cacheRead": 0.3
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-18",
+  "id": "openai/gpt-4o-realtime-preview",
+  "type": "removed",
+  "before": {
+   "input": 5,
+   "output": 20,
+   "cacheRead": 2.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-18",
+  "id": "openai/gpt-realtime",
+  "type": "removed",
+  "before": {
+   "input": 4,
+   "output": 16,
+   "cacheRead": 0.4
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-18",
+  "id": "openai/gpt-realtime-mini",
+  "type": "removed",
+  "before": {
+   "input": 0.6,
+   "output": 2.4,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-18",
+  "id": "openai/gpt-realtime-1.5",
+  "type": "removed",
+  "before": {
+   "input": 4,
+   "output": 16,
+   "cacheRead": 0.4
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-18",
+  "id": "openai/gpt-realtime-2",
+  "type": "removed",
+  "before": {
+   "input": 4,
+   "output": 16,
+   "cacheRead": 0.4
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-18",
+  "id": "openai/gpt-realtime-2.1",
+  "type": "removed",
+  "before": {
+   "input": 4,
+   "output": 24,
+   "cacheRead": 0.4
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-18",
+  "id": "openai/gpt-realtime-2.1-mini",
+  "type": "removed",
+  "before": {
+   "input": 0.6,
+   "output": 2.4,
+   "cacheRead": 0.06
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-11",
+  "id": "openai/gpt-5.6",
+  "type": "added",
+  "after": {
+   "input": 5,
+   "output": 30,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-11",
+  "id": "openai/gpt-5.6-sol",
+  "type": "added",
+  "after": {
+   "input": 5,
+   "output": 30,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-11",
+  "id": "openai/gpt-5.6-terra",
+  "type": "added",
+  "after": {
+   "input": 2.5,
+   "output": 15,
+   "cacheRead": 0.25
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-11",
+  "id": "openai/gpt-5.6-luna",
+  "type": "added",
+  "after": {
+   "input": 1,
+   "output": 6,
+   "cacheRead": 0.1
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-11",
+  "id": "openai/gpt-realtime-2.1",
+  "type": "added",
+  "after": {
+   "input": 4,
+   "output": 24,
+   "cacheRead": 0.4
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-11",
+  "id": "openai/gpt-realtime-2.1-mini",
+  "type": "added",
+  "after": {
+   "input": 0.6,
+   "output": 2.4,
+   "cacheRead": 0.06
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-11",
+  "id": "xai/grok-4.5",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-11",
+  "id": "xai/grok-4.5-latest",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-07-03",
+  "id": "anthropic/claude-sonnet-5",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-06-27",
+  "id": "mistral/mistral-medium-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.4,
+   "output": 2,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-06-27",
+  "id": "zai/glm-5.1",
+  "type": "added",
+  "after": {
+   "input": 1.4,
+   "output": 4.4,
+   "cacheRead": 0.26
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-06-27",
+  "id": "zai/glm-4.7-flash",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": 0
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-06-20",
+  "id": "mistral/mistral-medium-3-5",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-06-20",
+  "id": "deepseek/deepseek-v4-flash",
+  "type": "added",
+  "after": {
+   "input": 0.14,
+   "output": 0.28,
+   "cacheRead": 0.0028
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-06-20",
+  "id": "deepseek/deepseek-v4-pro",
+  "type": "added",
+  "after": {
+   "input": 0.435,
+   "output": 0.87,
+   "cacheRead": 0.003625
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-06-09",
+  "id": "anthropic/claude-fable-5",
+  "type": "added",
+  "after": {
+   "input": 10,
+   "output": 50,
+   "cacheRead": 1
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-06-06",
+  "id": "mistral/ministral-8b-latest",
+  "type": "added",
+  "after": {
+   "input": 0.15,
+   "output": 0.15,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-05-28",
+  "id": "anthropic/claude-opus-4-8",
+  "type": "added",
+  "after": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-05-23",
+  "id": "gemini/gemini-3.1-flash-lite",
+  "type": "added",
+  "after": {
+   "input": 0.25,
+   "output": 1.5,
+   "cacheRead": 0.025
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-05-23",
+  "id": "gemini/gemini-3.5-flash",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 9,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-05-16",
+  "id": "openai/gpt-realtime-2",
+  "type": "added",
+  "after": {
+   "input": 4,
+   "output": 16,
+   "cacheRead": 0.4
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-05-09",
+  "id": "xai/grok-4.3",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-05-09",
+  "id": "xai/grok-4.3-latest",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 2.5,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-04-25",
+  "id": "openai/gpt-5.5",
+  "type": "added",
+  "after": {
+   "input": 5,
+   "output": 30,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-04-25",
+  "id": "moonshot/kimi-k2.6",
+  "type": "added",
+  "after": {
+   "input": 0.95,
+   "output": 4,
+   "cacheRead": 0.16
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-04-18",
+  "id": "anthropic/claude-opus-4-7",
+  "type": "added",
+  "after": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-04-18",
+  "id": "xai/grok-4.20-0309-reasoning",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-28",
+  "id": "gemini/lyria-3-clip-preview",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-28",
+  "id": "gemini/lyria-3-pro-preview",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-28",
+  "id": "gemini/gemini-3.1-flash-live-preview",
+  "type": "added",
+  "after": {
+   "input": 0.75,
+   "output": 4.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-21",
+  "id": "openai/gpt-5.4-mini",
+  "type": "added",
+  "after": {
+   "input": 0.75,
+   "output": 4.5,
+   "cacheRead": 0.075
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-21",
+  "id": "openai/gpt-5.4-nano",
+  "type": "added",
+  "after": {
+   "input": 0.2,
+   "output": 1.25,
+   "cacheRead": 0.02
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-21",
+  "id": "xai/grok-4.20-beta-0309-reasoning",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-21",
+  "id": "xai/grok-4.20-beta-0309-non-reasoning",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "anthropic/claude-3-5-haiku-latest",
+  "type": "removed",
+  "before": {
+   "input": 1,
+   "output": 5,
+   "cacheRead": 0.1
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "anthropic/claude-3-5-sonnet-latest",
+  "type": "removed",
+  "before": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.3
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "anthropic/claude-3-7-sonnet-latest",
+  "type": "removed",
+  "before": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.3
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "anthropic/claude-3-opus-latest",
+  "type": "removed",
+  "before": {
+   "input": 15,
+   "output": 75,
+   "cacheRead": 1.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-1.5-flash",
+  "type": "removed",
+  "before": {
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-1.5-flash-001",
+  "type": "removed",
+  "before": {
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": 0.01875
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-1.5-flash-002",
+  "type": "removed",
+  "before": {
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": 0.01875
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-1.5-flash-8b",
+  "type": "removed",
+  "before": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-1.5-flash-latest",
+  "type": "removed",
+  "before": {
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-1.5-pro",
+  "type": "removed",
+  "before": {
+   "input": 3.5,
+   "output": 10.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-1.5-pro-001",
+  "type": "removed",
+  "before": {
+   "input": 3.5,
+   "output": 10.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-1.5-pro-002",
+  "type": "removed",
+  "before": {
+   "input": 3.5,
+   "output": 10.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-1.5-pro-latest",
+  "type": "removed",
+  "before": {
+   "input": 3.5,
+   "output": 1.05,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.0-flash-exp",
+  "type": "removed",
+  "before": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": 0
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.0-flash-lite-preview-02-05",
+  "type": "removed",
+  "before": {
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": 0.01875
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.0-flash-live-001",
+  "type": "removed",
+  "before": {
+   "input": 0.35,
+   "output": 1.5,
+   "cacheRead": 0.075
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.0-flash-preview-image-generation",
+  "type": "removed",
+  "before": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.025
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.0-flash-thinking-exp",
+  "type": "removed",
+  "before": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": 0
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.0-flash-thinking-exp-01-21",
+  "type": "removed",
+  "before": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": 0
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.0-pro-exp-02-05",
+  "type": "removed",
+  "before": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": 0
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.5-flash-preview-04-17",
+  "type": "removed",
+  "before": {
+   "input": 0.15,
+   "output": 0.6,
+   "cacheRead": 0.0375
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.5-flash-preview-05-20",
+  "type": "removed",
+  "before": {
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": 0.075
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.5-pro-exp-03-25",
+  "type": "removed",
+  "before": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": 0
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.5-pro-preview-03-25",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.5-pro-preview-05-06",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-2.5-pro-preview-06-05",
+  "type": "removed",
+  "before": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-pro",
+  "type": "removed",
+  "before": {
+   "input": 0.35,
+   "output": 1.05,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "gemini/gemini-pro-vision",
+  "type": "removed",
+  "before": {
+   "input": 0.35,
+   "output": 1.05,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "openai/gpt-4-1106-vision-preview",
+  "type": "removed",
+  "before": {
+   "input": 10,
+   "output": 30,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "openai/gpt-4-32k",
+  "type": "removed",
+  "before": {
+   "input": 60,
+   "output": 120,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "openai/gpt-4-vision-preview",
+  "type": "removed",
+  "before": {
+   "input": 10,
+   "output": 30,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "openai/gpt-4.5-preview",
+  "type": "removed",
+  "before": {
+   "input": 75,
+   "output": 150,
+   "cacheRead": 37.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "openai/o1-mini",
+  "type": "removed",
+  "before": {
+   "input": 1.1,
+   "output": 4.4,
+   "cacheRead": 0.55
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "openai/o1-preview",
+  "type": "removed",
+  "before": {
+   "input": 15,
+   "output": 60,
+   "cacheRead": 7.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-13",
+  "id": "openai/gpt-5.4-pro",
+  "type": "removed",
+  "before": {
+   "input": 30,
+   "output": 180,
+   "cacheRead": 3
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "dashscope/qwen3-next-80b-a3b-instruct",
+  "type": "added",
+  "after": {
+   "input": 0.15,
+   "output": 1.2,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "dashscope/qwen3-next-80b-a3b-thinking",
+  "type": "added",
+  "after": {
+   "input": 0.15,
+   "output": 1.2,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "dashscope/qwen3-vl-235b-a22b-instruct",
+  "type": "added",
+  "after": {
+   "input": 0.4,
+   "output": 1.6,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "dashscope/qwen3-vl-235b-a22b-thinking",
+  "type": "added",
+  "after": {
+   "input": 0.4,
+   "output": 4,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "dashscope/qwen3-vl-32b-instruct",
+  "type": "added",
+  "after": {
+   "input": 0.16,
+   "output": 0.64,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "dashscope/qwen3-vl-32b-thinking",
+  "type": "added",
+  "after": {
+   "input": 0.16,
+   "output": 2.87,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "gemini/gemini-3.1-flash-lite-preview",
+  "type": "added",
+  "after": {
+   "input": 0.25,
+   "output": 1.5,
+   "cacheRead": 0.025
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "openai/gpt-5.3-chat-latest",
+  "type": "added",
+  "after": {
+   "input": 1.75,
+   "output": 14,
+   "cacheRead": 0.175
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "openai/gpt-5.4",
+  "type": "added",
+  "after": {
+   "input": 2.5,
+   "output": 15,
+   "cacheRead": 0.25
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "openai/gpt-5.4-pro",
+  "type": "added",
+  "after": {
+   "input": 30,
+   "output": 180,
+   "cacheRead": 3
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "mistral/mistral-large-latest",
+  "type": "changed",
+  "before": {
+   "input": 2,
+   "output": 6,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.5,
+   "output": 1.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "mistral/mistral-small-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.1,
+   "output": 0.3,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.06,
+   "output": 0.18,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "zai/glm-5",
+  "type": "added",
+  "after": {
+   "input": 1,
+   "output": 3.2,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-03-07",
+  "id": "zai/glm-5-code",
+  "type": "added",
+  "after": {
+   "input": 1.2,
+   "output": 5,
+   "cacheRead": 0.3
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-28",
+  "id": "openai/gpt-audio-1.5",
+  "type": "added",
+  "after": {
+   "input": 2.5,
+   "output": 10,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-28",
+  "id": "openai/gpt-realtime-1.5",
+  "type": "added",
+  "after": {
+   "input": 4,
+   "output": 16,
+   "cacheRead": 0.4
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-28",
+  "id": "anthropic/us/claude-opus-4-6",
+  "type": "removed",
+  "before": {
+   "input": 5.5,
+   "output": 27.5,
+   "cacheRead": 0.55
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-28",
+  "id": "anthropic/fast/claude-opus-4-6",
+  "type": "removed",
+  "before": {
+   "input": 30,
+   "output": 150,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-28",
+  "id": "anthropic/fast/us/claude-opus-4-6",
+  "type": "removed",
+  "before": {
+   "input": 30,
+   "output": 150,
+   "cacheRead": 0.55
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-28",
+  "id": "anthropic/us/claude-sonnet-4-6",
+  "type": "removed",
+  "before": {
+   "input": 3.3,
+   "output": 16.5,
+   "cacheRead": 0.33
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-20",
+  "id": "anthropic/claude-sonnet-4-6",
+  "type": "added",
+  "after": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.3
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-20",
+  "id": "anthropic/us/claude-sonnet-4-6",
+  "type": "added",
+  "after": {
+   "input": 3.3,
+   "output": 16.5,
+   "cacheRead": 0.33
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-20",
+  "id": "gemini/gemini-3.1-pro-preview",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 12,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-20",
+  "id": "gemini/gemini-3.1-pro-preview-customtools",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 12,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-20",
+  "id": "mistral/devstral-small-latest",
+  "type": "added",
+  "after": {
+   "input": 0.1,
+   "output": 0.3,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-20",
+  "id": "mistral/devstral-latest",
+  "type": "added",
+  "after": {
+   "input": 0.4,
+   "output": 2,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-20",
+  "id": "mistral/devstral-medium-latest",
+  "type": "added",
+  "after": {
+   "input": 0.4,
+   "output": 2,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-14",
+  "id": "anthropic/fast/claude-opus-4-6",
+  "type": "added",
+  "after": {
+   "input": 30,
+   "output": 150,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-14",
+  "id": "anthropic/fast/us/claude-opus-4-6",
+  "type": "added",
+  "after": {
+   "input": 30,
+   "output": 150,
+   "cacheRead": 0.55
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-14",
+  "id": "openai/gpt-5-search-api",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-14",
+  "id": "gemini/gemini-2.0-flash-lite-001",
+  "type": "added",
+  "after": {
+   "input": 0.075,
+   "output": 0.3,
+   "cacheRead": 0.01875
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-14",
+  "id": "gemini/gemini-2.5-flash-native-audio-latest",
+  "type": "added",
+  "after": {
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-14",
+  "id": "gemini/gemini-pro-latest",
+  "type": "added",
+  "after": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-14",
+  "id": "gemini/gemini-2.5-flash-preview-tts",
+  "type": "removed",
+  "before": {
+   "input": 0.15,
+   "output": 0.6,
+   "cacheRead": 0.0375
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-07",
+  "id": "anthropic/claude-opus-4-6",
+  "type": "added",
+  "after": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-07",
+  "id": "anthropic/us/claude-opus-4-6",
+  "type": "added",
+  "after": {
+   "input": 5.5,
+   "output": 27.5,
+   "cacheRead": 0.55
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-02-07",
+  "id": "moonshot/kimi-k2.5",
+  "type": "added",
+  "after": {
+   "input": 0.6,
+   "output": 3,
+   "cacheRead": 0.1
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "gemini/gemini-robotics-er-1.5-preview",
+  "type": "added",
+  "after": {
+   "input": 0.3,
+   "output": 2.5,
+   "cacheRead": 0
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "xai/grok-3",
+  "type": "changed",
+  "before": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.75
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "xai/grok-3-beta",
+  "type": "changed",
+  "before": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.75
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "xai/grok-3-fast-beta",
+  "type": "changed",
+  "before": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": 1.25
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "xai/grok-3-fast-latest",
+  "type": "changed",
+  "before": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": 1.25
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "xai/grok-3-latest",
+  "type": "changed",
+  "before": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.75
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "xai/grok-3-mini",
+  "type": "changed",
+  "before": {
+   "input": 0.3,
+   "output": 0.5,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.3,
+   "output": 0.5,
+   "cacheRead": 0.075
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "xai/grok-3-mini-beta",
+  "type": "changed",
+  "before": {
+   "input": 0.3,
+   "output": 0.5,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.3,
+   "output": 0.5,
+   "cacheRead": 0.075
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "xai/grok-3-mini-fast",
+  "type": "changed",
+  "before": {
+   "input": 0.6,
+   "output": 4,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.6,
+   "output": 4,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "xai/grok-3-mini-fast-beta",
+  "type": "changed",
+  "before": {
+   "input": 0.6,
+   "output": 4,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.6,
+   "output": 4,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "xai/grok-3-mini-fast-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.6,
+   "output": 4,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.6,
+   "output": 4,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "xai/grok-3-mini-latest",
+  "type": "changed",
+  "before": {
+   "input": 0.3,
+   "output": 0.5,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.3,
+   "output": 0.5,
+   "cacheRead": 0.075
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-30",
+  "id": "zai/glm-4.6",
+  "type": "changed",
+  "before": {
+   "input": 0.6,
+   "output": 2.2,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.6,
+   "output": 2.2,
+   "cacheRead": 0.11
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-23",
+  "id": "gemini/gemini-2.5-flash-lite",
+  "type": "changed",
+  "before": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.025
+  },
+  "after": {
+   "input": 0.1,
+   "output": 0.4,
+   "cacheRead": 0.01
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-23",
+  "id": "openai/gpt-audio",
+  "type": "added",
+  "after": {
+   "input": 2.5,
+   "output": 10,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-23",
+  "id": "openai/gpt-audio-mini",
+  "type": "added",
+  "after": {
+   "input": 0.6,
+   "output": 2.4,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-17",
+  "id": "deepseek/deepseek-chat",
+  "type": "changed",
+  "before": {
+   "input": 0.6,
+   "output": 1.7,
+   "cacheRead": 0.06
+  },
+  "after": {
+   "input": 0.28,
+   "output": 0.42,
+   "cacheRead": 0.028
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-17",
+  "id": "deepseek/deepseek-reasoner",
+  "type": "changed",
+  "before": {
+   "input": 0.6,
+   "output": 1.7,
+   "cacheRead": 0.06
+  },
+  "after": {
+   "input": 0.28,
+   "output": 0.42,
+   "cacheRead": 0.028
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-17",
+  "id": "gemini/gemini-2.5-pro",
+  "type": "changed",
+  "before": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.3125
+  },
+  "after": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-17",
+  "id": "gemini/gemini-2.5-pro-preview-03-25",
+  "type": "changed",
+  "before": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.3125
+  },
+  "after": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-17",
+  "id": "gemini/gemini-2.5-pro-preview-05-06",
+  "type": "changed",
+  "before": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.3125
+  },
+  "after": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-17",
+  "id": "gemini/gemini-2.5-pro-preview-06-05",
+  "type": "changed",
+  "before": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.3125
+  },
+  "after": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-17",
+  "id": "gemini/gemini-2.5-pro-preview-tts",
+  "type": "changed",
+  "before": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.3125
+  },
+  "after": {
+   "input": 1.25,
+   "output": 10,
+   "cacheRead": 0.125
+  },
+  "backfill": true
+ },
+ {
+  "date": "2026-01-04",
+  "id": "zai/glm-4.7",
+  "type": "added",
+  "after": {
+   "input": 0.6,
+   "output": 2.2,
+   "cacheRead": 0.11
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-20",
+  "id": "gemini/gemini-3-flash-preview",
+  "type": "added",
+  "after": {
+   "input": 0.5,
+   "output": 3,
+   "cacheRead": 0.05
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-14",
+  "id": "openai/gpt-5.2",
+  "type": "added",
+  "after": {
+   "input": 1.75,
+   "output": 14,
+   "cacheRead": 0.175
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-14",
+  "id": "openai/gpt-5.2-chat-latest",
+  "type": "added",
+  "after": {
+   "input": 1.75,
+   "output": 14,
+   "cacheRead": 0.175
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "anthropic/claude-opus-4-5",
+  "type": "added",
+  "after": {
+   "input": 5,
+   "output": 25,
+   "cacheRead": 0.5
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "deepseek/deepseek-v3.2",
+  "type": "added",
+  "after": {
+   "input": 0.28,
+   "output": 0.4,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "mistral/mistral-large-3",
+  "type": "added",
+  "after": {
+   "input": 0.5,
+   "output": 1.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "moonshot/kimi-k2-0905-preview",
+  "type": "added",
+  "after": {
+   "input": 0.6,
+   "output": 2.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "moonshot/kimi-k2-turbo-preview",
+  "type": "added",
+  "after": {
+   "input": 1.15,
+   "output": 8,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "moonshot/kimi-thinking-preview",
+  "type": "changed",
+  "before": {
+   "input": 30,
+   "output": 30,
+   "cacheRead": null
+  },
+  "after": {
+   "input": 0.6,
+   "output": 2.5,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "moonshot/kimi-k2-thinking-turbo",
+  "type": "added",
+  "after": {
+   "input": 1.15,
+   "output": 8,
+   "cacheRead": 0.15
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "zai/glm-4.6",
+  "type": "added",
+  "after": {
+   "input": 0.6,
+   "output": 2.2,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "zai/glm-4.5",
+  "type": "added",
+  "after": {
+   "input": 0.6,
+   "output": 2.2,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "zai/glm-4.5v",
+  "type": "added",
+  "after": {
+   "input": 0.6,
+   "output": 1.8,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "zai/glm-4.5-x",
+  "type": "added",
+  "after": {
+   "input": 2.2,
+   "output": 8.9,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "zai/glm-4.5-air",
+  "type": "added",
+  "after": {
+   "input": 0.2,
+   "output": 1.1,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "zai/glm-4.5-airx",
+  "type": "added",
+  "after": {
+   "input": 1.1,
+   "output": 4.5,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "zai/glm-4-32b-0414-128k",
+  "type": "added",
+  "after": {
+   "input": 0.1,
+   "output": 0.1,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-12-07",
+  "id": "zai/glm-4.5-flash",
+  "type": "added",
+  "after": {
+   "input": 0,
+   "output": 0,
+   "cacheRead": null
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-11-22",
+  "id": "gemini/gemini-3-pro-preview",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 12,
+   "cacheRead": 0.2
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-11-22",
+  "id": "xai/grok-4-1-fast",
+  "type": "added",
+  "after": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-11-22",
+  "id": "xai/grok-4-1-fast-reasoning",
+  "type": "added",
+  "after": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-11-22",
+  "id": "xai/grok-4-1-fast-reasoning-latest",
+  "type": "added",
+  "after": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-11-22",
+  "id": "xai/grok-4-1-fast-non-reasoning",
+  "type": "added",
+  "after": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "backfill": true
+ },
+ {
+  "date": "2025-11-22",
+  "id": "xai/grok-4-1-fast-non-reasoning-latest",
+  "type": "added",
+  "after": {
+   "input": 0.2,
+   "output": 0.5,
+   "cacheRead": 0.05
+  },
+  "backfill": true
  }
 ]

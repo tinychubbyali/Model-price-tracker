@@ -32,10 +32,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://bfl.ai/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-03-13",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-03-13",
      "std": 0.04,
      "native": {
       "perImage": 0.04
@@ -54,10 +54,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://bfl.ai/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-03-13",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-03-13",
      "std": 0.06,
      "native": {
       "perImage": 0.06
@@ -76,10 +76,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://bfl.ai/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-03-13",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-03-13",
      "std": 0.025,
      "native": {
       "perImage": 0.025
@@ -98,10 +98,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://bfl.ai/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-03-13",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-03-13",
      "std": 0.05,
      "native": {
       "perImage": 0.05
@@ -121,10 +121,24 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-12-20",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-12-20",
+     "std": 0.6912,
+     "native": {
+      "perAudioToken": 0.000006
+     }
+    },
+    {
+     "date": "2026-05-16",
+     "std": 0.288,
+     "native": {
+      "perAudioToken": 0.0000025
+     }
+    },
+    {
+     "date": "2026-09-20",
      "std": 0.36,
      "native": {
       "perSecond": 0.0001,
@@ -144,10 +158,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-11-01",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-01",
      "std": 0.035,
      "native": {
       "perImage": 0.035
@@ -166,10 +180,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-11-01",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-01",
      "std": 0.075,
      "native": {
       "perImage": 0.075
@@ -188,10 +202,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-11-01",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-01",
      "std": 0.03,
      "native": {
       "perImage": 0.03
@@ -210,10 +224,10 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-11-01",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-01",
      "std": 0.009,
      "native": {
       "perChar": 0.00001
@@ -232,10 +246,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-11-01",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-01",
      "std": 0.027,
      "native": {
       "perChar": 0.00003
@@ -254,10 +268,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-11-01",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-01",
      "std": 0.018,
      "native": {
       "perChar": 0.00002
@@ -276,10 +290,10 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-11-01",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-01",
      "std": 0.0135,
      "native": {
       "perChar": 0.000015
@@ -301,10 +315,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.alibabacloud.com/help/en/model-studio/wan3-0-video",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-18",
      "std": 0.412565,
      "native": {
       "perSecond": 0.165025,
@@ -329,10 +343,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.alibabacloud.com/help/en/model-studio/wan3-0-video-prime",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-18",
      "std": 0.635995,
      "native": {
       "perSecond": 0.254399,
@@ -357,10 +371,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-1-t2v",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-18",
      "std": 0.618845,
      "native": {
       "perSecond": 0.165026,
@@ -384,10 +398,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-0-t2v",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-18",
      "std": 0.618845,
      "native": {
       "perSecond": 0.220034,
@@ -410,10 +424,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.alibabacloud.com/help/en/model-studio/wan2-7-t2v",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-18",
      "std": 0.43006,
      "native": {
       "perSecond": 0.143353,
@@ -434,10 +448,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://deepgram.com/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
      "std": 0.258012,
      "native": {
       "perSecond": 0.00007167
@@ -456,10 +470,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://elevenlabs.io/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
      "std": 0.21996,
      "native": {
       "perSecond": 0.0000611
@@ -478,10 +492,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://elevenlabs.io/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
      "std": 0.21996,
      "native": {
       "perSecond": 0.0000611
@@ -500,10 +514,17 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://elevenlabs.io/pricing/api",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-02-07",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-02-07",
+     "std": 0.162,
+     "native": {
+      "perChar": 0.00018
+     }
+    },
+    {
+     "date": "2026-10-24",
      "std": 0.072,
      "native": {
       "perChar": 0.00008
@@ -522,10 +543,17 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://elevenlabs.io/pricing/api",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-02-07",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-02-07",
+     "std": 0.162,
+     "native": {
+      "perChar": 0.00018
+     }
+    },
+    {
+     "date": "2026-10-24",
      "std": 0.072,
      "native": {
       "perChar": 0.00008
@@ -544,10 +572,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://elevenlabs.io/pricing/api",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-24",
      "std": 0.072,
      "native": {
       "perChar": 0.00008
@@ -566,10 +594,10 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://elevenlabs.io/pricing/api",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-24",
      "std": 0.036,
      "native": {
       "perChar": 0.00004
@@ -588,10 +616,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://elevenlabs.io/pricing/api",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-24",
      "std": 0.036,
      "native": {
       "perChar": 0.00004
@@ -610,10 +638,10 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://elevenlabs.io/pricing/api",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-24",
      "std": 0.036,
      "native": {
       "perChar": 0.00004
@@ -632,10 +660,10 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://elevenlabs.io/pricing/api",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-24",
      "std": 0.036,
      "native": {
       "perChar": 0.00004
@@ -654,10 +682,10 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://elevenlabs.io/pricing/api",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-24",
      "std": 0.036,
      "native": {
       "perChar": 0.00004
@@ -676,10 +704,10 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://elevenlabs.io/pricing/api",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-24",
      "std": 0.036,
      "native": {
       "perChar": 0.00004
@@ -699,10 +727,17 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-22",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-22",
+     "std": 0.134,
+     "native": {
+      "perImage": 0.134
+     }
+    },
+    {
+     "date": "2025-12-07",
      "std": 0.134,
      "native": {
       "perImage": 0.134,
@@ -723,10 +758,10 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://ai.google.dev/gemini-api/docs/deprecations",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-03-13",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-03-13",
      "std": 0.045,
      "native": {
       "perImage": 0.045,
@@ -747,10 +782,17 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
+     "std": 0.039,
+     "native": {
+      "perImage": 0.039
+     }
+    },
+    {
+     "date": "2025-12-20",
      "std": 0.039,
      "native": {
       "perImage": 0.039,
@@ -771,10 +813,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-22",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-22",
      "std": 0.0336,
      "native": {
       "perImage": 0.0336,
@@ -794,10 +836,10 @@
    "estimate": true,
    "tier": "fast",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-20",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-20",
      "std": 0.0192,
      "native": {
       "perAudioToken": 0.00001
@@ -816,10 +858,10 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
      "std": 0.02,
      "native": {
       "perImage": 0.02
@@ -838,10 +880,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
      "std": 0.04,
      "native": {
       "perImage": 0.04
@@ -860,10 +902,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-03-28",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-03-28",
      "std": 0.04,
      "native": {
       "perTrack": 0.04
@@ -882,10 +924,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://ai.google.dev/gemini-api/docs/deprecations",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-05",
      "std": 0.08,
      "native": {
       "perTrack": 0.08
@@ -906,10 +948,17 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://ai.google.dev/gemini-api/docs/deprecations",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
+     "std": 0.75,
+     "native": {
+      "perSecond": 0.15
+     }
+    },
+    {
+     "date": "2026-09-05",
      "std": 0.5,
      "native": {
       "perSecond": 0.1,
@@ -931,10 +980,17 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://ai.google.dev/gemini-api/docs/deprecations",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
+     "std": 2,
+     "native": {
+      "perSecond": 0.4
+     }
+    },
+    {
+     "date": "2026-09-05",
      "std": 2,
      "native": {
       "perSecond": 0.4,
@@ -955,10 +1011,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://ai.google.dev/gemini-api/docs/deprecations",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-04-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-04-18",
      "std": 0.25,
      "native": {
       "perSecond": 0.05,
@@ -979,10 +1035,24 @@
    "estimate": false,
    "tier": "light",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
+     "std": 0.3456,
+     "native": {
+      "perAudioToken": 0.000003
+     }
+    },
+    {
+     "date": "2026-05-16",
+     "std": 0.144,
+     "native": {
+      "perAudioToken": 0.00000125
+     }
+    },
+    {
+     "date": "2026-09-20",
      "std": 0.18,
      "native": {
       "perSecond": 0.00005,
@@ -1003,10 +1073,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
      "std": 0.015,
      "native": {
       "perSecond": 0.00025,
@@ -1027,8 +1097,30 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
+    {
+     "date": "2025-11-15",
+     "std": 0.6912,
+     "native": {
+      "perAudioToken": 0.000006
+     }
+    },
+    {
+     "date": "2026-05-16",
+     "std": 0.288,
+     "native": {
+      "perAudioToken": 0.0000025
+     }
+    },
+    {
+     "date": "2026-09-20",
+     "std": 0.36,
+     "native": {
+      "perSecond": 0.0001,
+      "perAudioToken": 0.0000025
+     }
+    },
     {
      "date": "2026-11-18",
      "std": 0.36,
@@ -1050,10 +1142,10 @@
    "estimate": true,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-12-20",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-12-20",
      "std": 0.13312,
      "native": {
       "perImageToken": 0.000032
@@ -1072,10 +1164,10 @@
    "estimate": true,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-04-30",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-04-30",
      "std": 0.1248,
      "native": {
       "perImageToken": 0.00003
@@ -1094,10 +1186,10 @@
    "estimate": true,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-12",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-12",
      "std": 0.1248,
      "native": {
       "perImageToken": 0.00003
@@ -1116,10 +1208,10 @@
    "estimate": true,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-12",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-12",
      "std": 0.1248,
      "native": {
       "perImageToken": 0.00003
@@ -1138,10 +1230,17 @@
    "estimate": true,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-12-20",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-12-20",
+     "std": 0.042,
+     "native": {
+      "perImage": 0.042
+     }
+    },
+    {
+     "date": "2026-01-04",
      "std": 0.1664,
      "native": {
       "perImageToken": 0.00004
@@ -1160,10 +1259,10 @@
    "estimate": true,
    "tier": "light",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-12-07",
      "std": 0.03328,
      "native": {
       "perImageToken": 0.000008
@@ -1182,10 +1281,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": null,
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-12-27",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-12-27",
      "std": 0.09,
      "native": {
       "perChar": 0.0001
@@ -1204,10 +1303,10 @@
    "estimate": false,
    "tier": "fast",
    "source": null,
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-12-27",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-12-27",
      "std": 0.054,
      "native": {
       "perChar": 0.00006
@@ -1226,10 +1325,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": null,
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-12-27",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-12-27",
      "std": 0.09,
      "native": {
       "perChar": 0.0001
@@ -1248,10 +1347,10 @@
    "estimate": false,
    "tier": "fast",
    "source": null,
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-12-27",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-12-27",
      "std": 0.054,
      "native": {
       "perChar": 0.00006
@@ -1271,10 +1370,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-18",
      "std": 0.4,
      "native": {
       "perSecond": 0.08,
@@ -1296,10 +1395,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-18",
      "std": 0.4,
      "native": {
       "perSecond": 0.08,
@@ -1320,10 +1419,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://docs.mistral.ai/models/voxtral-mini-transcribe-3-0",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-24",
      "std": 0.21,
      "native": {
       "perSecond": 0.0000583333
@@ -1342,10 +1441,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://docs.mistral.ai/models/voxtral-small-transcribe-3-0",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-24",
      "std": 0.24,
      "native": {
       "perSecond": 0.0000666667
@@ -1364,10 +1463,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-24",
      "std": 0.479999,
      "native": {
       "perSecond": 0.000133333
@@ -1386,10 +1485,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-24",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-24",
      "std": 0.0117,
      "native": {
       "perChar": 0.000013
@@ -1408,10 +1507,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
      "std": 0.0135,
      "native": {
       "perChar": 0.000015
@@ -1430,10 +1529,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
      "std": 0.027,
      "native": {
       "perChar": 0.00003
@@ -1452,10 +1551,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://cloud.google.com/text-to-speech/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-12-07",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-12-07",
      "std": 0.027,
      "native": {
       "perChar": 0.00003
@@ -1474,10 +1573,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://cloud.google.com/speech-to-text/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-07-11",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-07-11",
      "std": 0.960012,
      "native": {
       "perSecond": 0.00026667
@@ -1496,10 +1595,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://cloud.google.com/speech-to-text/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-27",
      "std": 0.960012,
      "native": {
       "perSecond": 0.00026667
@@ -1518,10 +1617,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing#lyria",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-12",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-12",
      "std": 0.06,
      "native": {
       "perTrack": 0.06
@@ -1540,10 +1639,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
      "std": 0.36,
      "native": {
       "perSecond": 0.0001
@@ -1562,10 +1661,17 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-06-20",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-06-20",
+     "std": 1.02,
+     "native": {
+      "perSecond": 0.0002833333333333333
+     }
+    },
+    {
+     "date": "2026-09-20",
      "std": 1.02,
      "native": {
       "perSecond": 0.000283333333333
@@ -1584,10 +1690,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-02-14",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-02-14",
      "std": 0.5,
      "native": {
       "perSecond": 0.1
@@ -1606,10 +1712,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-02-14",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-02-14",
      "std": 1.5,
      "native": {
       "perSecond": 0.3
@@ -1628,10 +1734,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-02-14",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-02-14",
      "std": 2.5,
      "native": {
       "perSecond": 0.5
@@ -1650,10 +1756,10 @@
    "estimate": true,
    "tier": "fast",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-20",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-20",
      "std": 0.0384,
      "native": {
       "perAudioToken": 0.00002
@@ -1672,10 +1778,10 @@
    "estimate": true,
    "tier": "fast",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-27",
      "std": 0.01728,
      "native": {
       "perAudioToken": 0.000009
@@ -1694,10 +1800,10 @@
    "estimate": true,
    "tier": "light",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-27",
      "std": 0.01152,
      "native": {
       "perAudioToken": 0.000006
@@ -1719,10 +1825,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.volcengine.com/docs/82379/1544106",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-18",
      "std": 1.08,
      "native": {
       "perSecond": 0.216,
@@ -1748,10 +1854,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://www.volcengine.com/docs/82379/1544106",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-18",
      "std": 0.709714,
      "native": {
       "perSecond": 0.141942857,
@@ -1776,10 +1882,10 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://www.volcengine.com/docs/82379/1544106",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-18",
      "std": 0.570857,
      "native": {
       "perSecond": 0.114171429,
@@ -1802,10 +1908,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://www.volcengine.com/docs/82379/1544106",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-18",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-18",
      "std": 0.354857,
      "native": {
       "perSecond": 0.070971429,
@@ -1826,10 +1932,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-15",
      "std": 0.27,
      "native": {
       "perSecond": 0.000075
@@ -1848,10 +1954,17 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-15",
+     "std": 1.02,
+     "native": {
+      "perSecond": 0.0002833333333333333
+     }
+    },
+    {
+     "date": "2026-09-20",
      "std": 1.02,
      "native": {
       "perSecond": 0.000283333333333
@@ -1870,10 +1983,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-26-02",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-15",
      "std": 0.18,
      "native": {
       "perSecond": 0.00005
@@ -1892,10 +2005,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-realtime-26-02",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-15",
      "std": 0.36,
      "native": {
       "perSecond": 0.0001
@@ -1914,10 +2027,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-12",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-12",
      "std": 0.0144,
      "native": {
       "perChar": 0.000016
@@ -1936,10 +2049,10 @@
    "estimate": true,
    "tier": "flagship",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-29",
      "std": 0.2304,
      "native": {
       "perAudioToken": 0.000002
@@ -1958,10 +2071,10 @@
    "estimate": true,
    "tier": "flagship",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-29",
      "std": 0.4032,
      "native": {
       "perAudioToken": 0.0000035
@@ -1980,10 +2093,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://docs.x.ai/docs/models",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-29",
      "std": 0.02,
      "native": {
       "perImage": 0.02
@@ -2003,10 +2116,17 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-29",
+     "std": 0.05,
+     "native": {
+      "perImage": 0.05
+     }
+    },
+    {
+     "date": "2026-11-15",
      "std": 0.04,
      "native": {
       "perImage": 0.04,
@@ -2027,10 +2147,17 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-29",
+     "std": 0.05,
+     "native": {
+      "perImage": 0.05
+     }
+    },
+    {
+     "date": "2026-11-15",
      "std": 0.04,
      "native": {
       "perImage": 0.04,
@@ -2051,10 +2178,17 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-29",
+     "std": 0.06,
+     "native": {
+      "perImage": 0.06
+     }
+    },
+    {
+     "date": "2026-11-08",
      "std": 0.04,
      "native": {
       "perImage": 0.04,
@@ -2076,10 +2210,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://docs.x.ai/docs/models/grok-imagine-video",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-12",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-12",
      "std": 0.35,
      "native": {
       "perSecond": 0.05,
@@ -2103,10 +2237,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://docs.x.ai/docs/models/grok-imagine-video-1.5",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-12",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-12",
      "std": 0.7,
      "native": {
       "perSecond": 0.08,
@@ -2131,10 +2265,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://docs.x.ai/developers/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-04",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-04",
      "std": 0.15,
      "native": {
       "perSecond": 0.02,
@@ -2156,10 +2290,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://docs.x.ai/developers/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-20",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-20",
      "std": 0.100008,
      "native": {
       "perSecond": 0.00002778
@@ -2178,10 +2312,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://docs.x.ai/developers/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-20",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-20",
      "std": 0.100008,
      "native": {
       "perSecond": 0.00002778
@@ -2200,10 +2334,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-realtime-26-02",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-08-29",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-08-29",
      "std": 0.36,
      "native": {
       "perSecond": 0.0001
@@ -2222,10 +2356,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://elevenlabs.io/pricing/api",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-05",
      "std": 0.21996,
      "native": {
       "perSecond": 0.0000611
@@ -2244,10 +2378,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-05",
      "std": 0.04,
      "native": {
       "perTrack": 0.04
@@ -2266,10 +2400,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-05",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-05",
      "std": 0.08,
      "native": {
       "perTrack": 0.08
@@ -2288,10 +2422,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-12",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-12",
      "std": 0.08,
      "native": {
       "perTrack": 0.08
@@ -2310,10 +2444,10 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://ai.google.dev/gemini-api/docs/models/lyria-realtime-exp",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-27",
      "std": 0.08,
      "native": {
       "perTrack": 0.08
@@ -2332,10 +2466,17 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing#veo",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
+     "std": 3.75,
+     "native": {
+      "perSecond": 0.75
+     }
+    },
+    {
+     "date": "2026-03-13",
      "std": 2,
      "native": {
       "perSecond": 0.4
@@ -2355,10 +2496,24 @@
    "estimate": false,
    "tier": "fast",
    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing#veo",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
+     "std": 2,
+     "native": {
+      "perSecond": 0.4
+     }
+    },
+    {
+     "date": "2026-03-13",
+     "std": 0.75,
+     "native": {
+      "perSecond": 0.15
+     }
+    },
+    {
+     "date": "2026-09-27",
      "std": 0.5,
      "native": {
       "perSecond": 0.1,
@@ -2378,10 +2533,17 @@
    "estimate": false,
    "tier": "flagship",
    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing#veo",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2025-11-15",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2025-11-15",
+     "std": 1.75,
+     "native": {
+      "perSecond": 0.35
+     }
+    },
+    {
+     "date": "2026-09-27",
      "std": 2.5,
      "native": {
       "perSecond": 0.5
@@ -2400,10 +2562,10 @@
    "estimate": true,
    "tier": "fast",
    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-27",
      "std": 0.0192,
      "native": {
       "perAudioToken": 0.00001
@@ -2422,10 +2584,10 @@
    "estimate": true,
    "tier": "flagship",
    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-09-27",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-09-27",
      "std": 0.0384,
      "native": {
       "perAudioToken": 0.00002
@@ -2445,10 +2607,10 @@
    "estimate": false,
    "tier": "light",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-10-11",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-10-11",
      "std": 0.0336,
      "native": {
       "perImage": 0.0336,
@@ -2468,10 +2630,10 @@
    "estimate": true,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-11-08",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-08",
      "std": 0.1248,
      "native": {
       "perImageToken": 0.00003
@@ -2490,10 +2652,10 @@
    "estimate": true,
    "tier": "flagship",
    "source": "https://developers.openai.com/api/docs/pricing",
-   "firstSeen": "2026-11-18",
+   "firstSeen": "2026-11-08",
    "history": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-08",
      "std": 0.1248,
      "native": {
       "perImageToken": 0.00003
@@ -2610,7 +2772,953 @@
      "native": {}
     }
    ]
+  },
+  "google/imagen-4.0-fast-generate": {
+   "modality": "image",
+   "vendor": "google",
+   "model": "imagen-4.0-fast-generate",
+   "native": {
+    "perImage": 0.02
+   },
+   "std": 0.02,
+   "estimate": false,
+   "tier": "fast",
+   "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "std": 0.02,
+     "native": {
+      "perImage": 0.02
+     }
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "google/imagen-4.0-generate": {
+   "modality": "image",
+   "vendor": "google",
+   "model": "imagen-4.0-generate",
+   "native": {
+    "perImage": 0.04
+   },
+   "std": 0.04,
+   "estimate": false,
+   "tier": "flagship",
+   "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "std": 0.04,
+     "native": {
+      "perImage": 0.04
+     }
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "google/imagen-4.0-ultra-generate": {
+   "modality": "image",
+   "vendor": "google",
+   "model": "imagen-4.0-ultra-generate",
+   "native": {
+    "perImage": 0.06
+   },
+   "std": 0.06,
+   "estimate": false,
+   "tier": "flagship",
+   "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+   "firstSeen": "2025-11-15",
+   "history": [
+    {
+     "date": "2025-11-15",
+     "std": 0.06,
+     "native": {
+      "perImage": 0.06
+     }
+    }
+   ],
+   "removed": "2026-09-27"
+  },
+  "google/deep-research-pro-preview-12": {
+   "modality": "image",
+   "vendor": "google",
+   "model": "deep-research-pro-preview-12",
+   "native": {
+    "perImage": 0.134,
+    "perImageToken": 0.00012
+   },
+   "std": 0.134,
+   "estimate": false,
+   "tier": "flagship",
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "firstSeen": "2026-02-07",
+   "history": [
+    {
+     "date": "2026-02-07",
+     "std": 0.134,
+     "native": {
+      "perImage": 0.134,
+      "perImageToken": 0.00012
+     }
+    }
+   ],
+   "removed": "2026-10-04"
+  },
+  "google/gemini-2.0-flash-exp-image-generation": {
+   "modality": "image",
+   "vendor": "google",
+   "model": "gemini-2.0-flash-exp-image-generation",
+   "native": {
+    "perImage": 0.039
+   },
+   "std": 0.039,
+   "estimate": false,
+   "tier": "fast",
+   "source": "https://ai.google.dev/pricing",
+   "firstSeen": "2026-02-14",
+   "history": [
+    {
+     "date": "2026-02-14",
+     "std": 0.039,
+     "native": {
+      "perImage": 0.039
+     }
+    }
+   ],
+   "removed": "2026-11-08"
   }
  },
- "changes": []
+ "changes": [
+  {
+   "date": "2026-11-15",
+   "id": "xai/grok-imagine-image-quality",
+   "type": "changed",
+   "before": 0.05,
+   "after": 0.04,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-15",
+   "id": "xai/grok-imagine-image-pro",
+   "type": "changed",
+   "before": 0.05,
+   "after": 0.04,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-08",
+   "id": "xai/grok-imagine-image-2.0",
+   "type": "changed",
+   "before": 0.06,
+   "after": 0.04,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-08",
+   "id": "openai/gpt-image-2.6-sunburst",
+   "type": "added",
+   "after": 0.1248,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-08",
+   "id": "openai/gpt-image-2.6-flare",
+   "type": "added",
+   "after": 0.1248,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-08",
+   "id": "google/gemini-2.0-flash-exp-image-generation",
+   "type": "removed",
+   "before": 0.039,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-01",
+   "id": "alibaba/qwen-image-2.0",
+   "type": "added",
+   "after": 0.035,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-01",
+   "id": "alibaba/qwen-image-2.0-pro",
+   "type": "added",
+   "after": 0.075,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-01",
+   "id": "alibaba/qwen-image-3.0",
+   "type": "added",
+   "after": 0.03,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-01",
+   "id": "alibaba/qwen3-tts-flash",
+   "type": "added",
+   "after": 0.009,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-01",
+   "id": "alibaba/qwen-audio-3.1-tts-plus",
+   "type": "added",
+   "after": 0.027,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-01",
+   "id": "alibaba/qwen-audio-3.0-tts-plus",
+   "type": "added",
+   "after": 0.018,
+   "backfill": true
+  },
+  {
+   "date": "2026-11-01",
+   "id": "alibaba/qwen-audio-3.0-tts-flash",
+   "type": "added",
+   "after": 0.0135,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "elevenlabs/eleven_v3",
+   "type": "changed",
+   "before": 0.162,
+   "after": 0.072,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "elevenlabs/eleven_multilingual_v2",
+   "type": "changed",
+   "before": 0.162,
+   "after": 0.072,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "elevenlabs/eleven_v4",
+   "type": "added",
+   "after": 0.072,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "elevenlabs/eleven_v4_turbo",
+   "type": "added",
+   "after": 0.036,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "elevenlabs/eleven_v3_conversational",
+   "type": "added",
+   "after": 0.036,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "elevenlabs/eleven_flash_v2_5",
+   "type": "added",
+   "after": 0.036,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "elevenlabs/eleven_flash_v2",
+   "type": "added",
+   "after": 0.036,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "elevenlabs/eleven_turbo_v2_5",
+   "type": "added",
+   "after": 0.036,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "elevenlabs/eleven_turbo_v2",
+   "type": "added",
+   "after": 0.036,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "mistral/voxtral-mini-transcribe-3",
+   "type": "added",
+   "after": 0.21,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "mistral/voxtral-small-transcribe-3",
+   "type": "added",
+   "after": 0.24,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "mistral/voxtral-mini-transcribe-realtime-3",
+   "type": "added",
+   "after": 0.479999,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "id": "mistral/voxtral-mini-tts-3",
+   "type": "added",
+   "after": 0.0117,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-18",
+   "id": "alibaba/wan3.0-video",
+   "type": "added",
+   "after": 0.412565,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-18",
+   "id": "alibaba/wan3.0-video-prime",
+   "type": "added",
+   "after": 0.635995,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-18",
+   "id": "alibaba/happyhorse-1.1-t2v",
+   "type": "added",
+   "after": 0.618845,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-18",
+   "id": "alibaba/happyhorse-1.0-t2v",
+   "type": "added",
+   "after": 0.618845,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-18",
+   "id": "alibaba/wan2.7-t2v",
+   "type": "added",
+   "after": 0.43006,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-18",
+   "id": "minimax/MiniMax-H3",
+   "type": "added",
+   "after": 0.4,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-18",
+   "id": "minimax/MiniMax-H3-Max",
+   "type": "added",
+   "after": 0.4,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-18",
+   "id": "bytedance/doubao-seedance-2-5",
+   "type": "added",
+   "after": 1.08,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-18",
+   "id": "bytedance/doubao-seedance-2-0",
+   "type": "added",
+   "after": 0.709714,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-18",
+   "id": "bytedance/doubao-seedance-2-0-fast",
+   "type": "added",
+   "after": 0.570857,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-18",
+   "id": "bytedance/doubao-seedance-2-0-mini",
+   "type": "added",
+   "after": 0.354857,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-11",
+   "id": "google/gemini-nano-banana-2.1",
+   "type": "added",
+   "after": 0.0336,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-04",
+   "id": "xai/grok-imagine-video-1.5-lite",
+   "type": "added",
+   "after": 0.15,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-04",
+   "id": "google/deep-research-pro-preview-12",
+   "type": "removed",
+   "before": 0.134,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-27",
+   "id": "google/chirp_2",
+   "type": "added",
+   "after": 0.960012,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-27",
+   "id": "google/gemini-3.8-flash-tts",
+   "type": "added",
+   "after": 0.01728,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-27",
+   "id": "google/gemini-3.8-flash-lite-tts",
+   "type": "added",
+   "after": 0.01152,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-27",
+   "id": "google/lyria-realtime",
+   "type": "added",
+   "after": 0.08,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-27",
+   "id": "google/veo-3.0-fast-generate",
+   "type": "changed",
+   "before": 0.75,
+   "after": 0.5,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-27",
+   "id": "google/veo-2.0-generate",
+   "type": "changed",
+   "before": 1.75,
+   "after": 2.5,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-27",
+   "id": "google/gemini-2.5-flash-tts",
+   "type": "added",
+   "after": 0.0192,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-27",
+   "id": "google/gemini-2.5-pro-tts",
+   "type": "added",
+   "after": 0.0384,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-27",
+   "id": "google/imagen-4.0-fast-generate",
+   "type": "removed",
+   "before": 0.02,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-27",
+   "id": "google/imagen-4.0-generate",
+   "type": "removed",
+   "before": 0.04,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-27",
+   "id": "google/imagen-4.0-ultra-generate",
+   "type": "removed",
+   "before": 0.06,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-20",
+   "id": "openai/gpt-4o-transcribe-diarize",
+   "type": "changed",
+   "before": 0.288,
+   "after": 0.36,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-20",
+   "id": "google/gemini-2.5-flash-preview-tts",
+   "type": "added",
+   "after": 0.0192,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-20",
+   "id": "openai/gpt-4o-mini-transcribe",
+   "type": "changed",
+   "before": 0.144,
+   "after": 0.18,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-20",
+   "id": "openai/gpt-4o-transcribe",
+   "type": "changed",
+   "before": 0.288,
+   "after": 0.36,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-20",
+   "id": "google/gemini-3.1-flash-tts",
+   "type": "added",
+   "after": 0.0384,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-20",
+   "id": "xai/grok-voice-transcribe-1.0",
+   "type": "added",
+   "after": 0.100008,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-20",
+   "id": "xai/grok-voice-transcribe-2.0",
+   "type": "added",
+   "after": 0.100008,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-12",
+   "id": "openai/gpt-image-2.5-flare",
+   "type": "added",
+   "after": 0.1248,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-12",
+   "id": "openai/gpt-image-2.5-sunburst",
+   "type": "added",
+   "after": 0.1248,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-12",
+   "id": "google/lyria",
+   "type": "added",
+   "after": 0.06,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-12",
+   "id": "mistral/voxtral-mini-tts",
+   "type": "added",
+   "after": 0.0144,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-12",
+   "id": "xai/grok-imagine-video",
+   "type": "added",
+   "after": 0.35,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-12",
+   "id": "xai/grok-imagine-video-1.5",
+   "type": "added",
+   "after": 0.7,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-12",
+   "id": "google/lyria-3.5",
+   "type": "added",
+   "after": 0.08,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-05",
+   "id": "google/lyria-3-pro",
+   "type": "added",
+   "after": 0.08,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-05",
+   "id": "google/veo-3.1-fast-generate",
+   "type": "changed",
+   "before": 0.75,
+   "after": 0.5,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-05",
+   "id": "elevenlabs/scribe_v2",
+   "type": "added",
+   "after": 0.21996,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-05",
+   "id": "google/lyria-3.5-clip",
+   "type": "added",
+   "after": 0.04,
+   "backfill": true
+  },
+  {
+   "date": "2026-09-05",
+   "id": "google/lyria-3.5-pro",
+   "type": "added",
+   "after": 0.08,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-29",
+   "id": "google/gemini-3.5-transcribe",
+   "type": "added",
+   "after": 0.2304,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-29",
+   "id": "google/gemini-3.5-transcribe-live",
+   "type": "added",
+   "after": 0.4032,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-29",
+   "id": "xai/grok-imagine-image",
+   "type": "added",
+   "after": 0.02,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-29",
+   "id": "xai/grok-imagine-image-quality",
+   "type": "added",
+   "after": 0.05,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-29",
+   "id": "xai/grok-imagine-image-pro",
+   "type": "added",
+   "after": 0.05,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-29",
+   "id": "xai/grok-imagine-image-2.0",
+   "type": "added",
+   "after": 0.06,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-29",
+   "id": "mistral/voxtral-mini-realtime",
+   "type": "added",
+   "after": 0.36,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-22",
+   "id": "google/gemini-3.1-flash-lite-image",
+   "type": "added",
+   "after": 0.0336,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-15",
+   "id": "openai/gpt-transcribe",
+   "type": "added",
+   "after": 0.27,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-15",
+   "id": "openai/gpt-live-transcribe",
+   "type": "added",
+   "after": 1.02,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-15",
+   "id": "mistral/voxtral-mini",
+   "type": "added",
+   "after": 0.18,
+   "backfill": true
+  },
+  {
+   "date": "2026-08-15",
+   "id": "mistral/voxtral-mini-transcribe-realtime",
+   "type": "added",
+   "after": 0.36,
+   "backfill": true
+  },
+  {
+   "date": "2026-07-11",
+   "id": "google/chirp_3",
+   "type": "added",
+   "after": 0.960012,
+   "backfill": true
+  },
+  {
+   "date": "2026-06-20",
+   "id": "openai/gpt-realtime-whisper",
+   "type": "added",
+   "after": 1.02,
+   "backfill": true
+  },
+  {
+   "date": "2026-05-16",
+   "id": "openai/gpt-4o-transcribe-diarize",
+   "type": "changed",
+   "before": 0.6912,
+   "after": 0.288,
+   "backfill": true
+  },
+  {
+   "date": "2026-05-16",
+   "id": "openai/gpt-4o-mini-transcribe",
+   "type": "changed",
+   "before": 0.3456,
+   "after": 0.144,
+   "backfill": true
+  },
+  {
+   "date": "2026-05-16",
+   "id": "openai/gpt-4o-transcribe",
+   "type": "changed",
+   "before": 0.6912,
+   "after": 0.288,
+   "backfill": true
+  },
+  {
+   "date": "2026-04-30",
+   "id": "openai/gpt-image-2",
+   "type": "added",
+   "after": 0.1248,
+   "backfill": true
+  },
+  {
+   "date": "2026-04-18",
+   "id": "google/veo-3.1-lite-generate",
+   "type": "added",
+   "after": 0.25,
+   "backfill": true
+  },
+  {
+   "date": "2026-03-28",
+   "id": "google/lyria-3-clip",
+   "type": "added",
+   "after": 0.04,
+   "backfill": true
+  },
+  {
+   "date": "2026-03-13",
+   "id": "bfl/flux-pro-1.1",
+   "type": "added",
+   "after": 0.04,
+   "backfill": true
+  },
+  {
+   "date": "2026-03-13",
+   "id": "bfl/flux-pro-1.1-ultra",
+   "type": "added",
+   "after": 0.06,
+   "backfill": true
+  },
+  {
+   "date": "2026-03-13",
+   "id": "bfl/flux-dev",
+   "type": "added",
+   "after": 0.025,
+   "backfill": true
+  },
+  {
+   "date": "2026-03-13",
+   "id": "bfl/flux-pro",
+   "type": "added",
+   "after": 0.05,
+   "backfill": true
+  },
+  {
+   "date": "2026-03-13",
+   "id": "google/gemini-3.1-flash-image",
+   "type": "added",
+   "after": 0.045,
+   "backfill": true
+  },
+  {
+   "date": "2026-03-13",
+   "id": "google/veo-3.0-fast-generate",
+   "type": "changed",
+   "before": 2,
+   "after": 0.75,
+   "backfill": true
+  },
+  {
+   "date": "2026-03-13",
+   "id": "google/veo-3.0-generate",
+   "type": "changed",
+   "before": 3.75,
+   "after": 2,
+   "backfill": true
+  },
+  {
+   "date": "2026-02-14",
+   "id": "openai/sora-2",
+   "type": "added",
+   "after": 0.5,
+   "backfill": true
+  },
+  {
+   "date": "2026-02-14",
+   "id": "openai/sora-2-pro",
+   "type": "added",
+   "after": 1.5,
+   "backfill": true
+  },
+  {
+   "date": "2026-02-14",
+   "id": "openai/sora-2-pro-high-res",
+   "type": "added",
+   "after": 2.5,
+   "backfill": true
+  },
+  {
+   "date": "2026-02-14",
+   "id": "google/gemini-2.0-flash-exp-image-generation",
+   "type": "added",
+   "after": 0.039,
+   "backfill": true
+  },
+  {
+   "date": "2026-02-07",
+   "id": "elevenlabs/eleven_v3",
+   "type": "added",
+   "after": 0.162,
+   "backfill": true
+  },
+  {
+   "date": "2026-02-07",
+   "id": "elevenlabs/eleven_multilingual_v2",
+   "type": "added",
+   "after": 0.162,
+   "backfill": true
+  },
+  {
+   "date": "2026-02-07",
+   "id": "google/deep-research-pro-preview-12",
+   "type": "added",
+   "after": 0.134,
+   "backfill": true
+  },
+  {
+   "date": "2026-01-04",
+   "id": "openai/gpt-image-1",
+   "type": "changed",
+   "before": 0.042,
+   "after": 0.1664,
+   "backfill": true
+  },
+  {
+   "date": "2025-12-27",
+   "id": "minimax/speech-02-hd",
+   "type": "added",
+   "after": 0.09,
+   "backfill": true
+  },
+  {
+   "date": "2025-12-27",
+   "id": "minimax/speech-02-turbo",
+   "type": "added",
+   "after": 0.054,
+   "backfill": true
+  },
+  {
+   "date": "2025-12-27",
+   "id": "minimax/speech-2.6-hd",
+   "type": "added",
+   "after": 0.09,
+   "backfill": true
+  },
+  {
+   "date": "2025-12-27",
+   "id": "minimax/speech-2.6-turbo",
+   "type": "added",
+   "after": 0.054,
+   "backfill": true
+  },
+  {
+   "date": "2025-12-20",
+   "id": "openai/gpt-4o-transcribe-diarize",
+   "type": "added",
+   "after": 0.6912,
+   "backfill": true
+  },
+  {
+   "date": "2025-12-20",
+   "id": "openai/gpt-image-1.5",
+   "type": "added",
+   "after": 0.13312,
+   "backfill": true
+  },
+  {
+   "date": "2025-12-20",
+   "id": "openai/gpt-image-1",
+   "type": "added",
+   "after": 0.042,
+   "backfill": true
+  },
+  {
+   "date": "2025-12-07",
+   "id": "openai/gpt-image-1-mini",
+   "type": "added",
+   "after": 0.03328,
+   "backfill": true
+  },
+  {
+   "date": "2025-12-07",
+   "id": "google/chirp",
+   "type": "added",
+   "after": 0.027,
+   "backfill": true
+  },
+  {
+   "date": "2025-11-22",
+   "id": "google/gemini-3-pro-image",
+   "type": "added",
+   "after": 0.134,
+   "backfill": true
+  }
+ ],
+ "backfill": {
+  "from": "2025-11-15",
+  "until": "2026-11-18",
+  "source": "https://github.com/BerriAI/litellm/commits/main/model_prices_and_context_window.json",
+  "method": "每周取主线上最后一个版本"
+ }
 }

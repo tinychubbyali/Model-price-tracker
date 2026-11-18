@@ -6,6 +6,8 @@
     "fetch": "node scripts/fetch-prices.mjs",
     "fetch-macro": "node scripts/fetch-macro.mjs",
     "fetch-multimodal": "node scripts/fetch-multimodal.mjs",
+    "build-weekly": "node scripts/build-weekly.mjs",
+    "backfill": "node scripts/backfill.mjs",
     "test": "node --test",
     "serve": "npx --yes serve docs"
   },
