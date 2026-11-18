@@ -36,5 +36,7 @@ export function segmentOfSlug(slug) {
   return 'frontier';
 }
 
-// Loose key for matching our model names to OpenRouter slugs: claude-sonnet-4.5 == claude-sonnet-4-5.
-export const matchKey = (name) => name.split(':')[0].split('/').pop().toLowerCase().replace(/[._\s]/g, '-');
+// Loose key for matching our model names to OpenRouter slugs: claude-sonnet-4.5-20260928 == claude-sonnet-4-5.
+// OpenRouter permaslugs end in a release date, which our model names don't carry.
+export const stripDate = (slug) => slug.split(':')[0].replace(/-20\d{6}$/, '');
+export const matchKey = (name) => stripDate(name).split('/').pop().toLowerCase().replace(/[._\s]/g, '-');

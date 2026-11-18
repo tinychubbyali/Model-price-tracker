@@ -94,13 +94,13 @@ test('weeklyUsage totals by week and segment, other counts only in the total', (
   ];
   const u = weeklyUsage(rows);
   assert.deepEqual(u.total, [{ date: '2026-11-02', value: 150 }, { date: '2026-11-09', value: 200 }]);
-  assert.deepEqual(u.bySegment.china, [{ date: '2026-11-09', value: 80 }]);
+  assert.deepEqual(u.bySegment.china, [{ date: '2026-11-02', value: 0 }, { date: '2026-11-09', value: 80 }]);
   assert.deepEqual(u.top.map((t) => t.slug), ['openai/gpt-5', 'deepseek/deepseek-v3.2']);
 });
 
 test('benchmarkIndex keys Artificial Analysis scores by a loose model name', () => {
   const idx = benchmarkIndex([
-    { source: 'artificial-analysis', model_permaslug: 'anthropic/claude-sonnet-4.5', display_name: 'Claude Sonnet 4.5', intelligence_index: 63 },
+    { source: 'artificial-analysis', model_permaslug: 'anthropic/claude-sonnet-4.5-20250929', display_name: 'Claude Sonnet 4.5', intelligence_index: 63 },
     { source: 'design-arena', model_permaslug: 'x/y', elo: 1200 },
   ]);
   assert.deepEqual(Object.keys(idx), ['claude-sonnet-4-5']);

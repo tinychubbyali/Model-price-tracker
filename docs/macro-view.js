@@ -3,7 +3,7 @@ import { SERIES_COLORS, barChart, bindHover, legend, lineChart, sparkline } from
 
 // One color per segment on every chart, in segment order.
 const segColor = (macro, id) => SERIES_COLORS[macro.segments.findIndex((s) => s.id === id) % SERIES_COLORS.length];
-import { segmentOf } from './segments.js';
+import { segmentOf, stripDate } from './segments.js';
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
@@ -305,7 +305,7 @@ function usageCards(macro) {
       ${chips(macro, 'demand', 'week')}
       <h3>用量前 10 的模型（${esc(macro.usageTop.week)} 当周）</h3>
       <table><thead><tr><th>#</th><th>模型</th><th>分类</th><th class="num">周用量</th></tr></thead><tbody>
-      ${top.map((r, i) => `<tr><td>${i + 1}</td><td>${esc(r.slug)}</td><td>${esc(segName(r.segment))}</td><td class="num">${tokensBig(r.tokens)}</td></tr>`).join('')}
+      ${top.map((r, i) => `<tr><td>${i + 1}</td><td>${esc(stripDate(r.slug))}</td><td>${esc(segName(r.segment))}</td><td class="num">${tokensBig(r.tokens)}</td></tr>`).join('')}
       </tbody></table>
     </article>` : ''}`;
 }

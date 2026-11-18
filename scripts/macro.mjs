@@ -133,8 +133,9 @@ export function weeklyUsage(rows) {
     const seg = r.model_permaslug === 'other' ? null : segmentOfSlug(r.model_permaslug ?? '');
     if (seg) bySeg[seg].set(r.date, (bySeg[seg].get(r.date) ?? 0) + v);
   }
-  const toPoints = (m) => [...m].map(([date, value]) => ({ date, value })).sort((a, b) => a.date.localeCompare(b.date));
   const dates = [...total.keys()].sort();
+  // A segment with no model in the top 50 that week counts as zero, so its line doesn't freeze on an old value.
+  const toPoints = (m) => dates.map((date) => ({ date, value: m.get(date) ?? 0 }));
   const last = dates.at(-1);
   const top = (rows ?? [])
     .filter((r) => r.date === last && r.model_permaslug !== 'other')
@@ -142,7 +143,7 @@ export function weeklyUsage(rows) {
     .sort((a, b) => b.tokens - a.tokens)
     .slice(0, 10);
   return {
-    total: toPoints(total),
+    total: dates.map((date) => ({ date, value: total.get(date) })),
     bySegment: Object.fromEntries(Object.entries(bySeg).map(([k, m]) => [k, toPoints(m)])),
     top,
   };
