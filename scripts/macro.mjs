@@ -9,7 +9,7 @@ export const LAYERS = [
   { id: 'markets', name: '收入与资本市场', blurb: '模型公司赚到钱了吗，市场又怎么给产业链各环节定价。' },
 ];
 
-import { SEGMENTS, matchKey, segmentOf, segmentOfSlug } from '../docs/segments.js';
+import { SEGMENTS, matchKey, segmentOf, segmentOfSlug, stripDate } from '../docs/segments.js';
 
 export { SEGMENTS, segmentOf, segmentOfSlug };
 
@@ -141,9 +141,14 @@ export function weeklyUsage(rows, endDate) {
   // A segment with no model in the top 50 that week counts as zero, so its line doesn't freeze on an old value.
   const toPoints = (m) => dates.map((date) => ({ date, value: m.get(date) ?? 0 }));
   const last = dates.at(-1);
-  const top = (rows ?? [])
-    .filter((r) => r.date === last && r.model_permaslug !== 'other')
-    .map((r) => ({ slug: r.model_permaslug, tokens: Number(r.total_tokens), segment: segmentOfSlug(r.model_permaslug) }))
+  // Releases of one model (deepseek-v4.1-flash-20260910 and -20261017) count together in the top list.
+  const latest = new Map();
+  for (const r of rows.filter((r) => r.date === last && r.model_permaslug !== 'other')) {
+    const slug = stripDate(r.model_permaslug);
+    latest.set(slug, (latest.get(slug) ?? 0) + Number(r.total_tokens));
+  }
+  const top = [...latest]
+    .map(([slug, tokens]) => ({ slug, tokens, segment: segmentOfSlug(slug) }))
     .sort((a, b) => b.tokens - a.tokens)
     .slice(0, 10);
   return {
