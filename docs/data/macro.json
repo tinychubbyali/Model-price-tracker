@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T06:57:57.871Z",
+ "updatedAt": "2026-11-18T06:59:22.244Z",
  "layers": [
   {
    "id": "compute",
@@ -55,58 +55,58 @@
   }
  ],
  "usageTop": {
-  "asOf": "2026-11-18T06:57:56.102Z",
-  "week": "2026-11-16",
+  "asOf": "2026-11-18T06:59:21.598Z",
+  "week": "2026-11-09",
   "rows": [
    {
-    "slug": "tencent/hy4-flash-20261116",
-    "tokens": 33131809907581,
+    "slug": "deepseek/deepseek-v4.1-flash-20261017",
+    "tokens": 59226957518681,
     "segment": "china"
    },
    {
-    "slug": "deepseek/deepseek-v4.1-flash-20261017",
-    "tokens": 20896099727168,
+    "slug": "tencent/hy4-20261104",
+    "tokens": 18121868313164,
     "segment": "china"
    },
    {
     "slug": "deepseek/deepseek-v4.1-flash-20260910",
-    "tokens": 5642267127117,
+    "tokens": 15545126927844,
     "segment": "china"
    },
    {
     "slug": "z-ai/glm-5.3-flash-20260826",
-    "tokens": 3840835124898,
+    "tokens": 11903059258880,
     "segment": "china"
    },
    {
     "slug": "openai/gpt-6-luna-20260922",
-    "tokens": 3001807278196,
+    "tokens": 7850806739142,
     "segment": "frontier"
    },
    {
     "slug": "anthropic/claude-opus-5.5-20260921",
-    "tokens": 2915189545247,
+    "tokens": 6983920751549,
     "segment": "frontier"
    },
    {
-    "slug": "tencent/hy4-20261104",
-    "tokens": 2751630794846,
-    "segment": "china"
-   },
-   {
     "slug": "stepfun/step-5-preview-20261008",
-    "tokens": 2446976587151,
-    "segment": "china"
-   },
-   {
-    "slug": "moonshotai/kimi-k3.1-pro-20261023",
-    "tokens": 1362617340998,
+    "tokens": 6410275896570,
     "segment": "china"
    },
    {
     "slug": "xiaomi/mimo-v2.6-flash-20260921",
-    "tokens": 1358517394519,
+    "tokens": 4228020833267,
     "segment": "china"
+   },
+   {
+    "slug": "z-ai/glm-5.3-20260816",
+    "tokens": 3758045975594,
+    "segment": "china"
+   },
+   {
+    "slug": "openai/gpt-6.1-sol-20260929",
+    "tokens": 3707400389614,
+    "segment": "frontier"
    }
   ]
  },
@@ -2516,10 +2516,6 @@
     {
      "date": "2026-11-09",
      "value": 211280142506486
-    },
-    {
-     "date": "2026-11-16",
-     "value": 104873968401157
     }
    ]
   },
@@ -2737,10 +2733,6 @@
     {
      "date": "2026-11-09",
      "value": 46191025321111
-    },
-    {
-     "date": "2026-11-16",
-     "value": 17598757147886
     }
    ]
   },
@@ -2958,10 +2950,6 @@
     {
      "date": "2026-11-09",
      "value": 142618624774762
-    },
-    {
-     "date": "2026-11-16",
-     "value": 79018443194253
     }
    ]
   },
@@ -3179,10 +3167,6 @@
     {
      "date": "2026-11-09",
      "value": 4863924997768
-    },
-    {
-     "date": "2026-11-16",
-     "value": 1917847506777
     }
    ]
   },
@@ -3400,10 +3384,6 @@
     {
      "date": "2026-11-09",
      "value": 3594775074324
-    },
-    {
-     "date": "2026-11-16",
-     "value": 935876900168
     }
    ]
   },
@@ -3620,10 +3600,6 @@
     },
     {
      "date": "2026-11-09",
-     "value": 0
-    },
-    {
-     "date": "2026-11-16",
      "value": 0
     }
    ]
