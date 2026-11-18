@@ -1,4 +1,6 @@
-# Model Price Tracker 大模型价格追踪
+# Numagic-AIStudy
+
+从 Token 价格切入，追踪 AI 产业链的宏观指标。（原名 Model Price Tracker 大模型价格追踪）
 
 自动记录主流大模型 API 牌价及其历史变动的静态网站。
 
