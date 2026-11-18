@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import {
-  calendarQuarter, parseAlphaVantage, priceMoves, quarterly, segmentOf, sumByQuarter, tokenPriceIndex,
+  benchmarkIndex, calendarQuarter, parseAlphaVantage, priceMoves, quarterly, segmentOf, segmentOfSlug, sumByQuarter,
+  tokenPriceIndex, weeklyUsage,
 } from '../scripts/macro.mjs';
 
 test('quarterly recovers single quarters from year-to-date cash-flow facts', () => {
@@ -73,4 +74,35 @@ test('priceMoves counts cuts and hikes per month', () => {
     'deepseek/deepseek-chat': { provider: 'deepseek', model: 'deepseek-chat' },
   };
   assert.deepEqual(priceMoves(tagged, models, 'china'), [{ date: '2026-11', cuts: 0, hikes: 1 }]);
+});
+
+test('segmentOfSlug sorts OpenRouter slugs by vendor and variant', () => {
+  assert.equal(segmentOfSlug('anthropic/claude-sonnet-4.5'), 'frontier');
+  assert.equal(segmentOfSlug('deepseek/deepseek-v3.2:free'), 'china');
+  assert.equal(segmentOfSlug('meta-llama/llama-4-maverick'), 'open');
+  assert.equal(segmentOfSlug('openai/gpt-oss-120b'), 'open');
+  assert.equal(segmentOfSlug('qwen/qwen3-coder'), 'niche');
+  assert.equal(segmentOfSlug('other'), null);
+});
+
+test('weeklyUsage totals by week and segment, other counts only in the total', () => {
+  const rows = [
+    { date: '2026-11-02', model_permaslug: 'openai/gpt-5', total_tokens: '100' },
+    { date: '2026-11-02', model_permaslug: 'other', total_tokens: '50' },
+    { date: '2026-11-09', model_permaslug: 'openai/gpt-5', total_tokens: '120' },
+    { date: '2026-11-09', model_permaslug: 'deepseek/deepseek-v3.2', total_tokens: '80' },
+  ];
+  const u = weeklyUsage(rows);
+  assert.deepEqual(u.total, [{ date: '2026-11-02', value: 150 }, { date: '2026-11-09', value: 200 }]);
+  assert.deepEqual(u.bySegment.china, [{ date: '2026-11-09', value: 80 }]);
+  assert.deepEqual(u.top.map((t) => t.slug), ['openai/gpt-5', 'deepseek/deepseek-v3.2']);
+});
+
+test('benchmarkIndex keys Artificial Analysis scores by a loose model name', () => {
+  const idx = benchmarkIndex([
+    { source: 'artificial-analysis', model_permaslug: 'anthropic/claude-sonnet-4.5', display_name: 'Claude Sonnet 4.5', intelligence_index: 63 },
+    { source: 'design-arena', model_permaslug: 'x/y', elo: 1200 },
+  ]);
+  assert.deepEqual(Object.keys(idx), ['claude-sonnet-4-5']);
+  assert.equal(idx['claude-sonnet-4-5'].scores.intelligence, 63);
 });

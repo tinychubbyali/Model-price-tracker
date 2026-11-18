@@ -5,28 +5,13 @@ export const LAYERS = [
   { id: 'compute', name: '算力供给', blurb: '芯片和算力卖得怎么样，决定了整个行业能用多少算力。' },
   { id: 'capex', name: '资本投入', blurb: '云厂商每季度花多少钱建数据中心，是对未来 AI 需求的押注。' },
   { id: 'tokens', name: '模型层（Token）', blurb: '算力最终变成 Token 卖出去，Token 的价格反映供需和技术进步。' },
-  { id: 'demand', name: '需求与用量', blurb: 'Token 实际被用了多少。这一层依赖人工录入，第二版加入。' },
+  { id: 'demand', name: '需求与用量', blurb: 'Token 实际被用了多少：开发者平台的公开用量，加上厂商公布的调用量。' },
   { id: 'markets', name: '收入与资本市场', blurb: '模型公司赚到钱了吗，市场又怎么给产业链各环节定价。' },
 ];
 
-// Model-layer segments, grouped by what drives their prices.
-export const SEGMENTS = [
-  { id: 'frontier', name: '海外前沿闭源', driver: '核心研发与芯片代际带来的推理成本下降' },
-  { id: 'china', name: '中国模型', driver: '开源与价格竞争、国产芯片、云厂商生态补贴' },
-  { id: 'open', name: '开源权重托管', driver: '推理硬件效率与托管商竞争' },
-  { id: 'multimodal', name: '多模态', driver: '计价单位和成本结构与文本不同' },
-  { id: 'niche', name: '小众与专用', driver: '特定场景的需求' },
-];
-const CHINA_PROVIDERS = new Set(['deepseek', 'dashscope', 'zai', 'moonshot']);
-const MULTIMODAL = /audio|realtime|tts|vision|omni|image|-vl-|lyria|robotics/;
-const NICHE = /code|coder|codestral|devstral|search|computer-use|deep-research|cyber/;
+import { SEGMENTS, matchKey, segmentOf, segmentOfSlug } from '../docs/segments.js';
 
-// Specialised and multimodal variants are split out first; the rest follow their vendor.
-export function segmentOf(m) {
-  if (MULTIMODAL.test(m.model)) return 'multimodal';
-  if (NICHE.test(m.model)) return 'niche';
-  return CHINA_PROVIDERS.has(m.provider) ? 'china' : 'frontier';
-}
+export { SEGMENTS, segmentOf, segmentOfSlug };
 
 const DAY = 864e5;
 const days = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / DAY);
@@ -134,4 +119,48 @@ export function priceMoves(changes, models, segment) {
     months.set(m, row);
   }
   return [...months.values()].sort((a, b) => a.date.localeCompare(b.date));
+}
+
+// OpenRouter rankings rows ({date, model_permaslug, total_tokens}) -> weekly totals overall and by segment,
+// plus the latest week's top models. "other" rows count toward the total only.
+export function weeklyUsage(rows) {
+  const total = new Map();
+  const bySeg = Object.fromEntries(SEGMENTS.map((s) => [s.id, new Map()]));
+  for (const r of rows ?? []) {
+    const v = Number(r.total_tokens);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(r.date ?? '') || !Number.isFinite(v)) continue;
+    total.set(r.date, (total.get(r.date) ?? 0) + v);
+    const seg = r.model_permaslug === 'other' ? null : segmentOfSlug(r.model_permaslug ?? '');
+    if (seg) bySeg[seg].set(r.date, (bySeg[seg].get(r.date) ?? 0) + v);
+  }
+  const toPoints = (m) => [...m].map(([date, value]) => ({ date, value })).sort((a, b) => a.date.localeCompare(b.date));
+  const dates = [...total.keys()].sort();
+  const last = dates.at(-1);
+  const top = (rows ?? [])
+    .filter((r) => r.date === last && r.model_permaslug !== 'other')
+    .map((r) => ({ slug: r.model_permaslug, tokens: Number(r.total_tokens), segment: segmentOfSlug(r.model_permaslug) }))
+    .sort((a, b) => b.tokens - a.tokens)
+    .slice(0, 10);
+  return {
+    total: toPoints(total),
+    bySegment: Object.fromEntries(Object.entries(bySeg).map(([k, m]) => [k, toPoints(m)])),
+    top,
+  };
+}
+
+// Artificial Analysis rows from OpenRouter's benchmarks endpoint -> { matchKey: {name, slug, scores} }.
+const AA_SCORES = ['intelligence_index', 'engineering_index', 'finance_and_accounting_index', 'legal_index'];
+export function benchmarkIndex(items) {
+  const out = {};
+  for (const it of items ?? []) {
+    if (it?.source !== 'artificial-analysis' || typeof it.model_permaslug !== 'string') continue;
+    const scores = Object.fromEntries(AA_SCORES.filter((k) => typeof it[k] === 'number').map((k) => [k.replace('_index', ''), it[k]]));
+    if (!Object.keys(scores).length) continue;
+    const key = matchKey(it.model_permaslug);
+    // Several variants can share a key (":free", ":thinking"); keep the highest-scoring one.
+    if (!out[key] || (scores.intelligence ?? 0) > (out[key].scores.intelligence ?? 0)) {
+      out[key] = { name: it.display_name ?? it.model_permaslug, slug: it.model_permaslug, scores };
+    }
+  }
+  return out;
 }

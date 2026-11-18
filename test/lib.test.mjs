@@ -13,7 +13,8 @@ const raw = {
   'dashscope/deepseek-v4-pro': { litellm_provider: 'dashscope', mode: 'chat', input_cost_per_token: 1e-6, output_cost_per_token: 1e-6 },
   'deepseek/deepseek-chat': {
     litellm_provider: 'deepseek', mode: 'chat', input_cost_per_token: 2.8e-7, output_cost_per_token: 4.2e-7,
-    cache_read_input_token_cost: 2.8e-8,
+    cache_read_input_token_cost: 2.8e-8, max_input_tokens: 131072, max_output_tokens: 8192,
+    supports_function_calling: true, supports_vision: false, deprecation_date: '2026-07-24',
   },
 };
 
@@ -24,6 +25,9 @@ test('normalize keeps only vendor chat models, priced per million tokens', () =>
   assert.equal(out['openai/gpt-4o'].output, 10);
   assert.equal(out['deepseek/deepseek-chat'].input, 0.28);
   assert.equal(out['deepseek/deepseek-chat'].cacheRead, 0.028);
+  assert.deepEqual(out['deepseek/deepseek-chat'].specs,
+    { context: 131072, maxOutput: 8192, caps: ['tools'], deprecation: '2026-07-24' });
+  assert.deepEqual(out['openai/gpt-4o'].specs, { context: null, maxOutput: null, caps: [], deprecation: null });
 });
 
 test('applySnapshot records changes, removals and restorations', () => {

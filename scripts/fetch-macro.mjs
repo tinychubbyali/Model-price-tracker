@@ -1,14 +1,16 @@
 // Fetches macro indicators along the AI value chain into docs/data/macro.json.
 // A source that fails keeps its previously stored points, so one outage never blanks the page.
 // Env: SEC_CONTACT_EMAIL (SEC asks automated clients to identify themselves),
-//      ALPHAVANTAGE_API_KEY (weekly stock prices). A missing one skips its series.
+//      ALPHAVANTAGE_API_KEY (weekly stock prices),
+//      OPENROUTER_API_KEY (public usage rankings and benchmark scores). A missing one skips its series.
 import { readFile, writeFile } from 'node:fs/promises';
 import {
-  LAYERS, SEGMENTS, parseAlphaVantage, priceMoves, quarterly, sumByQuarter, tokenPriceIndex,
+  LAYERS, SEGMENTS, benchmarkIndex, parseAlphaVantage, weeklyUsage, priceMoves, quarterly, sumByQuarter, tokenPriceIndex,
 } from './macro.mjs';
 
 const DATA_DIR = new URL('../docs/data/', import.meta.url);
 const MACRO = new URL('macro.json', DATA_DIR);
+const BENCHMARKS = new URL('benchmarks.json', DATA_DIR);
 const QUARTERS_KEPT = 12;
 const WEEKS_KEPT = 104;
 
@@ -54,6 +56,26 @@ async function getJson(url, headers) {
 
 const secEmail = process.env.SEC_CONTACT_EMAIL?.trim();
 const avKey = process.env.ALPHAVANTAGE_API_KEY?.trim();
+const orKey = process.env.OPENROUTER_API_KEY?.trim();
+const OR_RANKINGS = 'https://openrouter.ai/rankings';
+
+async function openRouter(path) {
+  if (!orKey) throw new Error('OPENROUTER_API_KEY not set');
+  return getJson(`https://openrouter.ai/api/v1/${path}`, { Authorization: `Bearer ${orKey}` });
+}
+
+// One request returns up to a year of weekly rows for the top 50 models plus "other".
+let usageCache;
+async function usage() {
+  usageCache ??= (async () => {
+    const start = new Date(Date.now() - 364 * 864e5).toISOString().slice(0, 10);
+    const body = await openRouter(`datasets/rankings-daily?period=week&start_date=${start}`);
+    const u = weeklyUsage(body.data);
+    if (!u.total.length) throw new Error('no usage rows');
+    return { ...u, asOf: body.meta?.as_of ?? null };
+  })();
+  return usageCache;
+}
 
 // Tries each XBRL tag and keeps the one whose quarterly data is most recent.
 async function secQuarterly(cik, tags) {
@@ -123,6 +145,14 @@ async function buildSeries() {
       () => weeklyCloses(s.symbol),
     );
   }
+  const usageMeta = { layer: 'demand', unit: 'tokens', freq: 'week', source: 'OpenRouter（CC BY 4.0）', sourceUrl: OR_RANKINGS };
+  await add({ id: 'usage-total', name: 'OpenRouter 每周 Token 用量',
+    note: 'OpenRouter 上公开流量的总量（输入 + 输出），代表开发者侧的需求，不含各厂商直连的流量。', ...usageMeta },
+  async () => (await usage()).total);
+  for (const seg of SEGMENTS) {
+    await add({ id: `usage-${seg.id}`, segment: seg.id, group: 'usage-seg', name: `${seg.name}：每周用量`, ...usageMeta },
+      async () => (await usage()).bySegment[seg.id]);
+  }
   return series;
 }
 
@@ -132,6 +162,27 @@ const changes = await readJson(new URL('changes.json', DATA_DIR), []);
 const today = new Date().toISOString().slice(0, 10);
 
 const series = await buildSeries();
+
+// Latest week's top models; kept from the previous run if OpenRouter is unavailable.
+let usageTop = previous.usageTop ?? null;
+try {
+  const u = await usage();
+  usageTop = { asOf: u.asOf, week: u.total.at(-1).date, rows: u.top };
+} catch {}
+
+// Benchmark scores live in their own file; the price tab reads them. Untouched when the fetch fails.
+try {
+  const body = await openRouter('benchmarks?source=artificial-analysis');
+  const models = benchmarkIndex(body.data);
+  if (!Object.keys(models).length) throw new Error('no benchmark rows');
+  await writeFile(BENCHMARKS, JSON.stringify({
+    asOf: body.meta?.as_of ?? null, citation: body.meta?.citation ?? 'Artificial Analysis, via OpenRouter',
+    sourceUrl: body.meta?.source_url ?? 'https://artificialanalysis.ai/', models,
+  }, null, 1) + '\n');
+  report('notice', `benchmarks: ${Object.keys(models).length} models`);
+} catch (err) {
+  report('warning', `benchmarks failed: ${err.cause?.code ?? err.message}`);
+}
 for (const s of series) {
   if (s.points) continue;
   s.points = previous.series.find((p) => p.id === s.id)?.points ?? [];
@@ -166,7 +217,7 @@ for (const seg of SEGMENTS) {
 
 await writeFile(
   MACRO,
-  JSON.stringify({ updatedAt: new Date().toISOString(), layers: LAYERS, segments: SEGMENTS, series }, null, 1) + '\n',
+  JSON.stringify({ updatedAt: new Date().toISOString(), layers: LAYERS, segments: SEGMENTS, usageTop, series }, null, 1) + '\n',
 );
 const stale = series.filter((s) => s.stale).map((s) => s.id);
 report(stale.length ? 'warning' : 'notice',
