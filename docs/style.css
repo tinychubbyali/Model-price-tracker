@@ -11,7 +11,7 @@
   --series-1: #2a78d6;
   --series-2: #eb6834;
   --series-3: #1baf7a;
-  --series-4: #eda100;
+  --series-4: #7c5cd6;
   --series-5: #e87ba4;
   --down: #0a7a3a;
   --up: #b42318;
@@ -30,7 +30,7 @@
     --series-1: #3987e5;
     --series-2: #d95926;
     --series-3: #199e70;
-    --series-4: #c98500;
+    --series-4: #9a7ef0;
     --series-5: #d55181;
     --down: #4cc27a;
     --up: #f07a6e;
@@ -49,7 +49,7 @@
   --series-1: #3987e5;
   --series-2: #d95926;
   --series-3: #199e70;
-  --series-4: #c98500;
+  --series-4: #9a7ef0;
   --series-5: #d55181;
   --down: #4cc27a;
   --up: #f07a6e;
@@ -189,3 +189,4 @@ td.caps { white-space: normal; min-width: 200px; }
 .hero-changes li { padding: 4px 0; border-bottom: 1px solid var(--grid); }
 .hero-changes a { color: var(--accent); text-decoration: none; }
 @media (max-width: 760px) { .hero-body { grid-template-columns: 1fr; } }
+.chart-svg .end-label { font-size: 12px; font-weight: 600; }

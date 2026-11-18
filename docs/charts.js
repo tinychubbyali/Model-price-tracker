@@ -44,10 +44,13 @@ export function barChart(points, { width = 520, height = 200, format = String, c
 // One or more lines sharing a time axis. series: [{name, points:[{date,value}]}].
 // money: tooltip values go through bindHover's money formatter; otherwise they print like the axis.
 // events: [{date, kind: 'down'|'up'|'new'}] drawn as ticks along the bottom axis.
-export function lineChart(series, { width = 520, height = 200, format = String, step = false, money = false, events = [] } = {}) {
+// A series may carry its own `color`, so one segment keeps one color on every chart.
+// endLabels: write each series' name at the end of its line instead of relying on a legend alone.
+export const colorOf = (series, s) => s.color ?? SERIES_COLORS[series.indexOf(s) % SERIES_COLORS.length];
+export function lineChart(series, { width = 520, height = 200, format = String, step = false, money = false, events = [], endLabels = false } = {}) {
   const live = series.filter((s) => s.points.length);
   if (!live.length) return '<p class="empty">暂无数据</p>';
-  const L = 56, R = 8, T = 10, B = 24;
+  const L = 56, R = endLabels ? 96 : 8, T = 10, B = 24;
   const all = live.flatMap((s) => s.points);
   const t0 = Math.min(...all.map((p) => toTime(p.date)));
   const t1 = Math.max(t0 + 864e5, ...all.map((p) => toTime(p.date)));
@@ -67,15 +70,23 @@ export function lineChart(series, { width = 520, height = 200, format = String, 
     return `<circle cx="${cx}" cy="${cy}" r="3" fill="${EVENT_COLOR[e.kind] ?? EVENT_COLOR.new}"><title>${esc(e.label ?? e.date)}</title></circle>`;
   }).join('');
   const lines = live.map((s) => {
-    const color = SERIES_COLORS[series.indexOf(s) % SERIES_COLORS.length];
+    const color = colorOf(series, s);
     const lastP = s.points.at(-1);
     return `<path d="${path(s.points)}" fill="none" stroke="${color}" stroke-width="2"/>` +
       `<circle cx="${x(lastP.date)}" cy="${y(lastP.value)}" r="4" fill="${color}" stroke="var(--surface-1)" stroke-width="2"/>`;
   }).join('');
-  const payload = esc(JSON.stringify({ L, R, width, t0, t1, money, series: live.map((s) => ({ name: s.name, color: SERIES_COLORS[series.indexOf(s) % SERIES_COLORS.length], points: s.points.map((p) => [toTime(p.date), p.value, label(p.date)]) })) }));
+  // End labels, nudged apart vertically so close lines don't overprint each other.
+  let labels = '';
+  if (endLabels) {
+    const placed = live.map((s) => ({ s, y: y(s.points.at(-1).value) })).sort((a, b) => a.y - b.y);
+    for (let i = 1; i < placed.length; i++) placed[i].y = Math.max(placed[i].y, placed[i - 1].y + 13);
+    labels = placed.map(({ s, y: ly }) => `<text class="end-label" x="${width - R + 8}" y="${ly + 4}" style="fill:${colorOf(series, s)}">${esc(s.name)}</text>`).join('');
+  }
+  const payload = esc(JSON.stringify({ L, R, width, t0, t1, money, series: live.map((s) => ({ name: s.name, color: colorOf(series, s), points: s.points.map((p) => [toTime(p.date), p.value, label(p.date)]) })) }));
   return `<div class="chart" data-hover="${payload}"><svg class="chart-svg" viewBox="0 0 ${width} ${height}" role="img">
     ${ticks.map((v) => `<line class="grid" x1="${L}" x2="${width - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${esc(format(v))}</text>`).join('')}
     ${lines}
+    ${labels}
     ${marks}
     <text x="${L}" y="${height - 6}">${esc(label(new Date(t0).toISOString()))}</text>
     <text x="${width - R}" y="${height - 6}" text-anchor="end">${esc(label(new Date(t1).toISOString()))}</text>
@@ -85,7 +96,7 @@ export function lineChart(series, { width = 520, height = 200, format = String, 
 
 export function legend(series) {
   return `<div class="legend">${series.filter((s) => s.points.length).map((s) =>
-    `<span><i style="background:${SERIES_COLORS[series.indexOf(s) % SERIES_COLORS.length]}"></i>${esc(s.name)}</span>`).join('')}</div>`;
+    `<span><i style="background:${colorOf(series, s)}"></i>${esc(s.name)}</span>`).join('')}</div>`;
 }
 
 // Crosshair + tooltip for every lineChart under root. `format` prints tooltip values.

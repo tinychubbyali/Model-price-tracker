@@ -1,5 +1,8 @@
 // Overview and macro tabs. Macro figures stay in USD; token prices follow the currency toggle.
 import { SERIES_COLORS, barChart, bindHover, legend, lineChart, sparkline } from './charts.js';
+
+// One color per segment on every chart, in segment order.
+const segColor = (macro, id) => SERIES_COLORS[macro.segments.findIndex((s) => s.id === id) % SERIES_COLORS.length];
 import { segmentOf } from './segments.js';
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
@@ -70,7 +73,7 @@ function shareSeries(macro, segId) {
 // The headline chart: daily token price medians by segment, with every price event marked,
 // and a panel naming the most recent day's changes.
 function dailyHero(macro, { money, changes, models }) {
-  const lines = macro.segments.map((seg) => ({ id: seg.id, name: seg.name, points: byId(macro, `token-index-${seg.id}`)?.points ?? [] }));
+  const lines = macro.segments.map((seg) => ({ id: seg.id, name: seg.name, color: segColor(macro, seg.id), points: byId(macro, `token-index-${seg.id}`)?.points ?? [] }));
   const live = lines.filter((l) => l.points.length);
   if (!live.length) return '';
   const blended = (h) => (h.input * 3 + h.output) / 4;
@@ -93,7 +96,7 @@ function dailyHero(macro, { money, changes, models }) {
   const rows = live.map((l) => {
     const last = l.points.at(-1);
     const w = changeOver(l.points, 7);
-    const color = SERIES_COLORS[live.indexOf(l) % SERIES_COLORS.length]; // lineChart colors by position in live
+    const color = l.color;
     return `<tr><td><i class="dot" style="background:${color}"></i>${esc(l.name)}</td><td class="num">${money(last.value)}</td><td class="num ${w && w.change < 0 ? 'down' : w && w.change > 0 ? 'up' : ''}">${pct(w?.change ?? null)}</td></tr>`;
   }).join('');
   return `<article class="card hero">
@@ -105,7 +108,7 @@ function dailyHero(macro, { money, changes, models }) {
       </div>
     </div>
     <div class="hero-body">
-      <div class="hero-chart">${lineChart(live, { format: money, step: true, width: 760, height: 260, money: true, events })}</div>
+      <div class="hero-chart">${lineChart(live, { format: money, step: true, width: 760, height: 260, money: true, events, endLabels: true })}</div>
       <aside class="hero-side">
         <table class="hero-table"><thead><tr><th>类型</th><th class="num">最新</th><th class="num">近 7 天</th></tr></thead><tbody>${rows}</tbody></table>
         ${lastDate ? `<h3>最新变化 · ${esc(lastDate)}</h3>
@@ -232,7 +235,7 @@ function fastBand(macro, moneyAxis) {
   const stockLines = stocks.map((s) => ({ name: s.name.replace(/股价$/, ''),
     points: s.points.map((p) => ({ date: p.date, value: (p.value / s.points[0].value) * 100 })) }));
   const tokenLines = macro.segments.map((seg) => ({
-    name: seg.name, points: byId(macro, `token-index-${seg.id}`)?.points ?? [] }));
+    name: seg.name, color: segColor(macro, seg.id), points: byId(macro, `token-index-${seg.id}`)?.points ?? [] }));
   const empty = tokenLines.filter((x) => !x.points.length).map((x) => x.name);
   return `<div class="macro-grid">
     <article class="card macro-card wide">
@@ -245,7 +248,7 @@ function fastBand(macro, moneyAxis) {
       ${chips(macro, 'tokens', 'day')}
       <h3>各类模型 Token 价格中位数</h3>
       <p class="kpi-note">混合价格（输入:输出 = 3:1），每百万 tokens。${empty.length ? `${esc(empty.join('、'))}暂无数据，需要扩展收录范围。` : ''}</p>
-      ${legend(tokenLines)}${lineChart(tokenLines, { format: moneyAxis, step: true, width: 760, money: true })}
+      ${legend(tokenLines)}${lineChart(tokenLines, { format: moneyAxis, step: true, width: 760, money: true, endLabels: true })}
       <p class="source">来源：本站价格数据</p>
     </article>
     ${usageCards(macro)}
@@ -258,7 +261,7 @@ function usageCards(macro) {
   if (!total?.points.length) {
     return `<article class="card macro-card wide">${chips(macro, 'demand', 'week')}<h3>OpenRouter 每周 Token 用量</h3><p class="kpi-missing">${esc(USAGE_MISSING)}</p></article>`;
   }
-  const shares = macro.segments.map((seg) => ({ name: seg.name, points: shareSeries(macro, seg.id) }));
+  const shares = macro.segments.map((seg) => ({ name: seg.name, color: segColor(macro, seg.id), points: shareSeries(macro, seg.id) }));
   const top = macro.usageTop?.rows ?? [];
   const segName = (id) => macro.segments.find((x) => x.id === id)?.name ?? '';
   return `<article class="card macro-card wide">
@@ -272,7 +275,7 @@ function usageCards(macro) {
       ${chips(macro, 'demand', 'week')}
       <h3>各类模型用量占比</h3>
       <p class="kpi-note">只统计前 50 名模型，其余计入总量但不分类。</p>
-      ${legend(shares)}${lineChart(shares, { format: (v) => `${Math.round(v * 100)}%`, width: 760 })}
+      ${legend(shares)}${lineChart(shares, { format: (v) => `${Math.round(v * 100)}%`, width: 760, endLabels: true })}
     </article>
     ${top.length ? `<article class="card macro-card wide">
       ${chips(macro, 'demand', 'week')}
