@@ -1,7 +1,14 @@
 {
- "updatedAt": "2026-11-17T10:25:33.217Z",
+ "updatedAt": "2026-11-18T06:10:15.521Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
- "usdCny": 6.679257,
+ "fx": {
+  "date": "2026-11-18",
+  "source": "https://open.er-api.com",
+  "rates": {
+   "SGD": 1.288508,
+   "CNY": 6.679863
+  }
+ },
  "models": {
   "anthropic/claude-haiku-4-5": {
    "provider": "anthropic",
@@ -4078,8 +4085,8 @@
    "model": "qwen4-max",
    "input": 1.5,
    "output": 4.5,
-   "cacheRead": null,
-   "source": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+   "cacheRead": 0.075,
+   "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
    "firstSeen": "2026-11-17",
    "history": [
     {
@@ -4087,6 +4094,63 @@
      "input": 1.5,
      "output": 4.5,
      "cacheRead": null
+    },
+    {
+     "date": "2026-11-18",
+     "input": 1.5,
+     "output": 4.5,
+     "cacheRead": 0.075
+    }
+   ]
+  },
+  "openai/gpt-6.2-astra": {
+   "provider": "openai",
+   "model": "gpt-6.2-astra",
+   "input": 8,
+   "output": 40,
+   "cacheRead": 0.4,
+   "source": "https://developers.openai.com/api/docs/pricing",
+   "firstSeen": "2026-11-18",
+   "history": [
+    {
+     "date": "2026-11-18",
+     "input": 8,
+     "output": 40,
+     "cacheRead": 0.4
+    }
+   ]
+  },
+  "openai/gpt-6.2-sol": {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.1,
+   "source": "https://developers.openai.com/api/docs/pricing",
+   "firstSeen": "2026-11-18",
+   "history": [
+    {
+     "date": "2026-11-18",
+     "input": 2,
+     "output": 10,
+     "cacheRead": 0.1
+    }
+   ]
+  },
+  "openai/gpt-6.2-astra-law": {
+   "provider": "openai",
+   "model": "gpt-6.2-astra-law",
+   "input": 8,
+   "output": 40,
+   "cacheRead": 0.4,
+   "source": "https://developers.openai.com/api/docs/pricing",
+   "firstSeen": "2026-11-18",
+   "history": [
+    {
+     "date": "2026-11-18",
+     "input": 8,
+     "output": 40,
+     "cacheRead": 0.4
     }
    ]
   }
