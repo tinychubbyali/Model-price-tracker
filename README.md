@@ -6,6 +6,10 @@
 - **价格口径**：标准按量计费，单位为每百万 tokens（USD），页面可切换为人民币显示
 - **更新频率**：GitHub Actions 每天 02:00 UTC 抓取一次，价格有变动才会写入历史
 
+## 宏观指标追踪
+
+`docs/macro.html` 是一张基于官方数据的中国宏观指标检查表，数据在 `docs/data/macro.json`，手动维护。每月数据出齐后，把对应指标的 `status` 改为 `support`（验证）、`neutral`（中性）或 `against`（证伪），并在 `log` 里追加一条 `{ "date": "2026-12", "note": "…" }`。本页不收录任何机构的预测数字。
+
 ## 工作原理
 
 1. `scripts/fetch-prices.mjs` 拉取 [LiteLLM 价格数据集](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json)。这是一份社区维护、对照各厂商官方价格页更新的机器可读价目表，每个模型都附有官方来源链接。

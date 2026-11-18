@@ -1,0 +1,663 @@
+{
+ "updatedAt": "2026-11-18",
+ "groups": [
+  {
+   "id": "A",
+   "name": "增长与内需",
+   "thesis": "名义增长尚可，但内需偏弱",
+   "indicators": [
+    {
+     "name": "实际与名义 GDP",
+     "hypothesis": "季度增速逐步放缓",
+     "support": "季度同比继续下行",
+     "against": "增速企稳回升",
+     "sources": [
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      }
+     ],
+     "freq": "季度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "内需五项：社零、一般预算支出、政府性基金支出、商品房销售额、制造业投资",
+     "hypothesis": "居民、政府、企业三个部门同时走弱",
+     "support": "五项合成同比继续为负",
+     "against": "连续三个月回升",
+     "sources": [
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      },
+      {
+       "label": "财政部·财政数据",
+       "url": "https://gks.mof.gov.cn/tongjishuju/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "基建投资与政策性金融工具投放",
+     "hypothesis": "年底靠投资托底",
+     "support": "四季度基建增速回升",
+     "against": "投资继续下滑",
+     "sources": [
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      },
+      {
+       "label": "国家发展改革委",
+       "url": "https://www.ndrc.gov.cn/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "name": "出口",
+   "thesis": "出口对增长的支撑减弱",
+   "indicators": [
+    {
+     "name": "出口总额同比（美元）",
+     "hypothesis": "出口增速回落",
+     "support": "增速明显回落",
+     "against": "维持两位数增长",
+     "sources": [
+      {
+       "label": "海关总署",
+       "url": "https://www.customs.gov.cn/"
+      },
+      {
+       "label": "海关统计在线查询",
+       "url": "http://stats.customs.gov.cn/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "AI 相关出口（自建 HS 篮子：集成电路、自动数据处理设备及部件等）",
+     "hypothesis": "AI 相关出口从高增长走平",
+     "support": "增速从高位明显回落",
+     "against": "继续高速增长",
+     "sources": [
+      {
+       "label": "海关统计在线查询",
+       "url": "http://stats.customs.gov.cn/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "全球 AI 资本开支（无官方统计，用头部云厂商季报）",
+     "hypothesis": "海外 AI 投资增速见顶",
+     "support": "头部云厂商下调资本开支指引",
+     "against": "指引继续上修",
+     "sources": [
+      {
+       "label": "SEC EDGAR",
+       "url": "https://www.sec.gov/edgar/search/"
+      }
+     ],
+     "freq": "季度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "对美、对欧（德国）出口与差额",
+     "hypothesis": "贸易摩擦重心向欧洲转移",
+     "support": "欧盟出台新限制",
+     "against": "摩擦缓和",
+     "sources": [
+      {
+       "label": "海关总署",
+       "url": "https://www.customs.gov.cn/"
+      },
+      {
+       "label": "德国联邦统计局",
+       "url": "https://www.destatis.de/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "货物贸易顺差及全球占比",
+     "hypothesis": "顺差继续扩张的空间有限",
+     "support": "顺差见顶走平",
+     "against": "继续快速扩大",
+     "sources": [
+      {
+       "label": "海关总署",
+       "url": "https://www.customs.gov.cn/"
+      },
+      {
+       "label": "IMF 数据",
+       "url": "https://data.imf.org/"
+      }
+     ],
+     "freq": "月度 / 季度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "出口退税政策与财政收支中的“出口退税”",
+     "hypothesis": "出口激励继续退出",
+     "support": "退税下调范围扩大",
+     "against": "政策暂停或回调",
+     "sources": [
+      {
+       "label": "国家税务总局",
+       "url": "https://www.chinatax.gov.cn/"
+      },
+      {
+       "label": "财政部·财政数据",
+       "url": "https://gks.mof.gov.cn/tongjishuju/"
+      }
+     ],
+     "freq": "事件 / 月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "海外 10 年期国债收益率（美、德、日）",
+     "hypothesis": "海外利率维持高位，压制利率敏感型出口",
+     "support": "收益率维持高位",
+     "against": "明显下行",
+     "sources": [
+      {
+       "label": "美国财政部·每日收益率",
+       "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+      },
+      {
+       "label": "德国央行",
+       "url": "https://www.bundesbank.de/"
+      },
+      {
+       "label": "日本财务省·国债利率",
+       "url": "https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/"
+      }
+     ],
+     "freq": "每日",
+     "status": "pending",
+     "log": []
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "地产与地方财政",
+   "thesis": "地产拖累加深，地方财政缺口扩大",
+   "indicators": [
+    {
+     "name": "房地产开发投资、新开工、销售面积与金额",
+     "hypothesis": "新开工与销售继续收缩",
+     "support": "新开工降幅扩大",
+     "against": "降幅持续收窄",
+     "sources": [
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "70 城房价（一线与其余分开看）",
+     "hypothesis": "核心城市与其他城市分化",
+     "support": "一线回升、其余仍跌",
+     "against": "普遍同向变动",
+     "sources": [
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "国有土地使用权出让收入",
+     "hypothesis": "土地收入继续下降",
+     "support": "同比降幅未收窄",
+     "against": "降幅快速收窄",
+     "sources": [
+      {
+       "label": "财政部·财政数据",
+       "url": "https://gks.mof.gov.cn/tongjishuju/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "个人所得税与居民可支配收入的增速差",
+     "hypothesis": "税收征管趋严",
+     "support": "个税增速持续高于收入增速",
+     "against": "两者增速趋同",
+     "sources": [
+      {
+       "label": "财政部·财政数据",
+       "url": "https://gks.mof.gov.cn/tongjishuju/"
+      },
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      }
+     ],
+     "freq": "月度 / 季度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "现房销售制度落地进度",
+     "hypothesis": "销售制度改革拉长开发周期",
+     "support": "全国性文件出台、试点扩围",
+     "against": "推进放缓",
+     "sources": [
+      {
+       "label": "住建部",
+       "url": "https://www.mohurd.gov.cn/"
+      },
+      {
+       "label": "中国政府网",
+       "url": "https://www.gov.cn/"
+      }
+     ],
+     "freq": "事件",
+     "status": "pending",
+     "log": []
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "name": "居民信心与杠杆",
+   "thesis": "信心疲弱，居民主动去杠杆",
+   "indicators": [
+    {
+     "name": "居民新增贷款（短期、中长期）与新增存款",
+     "hypothesis": "居民净偿还贷款",
+     "support": "居民贷款继续净减少",
+     "against": "中长期贷款转正并持续",
+     "sources": [
+      {
+       "label": "人民银行·调查统计司",
+       "url": "https://www.pbc.gov.cn/diaochatongjisi/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "社会消费品零售总额及以旧换新品类",
+     "hypothesis": "补贴退坡后消费乏力",
+     "support": "同比在 0 附近或转负",
+     "against": "回到 3% 以上",
+     "sources": [
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "消费者信心指数",
+     "hypothesis": "信心长期低位",
+     "support": "继续横在低位",
+     "against": "趋势性回升",
+     "sources": [
+      {
+       "label": "国家统计局·数据库",
+       "url": "https://data.stats.gov.cn/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "城镇居民储蓄率（1 − 人均消费支出 ÷ 人均可支配收入）",
+     "hypothesis": "储蓄率高于疫情前",
+     "support": "维持高位",
+     "against": "回落到疫情前水平",
+     "sources": [
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      }
+     ],
+     "freq": "季度",
+     "status": "pending",
+     "log": []
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "name": "就业与人口",
+   "thesis": "就业压力上升",
+   "indicators": [
+    {
+     "name": "城镇调查失业率、青年失业率、城镇新增就业",
+     "hypothesis": "就业市场承压",
+     "support": "青年失业率走高、新增就业放缓",
+     "against": "失业率回落",
+     "sources": [
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      },
+      {
+       "label": "人社部",
+       "url": "https://www.mohrss.gov.cn/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "企业就业人员周平均工作时间",
+     "hypothesis": "工时维持高位",
+     "support": "继续在高位",
+     "against": "明显下降",
+     "sources": [
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "结婚登记、出生人口",
+     "hypothesis": "长期背景，不用于短期判断",
+     "support": "—",
+     "against": "—",
+     "sources": [
+      {
+       "label": "民政部",
+       "url": "https://www.mca.gov.cn/"
+      },
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      }
+     ],
+     "freq": "季度 / 年度",
+     "status": "pending",
+     "log": []
+    }
+   ]
+  },
+  {
+   "id": "F",
+   "name": "价格",
+   "thesis": "油价回落后通缩压力重现",
+   "indicators": [
+    {
+     "name": "PPI、CPI、核心 CPI",
+     "hypothesis": "PPI 同比回落",
+     "support": "PPI 同比逐月回落并接近 0",
+     "against": "稳在 2% 以上",
+     "sources": [
+      {
+       "label": "国家统计局·最新发布",
+       "url": "https://www.stats.gov.cn/sj/zxfb/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "布伦特原油现货价",
+     "hypothesis": "油价回落带动 PPI 下行",
+     "support": "油价回落",
+     "against": "维持高位",
+     "sources": [
+      {
+       "label": "美国能源信息署·现货价",
+       "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm"
+      }
+     ],
+     "freq": "每日",
+     "status": "pending",
+     "log": []
+    }
+   ]
+  },
+  {
+   "id": "G",
+   "name": "政策拐点",
+   "thesis": "压力累积后政策明显转向",
+   "indicators": [
+    {
+     "name": "12 月政治局会议、中央经济工作会议措辞",
+     "hypothesis": "政策基调转向",
+     "support": "出现直接补贴居民、清理欠款、上调赤字等提法",
+     "against": "延续“增量支持、不转向”",
+     "sources": [
+      {
+       "label": "中国政府网",
+       "url": "https://www.gov.cn/"
+      }
+     ],
+     "freq": "12 月",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "年度预算：赤字率、特别国债、专项债、提前批额度",
+     "hypothesis": "广义赤字扩大",
+     "support": "广义赤字明显高于上年",
+     "against": "与上年基本持平",
+     "sources": [
+      {
+       "label": "中国政府网",
+       "url": "https://www.gov.cn/"
+      },
+      {
+       "label": "财政部·预算司",
+       "url": "https://yss.mof.gov.cn/"
+      }
+     ],
+     "freq": "3 月；提前批在年底",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "7 天逆回购利率、LPR、存款准备金率",
+     "hypothesis": "降息降准重启",
+     "support": "出现降息或降准",
+     "against": "全年不动",
+     "sources": [
+      {
+       "label": "人民银行·货币政策司",
+       "url": "https://www.pbc.gov.cn/zhengcehuobisi/"
+      },
+      {
+       "label": "中国货币网",
+       "url": "https://www.chinamoney.com.cn/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "社融存量增速、政府债券净融资",
+     "hypothesis": "政府债融资带动社融",
+     "support": "政府债融资提速、社融回升",
+     "against": "社融继续放缓",
+     "sources": [
+      {
+       "label": "人民银行·调查统计司",
+       "url": "https://www.pbc.gov.cn/diaochatongjisi/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    }
+   ]
+  },
+  {
+   "id": "H",
+   "name": "利率与汇率",
+   "thesis": "利率更低更久，人民币有管理地升值",
+   "indicators": [
+    {
+     "name": "中国 10 年期国债收益率",
+     "hypothesis": "利率维持低位",
+     "support": "维持在 2% 以下",
+     "against": "趋势性上行",
+     "sources": [
+      {
+       "label": "中债收益率曲线",
+       "url": "https://yield.chinabond.com.cn/"
+      },
+      {
+       "label": "中国货币网",
+       "url": "https://www.chinamoney.com.cn/"
+      }
+     ],
+     "freq": "每日",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "中美 10 年期利差",
+     "hypothesis": "利差收窄支持人民币",
+     "support": "利差收窄",
+     "against": "利差走阔",
+     "sources": [
+      {
+       "label": "中债收益率曲线",
+       "url": "https://yield.chinabond.com.cn/"
+      },
+      {
+       "label": "美国财政部·每日收益率",
+       "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+      }
+     ],
+     "freq": "每日",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "美元兑人民币中间价、CFETS 人民币汇率指数",
+     "hypothesis": "人民币稳步升值",
+     "support": "中间价稳步下行",
+     "against": "回到 7.0 以上",
+     "sources": [
+      {
+       "label": "中国货币网",
+       "url": "https://www.chinamoney.com.cn/"
+      },
+      {
+       "label": "国家外汇管理局",
+       "url": "https://www.safe.gov.cn/"
+      }
+     ],
+     "freq": "每日 / 每周",
+     "status": "pending",
+     "log": []
+    },
+    {
+     "name": "银行代客结售汇、外资持有境内股票与债券",
+     "hypothesis": "结汇意愿上升、外资持仓稳定",
+     "support": "结汇顺差扩大、持仓稳定",
+     "against": "净购汇、持仓下降",
+     "sources": [
+      {
+       "label": "国家外汇管理局",
+       "url": "https://www.safe.gov.cn/"
+      },
+      {
+       "label": "人民银行·调查统计司",
+       "url": "https://www.pbc.gov.cn/diaochatongjisi/"
+      }
+     ],
+     "freq": "月度",
+     "status": "pending",
+     "log": []
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  [
+   "月末或次月初",
+   "制造业与非制造业 PMI",
+   "国家统计局，9:30"
+  ],
+  [
+   "7–14 日",
+   "进出口",
+   "海关总署"
+  ],
+  [
+   "9 日前后",
+   "CPI、PPI",
+   "国家统计局，9:30"
+  ],
+  [
+   "10–15 日",
+   "金融统计数据、社融",
+   "人民银行"
+  ],
+  [
+   "15–19 日",
+   "国民经济运行（工业、投资、社零、地产、失业率），70 城房价",
+   "国家统计局，10:00"
+  ],
+  [
+   "20 日",
+   "LPR 报价",
+   "全国银行间同业拆借中心"
+  ],
+  [
+   "中下旬",
+   "财政收支（含土地出让收入、个税、出口退税）",
+   "财政部"
+  ],
+  [
+   "季度",
+   "GDP、居民收入与消费支出；货币政策执行报告；国际收支",
+   "统计局；人民银行；外汇管理局"
+  ]
+ ],
+ "triggers": [
+  "季度 GDP 同比低于 4.3%",
+  "PPI 同比回到 0.5% 以下",
+  "居民贷款连续两个季度净减少",
+  "土地出让收入降幅未收窄",
+  "出口增速降到 0 附近",
+  "高层会议出现直接补贴居民或上调赤字的明确表述"
+ ]
+}

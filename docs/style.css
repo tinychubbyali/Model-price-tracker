@@ -112,3 +112,21 @@ tr.removed td { color: var(--text-muted); }
 }
 .source { font-size: 13px; color: var(--text-muted); margin-top: 8px; }
 .source a { color: inherit; }
+
+.nav { display: flex; gap: 16px; margin-bottom: 14px; font-size: 14px; }
+.nav a { color: var(--text-secondary); text-decoration: none; padding-bottom: 2px; }
+.nav a[aria-current="page"] { color: var(--text-primary); font-weight: 600; border-bottom: 2px solid var(--accent); }
+.prose { margin: 0 0 8px; color: var(--text-secondary); font-size: 14px; }
+table.plain th { cursor: default; }
+table.plain tbody tr { cursor: default; }
+table.plain tbody tr:hover { background: none; }
+table.plain a { color: var(--accent); }
+table.macro th, table.macro td { white-space: normal; vertical-align: top; font-size: 14px; }
+table.macro td:nth-child(1) { min-width: 180px; }
+table.macro td:nth-child(n+2):nth-child(-n+5) { min-width: 130px; }
+table.macro td:nth-child(6), table.macro td:nth-child(7) { white-space: nowrap; }
+.status { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--text-secondary); }
+.status-support { color: var(--down); border-color: currentColor; }
+.status-against { color: var(--up); border-color: currentColor; }
+.triggers { margin: 0; padding-left: 20px; }
+.triggers li { padding: 3px 0; }

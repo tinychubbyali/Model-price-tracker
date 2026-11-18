@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>宏观指标追踪</title>
+  <meta name="description" content="基于官方数据的中国宏观指标追踪框架">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav" aria-label="页面">
+      <a href="index.html">模型价格</a>
+      <a href="macro.html" aria-current="page">宏观指标</a>
+    </nav>
+    <h1>宏观指标追踪</h1>
+    <p class="meta" id="meta">加载中…</p>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>怎么用</h2>
+      <p class="prose">这是一张“预测 + 复盘”用的检查表。每个指标对应一条待检验的判断：数据朝“支持信号”走，记为验证；朝“反向信号”走，记为证伪。每月数据出齐后更新一次，每季度按八个主题汇总。</p>
+      <p class="prose">逻辑链：内需偏弱 → 出口降温、地产拖累、居民去杠杆 → 价格回落 → 政策转向 → 利率与汇率。框架参考了 2026 年 10 月一场卖方中国宏观展望的思路，这里只保留基于官方数据的追踪部分，不含任何机构的预测数字。</p>
+    </section>
+
+    <section class="controls" aria-label="筛选">
+      <input id="search" type="search" placeholder="搜索指标，例如 PPI、土地、LPR" aria-label="搜索指标">
+      <select id="group" aria-label="主题"><option value="">全部主题</option></select>
+    </section>
+
+    <div id="groups"></div>
+    <p class="empty" id="noResults" hidden>没有匹配的指标。</p>
+
+    <section class="card">
+      <h2>政策拐点触发清单</h2>
+      <p class="prose">以下六项满足三项以上，视为政策明显转向的条件已具备。阈值是工作标准，可按经验调整。</p>
+      <ol id="triggers" class="triggers"></ol>
+    </section>
+
+    <section class="card">
+      <h2>每月数据日历</h2>
+      <div class="table-scroll">
+        <table class="plain">
+          <thead><tr><th>时间</th><th>数据</th><th>发布方</th></tr></thead>
+          <tbody id="calendar"></tbody>
+        </table>
+      </div>
+      <p class="source">关键事件：12 月政治局会议与中央经济工作会议 → 年底前后专项债提前批额度 → 次年 3 月全国两会 → 4 月、7 月政治局会议。</p>
+    </section>
+  </main>
+
+  <footer class="wrap meta">
+    数据以各机构官网发布为准。官网改版较频繁，链接指向栏目首页，请按栏目名称在站内查找。本页不构成投资建议。
+  </footer>
+
+  <script src="macro.js" type="module"></script>
+</body>
+</html>
