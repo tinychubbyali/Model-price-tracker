@@ -120,7 +120,7 @@ function dailyHero(macro, { money, changes, models }) {
     const ranked = shown.map((l) => ({ l, g: usageOf(l).growth })).filter((x) => x.g !== null).sort((a, b) => b.g - a.g);
     const fastest = ranked[0];
     usageNote = `<p class="kpi-note hero-usage">OpenRouter 本周（${esc(total.at(-1).date)}）总用量 ${tokensBig(total.at(-1).value)}，环比 ${pct(wow(total))}` +
-      (fastest ? `；增长最快的是${esc(fastest.l.name)}（${pct(fastest.g)}）` : '') + '。用量是 OpenRouter 公开流量，价格是本站牌价。</p>';
+      (fastest ? `；${fastest.g >= 0 ? '增长最快' : '降幅最小'}的是${esc(fastest.l.name)}（${pct(fastest.g)}）` : '') + '。用量是 OpenRouter 公开流量，价格是本站牌价。</p>';
   }
   const head = `<tr><th>类型</th><th class="num">价格</th><th class="num">近 7 天</th>${hasUsage ? '<th class="num">用量占比</th><th class="num">用量周环比</th>' : ''}</tr>`;
   return `<article class="card hero">

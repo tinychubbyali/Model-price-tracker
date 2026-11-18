@@ -96,6 +96,8 @@ test('weeklyUsage totals by week and segment, other counts only in the total', (
   assert.deepEqual(u.total, [{ date: '2026-11-02', value: 150 }, { date: '2026-11-09', value: 200 }]);
   assert.deepEqual(u.bySegment.china, [{ date: '2026-11-02', value: 0 }, { date: '2026-11-09', value: 80 }]);
   assert.deepEqual(u.top.map((t) => t.slug), ['openai/gpt-5', 'deepseek/deepseek-v3.2']);
+  // Data through 2026-11-12 covers the week of 11-02 fully but only part of the week of 11-09.
+  assert.deepEqual(weeklyUsage(rows, '2026-11-12').total, [{ date: '2026-11-02', value: 150 }]);
 });
 
 test('benchmarkIndex keys Artificial Analysis scores by a loose model name', () => {

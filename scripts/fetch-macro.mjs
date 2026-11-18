@@ -70,7 +70,7 @@ async function usage() {
   usageCache ??= (async () => {
     const start = new Date(Date.now() - 364 * 864e5).toISOString().slice(0, 10);
     const body = await openRouter(`datasets/rankings-daily?period=week&start_date=${start}`);
-    const u = weeklyUsage(body.data);
+    const u = weeklyUsage(body.data, body.meta?.end_date);
     if (!u.total.length) throw new Error('no usage rows');
     return { ...u, asOf: body.meta?.as_of ?? null };
   })();

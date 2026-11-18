@@ -123,7 +123,11 @@ export function priceMoves(changes, models, segment) {
 
 // OpenRouter rankings rows ({date, model_permaslug, total_tokens}) -> weekly totals overall and by segment,
 // plus the latest week's top models. "other" rows count toward the total only.
-export function weeklyUsage(rows) {
+// endDate is the last complete day the data covers; a week that runs past it is partial and dropped,
+// since comparing two days against a full week would look like a collapse in usage.
+export function weeklyUsage(rows, endDate) {
+  const complete = (d) => !endDate || Date.parse(d) + 6 * 864e5 <= Date.parse(endDate);
+  rows = (rows ?? []).filter((r) => complete(r.date ?? ''));
   const total = new Map();
   const bySeg = Object.fromEntries(SEGMENTS.map((s) => [s.id, new Map()]));
   for (const r of rows ?? []) {
