@@ -1,3 +1,5 @@
+import { renderMacro, renderOverview } from './macro-view.js';
+
 const PROVIDER_NAMES = {
   openai: 'OpenAI',
   anthropic: 'Anthropic',
@@ -13,8 +15,9 @@ const FIELD_NAMES = { input: '输入', output: '输出', cacheRead: '缓存命�
 const CURRENCY_SYMBOLS = { USD: '$', CNY: '¥', SGD: 'S$' };
 
 const $ = (sel) => document.querySelector(sel);
-const state = { currency: 'USD', sort: { key: 'provider', dir: 1 }, selected: null };
-let data, changes;
+const state = { currency: 'USD', sort: { key: 'provider', dir: 1 }, selected: null, tab: 'overview' };
+const TABS = ['overview', 'prices', 'macro'];
+let data, changes, macro;
 
 function loadPrefs() {
   try {
@@ -52,7 +55,6 @@ const lastChange = (m) => m.history.at(-1)?.date ?? m.firstSeen;
 function renderMeta() {
   const when = new Date(data.updatedAt).toLocaleString('zh-CN', { hour12: false });
   const n = Object.values(data.models).filter((m) => !m.removed).length;
-  $('#meta').innerHTML =
   const fxText = ['CNY', 'SGD'].filter((c) => rate(c)).map((c) => `${rate(c).toFixed(4)} ${c}`).join(' ≈ ');
   const fxSource = data.fx?.source
     ? `（<a href="${esc(data.fx.source)}" rel="noopener">${data.fx.source.includes('mas.gov.sg') ? '新加坡金管局' : '汇率来源'}</a>${data.fx.date ? ` ${esc(data.fx.date)}` : ''}）`
@@ -232,23 +234,54 @@ function renderDetail() {
 
 function select(id) {
   state.selected = id;
-  history.replaceState(null, '', id ? `#${encodeURIComponent(id)}` : location.pathname);
+  history.replaceState(null, '', id ? `#${encodeURIComponent(id)}` : '#prices');
   renderDetail();
   renderTable();
   if (id) $('#detail').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+// Axis labels for token prices: the same currency, fewer digits.
+const moneyAxis = (v) => money(v);
+
 function renderAll() {
   renderMeta();
-  renderTable();
-  renderChanges();
-  renderDetail();
+  for (const t of TABS) $(`#view-${t}`).hidden = t !== state.tab;
+  for (const a of document.querySelectorAll('[data-tab]')) {
+    a.setAttribute('aria-current', a.dataset.tab === state.tab ? 'page' : 'false');
+  }
+  if (state.tab === 'prices') {
+    renderTable();
+    renderChanges();
+    renderDetail();
+  } else if (!macro) {
+    $(`#view-${state.tab}`).innerHTML = '<p class="empty">宏观数据还没有生成，下一次每日抓取后会出现。</p>';
+  } else if (state.tab === 'overview') {
+    renderOverview($('#view-overview'), { macro, money });
+  } else {
+    renderMacro($('#view-macro'), { macro, money, moneyAxis });
+  }
+}
+
+// A hash is a tab name, or a model id (which opens the price tab on that model).
+function route() {
+  const hash = decodeURIComponent(location.hash.slice(1));
+  if (TABS.includes(hash)) {
+    state.tab = hash;
+  } else if (data.models[hash]) {
+    state.tab = 'prices';
+    state.selected = hash;
+  } else {
+    state.tab = 'overview';
+  }
+  renderAll();
 }
 
 async function main() {
   loadPrefs();
   [data, changes] = await Promise.all(
     ['data/prices.json', 'data/changes.json'].map((u) => fetch(u, { cache: 'no-cache' }).then((r) => r.json())));
+  // macro.json appears after the first daily run that includes it; the price tab works without it.
+  macro = await fetch('data/macro.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
 
   const providers = [...new Set(Object.values(data.models).map((m) => m.provider))];
   $('#provider').innerHTML += providers.map((p) => `<option value="${esc(p)}">${esc(providerName(p))}</option>`).join('');
@@ -281,9 +314,8 @@ async function main() {
     if (b) select(b.dataset.id);
   });
 
-  const hash = decodeURIComponent(location.hash.slice(1));
-  if (data.models[hash]) state.selected = hash;
-  renderAll();
+  window.addEventListener('hashchange', route);
+  route();
 }
 
 main().catch((err) => {

@@ -114,7 +114,9 @@ async function buildSeries() {
     );
   }
 
-  for (const s of STOCKS) {
+  for (const [i, s] of STOCKS.entries()) {
+    // Alpha Vantage's free tier allows one request per second.
+    if (i) await new Promise((r) => setTimeout(r, 1500));
     await add(
       { id: `stock-${s.id}`, layer: 'markets', name: `${s.name}股价`, unit: 'USD', freq: 'week',
         group: 'stocks', source: 'Alpha Vantage', sourceUrl: `https://www.alphavantage.co/` },
