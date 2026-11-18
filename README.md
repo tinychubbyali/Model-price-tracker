@@ -14,7 +14,8 @@
 2. 脚本只保留各厂商直连 API 的对话模型（去掉 Azure/Bedrock 等转售渠道、微调模型和带日期的快照别名），换算成每百万 tokens 价格。
 3. 与 `docs/data/prices.json` 中已有数据对比：价格变动、新上线、下架都会记入 `docs/data/changes.json`，并追加到对应模型的 `history`。
 4. 如果某家厂商的模型数量骤降一半以上，脚本会报错退出、不写入数据，避免把抓取故障记成"下架"。
-5. `docs/` 是纯静态网站，由 GitHub Pages 直接发布，没有构建步骤。
+5. `scripts/fetch-multimodal.mjs` 从同一份数据集取视频、图片、语音合成、语音识别、音乐的官方牌价，保留厂商原生单位，并换算成“标准成品价”（一条 5 秒 720p 视频、一张约 1K 图片、1 分钟语音、1 小时转写、一首歌），写入 `docs/data/multimodal.json`。没有公开 API 牌价的产品（Suno 订阅、3D 生成的积分制）在 `docs/data/multimodal-manual.json` 人工维护，页面上标为“估算”。
+6. `docs/` 是纯静态网站，由 GitHub Pages 直接发布，没有构建步骤。
 
 ## 本地运行
 
@@ -23,6 +24,7 @@
 ```bash
 npm test          # 运行单元测试
 npm run fetch     # 抓取最新价格并更新 docs/data
+npm run fetch-multimodal  # 抓取多模态价格
 npm run serve     # 本地预览网站
 ```
 

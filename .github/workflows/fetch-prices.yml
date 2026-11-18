@@ -27,6 +27,9 @@ jobs:
           node-version: 22
       - run: npm test
       - run: npm run fetch
+      # Multimodal prices are a separate file; a failure here must not block the token price update.
+      - run: npm run fetch-multimodal
+        continue-on-error: true
       # Macro sources are best-effort: a failure here must not block the price update.
       - run: npm run fetch-macro
         continue-on-error: true

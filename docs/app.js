@@ -1,4 +1,5 @@
 import { renderMacro, renderOverview } from './macro-view.js';
+import { renderMultimodal } from './multimodal-view.js';
 import { SEGMENTS, matchKey, segmentOf } from './segments.js';
 
 const PROVIDER_NAMES = {
@@ -24,9 +25,9 @@ const SCORE_NAMES = { intelligence: '综合智能', engineering: '工程', finan
 const CHANGES_SHOWN = 8;
 
 const $ = (sel) => document.querySelector(sel);
-const state = { currency: 'USD', sort: { key: 'provider', dir: 1 }, selected: null, tab: 'overview', caps: new Set(), allChanges: false };
-const TABS = ['overview', 'prices', 'macro'];
-let data, changes, macro, bench, disclosed;
+const state = { currency: 'USD', sort: { key: 'provider', dir: 1 }, selected: null, tab: 'overview', caps: new Set(), allChanges: false, mmSub: 'video' };
+const TABS = ['overview', 'prices', 'multimodal', 'macro'];
+let data, changes, macro, bench, disclosed, mm;
 
 function loadPrefs() {
   try {
@@ -343,6 +344,11 @@ function renderAll() {
     renderTable();
     renderChanges();
     renderDetail();
+  } else if (state.tab === 'multimodal') {
+    renderMultimodal($('#view-multimodal'), {
+      mm, money, textModels: data.models, sub: state.mmSub,
+      onSub: (id) => { state.mmSub = id; history.replaceState(null, '', `#multimodal/${id}`); renderAll(); },
+    });
   } else if (!macro) {
     $(`#view-${state.tab}`).innerHTML = '<p class="empty">宏观数据还没有生成，下一次每日抓取后会出现。</p>';
   } else if (state.tab === 'overview') {
@@ -357,6 +363,9 @@ function route() {
   const hash = decodeURIComponent(location.hash.slice(1));
   if (TABS.includes(hash)) {
     state.tab = hash;
+  } else if (hash.startsWith('multimodal/')) {
+    state.tab = 'multimodal';
+    state.mmSub = hash.slice('multimodal/'.length);
   } else if (data.models[hash]) {
     state.tab = 'prices';
     state.selected = hash;
@@ -372,7 +381,7 @@ async function main() {
     ['data/prices.json', 'data/changes.json'].map((u) => fetch(u, { cache: 'no-cache' }).then((r) => r.json())));
   // macro.json appears after the first daily run that includes it; the price tab works without it.
   const optional = (u) => fetch(u, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-  [macro, bench, disclosed] = await Promise.all(['data/macro.json', 'data/benchmarks.json', 'data/usage-disclosed.json'].map(optional));
+  [macro, bench, disclosed, mm] = await Promise.all(['data/macro.json', 'data/benchmarks.json', 'data/usage-disclosed.json', 'data/multimodal.json'].map(optional));
 
   const providers = [...new Set(Object.values(data.models).map((m) => m.provider))];
   $('#segment').innerHTML += SEGMENTS.map((g) => `<option value="${g.id}">${esc(g.name)}</option>`).join('');

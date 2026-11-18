@@ -1,0 +1,79 @@
+{
+ "note": "Hand-maintained prices for products with no public per-unit API price (subscription or credit plans). Every entry is an estimate: plan price divided by what the plan buys. Update `checked` and `source` when you change a number.",
+ "models": [
+  {
+   "modality": "music",
+   "vendor": "suno",
+   "vendorName": "Suno",
+   "model": "Suno（Pro 订阅）",
+   "tier": "flagship",
+   "std": 0.02,
+   "nativeText": "$10/月含 2,500 积分；10 积分生成 2 首",
+   "source": "https://diyai.io/ai-tools/audio-generation/suno-pricing/",
+   "checked": "2026-10-25"
+  },
+  {
+   "modality": "music",
+   "vendor": "suno",
+   "vendorName": "Suno",
+   "model": "Suno（Premier 订阅）",
+   "tier": "flagship",
+   "std": 0.015,
+   "nativeText": "$30/月含 10,000 积分；10 积分生成 2 首",
+   "source": "https://diyai.io/ai-tools/audio-generation/suno-pricing/",
+   "checked": "2026-10-25"
+  },
+  {
+   "modality": "3d",
+   "vendor": "meshy",
+   "vendorName": "Meshy",
+   "model": "Meshy 7.1（文生 3D，带贴图）",
+   "tier": "flagship",
+   "std": 0.6,
+   "nativeText": "每个模型 30 积分；Pro 订阅 $20/月含 1,000 积分",
+   "source": "https://docs.meshy.ai/en/api/pricing",
+   "checked": "2026-11-18"
+  },
+  {
+   "modality": "3d",
+   "vendor": "deemos",
+   "vendorName": "Deemos",
+   "model": "Rodin Gen-2.5 High",
+   "tier": "flagship",
+   "std": 0.5,
+   "nativeText": "每个模型 0.5 积分；Creator 订阅 $30/月含 30 积分",
+   "source": "https://www.3daistudio.com/3d-generator-ai-comparison-alternatives-guide/ai-3d-generator-pricing-compared",
+   "checked": "2026-11-01"
+  },
+  {
+   "modality": "3d",
+   "vendor": "tencent",
+   "vendorName": "腾讯",
+   "model": "混元 3D（腾讯云 API）",
+   "tier": "flagship",
+   "std": 0.375,
+   "nativeText": "每个模型 25 积分；按量付费 $15/1,000 积分",
+   "source": "https://www.3daistudio.com/3d-generator-ai-comparison-alternatives-guide/ai-3d-generator-pricing-compared",
+   "checked": "2026-11-01"
+  }
+ ],
+ "notes": {
+  "music": {
+   "title": "版权与授权状态",
+   "asOf": "2026-10-25",
+   "source": "https://www.aivortex.io/legal/ai-case-law/suno-udio-music-ai/",
+   "items": [
+    "2024 年 6 月，环球（UMG）、索尼、华纳三大唱片公司通过美国唱片业协会起诉 Suno 和 Udio，指控其未经授权用录音作品训练模型。",
+    "Udio：环球（2025 年 10 月）和华纳（2025 年 11 月）已和解并转为授权合作，索尼仍在起诉，并于 2026 年 7 月追加第二起诉讼。",
+    "Suno：华纳于 2025 年 11 月和解并撤诉；环球和索尼仍在起诉，2026 年 9 月又针对 Suno v6 提起第二起诉讼。",
+    "截至 2026 年 10 月，所有案件都还没有关于“合理使用”的判决。判决结果和授权费用会直接影响音乐生成的成本和定价。"
+   ]
+  },
+  "3d": {
+   "title": "计价说明",
+   "items": [
+    "3D 生成大多按积分计费，没有公开的按次 API 牌价。表中价格按“订阅价 ÷ 积分 × 每个模型消耗的积分”估算，每月人工核对一次。"
+   ]
+  }
+ }
+}

@@ -193,3 +193,28 @@ td.caps { white-space: normal; min-width: 200px; }
 .hero-body.wide-side { grid-template-columns: minmax(0, 1fr) 400px; }
 .hero-usage { margin-top: 6px; }
 @media (max-width: 960px) { .hero-body.wide-side { grid-template-columns: 1fr; } }
+
+/* Multimodal tab */
+.subtabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 14px; }
+.subtabs button {
+  font: inherit; font-size: 14px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-secondary);
+  border-radius: 999px; padding: 5px 14px; cursor: pointer;
+}
+.subtabs button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.subtabs .count { font-size: 12px; opacity: .75; }
+.mm-mod-note { margin: -6px 0 10px; }
+.mm-table tbody tr { cursor: default; }
+.mm-table td:first-child { white-space: normal; min-width: 200px; }
+.mm-table td:first-child a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--text-muted); }
+.mm-table td.res { color: var(--text-secondary); font-size: 13px; white-space: normal; }
+.mm-table td.res.em { color: var(--text-primary); font-weight: 600; }
+.mm-table .std { font-weight: 600; }
+.mm-table .bar { display: inline-block; height: 8px; border-radius: 4px; background: var(--accent); opacity: .7; vertical-align: middle; margin-left: 8px; }
+.native { display: block; font-size: 11px; color: var(--text-muted); font-weight: normal; }
+.tier { font-size: 11px; border-radius: 999px; padding: 0 7px; background: rgba(127, 127, 127, .14); color: var(--text-secondary); }
+.tier.t-flagship { background: color-mix(in srgb, var(--series-4) 18%, transparent); }
+.tier.t-light { background: color-mix(in srgb, var(--series-3) 18%, transparent); }
+.mm-buy { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-bottom: 0; }
+.mm-note { margin-top: 14px; padding: 12px 14px; border-radius: 10px; background: rgba(127, 127, 127, .07); font-size: 14px; }
+.mm-note h3 { margin: 0 0 6px; font-size: 14px; }
+.mm-note ul { margin: 0; padding-left: 18px; color: var(--text-secondary); }
