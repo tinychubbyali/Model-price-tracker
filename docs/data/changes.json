@@ -1,1 +1,182 @@
-[]
+[
+ {
+  "date": "2026-11-17",
+  "id": "dashscope/qwen4-max",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 4.5,
+   "cacheRead": null
+  }
+ },
+ {
+  "date": "2026-11-13",
+  "id": "gemini/gemini-4-hydrogen",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 7.5,
+   "cacheRead": 0.075
+  }
+ },
+ {
+  "date": "2026-11-11",
+  "id": "anthropic/claude-mythos-5-2",
+  "type": "added",
+  "after": {
+   "input": 8,
+   "output": 40,
+   "cacheRead": 0.2
+  }
+ },
+ {
+  "date": "2026-11-11",
+  "id": "gemini/gemini-4-carbon",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.1
+  }
+ },
+ {
+  "date": "2026-11-10",
+  "id": "anthropic/claude-fable-5-2",
+  "type": "added",
+  "after": {
+   "input": 8,
+   "output": 40,
+   "cacheRead": 0.2
+  }
+ },
+ {
+  "date": "2026-11-08",
+  "id": "moonshot/kimi-k3.1-pro-highspeed",
+  "type": "added",
+  "after": {
+   "input": 4,
+   "output": 20,
+   "cacheRead": 0.2
+  }
+ },
+ {
+  "date": "2026-11-06",
+  "id": "openai/gpt-6-cyber",
+  "type": "added",
+  "after": {
+   "input": 20,
+   "output": 100,
+   "cacheRead": 2
+  }
+ },
+ {
+  "date": "2026-11-06",
+  "id": "gemini/gemini-omni-1.2-flash",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 9,
+   "cacheRead": null
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "id": "mistral/mistral-large-4",
+  "type": "changed",
+  "before": {
+   "input": 1.36,
+   "output": 4.18,
+   "cacheRead": 0.14
+  },
+  "after": {
+   "input": 0.7,
+   "output": 2.1,
+   "cacheRead": 0.07
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "id": "mistral/mistral-large-4-0",
+  "type": "changed",
+  "before": {
+   "input": 1.36,
+   "output": 4.18,
+   "cacheRead": 0.14
+  },
+  "after": {
+   "input": 0.7,
+   "output": 2.1,
+   "cacheRead": 0.07
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "id": "openai/gpt-6-astra-law",
+  "type": "added",
+  "after": {
+   "input": 10,
+   "output": 50,
+   "cacheRead": 1
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "id": "openai/gpt-6-rosalind",
+  "type": "added",
+  "after": {
+   "input": 15,
+   "output": 75,
+   "cacheRead": 1.5
+  }
+ },
+ {
+  "date": "2026-10-30",
+  "id": "zai/glm-5v-turbo",
+  "type": "added",
+  "after": {
+   "input": 1.2,
+   "output": 4,
+   "cacheRead": 0.24
+  }
+ },
+ {
+  "date": "2026-10-29",
+  "id": "mistral/mistral-large-4",
+  "type": "changed",
+  "before": {
+   "input": 0.68,
+   "output": 2.09,
+   "cacheRead": 0.068
+  },
+  "after": {
+   "input": 1.36,
+   "output": 4.18,
+   "cacheRead": 0.14
+  }
+ },
+ {
+  "date": "2026-10-29",
+  "id": "mistral/mistral-large-4-0",
+  "type": "changed",
+  "before": {
+   "input": 0.68,
+   "output": 2.09,
+   "cacheRead": 0.068
+  },
+  "after": {
+   "input": 1.36,
+   "output": 4.18,
+   "cacheRead": 0.14
+  }
+ },
+ {
+  "date": "2026-10-29",
+  "id": "moonshot/kimi-k3.1-pro",
+  "type": "added",
+  "after": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.2
+  }
+ }
+]
