@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T12:44:15.941Z",
+ "updatedAt": "2026-11-19T10:04:24.849Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
  "notes": {
   "music": {
@@ -115,7 +115,7 @@
    "model": "gpt-4o-transcribe-diarize",
    "native": {
     "perSecond": 0.0001,
-    "perAudioToken": 0.0000025
+    "perAudioToken": 0.000006
    },
    "std": 0.36,
    "estimate": false,
@@ -143,6 +143,14 @@
      "native": {
       "perSecond": 0.0001,
       "perAudioToken": 0.0000025
+     }
+    },
+    {
+     "date": "2026-11-19",
+     "std": 0.36,
+     "native": {
+      "perSecond": 0.0001,
+      "perAudioToken": 0.000006
      }
     }
    ]
@@ -1029,7 +1037,7 @@
    "model": "gpt-4o-mini-transcribe",
    "native": {
     "perSecond": 0.00005,
-    "perAudioToken": 0.00000125
+    "perAudioToken": 0.000003
    },
    "std": 0.18,
    "estimate": false,
@@ -1057,6 +1065,14 @@
      "native": {
       "perSecond": 0.00005,
       "perAudioToken": 0.00000125
+     }
+    },
+    {
+     "date": "2026-11-19",
+     "std": 0.18,
+     "native": {
+      "perSecond": 0.00005,
+      "perAudioToken": 0.000003
      }
     }
    ]
@@ -3714,11 +3730,5 @@
    "after": 0.134,
    "backfill": true
   }
- ],
- "backfill": {
-  "from": "2025-11-15",
-  "until": "2026-11-18",
-  "source": "https://github.com/BerriAI/litellm/commits/main/model_prices_and_context_window.json",
-  "method": "每周取主线上最后一个版本"
- }
+ ]
 }

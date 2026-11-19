@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-18T00:00:37.846Z",
+ "asOf": "2026-11-19T00:00:35.278Z",
  "citation": "Source: Artificial Analysis (artificialanalysis.ai) via OpenRouter (openrouter.ai/rankings).",
  "sourceUrl": "https://artificialanalysis.ai",
  "models": {
@@ -21,6 +21,16 @@
     "engineering": 66.6,
     "finance_and_accounting": 60.9,
     "legal": 58.7
+   }
+  },
+  "gemini-4-neon": {
+   "name": "Gemini 4 Neon (Xhigh)",
+   "slug": "google/gemini-4-neon-20261118",
+   "scores": {
+    "intelligence": 61.4,
+    "engineering": 66.8,
+    "finance_and_accounting": 65.1,
+    "legal": 63.8
    }
   },
   "gemini-4-carbon": {

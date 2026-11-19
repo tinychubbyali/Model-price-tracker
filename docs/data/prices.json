@@ -1,12 +1,12 @@
 {
- "updatedAt": "2026-11-18T09:55:12.039Z",
+ "updatedAt": "2026-11-19T10:02:07.251Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
  "fx": {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "source": "https://open.er-api.com",
   "rates": {
-   "SGD": 1.288508,
-   "CNY": 6.679863
+   "SGD": 1.289354,
+   "CNY": 6.680778
   }
  },
  "models": {
@@ -3211,7 +3211,7 @@
     }
    ],
    "specs": {
-    "context": 131072,
+    "context": 262144,
     "maxOutput": 131072,
     "caps": [
      "vision",
@@ -3589,10 +3589,10 @@
   "mistral/mistral-large-latest": {
    "provider": "mistral",
    "model": "mistral-large-latest",
-   "input": 0.5,
-   "output": 1.5,
-   "cacheRead": 0.05,
-   "source": "https://docs.mistral.ai/models/mistral-large-3-25-12",
+   "input": 0.7,
+   "output": 2.1,
+   "cacheRead": 0.07,
+   "source": "https://docs.mistral.ai/models/mistral-large-4-0",
    "firstSeen": "2025-11-15",
    "history": [
     {
@@ -3612,12 +3612,19 @@
      "input": 0.5,
      "output": 1.5,
      "cacheRead": 0.05
+    },
+    {
+     "date": "2026-11-19",
+     "input": 0.7,
+     "output": 2.1,
+     "cacheRead": 0.07
     }
    ],
    "specs": {
-    "context": 262144,
-    "maxOutput": 262144,
+    "context": 1048576,
+    "maxOutput": 1048576,
     "caps": [
+     "reasoning",
      "vision",
      "tools"
     ],
@@ -5149,7 +5156,8 @@
     "caps": [
      "reasoning",
      "vision",
-     "tools"
+     "tools",
+     "web"
     ],
     "deprecation": null
    }
@@ -5188,7 +5196,8 @@
     "caps": [
      "reasoning",
      "vision",
-     "tools"
+     "tools",
+     "web"
     ],
     "deprecation": null
    }
@@ -5221,7 +5230,8 @@
     "caps": [
      "reasoning",
      "vision",
-     "tools"
+     "tools",
+     "web"
     ],
     "deprecation": null
    }
@@ -5253,7 +5263,8 @@
     "maxOutput": 393216,
     "caps": [
      "reasoning",
-     "tools"
+     "tools",
+     "web"
     ],
     "deprecation": null
    }
@@ -5396,7 +5407,7 @@
      "computer",
      "pdf"
     ],
-    "deprecation": "2026-06-09"
+    "deprecation": null
    }
   },
   "gemini/gemini-robotics-er-2-streaming-preview": {
@@ -6663,9 +6674,9 @@
   "openai/gpt-6-rosalind": {
    "provider": "openai",
    "model": "gpt-6-rosalind",
-   "input": 15,
-   "output": 75,
-   "cacheRead": 1.5,
+   "input": 10,
+   "output": 50,
+   "cacheRead": 1,
    "source": "https://developers.openai.com/api/docs/pricing",
    "firstSeen": "2026-10-31",
    "history": [
@@ -6674,6 +6685,12 @@
      "input": 15,
      "output": 75,
      "cacheRead": 1.5
+    },
+    {
+     "date": "2026-11-19",
+     "input": 10,
+     "output": 50,
+     "cacheRead": 1
     }
    ],
    "specs": {
@@ -10200,12 +10217,38 @@
     }
    ],
    "removed": "2026-09-05"
+  },
+  "gemini/gemini-4-neon": {
+   "provider": "gemini",
+   "model": "gemini-4-neon",
+   "input": 3,
+   "output": 15,
+   "cacheRead": 0.15,
+   "source": "https://aistudio.google.com/docs/pricing#gemini-4-neon",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 1048576,
+    "caps": [
+     "reasoning",
+     "vision",
+     "tools",
+     "web",
+     "computer",
+     "pdf",
+     "audio",
+     "video"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-11-19",
+   "history": [
+    {
+     "date": "2026-11-19",
+     "input": 3,
+     "output": 15,
+     "cacheRead": 0.15
+    }
+   ]
   }
- },
- "backfill": {
-  "from": "2025-11-15",
-  "until": "2026-10-27",
-  "source": "https://github.com/BerriAI/litellm/commits/main/model_prices_and_context_window.json",
-  "method": "每周取主线上最后一个版本"
  }
 }

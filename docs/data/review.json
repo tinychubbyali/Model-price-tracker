@@ -1110,6 +1110,28 @@
    "link": null,
    "note": null,
    "listed": "2026-11-18"
+  },
+  "openai/gpt-6-rosalind@2026-11-19": {
+   "id": "openai/gpt-6-rosalind",
+   "date": "2026-11-19",
+   "kind": "text",
+   "before": {
+    "input": 15,
+    "output": 75,
+    "cacheRead": 1.5
+   },
+   "after": {
+    "input": 10,
+    "output": 50,
+    "cacheRead": 1
+   },
+   "backfill": false,
+   "flags": [],
+   "status": "pending",
+   "announced": null,
+   "link": null,
+   "note": null,
+   "listed": "2026-11-19"
   }
  }
 }
