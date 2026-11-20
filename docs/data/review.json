@@ -16,11 +16,13 @@
     "cacheRead": 0.07
    },
    "backfill": false,
-   "flags": [],
-   "status": "pending",
+   "flags": [
+    "flipflop"
+   ],
+   "status": "error",
    "announced": null,
-   "link": null,
-   "note": null,
+   "link": "https://docs.mistral.ai/models/mistral-large-4-0",
+   "note": "数据源错误：10-29 翻倍、11-03 回到约原价；官方价 $0.70/$2.10，无调价公告。2026-11-20 Joyce 确认",
    "listed": "2026-11-18"
   },
   "mistral/mistral-large-4-0@2026-11-03": {
@@ -38,11 +40,13 @@
     "cacheRead": 0.07
    },
    "backfill": false,
-   "flags": [],
-   "status": "pending",
+   "flags": [
+    "flipflop"
+   ],
+   "status": "error",
    "announced": null,
-   "link": null,
-   "note": null,
+   "link": "https://docs.mistral.ai/models/mistral-large-4-0",
+   "note": "数据源错误：10-29 翻倍、11-03 回到约原价；官方价 $0.70/$2.10，无调价公告。2026-11-20 Joyce 确认",
    "listed": "2026-11-18"
   },
   "mistral/mistral-large-4@2026-10-29": {
@@ -60,11 +64,13 @@
     "cacheRead": 0.14
    },
    "backfill": false,
-   "flags": [],
-   "status": "pending",
+   "flags": [
+    "flipflop"
+   ],
+   "status": "error",
    "announced": null,
-   "link": null,
-   "note": null,
+   "link": "https://docs.mistral.ai/models/mistral-large-4-0",
+   "note": "数据源错误：10-29 翻倍、11-03 回到约原价；官方价 $0.70/$2.10，无调价公告。2026-11-20 Joyce 确认",
    "listed": "2026-11-18"
   },
   "mistral/mistral-large-4-0@2026-10-29": {
@@ -82,11 +88,13 @@
     "cacheRead": 0.14
    },
    "backfill": false,
-   "flags": [],
-   "status": "pending",
+   "flags": [
+    "flipflop"
+   ],
+   "status": "error",
    "announced": null,
-   "link": null,
-   "note": null,
+   "link": "https://docs.mistral.ai/models/mistral-large-4-0",
+   "note": "数据源错误：10-29 翻倍、11-03 回到约原价；官方价 $0.70/$2.10，无调价公告。2026-11-20 Joyce 确认",
    "listed": "2026-11-18"
   },
   "gemini/gemini-robotics-er-2-streaming-preview@2026-09-27": {
@@ -1127,10 +1135,10 @@
    },
    "backfill": false,
    "flags": [],
-   "status": "pending",
-   "announced": null,
-   "link": null,
-   "note": null,
+   "status": "confirmed",
+   "announced": "2026-11-19",
+   "link": "https://developers.openai.com/api/docs/pricing",
+   "note": "促销价，官方注明至少持续到 2026-12-31，之后可能恢复原价；未找到降价公告，日期按数据源记录。2026-11-20 Joyce 确认",
    "listed": "2026-11-19"
   }
  }

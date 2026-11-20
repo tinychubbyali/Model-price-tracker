@@ -35,14 +35,16 @@ test('anomalies flag bulk same-price edits, flip-flops and huge jumps', () => {
   const bulk = [1, 2, 3, 4, 5].map((i) => ch(`xai/m${i}`, '2026-08-29', [i, i * 5], [1.25, 2.5]));
   const flip = [ch('openai/x', '2026-01-01', [1, 4], [2, 8]), ch('openai/x', '2026-01-15', [2, 8], [1, 4])];
   const jump = [ch('moonshot/k', '2026-02-01', [30, 30], [0.6, 2.5])];
+  const near = [ch('mistral/l', '2026-10-29', [0.68, 2.09], [1.36, 4.18]), ch('mistral/l', '2026-11-03', [1.36, 4.18], [0.7, 2.1])];
   const real = [ch('deepseek/chat', '2026-01-17', [0.6, 1.7], [0.28, 0.42])];
   const alias = [ch('gemini/gemini-flash-latest', '2026-01-17', [0.3, 2.5], [0.75, 3.75])];
-  const moves = priceMoves([...bulk, ...flip, ...jump, ...real, ...alias], TEXT);
-  assert.equal(moves.length, 9); // the alias is not a price move
+  const moves = priceMoves([...bulk, ...flip, ...jump, ...near, ...real, ...alias], TEXT);
+  assert.equal(moves.length, 11); // the alias is not a price move
   const f = anomalies(moves, TEXT);
   assert.deepEqual(f.get('xai/m1@2026-08-29'), ['bulk']);
   assert.deepEqual(f.get('openai/x@2026-01-15'), ['flipflop']);
   assert.ok(f.get('moonshot/k@2026-02-01').includes('magnitude'));
+  assert.deepEqual(f.get('mistral/l@2026-11-03'), ['flipflop']); // back within 5% counts too
   assert.equal(f.get('deepseek/chat@2026-01-17'), undefined);
 });
 
