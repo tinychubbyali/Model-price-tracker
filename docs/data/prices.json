@@ -1,12 +1,12 @@
 {
- "updatedAt": "2026-11-19T10:02:07.251Z",
+ "updatedAt": "2026-11-20T03:47:37.651Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
  "fx": {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "source": "https://open.er-api.com",
   "rates": {
-   "SGD": 1.289354,
-   "CNY": 6.680778
+   "SGD": 1.290845,
+   "CNY": 6.69198
   }
  },
  "models": {
@@ -10247,6 +10247,31 @@
      "input": 3,
      "output": 15,
      "cacheRead": 0.15
+    }
+   ]
+  },
+  "gemini/genie-4": {
+   "provider": "gemini",
+   "model": "genie-4",
+   "input": 1.5,
+   "output": 9,
+   "cacheRead": null,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "specs": {
+    "context": 1048576,
+    "maxOutput": 65536,
+    "caps": [
+     "vision"
+    ],
+    "deprecation": null
+   },
+   "firstSeen": "2026-11-20",
+   "history": [
+    {
+     "date": "2026-11-20",
+     "input": 1.5,
+     "output": 9,
+     "cacheRead": null
     }
    ]
   }

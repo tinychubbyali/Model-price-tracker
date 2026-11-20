@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-20",
+  "id": "gemini/genie-4",
+  "type": "added",
+  "after": {
+   "input": 1.5,
+   "output": 9,
+   "cacheRead": null
+  }
+ },
+ {
   "date": "2026-11-19",
   "id": "mistral/mistral-large-latest",
   "type": "changed",
