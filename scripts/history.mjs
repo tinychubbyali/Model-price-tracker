@@ -81,7 +81,7 @@ const reviewKey = (c) => `${c.id}@${c.date}`;
 
 // Flags changes that look like data-entry errors in the source rather than vendor moves.
 // bulk: one vendor, one week, 5+ models set to the very same price.
-// flipflop: a model returns to its earlier price within 4 weeks.
+// flipflop: a model returns to (within 5% of) its earlier price within 4 weeks.
 // magnitude: price multiplied or divided by 5 or more at once.
 export function anomalies(moves, fmt) {
   const flags = new Map();
@@ -94,16 +94,17 @@ export function anomalies(moves, fmt) {
   for (const g of groups.values()) if (g.length >= 5) g.forEach((c) => add(c, 'bulk'));
   const byId = new Map();
   for (const c of moves) byId.set(c.id, [...(byId.get(c.id) ?? []), c]);
+  const v = (x) => (fmt.kind === 'mm' ? x : (x.input * 3 + x.output) / 4);
   for (const list of byId.values()) {
     list.sort((a, b) => a.date.localeCompare(b.date));
     for (let i = 1; i < list.length; i++) {
       const [a, b] = [list[i - 1], list[i]];
-      const back = JSON.stringify(b.after) === JSON.stringify(a.before);
+      // Back to roughly where it started (the source sometimes restores a slightly different figure).
+      const back = Math.abs(v(b.after) / v(a.before) - 1) <= 0.05 && Math.abs(v(a.after) / v(a.before) - 1) > 0.05;
       if (back && Date.parse(b.date) - Date.parse(a.date) <= 28 * DAY) { add(a, 'flipflop'); add(b, 'flipflop'); }
     }
   }
   for (const c of moves) {
-    const v = (x) => (fmt.kind === 'mm' ? x : (x.input * 3 + x.output) / 4);
     const r = v(c.after) / v(c.before);
     if (r >= 5 || r <= 0.2) add(c, 'magnitude');
   }

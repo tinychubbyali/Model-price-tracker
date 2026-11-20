@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T10:04:35.135Z",
+ "updatedAt": "2026-11-20T03:46:43.051Z",
  "weeks": [
   "2025-11-10",
   "2025-11-17",
@@ -117,10 +117,10 @@
     95.94,
     95.94,
     95.94,
-    97.22,
-    96,
-    96,
-    95.65
+    95.94,
+    95.94,
+    95.94,
+    95.59
    ],
    "median": [
     1.15,
@@ -229,10 +229,10 @@
     0,
     0,
     0,
-    1.34,
-    -1.25,
     0,
-    -0.36
+    0,
+    0,
+    -0.37
    ],
    "count": [
     78,
@@ -2604,8 +2604,8 @@
    },
    "pct": -33.3,
    "flags": [],
-   "status": "pending",
-   "announced": null,
+   "status": "confirmed",
+   "announced": "2026-11-19",
    "link": "https://developers.openai.com/api/docs/pricing",
    "backfill": false,
    "excluded": false
@@ -2687,12 +2687,14 @@
     "cacheRead": 0.07
    },
    "pct": -49.2,
-   "flags": [],
-   "status": "pending",
+   "flags": [
+    "flipflop"
+   ],
+   "status": "error",
    "announced": null,
    "link": "https://docs.mistral.ai/models/mistral-large-4-0",
    "backfill": false,
-   "excluded": false
+   "excluded": true
   },
   {
    "key": "mistral/mistral-large-4-0@2026-11-03",
@@ -2714,12 +2716,14 @@
     "cacheRead": 0.07
    },
    "pct": -49.2,
-   "flags": [],
-   "status": "pending",
+   "flags": [
+    "flipflop"
+   ],
+   "status": "error",
    "announced": null,
    "link": "https://docs.mistral.ai/models/mistral-large-4-0",
    "backfill": false,
-   "excluded": false
+   "excluded": true
   },
   {
    "key": "mistral/mistral-large-4@2026-10-29",
@@ -2741,12 +2745,14 @@
     "cacheRead": 0.14
    },
    "pct": 100,
-   "flags": [],
-   "status": "pending",
+   "flags": [
+    "flipflop"
+   ],
+   "status": "error",
    "announced": null,
    "link": "https://docs.mistral.ai/models/mistral-large-4-0",
    "backfill": false,
-   "excluded": false
+   "excluded": true
   },
   {
    "key": "mistral/mistral-large-4-0@2026-10-29",
@@ -2768,12 +2774,14 @@
     "cacheRead": 0.14
    },
    "pct": 100,
-   "flags": [],
-   "status": "pending",
+   "flags": [
+    "flipflop"
+   ],
+   "status": "error",
    "announced": null,
    "link": "https://docs.mistral.ai/models/mistral-large-4-0",
    "backfill": false,
-   "excluded": false
+   "excluded": true
   },
   {
    "key": "elevenlabs/eleven_v3@2026-10-24",
