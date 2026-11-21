@@ -1,8 +1,8 @@
 {
- "updatedAt": "2026-11-20T09:50:57.227Z",
+ "updatedAt": "2026-11-21T09:26:10.718Z",
  "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
  "fx": {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "source": "https://open.er-api.com",
   "rates": {
    "SGD": 1.290845,
@@ -5320,7 +5320,7 @@
      "vision",
      "tools"
     ],
-    "deprecation": null
+    "deprecation": "2026-11-19"
    }
   },
   "anthropic/claude-mythos-5": {

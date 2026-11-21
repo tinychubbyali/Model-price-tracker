@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-20T00:00:35.305Z",
+ "asOf": "2026-11-21T00:00:36.252Z",
  "citation": "Source: Artificial Analysis (artificialanalysis.ai) via OpenRouter (openrouter.ai/rankings).",
  "sourceUrl": "https://artificialanalysis.ai",
  "models": {
@@ -423,6 +423,16 @@
     "legal": 27.5
    }
   },
+  "inkling-2-mini": {
+   "name": "Inkling 2 Mini",
+   "slug": "thinkingmachines/inkling-2-mini-20261120",
+   "scores": {
+    "intelligence": 20.1,
+    "engineering": 27.6,
+    "finance_and_accounting": 35.3,
+    "legal": 31
+   }
+  },
   "qwen3-8-27b": {
    "name": "Qwen3.8 27B (Xhigh)",
    "slug": "qwen/qwen3.8-27b-20260814",
@@ -657,6 +667,14 @@
    "scores": {
     "finance_and_accounting": 32.1,
     "legal": 28.5
+   }
+  },
+  "gemma-4-26b-a4b-it": {
+   "name": "Gemma 4 26B A4B (Reasoning)",
+   "slug": "google/gemma-4-26b-a4b-it-20260403",
+   "scores": {
+    "finance_and_accounting": 7.1,
+    "legal": 6.9
    }
   }
  }
